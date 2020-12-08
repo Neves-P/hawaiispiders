@@ -18,10 +18,11 @@ RoxygenNote: 7.1.1
 URL: https://github.com/Neves-P/hawaiispiders
 BugReports: https://github.com/Neves-P/hawaiispiders/issues
 Suggests: 
-    readr
+    readr,
+    testthat
 Depends: 
     R (>= 2.10)
 Imports: 
     DAISIE (>= 3.1.0)
-Remotes:  
+Remotes: 
     rsetienne/DAISIE@onecolonist_fix
