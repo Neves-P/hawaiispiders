@@ -41,6 +41,9 @@ jobs:
         with:
           r-version: ${{ matrix.config.r }}
 
+      - name: Install libcurl4-openssl-dev
+        run: sudo apt install -qq libcurl4-openssl-dev
+
       - uses: r-lib/actions/setup-pandoc@v1
 
       - name: Query dependencies
