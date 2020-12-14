@@ -41,6 +41,10 @@ jobs:
         with:
           r-version: ${{ matrix.config.r }}
 
+      - name: Install libcurl4-openssl-dev
+        if: runner.os == 'Linux'
+        run: sudo apt install -qq libcurl4-openssl-dev
+
       - uses: r-lib/actions/setup-pandoc@v1
 
       - name: Query dependencies
@@ -83,12 +87,12 @@ jobs:
         run: find check -name 'testthat.Rout*' -exec cat '{}' \; || true
         shell: bash
 
-      - name: Install covr and test coverage
-        if: matrix.config.r == 'devel'
-        run: |
-          remotes::install_cran("covr")
-          covr::codecov()
-        shell: Rscript {0}
+#      - name: Install covr and test coverage
+#        if: matrix.config.r == 'devel'
+#        run: |
+#          remotes::install_cran("covr")
+#          covr::codecov()
+#        shell: Rscript {0}
 
       - name: Upload check results
         if: failure()
