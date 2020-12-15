@@ -11,3 +11,14 @@ spider_scenario_1 <- readr::read_delim(
 
 usethis::use_data(spider_scenario_1, overwrite = TRUE)
 
+
+file_path <- system.file("extdata", "spider_scenario_1_pruned.csv",
+                         package = "hawaiispiders")
+spider_scenario_1_pruned <- readr::read_delim(
+  file_path,
+  ";",
+  escape_double = FALSE,
+  trim_ws = TRUE
+)
+
+usethis::use_data(spider_scenario_1_pruned, overwrite = TRUE)
