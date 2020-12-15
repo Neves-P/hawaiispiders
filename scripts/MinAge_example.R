@@ -6,13 +6,15 @@ out <- hawaiispiders::DAISIE_dataprep(
 )
 
 
-# Pagiopalus nigriventis should not have c(1.20000, 1.19999) brts, but use
-# MinAge
+# Pagiopalus nigriventis should not have c(1.20000, 1.19999, 0.387) brts, but
+# only c(1.1999, 0.387)?
 out[[3]]$branching_times
 spider_scenario_1_pruned[2, ]
 
-View(out[[3]])
-View(spider_scenario_1_pruned[2, ])
+# Mecaphesa anguliventris should be stac 8 and have  c(1.2000, 0.3078, 0.0166)
+# as branching times?
+out[[16]]$branching_times
+spider_scenario_1_pruned[15, ]
 
 
 # Unpruned data. Doesn't work yet (brts older than island)
