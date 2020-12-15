@@ -9,7 +9,7 @@ A tibble with 33 rows and 5 variables:
 \describe{
 \item{Clade_name}{character vector with name of each lineage}
 \item{Status}{character vector with endemicity status. Can be \code{"Endemic"},
-\code{NonEndemic} or \code{"Endemic_MaxAge"}}
+\code{"NonEndemic"} or \code{"Endemic_MaxAge"}}
 \item{Missing_species}{numeric with the number of known species that are
 missing in the phylogeny}
 \item{Branching_times}{ordered numeric vector with colonisation and

@@ -9,7 +9,7 @@
 #' \describe{
 #'   \item{Clade_name}{character vector with name of each lineage}
 #'   \item{Status}{character vector with endemicity status. Can be `"Endemic"`,
-#'   `NonEndemic` or `"Endemic_MaxAge"`}
+#'   `"NonEndemic"` or `"Endemic_MaxAge"`}
 #'   \item{Missing_species}{numeric with the number of known species that are
 #'   missing in the phylogeny}
 #'   \item{Branching_times}{ordered numeric vector with colonisation and
