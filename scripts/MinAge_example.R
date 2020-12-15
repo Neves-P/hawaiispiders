@@ -1,4 +1,4 @@
-data(spider_scenario_1_pruned)
+data(spider_scenario_1_pruned, package = "hawaiispiders")
 out <- hawaiispiders::DAISIE_dataprep(
   datatable = spider_scenario_1_pruned,
   island_age = 1.2,
