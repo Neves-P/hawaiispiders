@@ -2,36 +2,45 @@
 % Please edit documentation in R/setup_model_parameters.R
 \name{setup_model_arguments}
 \alias{setup_model_arguments}
-\title{Stub}
+\title{Set up DAISIE_ML arguments}
 \usage{
 setup_model_arguments(model, r_lamc, r_mu, r_K, r_gam, r_ana)
 }
 \arguments{
-\item{model}{Integer with model that should run}
+\item{model}{Numeric integer with model that should run}
 
-\item{r_lamc}{Uniformly sampled value of cladogenesis rate}
+\item{r_lamc}{Numeric. Uniformly sampled value of cladogenesis rate}
 
-\item{r_mu}{Uniformly sampled value of extinction rate}
+\item{r_mu}{Numeric. Uniformly sampled value of extinction rate}
 
-\item{r_K}{Uniformly sampled value of carrying capacity}
+\item{r_K}{Numeric. Uniformly sampled value of carrying capacity}
 
-\item{r_gam}{Uniformly sampled value of immigration rate}
+\item{r_gam}{Numeric. Uniformly sampled value of immigration rate}
 
-\item{r_ana}{Uniformly sampled value of anagenesis rate}
+\item{r_ana}{Numeric. Uniformly sampled value of anagenesis rate}
 }
 \value{
-Model arguments
+A list with \code{\link[DAISIE:DAISIE_ML]{DAISIE::DAISIE_ML()}} arguments.
 }
 \description{
-Stub
+Set up DAISIE_ML arguments
 }
 \examples{
-# setup_model_arguments(
-#   model = model,
-#   r_lamc = r_lamc,
-#   r_mu = r_mu,
-#   r_K = r_K,
-#   r_gam = r_gam,
-#   r_ana = r_ana
-# )
+model <- 1
+r_lamc <- 1
+r_mu <- 2
+r_K <- 3
+r_gam <- 4
+r_ana <- 5
+hawaiispiders:::setup_model_arguments(
+  model = model,
+  r_lamc = r_lamc,
+  r_mu = r_mu,
+  r_K = r_K,
+  r_gam = r_gam,
+  r_ana = r_ana
+)
+}
+\author{
+Luis M Valente, Pedro Neves
 }
