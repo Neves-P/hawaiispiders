@@ -178,7 +178,7 @@ DAISIE_dataprep = function(datatable,
       colonist_name = as.character(datatable[i, "Clade_name"]),
       branching_times = NA,
       stac = NA,
-      missing_species = datatable[i, "Missing_species"],
+      missing_species = as.numeric(datatable[i, "Missing_species"]),
       type1or2 = 1)
     the_brts <- rev(sort(as.numeric(unlist(
       strsplit(as.character(datatable[i, "Branching_times"]), split = ",")))))
