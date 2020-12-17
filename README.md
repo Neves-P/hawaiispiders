@@ -7,7 +7,7 @@
 
 [![R build
 status](https://github.com/Neves-P/hawaiispiders/workflows/R-CMD-check/badge.svg)](https://github.com/Neves-P/hawaiispiders/actions)
-[![codecov.io](https://codecov.io/github/Neves-P/hawaiispiders/coverage.svg?branch=master)](https://codecov.io/github/Neves-P/hawaiispiders/branch/master)
+[![codecov](https://codecov.io/gh/Neves-P/hawaiispiders/branch/master/graph/badge.svg?token=RXzIKuJ8wa)](https://codecov.io/gh/Neves-P/hawaiispiders)
 <!-- badges: end -->
 
 The goal of hawaiispiders is to study the diversification and impact of
@@ -38,5 +38,5 @@ run_spider_analysis(
 
 For feature requests or bug-reports, please submit an
 [issue](https://github.com/Neves-P/hawaiispiders/issues/new).
-Alternatively, contact [@Neves-P](https://github.com/Neves-P/)
+Alternatively, contact \[@Neves-P\](<https://github.com/Neves-P/>)
 directly.
