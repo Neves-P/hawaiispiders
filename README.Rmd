@@ -17,7 +17,7 @@ knitr::opts_chunk$set(
 
 <!-- badges: start -->
 [![R build status](https://github.com/Neves-P/hawaiispiders/workflows/R-CMD-check/badge.svg)](https://github.com/Neves-P/hawaiispiders/actions)
-[![codecov.io](https://codecov.io/github/Neves-P/hawaiispiders/coverage.svg?branch=master)](https://codecov.io/github/Neves-P/hawaiispiders/branch/master)
+[![codecov](https://codecov.io/gh/Neves-P/hawaiispiders/branch/master/graph/badge.svg?token=RXzIKuJ8wa)](https://codecov.io/gh/Neves-P/hawaiispiders)
 <!-- badges: end -->
 
 The goal of hawaiispiders is to study the diversification and impact of geodynamic processes on spider species present on Big Island, Hawaii.
