@@ -7,6 +7,7 @@
 
 [![R build
 status](https://github.com/Neves-P/hawaiispiders/workflows/R-CMD-check/badge.svg)](https://github.com/Neves-P/hawaiispiders/actions)
+[![codecov.io](https://codecov.io/github/Neves-P/hawaiispiders/coverage.svg?branch=master)](https://codecov.io/github/Neves-P/hawaiispiders/branch/master)
 <!-- badges: end -->
 
 The goal of hawaiispiders is to study the diversification and impact of
