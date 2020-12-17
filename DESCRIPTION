@@ -1,6 +1,7 @@
 Package: hawaiispiders
 Title: Analyse Spider Evolution on Hawaii Island
-Version: 0.0.0.9000
+Date: 2020-12-17
+Version: 0.0.0.9001
 Authors@R: 
     person(given = "Pedro",
            family = "Neves",
