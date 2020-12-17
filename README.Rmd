@@ -40,3 +40,7 @@ run_spider_analysis(
   seed = 1
 )
 ```
+
+## Support/Questions
+For feature requests or bug-reports, please submit an [issue](https://github.com/Neves-P/hawaiispiders/issues/new).
+Alternatively, contact [@Neves-P](https://github.com/Neves-P/) directly.
