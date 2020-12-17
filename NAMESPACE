@@ -2,3 +2,4 @@
 
 export(DAISIE_dataprep)
 export(default_params_doc)
+export(run_spider_analysis)

@@ -4,20 +4,38 @@
 \alias{default_params_doc}
 \title{Default parameters documentation}
 \usage{
-default_params_doc(model, r_lamc, r_mu, r_K, r_gam, r_ana)
+default_params_doc(
+  model,
+  r_lamc,
+  r_mu,
+  r_K,
+  r_gam,
+  r_ana,
+  datalist_name,
+  M,
+  seed
+)
 }
 \arguments{
-\item{model}{Integer with model that should run}
+\item{model}{Numeric integer with model that should run}
 
-\item{r_lamc}{Uniformly sampled value of cladogenesis rate}
+\item{r_lamc}{Numeric. Uniformly sampled value of cladogenesis rate}
 
-\item{r_mu}{Uniformly sampled value of extinction rate}
+\item{r_mu}{Numeric. Uniformly sampled value of extinction rate}
 
-\item{r_K}{Uniformly sampled value of carrying capacity}
+\item{r_K}{Numeric. Uniformly sampled value of carrying capacity}
 
-\item{r_gam}{Uniformly sampled value of immigration rate}
+\item{r_gam}{Numeric. Uniformly sampled value of immigration rate}
 
-\item{r_ana}{Uniformly sampled value of anagenesis rate}
+\item{r_ana}{Numeric. Uniformly sampled value of anagenesis rate}
+
+\item{datalist_name}{Character with name of datalist to be used. Should be
+an exported dataset found in \verb{/data} accessible by \code{\link[=data]{data()}}}
+
+\item{M}{Numeric integer with mainland species number. In this case it refers
+to the total number of species on the Hawaiian archipelago. Defaults to 165}
+
+\item{seed}{Integer to be used as seed}
 }
 \value{
 Nothing
