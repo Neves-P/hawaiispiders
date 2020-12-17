@@ -13,7 +13,9 @@ default_params_doc(
   r_ana,
   datalist_name,
   M,
-  seed
+  seed,
+  seed_range,
+  file_path
 )
 }
 \arguments{
@@ -36,6 +38,14 @@ an exported dataset found in \verb{/data} accessible by \code{\link[=data]{data(
 to the total number of species on the Hawaiian archipelago. Defaults to 165}
 
 \item{seed}{Integer to be used as seed}
+
+\item{seed_range}{Numeric vector of 1 or 2. If only one element is supplied
+then the function will sample initial parameters with \code{seed = seed_range}.
+If the vector contains two elements, then \code{seed_range[2] - seed_range[1]}
+analysis will run in succession, with seeds ranging from
+\code{seed_range[1]:seed_range[2]}}
+
+\item{file_path}{The system directory where the output files will be stored.}
 }
 \value{
 Nothing

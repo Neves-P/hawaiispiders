@@ -14,17 +14,9 @@
 #'   seed = 1
 #' )
 #' }
-run_spider_analysis <- function(datalist_name, M = 165, model, seed) {
-
-  utils::sessionInfo()
-  message(Sys.time())
+run_spider_analysis <- function(datalist_name, M = 165, model, seed, file_path) {
 
 
-  testit::assert(is.character(datalist_name))
-  message("Datalist: ", datalist_name)
-  message("M: ", M)
-  message("model: ", model)
-  message("seed: ", seed)
 
   datalist <- get(datalist_name)
 
@@ -78,15 +70,6 @@ run_spider_analysis <- function(datalist_name, M = 165, model, seed) {
     methode = methode,
     cond = cond,
     res = res
-  )
-
-  cluster_folder <- file.path("spiders", datalist_name)
-  if (!dir.exists(cluster_folder)) {
-    dir.create(path = cluster_folder, recursive = TRUE)
-  }
-  file_path <- file.path(
-    cluster_folder,
-    paste0(datalist_name, "_", "m_", model, "_", "s_", seed, ".txt")
   )
 
   lik_res <- as.matrix(lik_res)

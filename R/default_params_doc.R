@@ -16,6 +16,7 @@
 #'   If the vector contains two elements, then `seed_range[2] - seed_range[1]`
 #'   analysis will run in succession, with seeds ranging from
 #'   `seed_range[1]:seed_range[2]`
+#' @param file_path The system directory where the output files will be stored.
 #'
 #' @return Nothing
 #' @export
@@ -28,6 +29,7 @@ default_params_doc <- function(model,
                                datalist_name,
                                M,
                                seed,
-                               seed_range) {
+                               seed_range,
+                               file_path) {
   # Nothing
 }

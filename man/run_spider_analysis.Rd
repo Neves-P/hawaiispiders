@@ -4,7 +4,7 @@
 \alias{run_spider_analysis}
 \title{Run spider analysis}
 \usage{
-run_spider_analysis(datalist_name, M = 165, model, seed)
+run_spider_analysis(datalist_name, M = 165, model, seed, file_path)
 }
 \arguments{
 \item{datalist_name}{Character with name of datalist to be used. Should be
@@ -16,6 +16,8 @@ to the total number of species on the Hawaiian archipelago. Defaults to 165}
 \item{model}{Numeric integer with model that should run}
 
 \item{seed}{Integer to be used as seed}
+
+\item{file_path}{The system directory where the output files will be stored.}
 }
 \value{
 Nothing. Writes to file.
