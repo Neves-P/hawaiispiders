@@ -38,5 +38,5 @@ run_spider_analysis(
 
 For feature requests or bug-reports, please submit an
 [issue](https://github.com/Neves-P/hawaiispiders/issues/new).
-Alternatively, contact \[@Neves-P\](<https://github.com/Neves-P/>)
+Alternatively, contact [@Neves-P](https://github.com/Neves-P/)
 directly.
