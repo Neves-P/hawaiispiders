@@ -11,6 +11,11 @@
 #' @param M Numeric integer with mainland species number. In this case it refers
 #'   to the total number of species on the Hawaiian archipelago. Defaults to 165
 #' @param seed Integer to be used as seed
+#' @param seed_range Numeric vector of 1 or 2. If only one element is supplied
+#'   then the function will sample initial parameters with `seed = seed_range`.
+#'   If the vector contains two elements, then `seed_range[2] - seed_range[1]`
+#'   analysis will run in succession, with seeds ranging from
+#'   `seed_range[1]:seed_range[2]`
 #'
 #' @return Nothing
 #' @export
@@ -22,6 +27,7 @@ default_params_doc <- function(model,
                                r_ana,
                                datalist_name,
                                M,
-                               seed) {
+                               seed,
+                               seed_range) {
   # Nothing
 }
