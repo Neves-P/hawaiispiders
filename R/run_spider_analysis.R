@@ -16,7 +16,7 @@
 #' }
 run_spider_analysis <- function(datalist_name, M = 165, model, seed) {
 
-  message(utils::sessionInfo())
+  utils::sessionInfo()
   message(Sys.time())
 
 
