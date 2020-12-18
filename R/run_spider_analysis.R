@@ -16,6 +16,7 @@
 #' }
 run_spider_analysis <- function(datalist_name, M = 165, model, seed, file_path) {
 
+  datalist_name <- as.character(datalist_name)
   datalist <- data(datalist_name, package = "hawaiispiders")
 
   island_age <- datalist[[1]]$island_age
