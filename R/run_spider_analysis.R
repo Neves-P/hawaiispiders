@@ -14,10 +14,14 @@
 #'   seed = 1
 #' )
 #' }
-run_spider_analysis <- function(datalist_name, M = 165, model, seed, file_path) {
+run_spider_analysis <- function(datalist_name,
+                                M = 165,
+                                model,
+                                seed,
+                                file_path) {
 
-  datalist <- load(file.path("data", paste0(datalist_name, ".rda")))
-  testit::assert(exists(datalist))
+  load(file.path("data", paste0(datalist_name, ".rda")))
+  datalist <- get(datalist_name)
 
   island_age <- datalist[[1]]$island_age
 
