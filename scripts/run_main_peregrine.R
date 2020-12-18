@@ -1,5 +1,5 @@
 args <- commandArgs(TRUE)
-
+print(args)
 seed_range <- c(as.numeric(args[4]), as.numeric(args[5]))
 
 hawaiispiders::run_main(
