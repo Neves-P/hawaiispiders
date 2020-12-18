@@ -41,7 +41,7 @@ ml R
 Rscript scripts/run_main_peregrine.R ${datalist_name} \
                                      ${M} \
                                      ${model_to_run} \
-                                     ${seed_range_1}
+                                     ${seed_range_1} \
                                      ${seed_range_2}
 
 
