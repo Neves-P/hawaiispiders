@@ -1,10 +1,10 @@
 args <- commandArgs(TRUE)
 
-seed_range <- c(args[4], args[5])
+seed_range <- c(as.numeric(args[4]), as.numeric(args[5]))
 
 hawaiispiders::run_main(
   datalist_name = args[1],
-  M = args[2],
-  model = args[3],
+  M = as.numeric(args[2]),
+  model = as.numeric(args[3]),
   seed_range = seed_range
 )
