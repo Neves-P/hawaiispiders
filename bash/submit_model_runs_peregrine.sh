@@ -44,13 +44,13 @@
 ##### Before running make sure logs folder has been created! ####
 ## Usage example running simulations for the oceanic_ontogeny param space, 1000
 ## replicates, entire parameter space:
-# git clone https://github.com/Neves-P/DAISIErobustness.git
-# sbatch DAISIErobustness/bash/submit_run_robustness_peregrine.sh oceanic_ontogeny 1000 abs
+# git clone https://github.com/Neves-P/hawaiispiders.git
+# sbatch hawaiispiders/bash/submit_run_robustness_peregrine.sh oceanic_ontogeny 1000 abs
 #
 ## Usage example running analysis for the nonoceanic param space, 1000
 ## replicates, entire parameter space:
-# git clone https://github.com/Neves-P/DAISIErobustness.git
-# sbatch DAISIErobustness/bash/submit_run_robustness_peregrine.sh nonoceanic 1000 abs
+# git clone https://github.com/Neves-P/hawaiispiders.git
+# sbatch hawaiispiders/bash/submit_run_robustness_peregrine.sh nonoceanic 1000 abs
 ################################################################################
 
 # Start script
@@ -65,11 +65,11 @@ seed_range_2=$4
 
 
 
-for (( model_to_run = 1; model_to_run <= end_model_number; param_set++ ))
+for (( model_to_run = 1; model_to_run <= end_model_number; model_to_run++ ))
 do
-  sbatch hawaiispiders/bash/submit_run_main.sh ${datalist_name} \
-                                               ${M} \
-                                               ${model_to_run} \
-                                               ${seed_range_1} \
-                                               ${seed_range_2}
+  sbatch bash/submit_run_main.sh ${datalist_name} \
+                                 ${M} \
+                                 ${model_to_run} \
+                                 ${seed_range_1} \
+                                 ${seed_range_2}
 done
