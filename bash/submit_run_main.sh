@@ -35,7 +35,7 @@ datalist_name=$1
 M=$2
 model_to_run=$3
 seed_range_1=$4
-seed_range_2=$4
+seed_range_2=$5
 
 ml R
 Rscript scripts/run_main_peregrine.R ${datalist_name} \

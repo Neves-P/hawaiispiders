@@ -60,8 +60,8 @@ Rscript -e "remotes::install_github('Neves-P/hawaiispiders')"
 datalist_name=$1
 M=$2
 end_model_number=$3
-seed_range_1=$3
-seed_range_2=$4
+seed_range_1=$4
+seed_range_2=$5
 
 
 
