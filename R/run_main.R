@@ -19,7 +19,7 @@
 #' @author Pedro Neves
 run_main <- function(datalist_name, M = 165, model, seed_range) {
 
-  utils::sessionInfo()
+  print(utils::sessionInfo())
   message(Sys.time())
 
 
