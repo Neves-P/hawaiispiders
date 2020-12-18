@@ -16,8 +16,8 @@
 #' }
 run_spider_analysis <- function(datalist_name, M = 165, model, seed, file_path) {
 
-
   datalist <- load(file.path("data", paste0(datalist_name, ".rda")))
+  testit::assert(exists(datalist))
 
   island_age <- datalist[[1]]$island_age
 
@@ -27,7 +27,6 @@ run_spider_analysis <- function(datalist_name, M = 165, model, seed, file_path) 
     normal.kind = "Inversion",
     sample.kind = "Rejection"
   )
-
 
   r_lamc <- stats::runif(1, min = 0, max = 2)
   r_mu <- stats::runif(1, min = 0, max = 2)
