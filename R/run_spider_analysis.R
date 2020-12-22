@@ -11,7 +11,8 @@
 #'   datalist_name = "spider_scenario_1_datalist",
 #'   M = 165,
 #'   model = 1,
-#'   seed = 1
+#'   seed = 1,
+#'   file_path
 #' )
 #' }
 run_spider_analysis <- function(datalist_name,

@@ -31,7 +31,8 @@ run_spider_analysis(
   datalist_name = "spider_scenario_1_datalist",
   M = 165,
   model = 1,
-  seed = 1
+  seed = 1,
+  file_path
 )
 }
 }
