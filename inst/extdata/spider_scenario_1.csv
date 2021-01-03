@@ -1,7 +1,7 @@
 Clade_name;Status;Missing_species;Branching_times;Min_age
-Pedinopista_stigmaticus;Endemic_MaxAge;0;2.001;
-Pagiopalus_atomarius_Pagiopalus_sp;Endemic_MaxAgeMinAge;1;1.337,0.576;
-Pagiopalus_nigriventis;Endemic_MaxAgeMinAge;0;1.506,0.387;
+Pedinopistha_stigmaticus;Non_Endemic_MaxAge;0;2.001;
+Pagiopalus_atomarius_Pagiopalus_sp;Non_Endemic_MaxAgeMinAge;1;1.337,0.576;
+Pagiopalus_nigriventis;Non_Endemic_MaxAgeMinAge;0;1.506,0.387;
 Tetragnatha_obscura_Tetragnatha_kukuhaa;Endemic_MaxAge;0;1.73,0.29;
 Tetragnatha_hawaiiensis;Non_Endemic_MaxAge;0;4.787;
 Tetragnatha_quasimodo;Non_Endemic_MaxAge;0;2.761;
@@ -29,6 +29,6 @@ Ariamnes_waikula;Endemic_MaxAgeMinAge;0;1,0.4459;
 Ariamnes_hiwa;Endemic_MaxAgeMinAge;0;2.13,0.5481;
 Argyrodes_hawaiiensis;Endemic_MaxAgeMinAge;0;2.7309,0.6564;
 Havaika_cruciata;Endemic_MaxAge;0;1.1403;
-Havaika_pubens;Endemic_MaxAge;0;2.3564;
+Havaika_pubens;Non_Endemic_MaxAge;0;2.3564;
 Havaika_navata;Non_Endemic_MaxAge;0;NA;
 Havaika_valida;Non_Endemic_MaxAge;0;NA;
