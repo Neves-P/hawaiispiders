@@ -1,3 +1,10 @@
+# hawaiispiders 0.0.0.9003
+
+* Corrected error in endemicity status for data.
+* Added documentation on data scenarios [here](docs/scenario_description.md).
+* Added all finalized scenarios favouring cladogenesis.
+* Improved data and function documentation.
+
 # hawaiispiders 0.0.0.9002
 
 * Add Bash and R scripts to run the analyses on the Peregrine HPCC.
