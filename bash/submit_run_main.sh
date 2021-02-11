@@ -7,8 +7,8 @@
 #SBATCH --mem=2GB
 #SBATCH --partition=regular
 
-# hawaiispiders: Test the Robustness of DAISIE to Geodynamics and Traits
-# Copyright (C) 2020 Joshua W. Lambert, Pedro Neves, Shu Xie
+# hawaiispiders: Analyse Spider Evolution on Hawaii Island
+# Copyright (C) 2020 Pedro Neves
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
