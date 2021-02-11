@@ -10,7 +10,7 @@
 #' # model 1
 #' \dontrun{
 #' run_main(
-#'   datalist_name = "spider_scenario_1_datalist",
+#'   datalist_name = "spider_scenario_1_1_1_datalist",
 #'   M = 165,
 #'   model = 1,
 #'   seed_range = c(1,20)
