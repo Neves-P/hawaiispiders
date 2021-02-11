@@ -3,7 +3,7 @@
 \docType{data}
 \name{spider_scenario_1_1_1_datatable}
 \alias{spider_scenario_1_1_1_datatable}
-\title{DAISIE datatable of spiders on Hawaii (Big Island)}
+\title{DAISIE datatable of spiders on Hawaii (Big Island) - 1.1.1}
 \format{
 A tibble with 33 rows and 5 variables:
 \describe{
@@ -29,7 +29,8 @@ spider_scenario_1_1_1_datatable
 A dataset containing the colonization and branching times of spiders on Big
 Island. This format can be passed to \code{\link[DAISIE:DAISIE_dataprep]{DAISIE::DAISIE_dataprep()}}. Endemicity
 status refers strictly to Big Island endemics, and not endemics to the
-Hawaiian archipelago in general.
+Hawaiian archipelago in general. This dataset favours cladogenesis and
+assumes MaxAge for most clades. Island age is set to 1.2My.
 }
 \references{
 GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
