@@ -24,7 +24,7 @@
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
 #' from multilocus genetic data. Molecular Ecology, 18: 1746-1764.
 #' <https://doi.org/10.1111/j.1365-294X.2009.04125.x>
-"spider_scenario_1_datatable"
+"spider_scenario_1_1_1_datatable"
 
 #' DAISIE datalist of spiders on Hawaii (Big Island)
 #'
@@ -59,4 +59,4 @@
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
 #' from multilocus genetic data. Molecular Ecology, 18: 1746-1764.
 #' <https://doi.org/10.1111/j.1365-294X.2009.04125.x>
-"spider_scenario_1_datalist"
+"spider_scenario_1_1_1_datalist"
