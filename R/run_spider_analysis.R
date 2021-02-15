@@ -21,7 +21,6 @@ run_spider_analysis <- function(datalist_name,
                                 seed,
                                 file_path) {
 
-  # load(file.path("data", paste0(datalist_name, ".rda")))
   datalist <- get(datalist_name)
 
   island_age <- datalist[[1]]$island_age
