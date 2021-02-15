@@ -19,14 +19,9 @@
 #' @author Pedro Neves
 run_main <- function(datalist_name, M = 165, model, seed_range) {
 
-  print(utils::sessionInfo())
-  message(Sys.time())
-
-
   testit::assert(is.character(datalist_name))
-  message("Datalist: ", datalist_name)
-  message("M: ", M)
-  message("model: ", model)
+
+  print_main_header(datalist_name = datalist_name, M = M, model = model)
 
   testit::assert(length(seed_range) == 1 || length(seed_range) == 2)
   if (length(seed_range) != 2) {
