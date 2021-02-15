@@ -1,4 +1,4 @@
-test_that("multiplication works", {
+test_that("integration test", {
   datalist_name <- "spider_scenario_1_1_1_datalist"
   M <- 165
   model <- 1
