@@ -8,7 +8,7 @@ default_params_doc(
   model,
   r_lamc,
   r_mu,
-  r_K,
+  r_k,
   r_gam,
   r_ana,
   datalist_name,
@@ -27,7 +27,7 @@ default_params_doc(
 
 \item{r_mu}{Numeric. Uniformly sampled value of extinction rate}
 
-\item{r_K}{Numeric. Uniformly sampled value of carrying capacity}
+\item{r_k}{Numeric. Uniformly sampled value of carrying capacity}
 
 \item{r_gam}{Numeric. Uniformly sampled value of immigration rate}
 

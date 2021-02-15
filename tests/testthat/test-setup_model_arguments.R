@@ -3,7 +3,7 @@ test_that("use setup_model_arguments", {
   model <- 1
   r_lamc <- 1
   r_mu <- 2
-  r_K <- 3
+  r_k <- 3
   r_gam <- 4
   r_ana <- 5
 
@@ -11,7 +11,7 @@ test_that("use setup_model_arguments", {
     model = model,
     r_lamc = r_lamc,
     r_mu = r_mu,
-    r_K = r_K,
+    r_k = r_k,
     r_gam = r_gam,
     r_ana = r_ana
   )
@@ -33,7 +33,7 @@ test_that("use setup_model_arguments", {
     model = model,
     r_lamc = r_lamc,
     r_mu = r_mu,
-    r_K = r_K,
+    r_k = r_k,
     r_gam = r_gam,
     r_ana = r_ana
   )
@@ -55,7 +55,7 @@ test_that("use setup_model_arguments", {
     model = model,
     r_lamc = r_lamc,
     r_mu = r_mu,
-    r_K = r_K,
+    r_k = r_k,
     r_gam = r_gam,
     r_ana = r_ana
   )
@@ -77,7 +77,7 @@ test_that("use setup_model_arguments", {
     model = model,
     r_lamc = r_lamc,
     r_mu = r_mu,
-    r_K = r_K,
+    r_k = r_k,
     r_gam = r_gam,
     r_ana = r_ana
   )

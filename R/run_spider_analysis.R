@@ -34,18 +34,18 @@ run_spider_analysis <- function(datalist_name,
 
   r_lamc <- stats::runif(1, min = 0, max = 2)
   r_mu <- stats::runif(1, min = 0, max = 2)
-  r_K <- stats::runif(1, min = 6, max = 200)
+  r_k <- stats::runif(1, min = 6, max = 200)
   r_gam <- stats::runif(1, min = 0, max = 0.0001)
   r_ana <- stats::runif(1, min = 0.1, max = 4)
 
   type <- 1
-  P_type2 <- 0
+  p_type2 <- 0
 
   model_arguments <- setup_model_arguments(
     model = model,
     r_lamc = r_lamc,
     r_mu = r_mu,
-    r_K = r_K,
+    r_k = r_k,
     r_gam = r_gam,
     r_ana = r_ana
   )
@@ -82,7 +82,7 @@ run_spider_analysis <- function(datalist_name,
     island_age,
     M,
     type,
-    P_type2,
+    p_type2,
     res,
     methode,
     "R1",
@@ -125,7 +125,7 @@ run_spider_analysis <- function(datalist_name,
     island_age,
     M,
     type,
-    P_type2,
+    p_type2,
     res,
     methode,
     "R2",

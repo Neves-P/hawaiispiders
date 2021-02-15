@@ -9,18 +9,18 @@
 #' model <- 1
 #' r_lamc <- 1
 #' r_mu <- 2
-#' r_K <- 3
+#' r_k <- 3
 #' r_gam <- 4
 #' r_ana <- 5
 #' hawaiispiders:::setup_model_arguments(
 #'   model = model,
 #'   r_lamc = r_lamc,
 #'   r_mu = r_mu,
-#'   r_K = r_K,
+#'   r_k = r_k,
 #'   r_gam = r_gam,
 #'   r_ana = r_ana
 #' )
-setup_model_arguments <- function(model, r_lamc, r_mu, r_K, r_gam, r_ana) {
+setup_model_arguments <- function(model, r_lamc, r_mu, r_k, r_gam, r_ana) {
   testit::assert(model %in% 1:4)
 
   ## M1  CS - DD
@@ -30,7 +30,7 @@ setup_model_arguments <- function(model, r_lamc, r_mu, r_K, r_gam, r_ana) {
     parsfix <- NULL
     idparsfix <- NULL
     idparsnoshift <- 6:10
-    initparsopt <- c(r_lamc, r_mu, r_K, r_gam, r_ana)
+    initparsopt <- c(r_lamc, r_mu, r_k, r_gam, r_ana)
   }
 
 
@@ -53,7 +53,7 @@ setup_model_arguments <- function(model, r_lamc, r_mu, r_K, r_gam, r_ana) {
     parsfix <- 0
     idparsfix <- 5
     idparsnoshift <- 6:10
-    initparsopt <- c(r_lamc, r_mu, r_K, r_gam)
+    initparsopt <- c(r_lamc, r_mu, r_k, r_gam)
 
   }
 

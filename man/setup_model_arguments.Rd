@@ -4,7 +4,7 @@
 \alias{setup_model_arguments}
 \title{Set up DAISIE_ML arguments}
 \usage{
-setup_model_arguments(model, r_lamc, r_mu, r_K, r_gam, r_ana)
+setup_model_arguments(model, r_lamc, r_mu, r_k, r_gam, r_ana)
 }
 \arguments{
 \item{model}{Numeric integer with model that should run}
@@ -13,7 +13,7 @@ setup_model_arguments(model, r_lamc, r_mu, r_K, r_gam, r_ana)
 
 \item{r_mu}{Numeric. Uniformly sampled value of extinction rate}
 
-\item{r_K}{Numeric. Uniformly sampled value of carrying capacity}
+\item{r_k}{Numeric. Uniformly sampled value of carrying capacity}
 
 \item{r_gam}{Numeric. Uniformly sampled value of immigration rate}
 
@@ -29,14 +29,14 @@ Set up DAISIE_ML arguments
 model <- 1
 r_lamc <- 1
 r_mu <- 2
-r_K <- 3
+r_k <- 3
 r_gam <- 4
 r_ana <- 5
 hawaiispiders:::setup_model_arguments(
   model = model,
   r_lamc = r_lamc,
   r_mu = r_mu,
-  r_K = r_K,
+  r_k = r_k,
   r_gam = r_gam,
   r_ana = r_ana
 )
