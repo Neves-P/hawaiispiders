@@ -1,11 +1,11 @@
 test_that("multiplication works", {
   testthat::local_edition(x = 3)
-  datalist_name <- "spider_scenario_1_datalist"
+  datalist_name <- "spider_scenario_1_1_1_datalist"
   M <- 165
   model <- 1
   seed <- 1
 
-  system.file("extdata", "spider_scenario_1.csv",
+  system.file("extdata", "spider_scenario_1_1_1.csv",
               package = "hawaiispiders")
   cluster_folder <- system.file("data", paste0(datalist_name, ".rda"),
                                 package = "hawaiispiders")
@@ -21,6 +21,7 @@ test_that("multiplication works", {
       model = model,
       seed = seed,
       file_path = file_path
-    )
+    ),
+    style = "json"
   )
 })
