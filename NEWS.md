@@ -1,3 +1,9 @@
+# hawaiispiders 0.0.0.9004
+
+* Add 2.*.* scenarios (favouring immigration and not cladogenesis). Document
+said scenarios.
+* Add 1.2.1 dataset and documentation.
+
 # hawaiispiders 0.0.0.9003
 
 * Corrected error in endemicity status for data.
