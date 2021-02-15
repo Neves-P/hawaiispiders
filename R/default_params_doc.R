@@ -3,7 +3,7 @@
 #' @param model Numeric integer with model that should run
 #' @param r_lamc Numeric. Uniformly sampled value of cladogenesis rate
 #' @param r_mu Numeric. Uniformly sampled value of extinction rate
-#' @param r_K Numeric. Uniformly sampled value of carrying capacity
+#' @param r_k Numeric. Uniformly sampled value of carrying capacity
 #' @param r_gam Numeric. Uniformly sampled value of immigration rate
 #' @param r_ana Numeric. Uniformly sampled value of anagenesis rate
 #' @param datalist_name Character with name of datalist to be used. Should be
@@ -26,7 +26,7 @@
 default_params_doc <- function(model,
                                r_lamc,
                                r_mu,
-                               r_K,
+                               r_k,
                                r_gam,
                                r_ana,
                                datalist_name,
