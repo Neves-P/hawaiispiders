@@ -15,7 +15,8 @@ default_params_doc(
   M,
   seed,
   seed_range,
-  file_path
+  file_path,
+  output_name
 )
 }
 \arguments{
@@ -46,6 +47,8 @@ analysis will run in succession, with seeds ranging from
 \code{seed_range[1]:seed_range[2]}}
 
 \item{file_path}{The system directory where the output files will be stored.}
+
+\item{output_name}{A string. Will be the name of the created output folder.}
 }
 \value{
 Nothing
