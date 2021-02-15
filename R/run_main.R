@@ -34,7 +34,11 @@ run_main <- function(datalist_name,
     seed_range <- c(seed_range[1], seed_range[1])
   }
 
-  file_path <- create_output_folder(output_name = datalist_name, model = model)
+  file_path <- create_output_folder(
+    output_name = datalist_name,
+    model = model,
+    verbose = verbose
+  )
 
   output_file_header <- c(
     "datalist_name",

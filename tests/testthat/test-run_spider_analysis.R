@@ -1,4 +1,5 @@
 test_that("integration test", {
+  skip_if(Sys.getenv("CI") == "", message = "Run only on CI")
   datalist_name <- "spider_scenario_1_1_1_datalist"
   M <- 165
   model <- 1
@@ -45,5 +46,5 @@ test_that("integration test", {
   expect_equal(expected_data_frame, spider_scenario_1_1_1_datalist_m_1[1, ],
                tolerance = 1e-6)
   # Clean-up
-  expect_equal(unlink("spiders", recursive = TRUE), 0)
+  expect_equal(unlink("results", recursive = TRUE), 0)
 })

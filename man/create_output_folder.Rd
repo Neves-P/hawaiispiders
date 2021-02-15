@@ -4,16 +4,21 @@
 \alias{create_output_folder}
 \title{Create model output folder}
 \usage{
-create_output_folder(output_name, model)
+create_output_folder(output_name, model, verbose = FALSE)
 }
 \arguments{
 \item{output_name}{A string. Will be the name of the created output folder.}
 
 \item{model}{Numeric integer with model that should run}
+
+\item{verbose}{Boolean. Defaults to FALSE. If TRUE, session info and run
+parameters are printed to the console/log file.}
 }
 \value{
 Creates appropriate directory. Returns string with path for
-output object.
+output object. If on Peregrine, folder will be $HOME/results/$output_name.
+If called from another environment, folder will be
+getwd()/results/$output_name.
 }
 \description{
 Create model output folder
