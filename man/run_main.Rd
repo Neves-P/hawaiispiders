@@ -28,14 +28,14 @@ Saves results to .txt file.
 Run analysis from a set of initial parameters
 }
 \examples{
-# Run 20 sets of randomly sampled initial parameters for scenario 1 and
+# Run 1 set of randomly sampled initial parameters for scenario 1 and
 # model 1
 \dontrun{
 run_main(
   datalist_name = "spider_scenario_1_1_1_datalist",
   M = 165,
   model = 1,
-  seed_range = c(1,20)
+  seed_range = 1
 )
 }
 }
