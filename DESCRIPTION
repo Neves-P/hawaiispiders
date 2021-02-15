@@ -26,6 +26,7 @@ Depends:
 Imports: 
     DAISIE (>= 3.1.0),
     DDD,
-    testit
+    testit,
+    devtools
 Remotes: 
     rsetienne/DAISIE@develop
