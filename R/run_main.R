@@ -17,11 +17,17 @@
 #' )
 #' }
 #' @author Pedro Neves
-run_main <- function(datalist_name, M = 165, model, seed_range) {
+run_main <- function(datalist_name,
+                     M = 165,
+                     model,
+                     seed_range,
+                     verbose = FALSE) {
 
   testit::assert(is.character(datalist_name))
 
-  print_main_header(datalist_name = datalist_name, M = M, model = model)
+  if (verbose) {
+    print_main_header(datalist_name = datalist_name, M = M, model = model)
+  }
 
   testit::assert(length(seed_range) == 1 || length(seed_range) == 2)
   if (length(seed_range) != 2) {

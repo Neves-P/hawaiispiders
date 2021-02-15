@@ -6,5 +6,6 @@ hawaiispiders::run_main(
   datalist_name = args[1],
   M = as.numeric(args[2]),
   model = as.numeric(args[3]),
-  seed_range = seed_range
+  seed_range = seed_range,
+  verbose = as.logical(verbose)
 )

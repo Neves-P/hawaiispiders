@@ -16,7 +16,8 @@ default_params_doc(
   seed,
   seed_range,
   file_path,
-  output_name
+  output_name,
+  verbose
 )
 }
 \arguments{
@@ -49,6 +50,9 @@ analysis will run in succession, with seeds ranging from
 \item{file_path}{The system directory where the output files will be stored.}
 
 \item{output_name}{A string. Will be the name of the created output folder.}
+
+\item{verbose}{Boolean. Defaults to FALSE. If TRUE, session info and run
+parameters are printed to the console/log file.}
 }
 \value{
 Nothing

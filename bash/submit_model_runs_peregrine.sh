@@ -62,6 +62,7 @@ M=$2
 end_model_number=$3
 seed_range_1=$4
 seed_range_2=$5
+verbose=$6
 
 
 
@@ -71,5 +72,6 @@ do
                                  ${M} \
                                  ${model_to_run} \
                                  ${seed_range_1} \
-                                 ${seed_range_2}
+                                 ${seed_range_2} \
+                                 ${verbose}
 done

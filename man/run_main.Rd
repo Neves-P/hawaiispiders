@@ -4,7 +4,7 @@
 \alias{run_main}
 \title{Run analysis from a set of initial parameters}
 \usage{
-run_main(datalist_name, M = 165, model, seed_range)
+run_main(datalist_name, M = 165, model, seed_range, verbose = FALSE)
 }
 \arguments{
 \item{datalist_name}{Character with name of datalist to be used. Should be
@@ -20,6 +20,9 @@ then the function will sample initial parameters with \code{seed = seed_range}.
 If the vector contains two elements, then \code{seed_range[2] - seed_range[1]}
 analysis will run in succession, with seeds ranging from
 \code{seed_range[1]:seed_range[2]}}
+
+\item{verbose}{Boolean. Defaults to FALSE. If TRUE, session info and run
+parameters are printed to the console/log file.}
 }
 \value{
 Saves results to .txt file.
