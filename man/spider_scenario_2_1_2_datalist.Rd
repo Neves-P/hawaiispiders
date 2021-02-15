@@ -44,6 +44,6 @@ Island age is set to 1.2My.
 GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 colonization history and phylogeography of Hawaiian crab spiders inferred
 from multilocus genetic data. Molecular Ecology, 18: 1746-1764.
-\url{https://doi.org/10.1111/j.1365-294X.2009.04125.x}
+\doi{10.1111/j.1365-294X.2009.04125.x}
 }
 \keyword{datasets}

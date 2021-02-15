@@ -24,7 +24,7 @@
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
 #' from multilocus genetic data. Molecular Ecology, 18: 1746-1764.
-#' <https://doi.org/10.1111/j.1365-294X.2009.04125.x>
+#' \doi{10.1111/j.1365-294X.2009.04125.x}
 "spider_scenario_1_1_1_datatable"
 
 #' DAISIE datalist of spiders on Hawaii (Big Island) - 1.1.1
@@ -61,7 +61,7 @@
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
 #' from multilocus genetic data. Molecular Ecology, 18: 1746-1764.
-#' <https://doi.org/10.1111/j.1365-294X.2009.04125.x>
+#' \doi{10.1111/j.1365-294X.2009.04125.x}
 "spider_scenario_1_1_1_datalist"
 
 
@@ -92,7 +92,7 @@
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
 #' from multilocus genetic data. Molecular Ecology, 18: 1746-1764.
-#' <https://doi.org/10.1111/j.1365-294X.2009.04125.x>
+#' \doi{10.1111/j.1365-294X.2009.04125.x}
 "spider_scenario_1_1_2_datatable"
 
 #' DAISIE datalist of spiders on Hawaii (Big Island) - 1.1.2
@@ -129,7 +129,7 @@
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
 #' from multilocus genetic data. Molecular Ecology, 18: 1746-1764.
-#' <https://doi.org/10.1111/j.1365-294X.2009.04125.x>
+#' \doi{10.1111/j.1365-294X.2009.04125.x}
 "spider_scenario_1_1_2_datalist"
 
 
@@ -160,7 +160,7 @@
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
 #' from multilocus genetic data. Molecular Ecology, 18: 1746-1764.
-#' <https://doi.org/10.1111/j.1365-294X.2009.04125.x>
+#' \doi{10.1111/j.1365-294X.2009.04125.x}
 "spider_scenario_1_2_1_datatable"
 
 #' DAISIE datalist of spiders on Hawaii (Big Island) - 1.2.1
@@ -197,7 +197,7 @@
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
 #' from multilocus genetic data. Molecular Ecology, 18: 1746-1764.
-#' <https://doi.org/10.1111/j.1365-294X.2009.04125.x>
+#' \doi{10.1111/j.1365-294X.2009.04125.x}
 "spider_scenario_1_2_1_datalist"
 
 #' DAISIE datatable of spiders on Hawaii (Big Island) - 1.2.2
@@ -226,7 +226,7 @@
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
 #' from multilocus genetic data. Molecular Ecology, 18: 1746-1764.
-#' <https://doi.org/10.1111/j.1365-294X.2009.04125.x>
+#' \doi{10.1111/j.1365-294X.2009.04125.x}
 "spider_scenario_1_2_2_datatable"
 
 #' DAISIE datalist of spiders on Hawaii (Big Island) - 1.2.2
@@ -263,7 +263,7 @@
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
 #' from multilocus genetic data. Molecular Ecology, 18: 1746-1764.
-#' <https://doi.org/10.1111/j.1365-294X.2009.04125.x>
+#' \doi{10.1111/j.1365-294X.2009.04125.x}
 "spider_scenario_1_2_2_datalist"
 
 #' DAISIE datatable of spiders on Hawaii (Big Island) - 2.1.1
@@ -292,7 +292,7 @@
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
 #' from multilocus genetic data. Molecular Ecology, 18: 1746-1764.
-#' <https://doi.org/10.1111/j.1365-294X.2009.04125.x>
+#' \doi{10.1111/j.1365-294X.2009.04125.x}
 "spider_scenario_2_1_1_datatable"
 
 #' DAISIE datalist of spiders on Hawaii (Big Island) - 2.1.1
@@ -329,7 +329,7 @@
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
 #' from multilocus genetic data. Molecular Ecology, 18: 1746-1764.
-#' <https://doi.org/10.1111/j.1365-294X.2009.04125.x>
+#' \doi{10.1111/j.1365-294X.2009.04125.x}
 "spider_scenario_2_1_1_datalist"
 
 #' DAISIE datatable of spiders on Hawaii (Big Island) - 2.1.2
@@ -358,7 +358,7 @@
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
 #' from multilocus genetic data. Molecular Ecology, 18: 1746-1764.
-#' <https://doi.org/10.1111/j.1365-294X.2009.04125.x>
+#' \doi{10.1111/j.1365-294X.2009.04125.x}
 "spider_scenario_2_1_2_datatable"
 
 #' DAISIE datalist of spiders on Hawaii (Big Island) - 2.1.2
@@ -395,7 +395,7 @@
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
 #' from multilocus genetic data. Molecular Ecology, 18: 1746-1764.
-#' <https://doi.org/10.1111/j.1365-294X.2009.04125.x>
+#' \doi{10.1111/j.1365-294X.2009.04125.x}
 "spider_scenario_2_1_2_datalist"
 
 #' DAISIE datatable of spiders on Hawaii (Big Island) - 2.2.1
@@ -424,7 +424,7 @@
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
 #' from multilocus genetic data. Molecular Ecology, 18: 1746-1764.
-#' <https://doi.org/10.1111/j.1365-294X.2009.04125.x>
+#' \doi{10.1111/j.1365-294X.2009.04125.x}
 "spider_scenario_2_2_1_datatable"
 
 #' DAISIE datalist of spiders on Hawaii (Big Island) - 2.2.1
@@ -461,7 +461,7 @@
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
 #' from multilocus genetic data. Molecular Ecology, 18: 1746-1764.
-#' <https://doi.org/10.1111/j.1365-294X.2009.04125.x>
+#' \doi{10.1111/j.1365-294X.2009.04125.x}
 "spider_scenario_2_2_1_datalist"
 
 #' DAISIE datatable of spiders on Hawaii (Big Island) - 2.2.2
@@ -490,7 +490,7 @@
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
 #' from multilocus genetic data. Molecular Ecology, 18: 1746-1764.
-#' <https://doi.org/10.1111/j.1365-294X.2009.04125.x>
+#' \doi{10.1111/j.1365-294X.2009.04125.x}
 "spider_scenario_2_2_2_datatable"
 
 #' DAISIE datalist of spiders on Hawaii (Big Island) - 2.2.2
@@ -527,5 +527,5 @@
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
 #' from multilocus genetic data. Molecular Ecology, 18: 1746-1764.
-#' <https://doi.org/10.1111/j.1365-294X.2009.04125.x>
+#' \doi{10.1111/j.1365-294X.2009.04125.x}
 "spider_scenario_2_2_2_datalist"
