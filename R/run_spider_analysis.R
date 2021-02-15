@@ -8,7 +8,7 @@
 #' @examples
 #' \dontrun{
 #' run_spider_analysis(
-#'   datalist_name = "spider_scenario_1_datalist",
+#'   datalist_name = "spider_scenario_1_1_1_datalist",
 #'   M = 165,
 #'   model = 1,
 #'   seed = 1,

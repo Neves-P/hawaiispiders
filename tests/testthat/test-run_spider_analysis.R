@@ -5,8 +5,6 @@ test_that("multiplication works", {
   model <- 1
   seed <- 1
 
-  system.file("extdata", "spider_scenario_1_1_1.csv",
-              package = "hawaiispiders")
   cluster_folder <- system.file("data", paste0(datalist_name, ".rda"),
                                 package = "hawaiispiders")
   file_path <- file.path(
