@@ -33,15 +33,7 @@ run_main <- function(datalist_name, M = 165, model, seed_range) {
     seed_range <- c(seed_range[1], seed_range[1])
   }
 
-
-  cluster_folder <- file.path("spiders", datalist_name)
-  if (!dir.exists(cluster_folder)) {
-    dir.create(path = cluster_folder, recursive = TRUE)
-  }
-  file_path <- file.path(
-    cluster_folder,
-    paste0(datalist_name, "_", "m_", model, ".txt")
-  )
+  file_path <- create_output_folder(output_name = datalist_name, model = model)
 
   output_file_header <- c(
     "datalist_name",
