@@ -1,3 +1,15 @@
+# hawaiispiders 1.0.0
+
+* Add `is_on_cluster()` to better handle files internally.
+* Improve documentation.
+* Drastically improve test code coverage.
+* Use lazy-loading for data loading, not `load()`.
+* More modular main function. `print_main_header()` now takes care of diagnostic printing.
+* Add new `verbose` argument to `run_main()` and friends, which is `FALSE` by default.
+* Depend on `devtools` for `devtools::session_info()`.
+* Better file handling in Peregrine HPCC.
+* More informative format for results.
+
 # hawaiispiders 0.0.0.9004
 
 * Add 2.*.* scenarios (favouring immigration and not cladogenesis). Document
