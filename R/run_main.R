@@ -51,8 +51,19 @@ run_main <- function(datalist_name,
     "res",
     "methode",
     "run_number",
-    "results",
-    "initparsopt"
+    "lambda_c",
+    "mu",
+    "K",
+    "gamma",
+    "lambda_a",
+    "loglik",
+    "df",
+    "conv",
+    "initparsopt_lac",
+    "initparsopt_mu",
+    "initparsopt_K",
+    "initparsopt_gamma",
+    "initparsopt_laa"
   )
 
   write(
