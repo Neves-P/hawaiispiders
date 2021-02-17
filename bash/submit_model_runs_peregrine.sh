@@ -63,10 +63,10 @@ verbose=$6
 
 for (( model_to_run = 1; model_to_run <= end_model_number; model_to_run++ ))
 do
-  sbatch bash/submit_run_main.sh ${datalist_name} \
-                                 ${M} \
-                                 ${model_to_run} \
-                                 ${seed_range_1} \
-                                 ${seed_range_2} \
-                                 ${verbose}
+  sbatch hawaiispiders/bash/submit_run_main.sh ${datalist_name} \
+                                               ${M} \
+                                               ${model_to_run} \
+                                               ${seed_range_1} \
+                                               ${seed_range_2} \
+                                               ${verbose}
 done
