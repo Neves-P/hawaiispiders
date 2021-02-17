@@ -42,15 +42,10 @@
 #  only one seed will be used.
 ################################################################################
 ##### Before running make sure logs folder has been created! ####
-## Usage example running simulations for the oceanic_ontogeny param space, 1000
-## replicates, entire parameter space:
+## Usage example running model fits for scenario 1.1.1, all 4 models, 20
+## different seeds for initial parameters.
 # git clone https://github.com/Neves-P/hawaiispiders.git
-# sbatch hawaiispiders/bash/submit_run_robustness_peregrine.sh oceanic_ontogeny 1000 abs
-#
-## Usage example running analysis for the nonoceanic param space, 1000
-## replicates, entire parameter space:
-# git clone https://github.com/Neves-P/hawaiispiders.git
-# sbatch hawaiispiders/bash/submit_run_robustness_peregrine.sh nonoceanic 1000 abs
+# sbatch hawaiispiders/bash/submit_model_runs_peregrine.sh spider_scenario_1_1_1_datalist 165 4 1 20 TRUE
 ################################################################################
 
 # Start script
