@@ -10,7 +10,7 @@ Authors@R:
            comment = c(ORCID = "0000-0003-2561-4677"))
 Description: Using the DAISIE framework, runs macroevolutionary analyses on the
     macroevolution of spider lineages on the Hawaii island, also known as Big 
-    Island. Explicitely accounts for the geodynamics of Hawaii.
+    Island. Explicitly accounts for the geodynamics of Hawaii.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
