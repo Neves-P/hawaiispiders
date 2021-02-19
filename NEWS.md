@@ -1,3 +1,10 @@
+# hawaiispiders 1.0.1
+
+* Fix issues in file paths when running on Peregrine.
+* Fix bug in passing verbose argument to `run_main()` function when running on Peregrine.
+* Add call to `library(hawaiispiders)` on Peregrine jobscript so lazy loading of data to works correctly.
+* Minor formatting in /LICENSE.md so it is recognized by GitHub properly. License remains GPL-3.
+
 # hawaiispiders 1.0.0
 
 * Add `is_on_cluster()` to better handle files internally.
