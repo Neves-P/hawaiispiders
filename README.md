@@ -8,7 +8,7 @@
 [![R build
 status](https://github.com/Neves-P/hawaiispiders/workflows/R-CMD-check/badge.svg)](https://github.com/Neves-P/hawaiispiders/actions)
 [![codecov](https://codecov.io/gh/Neves-P/hawaiispiders/branch/master/graph/badge.svg?token=RXzIKuJ8wa)](https://codecov.io/gh/Neves-P/hawaiispiders)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4544048.svg)](https://doi.org/10.5281/zenodo.4544041)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4544041.svg)](https://doi.org/10.5281/zenodo.4544041)
 <!-- badges: end -->
 
 The goal of hawaiispiders is to study the diversification and impact of
