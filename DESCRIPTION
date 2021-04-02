@@ -29,4 +29,4 @@ Imports:
     testit,
     devtools
 Remotes: 
-    rsetienne/DAISIE@develop
+    rsetienne/DAISIE@v3.2.1
