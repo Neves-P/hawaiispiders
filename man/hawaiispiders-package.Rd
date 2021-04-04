@@ -8,7 +8,7 @@
 \description{
 Using the DAISIE framework, runs macroevolutionary analyses on the
     macroevolution of spider lineages on the Hawaii island, also known as Big 
-    Island. Explicitely accounts for the geodynamics of Hawaii.
+    Island. Explicitly accounts for the geodynamics of Hawaii.
 }
 \seealso{
 Useful links:
