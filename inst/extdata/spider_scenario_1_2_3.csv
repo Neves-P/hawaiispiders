@@ -1,6 +1,6 @@
 Clade_name;Status;Missing_species;Branching_times
 Pedinopistha_stigmaticus;Non_Endemic;0;2.001
-Pagiopalus_atomarius_Pagiopalus_sp;Non_Endemic;0;1.337,1.205
+Pagiopalus_atomarius_Pagiopalus_sp;Endemic;0;1.337,1.205
 Pagiopalus_nigriventis;Non_Endemic;0;1.506
 Tetragnatha_obscura_Tetragnatha_kukuhaa;Endemic;0;1.73,0.29
 Tetragnatha_hawaiiensis;Non_Endemic_MaxAge;0;4.787
