@@ -28,7 +28,7 @@ An example call to the main function is:
 
 ``` r
 run_main(
-  datalist_name = "spider_scenario_1_1_1_datalist",
+  datalist_name = "y_c_max",
   M = 165,
   model = 1,
   seed_range = 1

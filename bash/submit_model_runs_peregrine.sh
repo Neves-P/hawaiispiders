@@ -45,7 +45,7 @@
 ## Usage example running model fits for scenario 1.1.1, all 4 models, 20
 ## different seeds for initial parameters.
 # git clone https://github.com/Neves-P/hawaiispiders.git
-# sbatch hawaiispiders/bash/submit_model_runs_peregrine.sh spider_scenario_1_1_1_datalist 165 4 1 20 TRUE
+# sbatch hawaiispiders/bash/submit_model_runs_peregrine.sh y_c_max 165 4 1 20 TRUE
 ################################################################################
 
 # Start script
