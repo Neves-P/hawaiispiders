@@ -1,19 +1,19 @@
 # Scenario descriptions
 |Scenario|Island Age|Favour cladogenesis|Favour MaxAge|
 |:------:|:--------:|:-----------------:|:-----------:|
-|  1.1.1 |   1.2My  |        Yes        |     Yes     |
-|  1.1.2 |   1.2My  |        Yes        |     No      |
-|  1.1.3 |   1.2My  |        Yes        |     Never   |
-|  1.2.1 |   2.4My  |        Yes        |     Yes     |
-|  1.2.2 |   2.4My  |        Yes        |     No      |
-|  1.2.3 |   2.4My  |        Yes        |     Never   |
-|  2.1.1 |   1.2My  |        No         |     Yes     |
-|  2.1.2 |   1.2My  |        No         |     No      |
-|  2.1.3 |   1.2My  |        No         |     Never   |
-|  2.2.1 |   2.4My  |        No         |     Yes     |
-|  2.2.2 |   2.4My  |        No         |     No      |
-|  2.2.3 |   2.4My  |        No         |     Never   |
+| y_c_max|   1.2My  |        Yes        |     Yes     |
+| y_c_min|   1.2My  |        Yes        |     MinAge  |
+| y_c_no |   1.2My  |        Yes        |     Never   |
+| o_c_max|   2.4My  |        Yes        |     Yes     |
+| o_c_min|   2.4My  |        Yes        |     MinAge  |
+| o_c_no |   2.4My  |        Yes        |     Never   |
+| y_m_max|   1.2My  |        No         |     Yes     |
+| y_m_min|   1.2My  |        No         |     MinAge  |
+| y_m_no |   1.2My  |        No         |     Never   |
+| o_m_max|   2.4My  |        No         |     Yes     |
+| o_m_min|   2.4My  |        No         |     MinAge  |
+| o_m_no |   2.4My  |        No         |     Never   |
 
-For 2.4 My islands some instances of species are not tagged as missing (which they would be, if the island age were 1.2) because those branching times can be included. As an example compare the Pagiopalus_atomarius_Pagiopalus_sp clade between scenarios 1.1.1 and 1.2.1.
+For 2.4 My islands some instances of species are not tagged as missing (which they would be, if the island age were 1.2) because those branching times can be included. As an example compare the Pagiopalus_atomarius_Pagiopalus_sp clade between scenarios y_c_max and y.m.max.
 
-Never favouring MaxAge implies that MinAges are never used when a precise colonisation age is known.
+MinAge favouring in the MaxAge column implies that MaxAgeMinAges are used when a min age is available and the precise colonisation time is available too. Not favouring MaxAge means MinAges only used **iff** the precise colonisation age is unknown and a min age is available. These are the "\_no" scenarios, which are arguable the most realistic ones from an empirical point of view.
