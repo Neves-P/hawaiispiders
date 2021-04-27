@@ -1,6 +1,6 @@
 ## code to prepare `y_m_min_datatable` dataset goes here
 
-file_path <- system.file("extdata", "spider_scenario_2_1_2.csv",
+file_path <- system.file("extdata", "y_m_min.csv",
                          package = "hawaiispiders")
 y_m_min_datatable <- readr::read_delim(
   file_path,

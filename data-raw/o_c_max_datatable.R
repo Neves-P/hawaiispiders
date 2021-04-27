@@ -1,6 +1,6 @@
 ## code to prepare `o_c_max_datatable` dataset goes here
 
-file_path <- system.file("extdata", "spider_scenario_1_2_1.csv",
+file_path <- system.file("extdata", "o_c_max.csv",
                          package = "hawaiispiders")
 o_c_max_datatable <- readr::read_delim(
   file_path,

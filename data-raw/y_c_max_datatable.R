@@ -1,6 +1,6 @@
 ## code to prepare `y_c_max_datatable` dataset goes here
 
-file_path <- system.file("extdata", "spider_scenario_1_1_1.csv",
+file_path <- system.file("extdata", "y_c_max.csv",
                          package = "hawaiispiders")
 y_c_max_datatable <- readr::read_delim(
   file_path,
