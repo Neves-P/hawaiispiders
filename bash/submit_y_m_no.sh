@@ -43,8 +43,10 @@ else
     cd ..
 fi
 spidersid=$(sbatch --job-name=sp_inst hawaiispiders/bash/install_hawaiispiders.sh)
-echo spidersid
-# Submit jobs
+a=123
+echo $spidersid
+echo $a
+## Submit jobs
 sbatch --job-name=y_m_no --dependency=afterany:$utilsid:$spidersid DAISIEutils/bash/submit_run_daisie_ml.sh y_m_no cr_di hawaiispiders 1
 
 sbatch --dependency=singleton --job-name=y_m_no DAISIEutils/bash/submit_run_daisie_ml.sh y_m_no cr_dd hawaiispiders 1
