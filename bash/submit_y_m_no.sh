@@ -47,7 +47,7 @@ fi
 spidersid=$(sbatch --job-name=spi_inst hawaiispiders/bash/install_hawaiispiders.sh)
 
 # Submit jobs
-sbatch --dependency=afterok:$utilsid:$spidersid --job-name=y_m_no DAISIEutils/bash/submit_run_daisie_ml.sh y_m_no cr_di hawaiispiders 1
+sbatch --dependency=afterany:$utilsid:$spidersid --job-name=y_m_no DAISIEutils/bash/submit_run_daisie_ml.sh y_m_no cr_di hawaiispiders 1
 
 sbatch --dependency=singleton --job-name=y_m_no DAISIEutils/bash/submit_run_daisie_ml.sh y_m_no cr_dd hawaiispiders 1
 
