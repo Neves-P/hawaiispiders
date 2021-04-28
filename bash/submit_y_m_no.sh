@@ -31,7 +31,7 @@ else
     git pull
     cd ..
 fi
-utilsid=$(sbatch --job-name=install DAISIEutils/bash/install_DAISIEutils.sh)
+utilsid=$(sbatch --job-name=ut_inst DAISIEutils/bash/install_DAISIEutils.sh)
 
 # Install hawaiispiders
 if [ ! -d hawaiispiders/.git ]
@@ -42,8 +42,8 @@ else
     git pull
     cd ..
 fi
-spidersid=$(sbatch --job-name=install hawaiispiders/bash/install_hawaiispiders.sh)
-echo $spidersid
+spidersid=$(sbatch --job-name=sp_inst hawaiispiders/bash/install_hawaiispiders.sh)
+echo spidersid
 # Submit jobs
 sbatch --job-name=y_m_no --dependency=afterany:$utilsid:$spidersid DAISIEutils/bash/submit_run_daisie_ml.sh y_m_no cr_di hawaiispiders 1
 
