@@ -22,8 +22,6 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-git clone https://github.com/tece-lab/DAISIEutils || (cd $HOME/DAISIEutils ; git pull; cd ..)
-
 # Install DAISIEutils
 if [ ! -d DAISIEutils/.git ]
 then
