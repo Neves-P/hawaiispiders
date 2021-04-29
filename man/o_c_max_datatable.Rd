@@ -3,7 +3,7 @@
 \docType{data}
 \name{o_c_max_datatable}
 \alias{o_c_max_datatable}
-\title{DAISIE datatable of spiders on Hawaii (Big Island) - 1.2.1}
+\title{DAISIE datatable of spiders on Hawaii (Big Island) - o_c_max}
 \format{
 A tibble with 33 rows and 5 variables:
 \describe{

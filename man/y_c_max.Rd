@@ -3,7 +3,7 @@
 \docType{data}
 \name{y_c_max}
 \alias{y_c_max}
-\title{DAISIE datalist of spiders on Hawaii (Big Island) - 1.1.1}
+\title{DAISIE datalist of spiders on Hawaii (Big Island) - y_c_max}
 \format{
 A list with 34 elements. The first one contains the \verb{$island_age},
 a numeric with the island age in Ma, and \verb{$not_present}, a numeric with the

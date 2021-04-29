@@ -3,7 +3,7 @@
 \docType{data}
 \name{y_c_min_datatable}
 \alias{y_c_min_datatable}
-\title{DAISIE datatable of spiders on Hawaii (Big Island) - 1.1.2}
+\title{DAISIE datatable of spiders on Hawaii (Big Island) - y_c_min}
 \format{
 A tibble with 33 rows and 5 variables:
 \describe{

@@ -3,7 +3,7 @@
 \docType{data}
 \name{o_m_no}
 \alias{o_m_no}
-\title{DAISIE datalist of spiders on Hawaii (Big Island) - 2.2.3}
+\title{DAISIE datalist of spiders on Hawaii (Big Island) - o_m_no}
 \format{
 A list with 34 elements. The first one contains the \verb{$island_age},
 a numeric with the island age in Ma, and \verb{$not_present}, a numeric with the

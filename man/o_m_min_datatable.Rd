@@ -3,7 +3,7 @@
 \docType{data}
 \name{o_m_min_datatable}
 \alias{o_m_min_datatable}
-\title{DAISIE datatable of spiders on Hawaii (Big Island) - 2.2.2}
+\title{DAISIE datatable of spiders on Hawaii (Big Island) - o_m_min}
 \format{
 A tibble with 35 rows and 5 variables:
 \describe{
