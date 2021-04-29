@@ -19,6 +19,7 @@ RoxygenNote: 7.1.1
 URL: https://github.com/Neves-P/hawaiispiders
 BugReports: https://github.com/Neves-P/hawaiispiders/issues
 Suggests: 
+    DAISIEutils (>= 1.0.0),
     readr,
     testthat (>= 3.0.0)
 Depends: 
@@ -28,6 +29,7 @@ Imports:
     DDD,
     testit,
     devtools
-Remotes: 
-    rsetienne/DAISIE@v3.2.1
+Remotes:  
+    rsetienne/DAISIE@v3.2.1,
+    tece-lab/DAISIEutils
 Config/testthat/edition: 3
