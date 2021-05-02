@@ -22,39 +22,17 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-# Install DAISIEutils
-if [ ! -d DAISIEutils/.git ]
-then
-git clone https://github.com/tece-lab/DAISIEutils
-else
-  cd DAISIEutils/
-  git pull
-cd ..
-fi
-utilsid=$(sbatch --job-name=ut_inst DAISIEutils/bash/install_DAISIEutils.sh)
-
-# Install hawaiispiders
-if [ ! -d hawaiispiders/.git ]
-then
-git clone https://github.com/Neves-P/hawaiispiders
-else
-  cd hawaiispiders/
-  git pull
-cd ..
-fi
-spidersid=$(sbatch --job-name=sp_inst hawaiispiders/bash/install_hawaiispiders.sh)
-
 ## Submit jobs (use last word ##* to get jobid for afterok)
-sbatch --job-name=y_m_max --dependency=afterok:${utilsid##* }:${spidersid##* } DAISIEutils/bash/submit_run_daisie_ml.sh y_m_max cr_di hawaiispiders 1
+sbatch --job-name=y_m_max DAISIEutils/bash/submit_run_daisie_ml.sh y_m_max cr_di hawaiispiders 1
 
-  sbatch --dependency=singleton --job-name=y_m_max DAISIEutils/bash/submit_run_daisie_ml.sh y_m_max cr_dd hawaiispiders 1
+sbatch --dependency=singleton --job-name=y_m_max DAISIEutils/bash/submit_run_daisie_ml.sh y_m_max cr_dd hawaiispiders 1
 
-  sbatch --dependency=singleton --job-name=y_m_max DAISIEutils/bash/submit_run_daisie_ml.sh y_m_max cr_di hawaiispiders 1
+sbatch --dependency=singleton --job-name=y_m_max DAISIEutils/bash/submit_run_daisie_ml.sh y_m_max cr_di hawaiispiders 1
 
-  sbatch --dependency=singleton --job-name=y_m_max DAISIEutils/bash/submit_run_daisie_ml.sh y_m_max cr_di_0laa hawaiispiders 1
+sbatch --dependency=singleton --job-name=y_m_max DAISIEutils/bash/submit_run_daisie_ml.sh y_m_max cr_di_0laa hawaiispiders 1
 
-  sbatch --dependency=singleton --job-name=y_m_max DAISIEutils/bash/submit_run_daisie_ml.sh y_m_max cr_dd_0laa hawaiispiders 1
+sbatch --dependency=singleton --job-name=y_m_max DAISIEutils/bash/submit_run_daisie_ml.sh y_m_max cr_dd_0laa hawaiispiders 1
 
-  sbatch --dependency=singleton --job-name=y_m_max DAISIEutils/bash/submit_run_daisie_ml.sh y_m_max cr_dd_0lac hawaiispiders 1
+sbatch --dependency=singleton --job-name=y_m_max DAISIEutils/bash/submit_run_daisie_ml.sh y_m_max cr_dd_0lac hawaiispiders 1
 
-  sbatch --dependency=singleton --job-name=y_m_max DAISIEutils/bash/submit_run_daisie_ml.sh y_m_max cr_di_0lac hawaiispiders 1
+sbatch --dependency=singleton --job-name=y_m_max DAISIEutils/bash/submit_run_daisie_ml.sh y_m_max cr_di_0lac hawaiispiders 1
