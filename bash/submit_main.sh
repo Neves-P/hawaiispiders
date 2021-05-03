@@ -45,26 +45,26 @@ fi
 spidersid=$(sbatch --job-name=sp_inst hawaiispiders/bash/install_hawaiispiders.sh)
 
 ## Submit jobs (use last word ##* to get jobid for afterok)
-sbatch --job-name=main_subs --dependency=afterok:${utilsid##* }:${spidersid##* } hawaiispiders/bash/submit_y_m_no.sh
+batch1=$(sbatch --dependency=afterok:${utilsid##* }:${spidersid##* } hawaiispiders/bash/submit_y_m_no.sh)
 
-sbatch --dependency=singleton --job-name=main_subs hawaiispiders/bash/submit_y_m_min.sh
+batch2=$(sbatch --dependency=afterok:${batch1} hawaiispiders/bash/submit_y_m_min.sh)
 
-sbatch --dependency=singleton --job-name=main_subs hawaiispiders/bash/submit_y_m_max.sh
+batch3=$(sbatch --dependency=afterok:${batch2} hawaiispiders/bash/submit_y_m_max.sh)
 
-sbatch --dependency=singleton --job-name=main_subs hawaiispiders/bash/submit_y_c_no.sh
+batch4=$(sbatch --dependency=afterok:${batch3} hawaiispiders/bash/submit_y_c_no.sh)
 
-sbatch --dependency=singleton --job-name=main_subs hawaiispiders/bash/submit_y_c_min.sh
+batch5=$(sbatch --dependency=afterok:${batch4} hawaiispiders/bash/submit_y_c_min.sh)
 
-sbatch --dependency=singleton --job-name=main_subs hawaiispiders/bash/submit_y_c_max.sh
+batch6=$(sbatch --dependency=afterok:${batch5} hawaiispiders/bash/submit_y_c_max.sh)
 
-sbatch --dependency=singleton --job-name=main_subs hawaiispiders/bash/submit_o_m_no.sh
+batch7=$(sbatch --dependency=afterok:${batch6} hawaiispiders/bash/submit_o_m_no.sh)
 
-sbatch --dependency=singleton --job-name=main_subs hawaiispiders/bash/submit_o_m_min.sh
+batch8=$(sbatch --dependency=afterok:${batch7} hawaiispiders/bash/submit_o_m_min.sh)
 
-sbatch --dependency=singleton --job-name=main_subs hawaiispiders/bash/submit_o_m_max.sh
+batch9=$(sbatch --dependency=afterok:${batch8} hawaiispiders/bash/submit_o_m_max.sh)
 
-sbatch --dependency=singleton --job-name=main_subs hawaiispiders/bash/submit_o_c_no.sh
+batch10=$(sbatch --dependency=afterok:${batch9} hawaiispiders/bash/submit_o_c_no.sh)
 
-sbatch --dependency=singleton --job-name=main_subs hawaiispiders/bash/submit_o_c_min.sh
+batch11=$(sbatch --dependency=afterok:${batch10} hawaiispiders/bash/submit_o_c_min.sh
 
-sbatch --dependency=singleton --job-name=main_subs hawaiispiders/bash/submit_o_c_max.sh
+batch12=$(sbatch --dependency=afterok:${batch11} hawaiispiders/bash/submit_o_c_max.sh
