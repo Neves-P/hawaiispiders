@@ -65,6 +65,6 @@ batch9=$(sbatch --dependency=afterok:${batch8} hawaiispiders/bash/submit_o_m_max
 
 batch10=$(sbatch --dependency=afterok:${batch9} hawaiispiders/bash/submit_o_c_no.sh)
 
-batch11=$(sbatch --dependency=afterok:${batch10} hawaiispiders/bash/submit_o_c_min.sh
+batch11=$(sbatch --dependency=afterok:${batch10} hawaiispiders/bash/submit_o_c_min.sh)
 
-batch12=$(sbatch --dependency=afterok:${batch11} hawaiispiders/bash/submit_o_c_max.sh
+batch12=$(sbatch --dependency=afterok:${batch11} hawaiispiders/bash/submit_o_c_max.sh)
