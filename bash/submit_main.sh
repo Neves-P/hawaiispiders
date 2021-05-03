@@ -47,19 +47,19 @@ spidersid=$(sbatch --job-name=sp_inst hawaiispiders/bash/install_hawaiispiders.s
 ## Submit jobs (use last word ##* to get jobid for afterok)
 batch1=$(sbatch --dependency=afterok:${utilsid##* }:${spidersid##* } hawaiispiders/bash/submit_y_m_no.sh)
 
-batch2=$(sbatch --dependency=afterok:${batch1} hawaiispiders/bash/submit_y_m_min.sh)
+batch2=$(sbatch --dependency=afterok:${batch1##* } hawaiispiders/bash/submit_y_m_min.sh)
 
-batch3=$(sbatch --dependency=afterok:${batch2} hawaiispiders/bash/submit_y_m_max.sh)
+batch3=$(sbatch --dependency=afterok:${batch2##* } hawaiispiders/bash/submit_y_m_max.sh)
 
-batch4=$(sbatch --dependency=afterok:${batch3} hawaiispiders/bash/submit_y_c_no.sh)
+batch4=$(sbatch --dependency=afterok:${batch3##* } hawaiispiders/bash/submit_y_c_no.sh)
 
-batch5=$(sbatch --dependency=afterok:${batch4} hawaiispiders/bash/submit_y_c_min.sh)
+batch5=$(sbatch --dependency=afterok:${batch4##* } hawaiispiders/bash/submit_y_c_min.sh)
 
-batch6=$(sbatch --dependency=afterok:${batch5} hawaiispiders/bash/submit_y_c_max.sh)
+batch6=$(sbatch --dependency=afterok:${batch5##* } hawaiispiders/bash/submit_y_c_max.sh)
 
-batch7=$(sbatch --dependency=afterok:${batch6} hawaiispiders/bash/submit_o_m_no.sh)
+batch7=$(sbatch --dependency=afterok:${batch6##* } hawaiispiders/bash/submit_o_m_no.sh)
 
-batch8=$(sbatch --dependency=afterok:${batch7} hawaiispiders/bash/submit_o_m_min.sh)
+batch8=$(sbatch --dependency=afterok:${batch7##* } hawaiispiders/bash/submit_o_m_min.sh)
 
 batch9=$(sbatch --dependency=afterok:${batch8} hawaiispiders/bash/submit_o_m_max.sh)
 
