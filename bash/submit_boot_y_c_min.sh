@@ -5,7 +5,7 @@
 #SBATCH --job-name=boot
 #SBATCH --output=logs/boot.log
 #SBATCH --mem=2GB
-#SBATCH --partition=gelifes
+#SBATCH --partition=regular
 # hawaiispiders: Analyse Spider Evolution on Hawaii Island
 # Copyright (C) 2021 Pedro Neves
 #
@@ -22,17 +22,16 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-## Submit jobs (use last word ##* to get jobid for afterok)
-sbatch --job-name=b-y_c_min DAISIEutils/bash/submit_bootstrap.sh y_c_min cr_di hawaiispiders 1
-
+# sbatch --job-name=b-y_c_min DAISIEutils/bash/submit_bootstrap.sh y_c_min cr_di hawaiispiders 1
+#
 sbatch --dependency=singleton --job-name=b-y_c_min DAISIEutils/bash/submit_bootstrap.sh y_c_min cr_dd hawaiispiders 1
-
-sbatch --dependency=singleton --job-name=b-y_c_min DAISIEutils/bash/submit_bootstrap.sh y_c_min cr_di hawaiispiders 1
-
-sbatch --dependency=singleton --job-name=b-y_c_min DAISIEutils/bash/submit_bootstrap.sh y_c_min cr_di_0laa hawaiispiders 1
-
-sbatch --dependency=singleton --job-name=b-y_c_min DAISIEutils/bash/submit_bootstrap.sh y_c_min cr_dd_0laa hawaiispiders 1
-
-sbatch --dependency=singleton --job-name=b-y_c_min DAISIEutils/bash/submit_bootstrap.sh y_c_min cr_dd_0lac hawaiispiders 1
-
-sbatch --dependency=singleton --job-name=b-y_c_min DAISIEutils/bash/submit_bootstrap.sh y_c_min cr_di_0lac hawaiispiders 1
+#
+# sbatch --dependency=singleton --job-name=b-y_c_min DAISIEutils/bash/submit_bootstrap.sh y_c_min cr_di hawaiispiders 1
+#
+# sbatch --dependency=singleton --job-name=b-y_c_min DAISIEutils/bash/submit_bootstrap.sh y_c_min cr_di_0laa hawaiispiders 1
+#
+# sbatch --dependency=singleton --job-name=b-y_c_min DAISIEutils/bash/submit_bootstrap.sh y_c_min cr_dd_0laa hawaiispiders 1
+#
+# sbatch --dependency=singleton --job-name=b-y_c_min DAISIEutils/bash/submit_bootstrap.sh y_c_min cr_dd_0lac hawaiispiders 1
+#
+# sbatch --dependency=singleton --job-name=b-y_c_min DAISIEutils/bash/submit_bootstrap.sh y_c_min cr_di_0lac hawaiispiders 1
