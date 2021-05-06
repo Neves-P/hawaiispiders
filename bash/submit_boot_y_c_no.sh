@@ -24,9 +24,9 @@
 
 # sbatch --job-name=b-y_c_no DAISIEutils/bash/submit_bootstrap.sh y_c_no cr_di hawaiispiders 1
 #
-sbatch --dependency=singleton --job-name=b-y_c_no DAISIEutils/bash/submit_bootstrap.sh y_c_no cr_dd hawaiispiders 1
+# sbatch --dependency=singleton --job-name=b-y_c_no DAISIEutils/bash/submit_bootstrap.sh y_c_no cr_dd hawaiispiders 1
 #
-# sbatch --dependency=singleton --job-name=b-y_c_no DAISIEutils/bash/submit_bootstrap.sh y_c_no cr_di hawaiispiders 1
+sbatch --dependency=singleton --job-name=b-y_c_no DAISIEutils/bash/submit_bootstrap.sh y_c_no cr_di hawaiispiders 1
 #
 # sbatch --dependency=singleton --job-name=b-y_c_no DAISIEutils/bash/submit_bootstrap.sh y_c_no cr_di_0laa hawaiispiders 1
 #
