@@ -1,5 +1,5 @@
 ---
-title: "Senstivity Analysis"
+title: "Sensitivity analysis"
 output: html_notebook
 ---
 
@@ -7,7 +7,7 @@ Here I present the sensitivity of the model to alternate data sets, each corresp
 
 I compiled 12 alternate data sets from the same spider phylogenies. All data sets and the files needed to produce them are included as data objects on this `R` package. The following table describes the differences between each data set.
 
-# Scenario descriptions
+## Scenario descriptions
 |Scenario|Island Age|Favour cladogenesis|Favour MaxAge|
 |:------:|:--------:|:-----------------:|:-----------:|
 | y_c_max|   1.2My  |        Yes        |     Yes     |
@@ -23,9 +23,13 @@ I compiled 12 alternate data sets from the same spider phylogenies. All data set
 | o_m_min|   2.4My  |        No         |     MinAge  |
 | o_m_no |   2.4My  |        No         |     Never   |
 
-For 2.4 My islands some instances of species are not tagged as missing (which they would be, if the island age were 1.2) because those branching times can be included. As an example compare the Pagiopalus_atomarius_Pagiopalus_sp clade between scenarios y_c_max and y.m.max.
+For 2.4 My islands some instances of species are not tagged as missing (which they would be, if the island age were 1.2) because those branching times can be included. As an example compare the Pagiopalus_atomarius_Pagiopalus_sp clade between scenarios y_c_max and y_m_max.
 
 MinAge favouring in the MaxAge column implies that MaxAgeMinAges are used when a min age is available and the precise colonisation time is available too. Not favouring MaxAge means MinAges only used **iff** the precise colonisation age is unknown and a min age is available. These are the "\_no" scenarios, which are arguable the most realistic ones from an empirical point of view.
+
+## Sensitivity
+
+After having obtained the 
 
 ```{r Sensitivity}
 
