@@ -23,15 +23,34 @@ I compiled 12 alternate data sets from the same spider phylogenies. All data set
 | o_m_min|   2.4My  |        No         |     MinAge  |
 | o_m_no |   2.4My  |        No         |     Never   |
 
-For 2.4 My islands some instances of species are not tagged as missing (which they would be, if the island age were 1.2) because those branching times can be included. As an example compare the Pagiopalus_atomarius_Pagiopalus_sp clade between scenarios y_c_max and y_m_max.
+For 2.4 My old islands some instances of species are not tagged as missing (which they would be, if the island age were 1.2 My) because those branching times can be included. As an example compare the Pagiopalus_atomarius_Pagiopalus_sp clade between scenarios y_c_max and y_m_max.
 
 MinAge favouring in the MaxAge column implies that MaxAgeMinAges are used when a min age is available and the precise colonisation time is available too. Not favouring MaxAge means MinAges only used **iff** the precise colonisation age is unknown and a min age is available. These are the "\_no" scenarios, which are arguable the most realistic ones from an empirical point of view.
 
+## Model fitting
+
+Seven different DAISIE models were fit to each of the data sets. Only constant rate models were used for these analyses, and no 
+
 ## Sensitivity
 
-After having obtained the 
+After having fit a collection of DAISIE models 
 
-```{r Sensitivity}
-
+```{r Sensitivity, echo=TRUE}
+comparisons <- list(
+  "age_c_max" = c("y_c_max", "o_c_max"),
+  "age_m_max" = c("y_m_max", "o_m_max"),
+  "age_c_min" = c("y_c_min", "o_c_min"),
+  "age_m_min" = c("y_m_min", "o_m_min"),
+  "age_c_no" = c("y_c_min", "o_c_no"),
+  "age_m_no" = c("y_m_min", "o_m_no")
+)
+age_sens <- list()
+for (i in seq_along(comparisons)) {
+  age_sens[[i]] <- DAISIEutils::sensitivity(
+    comparisons[[i]], full_output = FALSE
+  )
+}
+age_sens
 ```
 
+  
