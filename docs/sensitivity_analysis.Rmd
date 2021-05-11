@@ -83,7 +83,18 @@ for (i in seq_along(rate_comparisons)) {
   )
 }
 names(rate_sens) <- rate_names
-rate_sens
+rate_input_rank <- lapply(rate_sens, "[[", 1)
+knitr::kable(
+  data.frame(
+    rate_input_rank
+  )
+)
+rate_model_rank <- lapply(rate_sens, "[[", 2)
+knitr::kable(
+  data.frame(
+    rate_model_rank
+  )
+)
 ```
 
 
