@@ -36,7 +36,15 @@ Seven different DAISIE models were fit to each of the data sets. Only constant r
 After having fit a collection of DAISIE models 
 
 ```{r Sensitivity, echo=TRUE}
-comparisons <- list(
+age_names <- c(
+  "age_c_max",
+  "age_m_max",
+  "age_c_min",
+  "age_m_min",
+  "age_c_no",
+  "age_m_no"
+)
+age_comparisons <- list(
   "age_c_max" = c("y_c_max", "o_c_max"),
   "age_m_max" = c("y_m_max", "o_m_max"),
   "age_c_min" = c("y_c_min", "o_c_min"),
@@ -45,12 +53,37 @@ comparisons <- list(
   "age_m_no" = c("y_m_min", "o_m_no")
 )
 age_sens <- list()
-for (i in seq_along(comparisons)) {
+for (i in seq_along(age_comparisons)) {
   age_sens[[i]] <- DAISIEutils::sensitivity(
-    comparisons[[i]], full_output = FALSE
+    age_comparisons[[i]], full_output = FALSE
   )
 }
+names(age_sens) <- age_names
 age_sens
+rate_names <- c(
+  "rate_y_max",
+  "rate_y_min",
+  "rate_y_no",
+  "rate_o_max",
+  "rate_o_min",
+  "rate_o_no"
+)
+rate_comparisons <- list(
+  "rate_y_max" = c("y_c_max", "y_m_max"),
+  "rate_y_min" = c("y_c_min", "y_m_min"),
+  "rate_y_no" = c("y_c_no", "y_m_no"),
+  "rate_o_max" = c("o_c_max", "o_m_max"),
+  "rate_o_min" = c("o_c_min", "o_m_min"),
+  "rate_o_no" = c("o_c_no", "o_m_no")
+)
+rate_sens <- list()
+for (i in seq_along(rate_comparisons)) {
+  rate_sens[[i]] <- DAISIEutils::sensitivity(
+    rate_comparisons[[i]], full_output = FALSE
+  )
+}
+names(rate_sens) <- rate_names
+rate_sens
 ```
 
-  
+
