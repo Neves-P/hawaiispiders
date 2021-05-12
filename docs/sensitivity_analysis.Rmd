@@ -23,17 +23,41 @@ I compiled 12 alternate data sets from the same spider phylogenies. All data set
 | o_m_min|   2.4My  |        No         |     MinAge  |
 | o_m_no |   2.4My  |        No         |     Never   |
 
-For 2.4 My old islands some instances of species are not tagged as missing (which they would be, if the island age were 1.2 My) because those branching times can be included. As an example compare the Pagiopalus_atomarius_Pagiopalus_sp clade between scenarios y_c_max and y_m_max.
-
 MinAge favouring in the MaxAge column implies that MaxAgeMinAges are used when a min age is available and the precise colonisation time is available too. Not favouring MaxAge means MinAges only used **iff** the precise colonisation age is unknown and a min age is available. These are the "\_no" scenarios, which are arguable the most realistic ones from an empirical point of view.
+
+Broadly speaking, the data consists of mainly singleton endemic species which colonised the island early. In many cases the colonisation time predates the island age. On scenarios favouring cladogenesis, 33 independent clades are present, while the number increases to 35 on scenarios favouring colonisation. There are 37 species present in total.
+
+```{r Plot}
+data("y_c_no", package = "hawaiispiders")
+DAISIE::DAISIE_plot_island(y_c_no)
+
+data("o_c_no", package = "hawaiispiders")
+DAISIE::DAISIE_plot_island(o_c_no)
+
+data("y_m_no", package = "hawaiispiders")
+DAISIE::DAISIE_plot_island(y_c_no)
+
+data("o_m_no", package = "hawaiispiders")
+DAISIE::DAISIE_plot_island(o_c_no)
+```
+
+
 
 ## Model fitting
 
-Seven different DAISIE models were fit to each of the data sets. Only constant rate models were used for these analyses, and no 
+Seven different DAISIE models were fit to each of the data sets. Only constant rate models were used for these analyses.
+Fit models are as follows:
+
+* Constant rate diversity dependent model
+* Constant rate diversity independent model
+* Constant rate diversity dependent model with anagenesis rate fixed to 0
+* Constant rate diversity independent model with anagenesis rate fixed to 0
+* Constant rate diversity dependent model with cladogenesis rate fixed to 0
+* Constant rate diversity independent model with cladogenesis rate fixed to 0
 
 ## Sensitivity
 
-After having fit a collection of DAISIE models 
+After having fit a collection of DAISIE models, senstivity analysis was performed to assess the influence of varying scenarios on the selection of the best model and model rank overall.
 
 ```{r Sensitivity, echo=TRUE}
 age_names <- c(
@@ -60,10 +84,6 @@ for (i in seq_along(age_comparisons)) {
 }
 names(age_sens) <- age_names
 
-age_input_rank <- data.frame(lapply(age_sens, "[[", 1))
-age_model_rank <- data.frame(lapply(age_sens, "[[", 2))
-knitr::kable(rbind(age_input_rank, age_model_rank))
-
 rate_names <- c(
   "rate_y_max",
   "rate_y_min",
@@ -87,9 +107,11 @@ for (i in seq_along(rate_comparisons)) {
   )
 }
 names(rate_sens) <- rate_names
-rate_input_rank <- data.frame(lapply(rate_sens, "[[", 1))
-rate_model_rank <- data.frame(lapply(rate_sens, "[[", 2))
-knitr::kable(rbind(rate_input_rank, rate_model_rank))
+rate_input_rank_sens <- data.frame(lapply(rate_sens, "[[", 1))
+rate_model_rank_sens <- data.frame(lapply(rate_sens, "[[", 2))
+knitr::kable(rbind(rate_input_rank_sens, rate_model_rank_sens))
+rate_model_rankings <- data.frame(lapply(rate_sens, "[[", 3))
+knitr::kable(t(rate_model_rankings))
 
 m_age_names <- c(
   "m_age_y_c",
@@ -110,9 +132,11 @@ for (i in seq_along(m_age_comparisons)) {
   )
 }
 names(m_age_sens) <- m_age_names
-m_age_input_rank <- data.frame(lapply(m_age_sens, "[[", 1))
-m_age_model_rank <- data.frame(lapply(m_age_sens, "[[", 2))
-knitr::kable(rbind(m_age_input_rank, m_age_model_rank))
+m_age_input_rank_sens <- data.frame(lapply(m_age_sens, "[[", 1))
+m_age_model_rank_sens <- data.frame(lapply(m_age_sens, "[[", 2))
+knitr::kable(rbind(m_age_input_rank_sens, m_age_model_rank_sens))
+m_age_model_rankings <- data.frame(lapply(m_age_sens, "[[", 3))
+knitr::kable(t(m_age_model_rankings))
 ```
 
 
