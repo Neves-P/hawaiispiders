@@ -59,7 +59,11 @@ for (i in seq_along(age_comparisons)) {
   )
 }
 names(age_sens) <- age_names
-age_sens
+
+age_input_rank <- data.frame(lapply(age_sens, "[[", 1))
+age_model_rank <- data.frame(lapply(age_sens, "[[", 2))
+knitr::kable(rbind(age_input_rank, age_model_rank))
+
 rate_names <- c(
   "rate_y_max",
   "rate_y_min",
@@ -83,18 +87,32 @@ for (i in seq_along(rate_comparisons)) {
   )
 }
 names(rate_sens) <- rate_names
-rate_input_rank <- lapply(rate_sens, "[[", 1)
-knitr::kable(
-  data.frame(
-    rate_input_rank
-  )
+rate_input_rank <- data.frame(lapply(rate_sens, "[[", 1))
+rate_model_rank <- data.frame(lapply(rate_sens, "[[", 2))
+knitr::kable(rbind(rate_input_rank, rate_model_rank))
+
+m_age_names <- c(
+  "m_age_y_c",
+  "m_age_y_m",
+  "m_age_o_c",
+  "m_age_o_m"
 )
-rate_model_rank <- lapply(rate_sens, "[[", 2)
-knitr::kable(
-  data.frame(
-    rate_model_rank
-  )
+m_age_comparisons <- list(
+  "m_age_y_c" = c("y_c_max", "y_c_min", "y_c_no"),
+  "m_age_y_m" = c("y_m_max", "y_m_min", "y_m_no"),
+  "m_age_o_c" = c("o_c_max", "o_c_min", "o_c_no"),
+  "m_age_y_m" = c("o_c_max", "o_c_min", "o_c_no")
 )
+m_age_sens <- list()
+for (i in seq_along(m_age_comparisons)) {
+  m_age_sens[[i]] <- DAISIEutils::sensitivity(
+    m_age_comparisons[[i]], full_output = FALSE
+  )
+}
+names(m_age_sens) <- m_age_names
+m_age_input_rank <- data.frame(lapply(m_age_sens, "[[", 1))
+m_age_model_rank <- data.frame(lapply(m_age_sens, "[[", 2))
+knitr::kable(rbind(m_age_input_rank, m_age_model_rank))
 ```
 
 
