@@ -337,97 +337,222 @@ summary {
 <p>After having fit a collection of DAISIE models</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubV9hZ2Vfc2Vuc1xuXG5gYGAifQ== -->
-<pre class="r"><code>m_age_sens
-</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYWdlX25hbWVzIDwtIGMoXG4gIFwiYWdlX2NfbWF4XCIsXG4gIFwiYWdlX21fbWF4XCIsXG4gIFwiYWdlX2NfbWluXCIsXG4gIFwiYWdlX21fbWluXCIsXG4gIFwiYWdlX2Nfbm9cIixcbiAgXCJhZ2VfbV9ub1wiXG4pXG5hZ2VfY29tcGFyaXNvbnMgPC0gbGlzdChcbiAgXCJhZ2VfY19tYXhcIiA9IGMoXCJ5X2NfbWF4XCIsIFwib19jX21heFwiKSxcbiAgXCJhZ2VfbV9tYXhcIiA9IGMoXCJ5X21fbWF4XCIsIFwib19tX21heFwiKSxcbiAgXCJhZ2VfY19taW5cIiA9IGMoXCJ5X2NfbWluXCIsIFwib19jX21pblwiKSxcbiAgXCJhZ2VfbV9taW5cIiA9IGMoXCJ5X21fbWluXCIsIFwib19tX21pblwiKSxcbiAgXCJhZ2VfY19ub1wiID0gYyhcInlfY19taW5cIiwgXCJvX2Nfbm9cIiksXG4gIFwiYWdlX21fbm9cIiA9IGMoXCJ5X21fbWluXCIsIFwib19tX25vXCIpXG4pXG5hZ2Vfc2VucyA8LSBsaXN0KClcbmZvciAoaSBpbiBzZXFfYWxvbmcoYWdlX2NvbXBhcmlzb25zKSkge1xuICBhZ2Vfc2Vuc1tbaV1dIDwtIERBSVNJRXV0aWxzOjpzZW5zaXRpdml0eShcbiAgICBhZ2VfY29tcGFyaXNvbnNbW2ldXSwgZnVsbF9vdXRwdXQgPSBGQUxTRVxuICApXG59XG5uYW1lcyhhZ2Vfc2VucykgPC0gYWdlX25hbWVzXG5cbmFnZV9pbnB1dF9yYW5rIDwtIGRhdGEuZnJhbWUobGFwcGx5KGFnZV9zZW5zLCBcIltbXCIsIDEpKVxuYWdlX21vZGVsX3JhbmsgPC0gZGF0YS5mcmFtZShsYXBwbHkoYWdlX3NlbnMsIFwiW1tcIiwgMikpXG5rbml0cjo6a2FibGUocmJpbmQoYWdlX2lucHV0X3JhbmssIGFnZV9tb2RlbF9yYW5rKSlcbmBgYCJ9 -->
+<pre class="r"><code>age_names &lt;- c(
+  &quot;age_c_max&quot;,
+  &quot;age_m_max&quot;,
+  &quot;age_c_min&quot;,
+  &quot;age_m_min&quot;,
+  &quot;age_c_no&quot;,
+  &quot;age_m_no&quot;
+)
+age_comparisons &lt;- list(
+  &quot;age_c_max&quot; = c(&quot;y_c_max&quot;, &quot;o_c_max&quot;),
+  &quot;age_m_max&quot; = c(&quot;y_m_max&quot;, &quot;o_m_max&quot;),
+  &quot;age_c_min&quot; = c(&quot;y_c_min&quot;, &quot;o_c_min&quot;),
+  &quot;age_m_min&quot; = c(&quot;y_m_min&quot;, &quot;o_m_min&quot;),
+  &quot;age_c_no&quot; = c(&quot;y_c_min&quot;, &quot;o_c_no&quot;),
+  &quot;age_m_no&quot; = c(&quot;y_m_min&quot;, &quot;o_m_no&quot;)
+)
+age_sens &lt;- list()
+for (i in seq_along(age_comparisons)) {
+  age_sens[[i]] &lt;- DAISIEutils::sensitivity(
+    age_comparisons[[i]], full_output = FALSE
+  )
+}
+names(age_sens) &lt;- age_names
+
+age_input_rank &lt;- data.frame(lapply(age_sens, &quot;[[&quot;, 1))
+age_model_rank &lt;- data.frame(lapply(age_sens, &quot;[[&quot;, 2))
+knitr::kable(rbind(age_input_rank, age_model_rank))</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiJG1fYWdlX3lfY1xuJG1fYWdlX3lfYyRiZXN0X2ZpdF9zZW5zaXRpdml0eVxuWzFdIFwiQmVzdCBmaXQgbW9kZWwgaXMgbm90IHNlbnNpdGl2ZSB0byBpbnB1dFwiXG5cbiRtX2FnZV95X2MkbW9kZWxfc2VsZWN0aW9uX3NlbnNpdGl2aXR5XG5bMV0gXCJNb2RlbCBzZWxlY3Rpb24gcmFuayBpcyBzZW5zaXRpdmUgdG8gaW5wdXRcIlxuXG4kbV9hZ2VfeV9jJG1vZGVsX3NlbGVjdGlvbl9yYW5rXG4kbV9hZ2VfeV9jJG1vZGVsX3NlbGVjdGlvbl9yYW5rJHlfY19tYXhcbiAgICAgY3JfZGkgY3JfZGlfMGxhYSAgICAgIGNyX2RkIGNyX2RkXzBsYWEgXG4gIDI3MS42NzYzICAgMjc3LjIzMzAgICAyNzcuNDM2MyAgIDI3OS4zMjE2IFxuXG4kbV9hZ2VfeV9jJG1vZGVsX3NlbGVjdGlvbl9yYW5rJHlfY19taW5cbiAgICAgY3JfZGkgICAgICBjcl9kZCBjcl9kaV8wbGFhIGNyX2RkXzBsYWEgXG4gIDI2OS43ODY0ICAgMjc1LjY4MzkgICAyNzYuNzg2MSAgIDI3OC45ODY1IFxuXG4kbV9hZ2VfeV9jJG1vZGVsX3NlbGVjdGlvbl9yYW5rJHlfY19ub1xuICAgICBjcl9kaSBjcl9kaV8wbGFhIGNyX2RkXzBsYWEgICAgICBjcl9kZCBcbiAgMjUyLjczMzQgICAyNTMuMjgwNCAgIDI1My45ODIxICAgMjU3Ljc2NzggXG5cblxuXG4kbV9hZ2VfeV9tXG4kbV9hZ2VfeV9tJGJlc3RfZml0X3NlbnNpdGl2aXR5XG5bMV0gXCJCZXN0IGZpdCBtb2RlbCBpcyBub3Qgc2Vuc2l0aXZlIHRvIGlucHV0XCJcblxuJG1fYWdlX3lfbSRtb2RlbF9zZWxlY3Rpb25fc2Vuc2l0aXZpdHlcblsxXSBcIk1vZGVsIHNlbGVjdGlvbiByYW5rIGlzIHNlbnNpdGl2ZSB0byBpbnB1dFwiXG5cbiRtX2FnZV95X20kbW9kZWxfc2VsZWN0aW9uX3JhbmtcbiRtX2FnZV95X20kbW9kZWxfc2VsZWN0aW9uX3JhbmskeV9tX21heFxuICAgICBjcl9kaSAgICAgIGNyX2RkIGNyX2RpXzBsYWEgY3JfZGRfMGxhYSBcbiAgMjg1LjI2ODIgICAyOTEuNjQwNiAgIDI5My45MzQwICAgMjk0Ljk2MDIgXG5cbiRtX2FnZV95X20kbW9kZWxfc2VsZWN0aW9uX3JhbmskeV9tX21pblxuICAgICBjcl9kaSAgICAgIGNyX2RkIGNyX2RpXzBsYWEgY3JfZGRfMGxhYSBcbiAgMjg1LjcxNjUgICAyOTEuOTc0MCAgIDI5Ni4xNzkxICAgMjk3LjU1NDAgXG5cbiRtX2FnZV95X20kbW9kZWxfc2VsZWN0aW9uX3JhbmskeV9tX25vXG4gICAgIGNyX2RpICAgICAgY3JfZGQgY3JfZGRfMGxhYSBjcl9kaV8wbGFhIFxuICAyNjguNjMwOCAgIDI3My40NDE0ICAgMjczLjkwODQgICAyNzQuNTIwMyBcblxuXG5cbiRtX2FnZV9vX2NcbiRtX2FnZV9vX2MkYmVzdF9maXRfc2Vuc2l0aXZpdHlcblsxXSBcIkJlc3QgZml0IG1vZGVsIGlzIHNlbnNpdGl2ZSB0byBpbnB1dFwiXG5cbiRtX2FnZV9vX2MkbW9kZWxfc2VsZWN0aW9uX3NlbnNpdGl2aXR5XG5bMV0gXCJNb2RlbCBzZWxlY3Rpb24gcmFuayBpcyBzZW5zaXRpdmUgdG8gaW5wdXRcIlxuXG4kbV9hZ2Vfb19jJG1vZGVsX3NlbGVjdGlvbl9yYW5rXG4kbV9hZ2Vfb19jJG1vZGVsX3NlbGVjdGlvbl9yYW5rJG9fY19tYXhcbiAgICAgY3JfZGkgY3JfZGlfMGxhYSAgICAgIGNyX2RkIGNyX2RkXzBsYWEgXG4gIDI5MS4xMzU2ICAgMjkyLjU2MTcgICAyOTMuNTI4NyAgIDI5NC4wMDQ5IFxuXG4kbV9hZ2Vfb19jJG1vZGVsX3NlbGVjdGlvbl9yYW5rJG9fY19taW5cbiAgICAgY3JfZGkgICAgICBjcl9kZCBjcl9kaV8wbGFhIGNyX2RkXzBsYWEgXG4gIDMwOS44ODIxICAgMzEzLjg0NjcgICAzMTkuMDI3NSAgIDMyMC40MDYwIFxuXG4kbV9hZ2Vfb19jJG1vZGVsX3NlbGVjdGlvbl9yYW5rJG9fY19ub1xuY3JfZGRfMGxhYSAgICAgIGNyX2RkICAgICAgY3JfZGkgY3JfZGlfMGxhYSBcbiAgMjk3LjI0NzggICAyOTguMzI0NSAgIDI5OS4xNzQ5ICAgMzA1LjQwODkgXG5cblxuXG4kbV9hZ2Vfb19tXG4kbV9hZ2Vfb19tJGJlc3RfZml0X3NlbnNpdGl2aXR5XG5bMV0gXCJCZXN0IGZpdCBtb2RlbCBpcyBzZW5zaXRpdmUgdG8gaW5wdXRcIlxuXG4kbV9hZ2Vfb19tJG1vZGVsX3NlbGVjdGlvbl9zZW5zaXRpdml0eVxuWzFdIFwiTW9kZWwgc2VsZWN0aW9uIHJhbmsgaXMgc2Vuc2l0aXZlIHRvIGlucHV0XCJcblxuJG1fYWdlX29fbSRtb2RlbF9zZWxlY3Rpb25fcmFua1xuJG1fYWdlX29fbSRtb2RlbF9zZWxlY3Rpb25fcmFuayRvX2NfbWF4XG4gICAgIGNyX2RpIGNyX2RpXzBsYWEgICAgICBjcl9kZCBjcl9kZF8wbGFhIFxuICAyOTEuMTM1NiAgIDI5Mi41NjE3ICAgMjkzLjUyODcgICAyOTQuMDA0OSBcblxuJG1fYWdlX29fbSRtb2RlbF9zZWxlY3Rpb25fcmFuayRvX2NfbWluXG4gICAgIGNyX2RpICAgICAgY3JfZGQgY3JfZGlfMGxhYSBjcl9kZF8wbGFhIFxuICAzMDkuODgyMSAgIDMxMy44NDY3ICAgMzE5LjAyNzUgICAzMjAuNDA2MCBcblxuJG1fYWdlX29fbSRtb2RlbF9zZWxlY3Rpb25fcmFuayRvX2Nfbm9cbmNyX2RkXzBsYWEgICAgICBjcl9kZCAgICAgIGNyX2RpIGNyX2RpXzBsYWEgXG4gIDI5Ny4yNDc4ICAgMjk4LjMyNDUgICAyOTkuMTc0OSAgIDMwNS40MDg5IFxuIn0= -->
-<pre><code>$m_age_y_c
-$m_age_y_c$best_fit_sensitivity
-[1] &quot;Best fit model is not sensitive to input&quot;
-
-$m_age_y_c$model_selection_sensitivity
-[1] &quot;Model selection rank is sensitive to input&quot;
-
-$m_age_y_c$model_selection_rank
-$m_age_y_c$model_selection_rank$y_c_max
-     cr_di cr_di_0laa      cr_dd cr_dd_0laa 
-  271.6763   277.2330   277.4363   279.3216 
-
-$m_age_y_c$model_selection_rank$y_c_min
-     cr_di      cr_dd cr_di_0laa cr_dd_0laa 
-  269.7864   275.6839   276.7861   278.9865 
-
-$m_age_y_c$model_selection_rank$y_c_no
-     cr_di cr_di_0laa cr_dd_0laa      cr_dd 
-  252.7334   253.2804   253.9821   257.7678 
-
-
-
-$m_age_y_m
-$m_age_y_m$best_fit_sensitivity
-[1] &quot;Best fit model is not sensitive to input&quot;
-
-$m_age_y_m$model_selection_sensitivity
-[1] &quot;Model selection rank is sensitive to input&quot;
-
-$m_age_y_m$model_selection_rank
-$m_age_y_m$model_selection_rank$y_m_max
-     cr_di      cr_dd cr_di_0laa cr_dd_0laa 
-  285.2682   291.6406   293.9340   294.9602 
-
-$m_age_y_m$model_selection_rank$y_m_min
-     cr_di      cr_dd cr_di_0laa cr_dd_0laa 
-  285.7165   291.9740   296.1791   297.5540 
-
-$m_age_y_m$model_selection_rank$y_m_no
-     cr_di      cr_dd cr_dd_0laa cr_di_0laa 
-  268.6308   273.4414   273.9084   274.5203 
-
-
-
-$m_age_o_c
-$m_age_o_c$best_fit_sensitivity
-[1] &quot;Best fit model is sensitive to input&quot;
-
-$m_age_o_c$model_selection_sensitivity
-[1] &quot;Model selection rank is sensitive to input&quot;
-
-$m_age_o_c$model_selection_rank
-$m_age_o_c$model_selection_rank$o_c_max
-     cr_di cr_di_0laa      cr_dd cr_dd_0laa 
-  291.1356   292.5617   293.5287   294.0049 
-
-$m_age_o_c$model_selection_rank$o_c_min
-     cr_di      cr_dd cr_di_0laa cr_dd_0laa 
-  309.8821   313.8467   319.0275   320.4060 
-
-$m_age_o_c$model_selection_rank$o_c_no
-cr_dd_0laa      cr_dd      cr_di cr_di_0laa 
-  297.2478   298.3245   299.1749   305.4089 
-
-
-
-$m_age_o_m
-$m_age_o_m$best_fit_sensitivity
-[1] &quot;Best fit model is sensitive to input&quot;
-
-$m_age_o_m$model_selection_sensitivity
-[1] &quot;Model selection rank is sensitive to input&quot;
-
-$m_age_o_m$model_selection_rank
-$m_age_o_m$model_selection_rank$o_c_max
-     cr_di cr_di_0laa      cr_dd cr_dd_0laa 
-  291.1356   292.5617   293.5287   294.0049 
-
-$m_age_o_m$model_selection_rank$o_c_min
-     cr_di      cr_dd cr_di_0laa cr_dd_0laa 
-  309.8821   313.8467   319.0275   320.4060 
-
-$m_age_o_m$model_selection_rank$o_c_no
-cr_dd_0laa      cr_dd      cr_di cr_di_0laa 
-  297.2478   298.3245   299.1749   305.4089 </code></pre>
+<!-- rnb-output-begin eyJkYXRhIjoiUmVnaXN0ZXJlZCBTMyBtZXRob2RzIG92ZXJ3cml0dGVuIGJ5ICdodG1sdG9vbHMnOlxuICBtZXRob2QgICAgICAgICAgICAgICBmcm9tICAgICAgICAgXG4gIHByaW50Lmh0bWwgICAgICAgICAgIHRvb2xzOnJzdHVkaW9cbiAgcHJpbnQuc2hpbnkudGFnICAgICAgdG9vbHM6cnN0dWRpb1xuICBwcmludC5zaGlueS50YWcubGlzdCB0b29sczpyc3R1ZGlvXG4ifQ== -->
+<pre><code>Registered S3 methods overwritten by &#39;htmltools&#39;:
+  method               from         
+  print.html           tools:rstudio
+  print.shiny.tag      tools:rstudio
+  print.shiny.tag.list tools:rstudio</code></pre>
 <!-- rnb-output-end -->
+
+<!-- rnb-html-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImtuaXRfYXNpcyJdLCJzaXppbmdQb2xpY3kiOltdfX0= -->
+
+<table>
+<colgroup>
+<col width="17%" />
+<col width="15%" />
+<col width="17%" />
+<col width="17%" />
+<col width="15%" />
+<col width="15%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">age_c_max</th>
+<th align="left">age_m_max</th>
+<th align="left">age_c_min</th>
+<th align="left">age_m_min</th>
+<th align="left">age_c_no</th>
+<th align="left">age_m_no</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Best fit model is not sensitive to input</td>
+<td align="left">Best fit model is not sensitive to input</td>
+<td align="left">Best fit model is not sensitive to input</td>
+<td align="left">Best fit model is not sensitive to input</td>
+<td align="left">Best fit model is sensitive to input</td>
+<td align="left">Best fit model is not sensitive to input</td>
+</tr>
+<tr class="even">
+<td align="left">Model selection rank is not sensitive to input</td>
+<td align="left">Model selection rank is sensitive to input</td>
+<td align="left">Model selection rank is not sensitive to input</td>
+<td align="left">Model selection rank is not sensitive to input</td>
+<td align="left">Model selection rank is sensitive to input</td>
+<td align="left">Model selection rank is sensitive to input</td>
+</tr>
+</tbody>
+</table>
+
+
+<!-- rnb-html-end -->
+
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucmF0ZV9uYW1lcyA8LSBjKFxuICBcInJhdGVfeV9tYXhcIixcbiAgXCJyYXRlX3lfbWluXCIsXG4gIFwicmF0ZV95X25vXCIsXG4gIFwicmF0ZV9vX21heFwiLFxuICBcInJhdGVfb19taW5cIixcbiAgXCJyYXRlX29fbm9cIlxuKVxucmF0ZV9jb21wYXJpc29ucyA8LSBsaXN0KFxuICBcInJhdGVfeV9tYXhcIiA9IGMoXCJ5X2NfbWF4XCIsIFwieV9tX21heFwiKSxcbiAgXCJyYXRlX3lfbWluXCIgPSBjKFwieV9jX21pblwiLCBcInlfbV9taW5cIiksXG4gIFwicmF0ZV95X25vXCIgPSBjKFwieV9jX25vXCIsIFwieV9tX25vXCIpLFxuICBcInJhdGVfb19tYXhcIiA9IGMoXCJvX2NfbWF4XCIsIFwib19tX21heFwiKSxcbiAgXCJyYXRlX29fbWluXCIgPSBjKFwib19jX21pblwiLCBcIm9fbV9taW5cIiksXG4gIFwicmF0ZV9vX25vXCIgPSBjKFwib19jX25vXCIsIFwib19tX25vXCIpXG4pXG5yYXRlX3NlbnMgPC0gbGlzdCgpXG5mb3IgKGkgaW4gc2VxX2Fsb25nKHJhdGVfY29tcGFyaXNvbnMpKSB7XG4gIHJhdGVfc2Vuc1tbaV1dIDwtIERBSVNJRXV0aWxzOjpzZW5zaXRpdml0eShcbiAgICByYXRlX2NvbXBhcmlzb25zW1tpXV0sIGZ1bGxfb3V0cHV0ID0gRkFMU0VcbiAgKVxufVxubmFtZXMocmF0ZV9zZW5zKSA8LSByYXRlX25hbWVzXG5yYXRlX2lucHV0X3JhbmsgPC0gZGF0YS5mcmFtZShsYXBwbHkocmF0ZV9zZW5zLCBcIltbXCIsIDEpKVxucmF0ZV9tb2RlbF9yYW5rIDwtIGRhdGEuZnJhbWUobGFwcGx5KHJhdGVfc2VucywgXCJbW1wiLCAyKSlcbmtuaXRyOjprYWJsZShyYmluZChyYXRlX2lucHV0X3JhbmssIHJhdGVfbW9kZWxfcmFuaykpXG5gYGAifQ== -->
+<pre class="r"><code>rate_names &lt;- c(
+  &quot;rate_y_max&quot;,
+  &quot;rate_y_min&quot;,
+  &quot;rate_y_no&quot;,
+  &quot;rate_o_max&quot;,
+  &quot;rate_o_min&quot;,
+  &quot;rate_o_no&quot;
+)
+rate_comparisons &lt;- list(
+  &quot;rate_y_max&quot; = c(&quot;y_c_max&quot;, &quot;y_m_max&quot;),
+  &quot;rate_y_min&quot; = c(&quot;y_c_min&quot;, &quot;y_m_min&quot;),
+  &quot;rate_y_no&quot; = c(&quot;y_c_no&quot;, &quot;y_m_no&quot;),
+  &quot;rate_o_max&quot; = c(&quot;o_c_max&quot;, &quot;o_m_max&quot;),
+  &quot;rate_o_min&quot; = c(&quot;o_c_min&quot;, &quot;o_m_min&quot;),
+  &quot;rate_o_no&quot; = c(&quot;o_c_no&quot;, &quot;o_m_no&quot;)
+)
+rate_sens &lt;- list()
+for (i in seq_along(rate_comparisons)) {
+  rate_sens[[i]] &lt;- DAISIEutils::sensitivity(
+    rate_comparisons[[i]], full_output = FALSE
+  )
+}
+names(rate_sens) &lt;- rate_names
+rate_input_rank &lt;- data.frame(lapply(rate_sens, &quot;[[&quot;, 1))
+rate_model_rank &lt;- data.frame(lapply(rate_sens, &quot;[[&quot;, 2))
+knitr::kable(rbind(rate_input_rank, rate_model_rank))</code></pre>
+<!-- rnb-source-end -->
+
+<!-- rnb-html-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImtuaXRfYXNpcyJdLCJzaXppbmdQb2xpY3kiOltdfX0= -->
+
+<table>
+<colgroup>
+<col width="15%" />
+<col width="17%" />
+<col width="15%" />
+<col width="17%" />
+<col width="17%" />
+<col width="15%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">rate_y_max</th>
+<th align="left">rate_y_min</th>
+<th align="left">rate_y_no</th>
+<th align="left">rate_o_max</th>
+<th align="left">rate_o_min</th>
+<th align="left">rate_o_no</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Best fit model is not sensitive to input</td>
+<td align="left">Best fit model is not sensitive to input</td>
+<td align="left">Best fit model is not sensitive to input</td>
+<td align="left">Best fit model is not sensitive to input</td>
+<td align="left">Best fit model is not sensitive to input</td>
+<td align="left">Best fit model is sensitive to input</td>
+</tr>
+<tr class="even">
+<td align="left">Model selection rank is sensitive to input</td>
+<td align="left">Model selection rank is not sensitive to input</td>
+<td align="left">Model selection rank is sensitive to input</td>
+<td align="left">Model selection rank is not sensitive to input</td>
+<td align="left">Model selection rank is not sensitive to input</td>
+<td align="left">Model selection rank is sensitive to input</td>
+</tr>
+</tbody>
+</table>
+
+
+<!-- rnb-html-end -->
+
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuXG5tX2FnZV9uYW1lcyA8LSBjKFxuICBcIm1fYWdlX3lfY1wiLFxuICBcIm1fYWdlX3lfbVwiLFxuICBcIm1fYWdlX29fY1wiLFxuICBcIm1fYWdlX29fbVwiXG4pXG5tX2FnZV9jb21wYXJpc29ucyA8LSBsaXN0KFxuICBcIm1fYWdlX3lfY1wiID0gYyhcInlfY19tYXhcIiwgXCJ5X2NfbWluXCIsIFwieV9jX25vXCIpLFxuICBcIm1fYWdlX3lfbVwiID0gYyhcInlfbV9tYXhcIiwgXCJ5X21fbWluXCIsIFwieV9tX25vXCIpLFxuICBcIm1fYWdlX29fY1wiID0gYyhcIm9fY19tYXhcIiwgXCJvX2NfbWluXCIsIFwib19jX25vXCIpLFxuICBcIm1fYWdlX3lfbVwiID0gYyhcIm9fY19tYXhcIiwgXCJvX2NfbWluXCIsIFwib19jX25vXCIpXG4pXG5tX2FnZV9zZW5zIDwtIGxpc3QoKVxuZm9yIChpIGluIHNlcV9hbG9uZyhtX2FnZV9jb21wYXJpc29ucykpIHtcbiAgbV9hZ2Vfc2Vuc1tbaV1dIDwtIERBSVNJRXV0aWxzOjpzZW5zaXRpdml0eShcbiAgICBtX2FnZV9jb21wYXJpc29uc1tbaV1dLCBmdWxsX291dHB1dCA9IEZBTFNFXG4gIClcbn1cbm5hbWVzKG1fYWdlX3NlbnMpIDwtIG1fYWdlX25hbWVzXG5tX2FnZV9pbnB1dF9yYW5rIDwtIGRhdGEuZnJhbWUobGFwcGx5KG1fYWdlX3NlbnMsIFwiW1tcIiwgMSkpXG5tX2FnZV9tb2RlbF9yYW5rIDwtIGRhdGEuZnJhbWUobGFwcGx5KG1fYWdlX3NlbnMsIFwiW1tcIiwgMikpXG5rbml0cjo6a2FibGUocmJpbmQobV9hZ2VfaW5wdXRfcmFuaywgbV9hZ2VfbW9kZWxfcmFuaykpXG5gYGAifQ== -->
+<pre class="r"><code>
+m_age_names &lt;- c(
+  &quot;m_age_y_c&quot;,
+  &quot;m_age_y_m&quot;,
+  &quot;m_age_o_c&quot;,
+  &quot;m_age_o_m&quot;
+)
+m_age_comparisons &lt;- list(
+  &quot;m_age_y_c&quot; = c(&quot;y_c_max&quot;, &quot;y_c_min&quot;, &quot;y_c_no&quot;),
+  &quot;m_age_y_m&quot; = c(&quot;y_m_max&quot;, &quot;y_m_min&quot;, &quot;y_m_no&quot;),
+  &quot;m_age_o_c&quot; = c(&quot;o_c_max&quot;, &quot;o_c_min&quot;, &quot;o_c_no&quot;),
+  &quot;m_age_y_m&quot; = c(&quot;o_c_max&quot;, &quot;o_c_min&quot;, &quot;o_c_no&quot;)
+)
+m_age_sens &lt;- list()
+for (i in seq_along(m_age_comparisons)) {
+  m_age_sens[[i]] &lt;- DAISIEutils::sensitivity(
+    m_age_comparisons[[i]], full_output = FALSE
+  )
+}
+names(m_age_sens) &lt;- m_age_names
+m_age_input_rank &lt;- data.frame(lapply(m_age_sens, &quot;[[&quot;, 1))
+m_age_model_rank &lt;- data.frame(lapply(m_age_sens, &quot;[[&quot;, 2))
+knitr::kable(rbind(m_age_input_rank, m_age_model_rank))</code></pre>
+<!-- rnb-source-end -->
+
+<!-- rnb-html-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImtuaXRfYXNpcyJdLCJzaXppbmdQb2xpY3kiOltdfX0= -->
+
+<table>
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">m_age_y_c</th>
+<th align="left">m_age_y_m</th>
+<th align="left">m_age_o_c</th>
+<th align="left">m_age_o_m</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Best fit model is not sensitive to input</td>
+<td align="left">Best fit model is not sensitive to input</td>
+<td align="left">Best fit model is sensitive to input</td>
+<td align="left">Best fit model is sensitive to input</td>
+</tr>
+<tr class="even">
+<td align="left">Model selection rank is sensitive to input</td>
+<td align="left">Model selection rank is sensitive to input</td>
+<td align="left">Model selection rank is sensitive to input</td>
+<td align="left">Model selection rank is sensitive to input</td>
+</tr>
+</tbody>
+</table>
+
+
+<!-- rnb-html-end -->
+
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
