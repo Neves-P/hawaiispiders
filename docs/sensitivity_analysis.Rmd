@@ -23,7 +23,7 @@ I compiled 12 alternate data sets from the same spider phylogenies. All data set
 | o_m_min|   2.4My  |        No         |     MinAge  |
 | o_m_no |   2.4My  |        No         |     Never   |
 
-MinAge favouring in the MaxAge column implies that MaxAgeMinAges are used when a min age is available and the precise colonisation time is available too. Not favouring MaxAge means MinAges only used **iff** the precise colonisation age is unknown and a min age is available. These are the "\_no" scenarios, which are arguable the most realistic ones from an empirical point of view.
+MinAge favouring in the MaxAge column implies that MaxAgeMinAges are used when a min age is available and the precise colonisation time is available too. Not favouring MaxAge means MinAges only used **iff** the precise colonisation age is unknown and a min age is available. These are the "\_no" scenarios, which are arguably the most realistic ones from an empirical point of view.
 
 Broadly speaking, the data consists of mainly singleton endemic species which colonised the island early. In many cases the colonisation time predates the island age. On scenarios favouring cladogenesis, 33 independent clades are present, while the number increases to 35 on scenarios favouring colonisation. There are 37 species present in total.
 
