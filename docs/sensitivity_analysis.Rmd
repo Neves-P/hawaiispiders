@@ -121,7 +121,6 @@ rate_min_values <- apply(rate_model_rankings, 1, min)
 rate_model_rankings %>% dplyr::mutate_all(~kableExtra::cell_spec(
   .x, color = ifelse(.x %in% rate_min_values, "red", "black"))) %>% 
   knitr::kable(escape = FALSE) %>% kableExtra::kable_styling()
-knitr::kable(t(rate_model_rankings))
 
 m_age_names <- c(
   "m_age_y_c",
