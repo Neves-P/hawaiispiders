@@ -41,10 +41,10 @@ data("o_c_no", package = "hawaiispiders")
 DAISIE::DAISIE_plot_island(o_c_no)
 
 data("y_m_no", package = "hawaiispiders")
-DAISIE::DAISIE_plot_island(y_c_no)
+DAISIE::DAISIE_plot_island(y_m_no)
 
 data("o_m_no", package = "hawaiispiders")
-DAISIE::DAISIE_plot_island(o_c_no)
+DAISIE::DAISIE_plot_island(o_m_no)
 ```
 
 
