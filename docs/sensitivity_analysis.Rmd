@@ -111,10 +111,16 @@ for (i in seq_along(rate_comparisons)) {
   )
 }
 names(rate_sens) <- rate_names
-rate_input_rank_sens <- data.frame(lapply(rate_sens, "[[", 1))
-rate_model_rank_sens <- data.frame(lapply(rate_sens, "[[", 2))
-knitr::kable(rbind(rate_input_rank_sens, rate_model_rank_sens))
 rate_model_rankings <- data.frame(lapply(rate_sens, "[[", 3))
+rate_model_rankings <- as.data.frame(t(rate_model_rankings))
+rownames(rate_model_rankings) <- unlist(
+  lapply(strsplit(x = rownames(rate_model_rankings), "\\."), "[[", 2)
+)
+
+rate_min_values <- apply(rate_model_rankings, 1, min)
+rate_model_rankings %>% dplyr::mutate_all(~kableExtra::cell_spec(
+  .x, color = ifelse(.x %in% rate_min_values, "red", "black"))) %>% 
+  knitr::kable(escape = FALSE) %>% kableExtra::kable_styling()
 knitr::kable(t(rate_model_rankings))
 
 m_age_names <- c(
@@ -127,7 +133,7 @@ m_age_comparisons <- list(
   "m_age_y_c" = c("y_c_max", "y_c_min", "y_c_no"),
   "m_age_y_m" = c("y_m_max", "y_m_min", "y_m_no"),
   "m_age_o_c" = c("o_c_max", "o_c_min", "o_c_no"),
-  "m_age_y_m" = c("o_c_max", "o_c_min", "o_c_no")
+  "m_age_o_m" = c("o_m_max", "o_m_min", "o_m_no")
 )
 m_age_sens <- list()
 for (i in seq_along(m_age_comparisons)) {
@@ -136,11 +142,19 @@ for (i in seq_along(m_age_comparisons)) {
   )
 }
 names(m_age_sens) <- m_age_names
-m_age_input_rank_sens <- data.frame(lapply(m_age_sens, "[[", 1))
-m_age_model_rank_sens <- data.frame(lapply(m_age_sens, "[[", 2))
-knitr::kable(rbind(m_age_input_rank_sens, m_age_model_rank_sens))
 m_age_model_rankings <- data.frame(lapply(m_age_sens, "[[", 3))
+m_age_model_rankings <- as.data.frame(t(m_age_model_rankings))
+rownames(m_age_model_rankings) <- unlist(
+  lapply(strsplit(x = rownames(m_age_model_rankings), "\\."), "[[", 2)
+)
+
+age_min_values <- apply(m_age_model_rankings, 1, min)
+m_age_model_rankings %>% dplyr::mutate_all(~kableExtra::cell_spec(
+  .x, color = ifelse(.x %in% age_min_values, "red", "black"))) %>% 
+  knitr::kable(escape = FALSE) %>% kableExtra::kable_styling()
 knitr::kable(t(m_age_model_rankings))
+
+
 ```
 
 
