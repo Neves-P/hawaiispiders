@@ -5,7 +5,10 @@ output: html_notebook
 
 Here I present the sensitivity of the model to alternate data sets, each corresponding to a specific interpretation of the phylogenetic data or model parameters.
 
-I compiled 12 alternate data sets from the same spider phylogenies. All data sets and the files needed to produce them are included as data objects on this `R` package. The following table describes the differences between each data set.
+I compiled 12 alternate data sets from the same spider phylogenies. All data sets and the files needed to produce them are included as data objects on this `R` package. For the time being, this package is private and access to the raw data is only possible via invite. 
+
+
+The following table describes the differences between each data set.
 
 ## Scenario descriptions
 |Scenario|Island Age|Favour cladogenesis|Favour MaxAge|
@@ -23,9 +26,12 @@ I compiled 12 alternate data sets from the same spider phylogenies. All data set
 | o_m_min|   2.4My  |        No         |     MinAge  |
 | o_m_no |   2.4My  |        No         |     Never   |
 
-MinAge favouring in the MaxAge column implies that MaxAgeMinAges are used when a min age is available and the precise colonisation time is available too. Not favouring MaxAge means MinAges only used **iff** the precise colonisation age is unknown and a min age is available. These are the "\_no" scenarios, which are arguably the most realistic ones from an empirical point of view.
+In scenarios favouring MaxAge the colonisation time is always assumed to be an upper limit, rather than a precise age, even when a precise age can be estimated from the data. While some information is lost in this process, the upside lies in accounting for possible uncertainty when 
+A MinAge functions as a lower boundary for uncertain colonisation times. This lower limit corresponds to the earliest split between two populations of the same species 
+MinAge favouring in the MaxAge column implies that MaxAgeMinAges are used when a min age is available and the precise colonisation time is available too.
+Not (Never) favouring MaxAge means MinAges are used only **iff** the precise colonisation age is unknown and a min age is available. These are the "\_no" scenarios, which are arguably the most realistic ones from an empirical point of view.
 
-Broadly speaking, the data consists of mainly singleton endemic species which colonised the island early. In many cases the colonisation time predates the island age. On scenarios favouring cladogenesis, 33 independent clades are present, while the number increases to 35 on scenarios favouring colonisation. There are 37 species present in total.
+Broadly speaking, the data consists of mainly singleton endemic species which colonised the island early. In many cases the colonisation time predates the island age. On scenarios favouring cladogenesis, 33 independent clades are present, while the number increases to 35 on scenarios favouring colonisation. There are 37 species in total. 7 of all species are known to be present as nonendemics on the island, but have not been sampled in the phylogeny, hence their colonisation time is unknown.
 
 ```{r Plot}
 data("y_c_no", package = "hawaiispiders")
@@ -52,8 +58,6 @@ Fit models are as follows:
 * Constant rate diversity independent model
 * Constant rate diversity dependent model with anagenesis rate fixed to 0
 * Constant rate diversity independent model with anagenesis rate fixed to 0
-* Constant rate diversity dependent model with cladogenesis rate fixed to 0
-* Constant rate diversity independent model with cladogenesis rate fixed to 0
 
 ## Sensitivity
 
@@ -73,8 +77,8 @@ age_comparisons <- list(
   "age_m_max" = c("y_m_max", "o_m_max"),
   "age_c_min" = c("y_c_min", "o_c_min"),
   "age_m_min" = c("y_m_min", "o_m_min"),
-  "age_c_no" = c("y_c_min", "o_c_no"),
-  "age_m_no" = c("y_m_min", "o_m_no")
+  "age_c_no" = c("y_c_no", "o_c_no"),
+  "age_m_no" = c("y_m_no", "o_m_no")
 )
 age_sens <- list()
 for (i in seq_along(age_comparisons)) {
