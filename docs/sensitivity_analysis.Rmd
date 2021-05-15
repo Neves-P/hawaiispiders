@@ -75,16 +75,8 @@ rate_names <- c(
   "rate_o_min",
   "rate_o_no"
 )
-rate_comparisons <- list(
-  "rate_y_max" = c("y_c_max", "y_m_max"),
-  "rate_y_min" = c("y_c_min", "y_m_min"),
-  "rate_y_no" = c("y_c_no", "y_m_no"),
-  "rate_o_max" = c("o_c_max", "o_m_max"),
-  "rate_o_min" = c("o_c_min", "o_m_min"),
-  "rate_o_no" = c("o_c_no", "o_m_no")
-)
 
-rate_comparisons <- c(
+scenarios <- c(
   "y_c_max",
   "y_m_max",
   "y_c_min",
@@ -99,11 +91,24 @@ rate_comparisons <- c(
   "o_m_no"
 )
 
-rate_sens <- DAISIEutils::sensitivity(rate_comparisons, full_output = TRUE)
+rate_sens <- DAISIEutils::sensitivity(scenarios, full_output = TRUE)
 
 # rate_model_rankings <- data.frame(lapply(rate_sens$model_selection_rank, "[", 1))
-rate_sens$model_selection_rank
+model_orders <- c("cr_di", "cr_dd", "cr_di_0laa", "cr_dd_0laa")
+rate_model_rankings <- data.frame(
+  "cr_di" = numeric(),
+  "cr_dd" = numeric(),
+  "cr_di_0laa" = numeric(),
+  "cr_dd_0laa" = numeric()
+)
 
+for (scenario in seq_along(scenarios)) {
+  for (model in model_orders) {
+    rate_model_rankings[scenario, model] <- 
+      rate_sens$model_selection_rank[[scenario]][[model]]
+  }
+}
+rownames(rate_model_rankings) <- scenarios
 
 rate_min_values <- apply(rate_model_rankings, 1, min)
 rate_model_rankings %>% dplyr::mutate_all(~kableExtra::cell_spec(
@@ -112,21 +117,16 @@ rate_model_rankings %>% dplyr::mutate_all(~kableExtra::cell_spec(
 ```
 
 ```{r crdi results, echo=FALSE}
-# cr_di model results
+# best model results
+best_model <- c(rep("cr_di", 10), "cr_dd_0laa", "cr_di")
 row_names <- c()
 cr_model_fits <- data.frame()
-for (i in seq_along(rate_sens)) {
-  for (j in seq_along(rate_sens[[i]][[4]])) {
-    cr_model_fits <- rbind(
-      cr_model_fits, rate_sens[[i]][[4]][[j]]$cr_di
-    )
-  }
-  
-  row_names <- c(row_names, names(rate_sens[[i]][[4]]))
+for (j in seq_along(rate_sens[[4]])) {
+  cr_model_fits <- rbind(
+    cr_model_fits, rate_sens[[4]][[j]][[best_model[j]]]
+  )
 }
-rownames(cr_model_fits) <- row_names
+rownames(cr_model_fits) <- names(rate_sens[[4]])
 
 knitr::kable(cr_model_fits) %>% kableExtra::kable_styling()
 ```
-
-
