@@ -116,7 +116,7 @@ rate_model_rankings %>% dplyr::mutate_all(~kableExtra::cell_spec(
   knitr::kable(escape = FALSE) %>% kableExtra::kable_styling()
 ```
 
-Table 2. Model estimates of the best model
+Table 2. Parameter estimates obtained for the best model of each scenario
 ```{r crdi results, echo=FALSE}
 # best model results
 best_model <- c(rep("cr_di", 10), "cr_dd_0laa", "cr_di")
