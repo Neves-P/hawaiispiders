@@ -65,7 +65,7 @@ After having fit a collection of DAISIE models, senstivity analysis was performe
 
 
 
-Table 1. BIC for each model and dataset. Cells in red correspond to the lowest BIC value of a given dataset, and hence the preferred model. 
+**Table 1. BIC for each model and dataset. Cells in red correspond to the lowest BIC value of a given dataset, and hence the preferred model.**
 ```{r Sensitivity MaxAge, echo=FALSE}
 rate_names <- c(
   "rate_y_max",
@@ -116,7 +116,7 @@ rate_model_rankings %>% dplyr::mutate_all(~kableExtra::cell_spec(
   knitr::kable(escape = FALSE) %>% kableExtra::kable_styling()
 ```
 
-Table 2. Parameter estimates obtained for the best model of each scenario
+**Table 2. Parameter estimates obtained for the best model of each scenario.**
 ```{r crdi results, echo=FALSE}
 # best model results
 best_model <- c(rep("cr_di", 10), "cr_dd_0laa", "cr_di")
@@ -132,6 +132,7 @@ rownames(cr_model_fits) <- names(rate_sens[[4]])
 knitr::kable(cr_model_fits) %>% kableExtra::kable_styling()
 ```
 
+# Discussion
 The constant rate diversity independent model is chosen as the best model for nearly all scenarios, with the exception of the o_c_no scenario. A more thorough analysis is needed to confirm the validity of model fitting in this instance. 
 
 Overall, there appears to be no signature of diversity dependence. Higher values of extinction are estimated in models favouring uncertain colonisation times and a higher island age, suggesting these assumptions can lead to different conclusions. Thus, care should be taken when fist constructing data sets so as to avoid at times erroneous interpretations. A thorough assessment of this impac ton these data may serve as illustrative example of the importance of model assumptions and data pre-processing.
