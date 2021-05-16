@@ -26,8 +26,8 @@ The following table describes the differences between each data set.
 | o_m_min|   2.4My  |        No         |     MinAge  |
 | o_m_no |   2.4My  |        No         |     Never   |
 
-In scenarios favouring MaxAge the colonisation time is always assumed to be an upper limit, rather than a precise age, even when a precise age can be estimated from the data. While some information is lost in this process, the upside lies in accounting for possible uncertainty when 
-A MinAge functions as a lower boundary for uncertain colonisation times. This lower limit corresponds to the earliest split between two populations of the same species 
+In scenarios favouring MaxAge the colonisation time is always assumed to be an upper limit, rather than a precise age, even when a precise age can be estimated from the data. While some information is lost in this process, the upside lies in accounting for possible uncertainty when inferring the phylogeny or interpreting it for the data pre processing step.
+A MinAge functions as a lower boundary for uncertain colonisation times. This lower limit corresponds to the earliest split between two populations of the same species. This ensures that uncertain colonisations (i.e., those considered MaxAge) have both an upper (MaxAge) and lower (MinAge) boundary, thus decreasing the assumed uncertainty in the phylogeny.
 MinAge favouring in the MaxAge column implies that MaxAgeMinAges are used when a min age is available and the precise colonisation time is available too.
 Not (never) favouring MaxAge means MinAges are used only **iff** the precise colonisation age is unknown and a min age is available. These are the "\_no" scenarios, which are arguably the most realistic ones from an empirical point of view.
 
@@ -46,7 +46,7 @@ DAISIE::DAISIE_plot_island(y_m_no)
 data("o_m_no", package = "hawaiispiders")
 DAISIE::DAISIE_plot_island(o_m_no)
 ```
-
+**Figures 1 to 4. Input island data plots with all colonising lineages. Fig 1. y_c_no scenario; Fig 2. o_c_no scenario; Fig 3. y_m_no scenario; Fig 4. o_m_no scenario**
 
 
 ## Model fitting
