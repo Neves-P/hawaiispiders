@@ -259,14 +259,14 @@ plot_stt <- function(
     )
   )
   graphics::polygon(c(stt$stt_average[, "Time"], rev(stt$stt_average[, "Time"])), c(stt$stt_q0.025[, "Total"] +
-                                                                                      1, rev(stt$stt_q0.975[, "Total"] + 1)), col = "light grey", border = NA)
+                                                                                      1, rev(stt$stt_q0.975[, "Total"] + 1)), col = "#8E9775", border = NA)
   graphics::polygon(c(stt$stt_average[, "Time"], rev(stt$stt_average[, "Time"])), c(stt$stt_q0.25[, "Total"] +
-                                                                                      1, rev(stt$stt_q0.75[, "Total"] + 1)), col = "#586444", border = NA)
+                                                                                      1, rev(stt$stt_q0.75[, "Total"] + 1)), col = "#4A503D", border = NA)
   graphics::lines(stt$stt_average[, "Time"], stt$stt_average[, "Total"] + 1, lwd = 2)
   graphics::lines(stt$stt_average[, "Time"], stt$stt_average[, "nI"] + 1, lwd = 2, col = "cyan3")
-  graphics::lines(stt$stt_average[, "Time"], stt$stt_average[, "Endemic"] + 1, lwd = 2, col = "#586444")
+  graphics::lines(stt$stt_average[, "Time"], stt$stt_average[, "Endemic"] + 1, lwd = 2, col = "#E28F83")
   legend_names <- c("Total", "Non-endemic", "Endemic")
-  legend_colors <- c("black", "cyan3", "#586444")
+  legend_colors <- c("black", "cyan3", "#E28F83")
   graphics::legend(
     "bottomright", legend_names, lty = 1, lwd = 2,
     col = legend_colors, cex = 1.2, border = NA, bty = "n"
