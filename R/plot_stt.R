@@ -37,16 +37,16 @@ convert_to_classic_plot <- function(simulation_outputs) {
   stt_q0_75_all <- apply(complete_arr, c(1, 2), stats::quantile, 0.75)
   stt_q0_975_all <- apply(complete_arr, c(1, 2), stats::quantile, 0.975)
   colnames(stt_average_all) <- c("Time", "nI", "nA", "nC", "Endemic", "Total")
-  colnames(stt_q0.025_all) <- c("Time", "nI", "nA", "nC", "Endemic", "Total")
-  colnames(stt_q0.25_all) <- c("Time", "nI", "nA", "nC", "Endemic", "Total")
-  colnames(stt_q0.75_all) <- c("Time", "nI", "nA", "nC", "Endemic", "Total")
-  colnames(stt_q0.975_all) <- c("Time", "nI", "nA", "nC", "Endemic", "Total")
+  colnames(stt_q0_025_all) <- c("Time", "nI", "nA", "nC", "Endemic", "Total")
+  colnames(stt_q0_25_all) <- c("Time", "nI", "nA", "nC", "Endemic", "Total")
+  colnames(stt_q0_75_all) <- c("Time", "nI", "nA", "nC", "Endemic", "Total")
+  colnames(stt_q0_975_all) <- c("Time", "nI", "nA", "nC", "Endemic", "Total")
   all_species <- list(
     stt_average = stt_average_all,
-    stt_q0.025 = stt_q0.025_all,
-    stt_q0.25 = stt_q0.25_all,
-    stt_q0.75 = stt_q0.75_all,
-    stt_q0.975 = stt_q0.975_all
+    stt_q0.025 = stt_q0_025_all,
+    stt_q0.25 = stt_q0_25_all,
+    stt_q0.75 = stt_q0_75_all,
+    stt_q0.975 = stt_q0_975_all
   )
   return(list(
     all_species = all_species
