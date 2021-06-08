@@ -1,7 +1,8 @@
 ## code to prepare `o_c_min_datable` dataset goes here
 
 file_path <- system.file("extdata", "o_c_min.csv",
-                         package = "hawaiispiders")
+  package = "hawaiispiders"
+)
 o_c_min_datable <- readr::read_delim(
   file_path,
   ";",
