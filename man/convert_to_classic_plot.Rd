@@ -22,6 +22,5 @@ utils::data("islands_1type_1000reps", package = "DAISIE")
 simulation_outuputs <- hawaiispiders:::convert_to_classic_plot(
   islands_1type_1000reps
 )
-
 }
 \keyword{internal}

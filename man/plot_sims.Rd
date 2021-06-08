@@ -27,12 +27,12 @@ This is an alternative colour scheme with minor modifications from
 simulations were ran with \code{sample_freq} other than \code{Inf} and
 }
 \examples{
+
 ### Plot islands with single process (only one type of species)
 utils::data(islands_1type_1000reps, package = "DAISIE")
 plot_sims(
   island_replicates = islands_1type_1000reps
 )
-
 }
 \references{
 Valente, L.M., A.B. Phillimore and R.S. Etienne (2015).

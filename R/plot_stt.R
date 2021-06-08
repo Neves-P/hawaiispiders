@@ -32,10 +32,10 @@ convert_to_classic_plot <- function(simulation_outputs) {
   }
   stt_average_all <- apply(complete_arr, c(1, 2), stats::median)
 
-  stt_q0.025_all <- apply(complete_arr, c(1, 2), stats::quantile, 0.025)
-  stt_q0.25_all <- apply(complete_arr, c(1, 2), stats::quantile, 0.25)
-  stt_q0.75_all <- apply(complete_arr, c(1, 2), stats::quantile, 0.75)
-  stt_q0.975_all <- apply(complete_arr, c(1, 2), stats::quantile, 0.975)
+  stt_q0_025_all <- apply(complete_arr, c(1, 2), stats::quantile, 0.025)
+  stt_q0_25_all <- apply(complete_arr, c(1, 2), stats::quantile, 0.25)
+  stt_q0_75_all <- apply(complete_arr, c(1, 2), stats::quantile, 0.75)
+  stt_q0_975_all <- apply(complete_arr, c(1, 2), stats::quantile, 0.975)
   colnames(stt_average_all) <- c("Time", "nI", "nA", "nC", "Endemic", "Total")
   colnames(stt_q0.025_all) <- c("Time", "nI", "nA", "nC", "Endemic", "Total")
   colnames(stt_q0.25_all) <- c("Time", "nI", "nA", "nC", "Endemic", "Total")
