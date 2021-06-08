@@ -23,13 +23,14 @@ Suggests:
     DDD,
     DAISIEutils (>= 1.0.0),
     readr,
-    testthat (>= 3.0.0)
+    testthat (>= 3.0.0),
+    lintr
 Depends: 
     R (>= 2.10)
 Imports: 
     testit,
     devtools
-Remotes:  
+Remotes: 
     rsetienne/DAISIE@v4.0.2,
     tece-lab/DAISIEutils
 Config/testthat/edition: 3
