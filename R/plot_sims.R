@@ -1,13 +1,15 @@
 #' @title Plot island species-through-time (STT) plots
-#' @description Produces STT plots. If only one type of species is present in
-#' the simulated islands, STT is plotted for all species. If two types are
-#' present, three plots are produced: STT for all, STT for type 1 and STT
-#' for type 2.
+#' @description Produces STT plots.
 #'
 #' R plots with number of total, endemic and non-endemic STTs for different
 #' types of species for the entire time span the islands were simulated.
-#' 2.5-97.5th percentiles are plotted in light grey, 25-75th percentiles
-#' plotted in dark grey.
+#' 2.5-97.5th percentiles are plotted in light green, 25-75th percentiles
+#' plotted in dark green.
+#'
+#' @note
+#' This is an alternative colour scheme with minor modifications from
+#' [DAISIE::DAISIE_plot_sims()]. This version is simplified and always assumes
+#' simulations were ran with `sample_freq` other than `Inf` and
 #'
 #' @inheritParams default_params_doc
 #'
@@ -19,42 +21,21 @@
 #' @keywords models
 #' @export
 #' @examples
-#'
-#'
+
 #' ### Plot islands with single process (only one type of species)
-#' utils::data(islands_1type_1000reps)
+#' utils::data(islands_1type_1000reps, package = "DAISIE")
 #' plot_sims(
 #'   island_replicates = islands_1type_1000reps
-#'   )
-#'
-#'
-#' ### Plot island with type 1 and type 2
-#' utils::data(islands_2types_1000reps)
-#' plot_sims(
-#'   island_replicates = islands_2types_1000reps
-#'   )
-#'
-#'
+#' )
 #'
 plot_sims <- function(
-  island_replicates,
-  type = "all_species",
-  sample_freq = 25,
-  trait_pars = NULL
+  island_replicates
 ) {
   time <- max(island_replicates[[1]][[1]]$stt_all[, 1])
-  if (sample_freq != Inf) {
     # Prepare dataset
-    plot_lists <- convert_to_classic_plot(island_replicates,
-                                          trait_pars = trait_pars)
-  } else {
-    stop("Plotting STT with sample_freq = Inf not yet available. \n")
-  }
-  if (type == "all") {
+    plot_lists <- convert_to_classic_plot(island_replicates)
     types <- names(plot_lists)
-  } else {
-    types <- type
-  }
+
   num_plots <- sum(!sapply(plot_lists[types], FUN = is.null))
   graphics::par(mfrow = c(1, num_plots))
   for (type_here in types) {

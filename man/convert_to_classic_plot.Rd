@@ -4,7 +4,7 @@
 \alias{convert_to_classic_plot}
 \title{Prepare input for stt}
 \usage{
-convert_to_classic_plot(simulation_outputs, trait_pars = NULL)
+convert_to_classic_plot(simulation_outputs)
 }
 \value{
 a list with wrangled data to be used for plotting STT plots with
@@ -13,12 +13,15 @@ plot_stt
 \description{
 Prepare input for stt
 }
+\note{
+This function is taken from \code{\link[DAISIE:DAISIE-package]{DAISIE::DAISIE-package}} and simplified, as it
+is not exported there.
+}
 \examples{
 utils::data("islands_1type_1000reps", package = "DAISIE")
-simulation_outuputs <- DAISIE:::convert_to_classic_plot(
-islands_1type_1000reps
+simulation_outuputs <- hawaiispiders:::convert_to_classic_plot(
+  islands_1type_1000reps
 )
-
 
 }
 \keyword{internal}

@@ -2,13 +2,19 @@
 % Please edit documentation in R/plot_stt.R
 \name{plot_stt}
 \alias{plot_stt}
-\title{Create the Species-Through-Time plot. This is used to visualize
-the output of sim functions}
+\title{Create the Species-Through-Time plot}
 \usage{
 plot_stt(time, plot_lists = plot_lists, type = type)
 }
 \description{
-Create the Species-Through-Time plot. This is used to visualize
-the output of sim functions
+This is used to visualize the output of sim functions.
+}
+\note{
+This function is modified from \link[DAISIE:DAISIE_plot_stt]{DAISIE::DAISIE_plot_stt}. The location
+of the legend is shifted to the bottom right-hand side and the grey colour
+scheme is replaced by a green one.
+}
+\author{
+Luis Valente, Pedro Neves
 }
 \keyword{internal}

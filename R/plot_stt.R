@@ -4,55 +4,33 @@
 #'
 #' @examples
 #' utils::data("islands_1type_1000reps", package = "DAISIE")
-#' simulation_outuputs <- DAISIE:::convert_to_classic_plot(
-#' islands_1type_1000reps
+#' simulation_outuputs <- hawaiispiders:::convert_to_classic_plot(
+#'   islands_1type_1000reps
 #' )
 #'
-#'
+#' @note
+#' This function is taken from [`DAISIE::DAISIE-package`] and simplified, as it
+#' is not exported there.
 #' @return a list with wrangled data to be used for plotting STT plots with
 #' plot_stt
 #' @keywords internal
-convert_to_classic_plot <- function(simulation_outputs,
-                                           trait_pars = NULL) {
+convert_to_classic_plot <- function(simulation_outputs) {
 
   replicates <- length(simulation_outputs)
   ### STT ALL species
   s_freq <- length(simulation_outputs[[1]][[1]]$stt_all[, 1])
   complete_arr <- array(dim = c(s_freq, 6, replicates))
   for (x in 1:replicates) {
-    if(is.null(trait_pars)){
-      sum_endemics <- simulation_outputs[[x]][[1]]$stt_all[, "nA"] +
-        simulation_outputs[[x]][[1]]$stt_all[, "nC"]
-      total <- simulation_outputs[[x]][[1]]$stt_all[, "nA"] +
-        simulation_outputs[[x]][[1]]$stt_all[, "nC"] +
-        simulation_outputs[[x]][[1]]$stt_all[, "nI"]
-      complete_arr[, , x] <- cbind(simulation_outputs[[x]][[1]]$stt_all[, c("Time", "nI", "nA", "nC")],
-                                   sum_endemics,
-                                   total)
-    }else{
-      sum_endemics <- simulation_outputs[[x]][[1]]$stt_all[, "nA"] +
-        simulation_outputs[[x]][[1]]$stt_all[, "nC"] +
-        simulation_outputs[[x]][[1]]$stt_all[, "nA2"] +
-        simulation_outputs[[x]][[1]]$stt_all[, "nC2"]
-      total <- simulation_outputs[[x]][[1]]$stt_all[, "nA"] +
-        simulation_outputs[[x]][[1]]$stt_all[, "nC"] +
-        simulation_outputs[[x]][[1]]$stt_all[, "nI"] +
-        simulation_outputs[[x]][[1]]$stt_all[, "nA2"] +
-        simulation_outputs[[x]][[1]]$stt_all[, "nC2"] +
-        simulation_outputs[[x]][[1]]$stt_all[, "nI2"]
-      nI <- simulation_outputs[[x]][[1]]$stt_all[, "nI"] +
-        simulation_outputs[[x]][[1]]$stt_all[, "nI2"]
-      nA <- simulation_outputs[[x]][[1]]$stt_all[, "nA"] +
-        simulation_outputs[[x]][[1]]$stt_all[, "nA2"]
-      nC <- simulation_outputs[[x]][[1]]$stt_all[, "nC"] +
-        simulation_outputs[[x]][[1]]$stt_all[, "nC2"]
-      complete_arr[,,x]<-cbind(simulation_outputs[[x]][[1]]$stt_all[, 'Time'],
-                               nI,
-                               nA,
-                               nC,
-                               sum_endemics,
-                               total)
-    }
+
+    sum_endemics <- simulation_outputs[[x]][[1]]$stt_all[, "nA"] +
+      simulation_outputs[[x]][[1]]$stt_all[, "nC"]
+    total <- simulation_outputs[[x]][[1]]$stt_all[, "nA"] +
+      simulation_outputs[[x]][[1]]$stt_all[, "nC"] +
+      simulation_outputs[[x]][[1]]$stt_all[, "nI"]
+    complete_arr[, , x] <- cbind(simulation_outputs[[x]][[1]]$stt_all[, c("Time", "nI", "nA", "nC")],
+                                 sum_endemics,
+                                 total)
+
   }
   stt_average_all <- apply(complete_arr, c(1, 2), stats::median)
 
@@ -72,167 +50,21 @@ convert_to_classic_plot <- function(simulation_outputs,
     stt_q0.75 = stt_q0.75_all,
     stt_q0.975 = stt_q0.975_all
   )
-  if (is.null(simulation_outputs[[1]][[1]]$stt_type1) == FALSE) {
-    ### STT TYPE1
-    s_freq <- length(simulation_outputs[[1]][[1]]$stt_type1[, 1])
-    complete_arr <- array(dim = c(s_freq, 7, replicates))
-    for (x in 1:replicates) {
-      sum_endemics <- simulation_outputs[[x]][[1]]$stt_type1[, "nA"] +
-        simulation_outputs[[x]][[1]]$stt_type1[, "nC"]
-      total <- simulation_outputs[[x]][[1]]$stt_type1[, "nA"] +
-        simulation_outputs[[x]][[1]]$stt_type1[, "nC"] +
-        simulation_outputs[[x]][[1]]$stt_type1[, "nI"]
-      complete_arr[, , x] <- cbind(simulation_outputs[[x]][[1]]$stt_type1,
-                                   sum_endemics,
-                                   total)
-    }
-    stt_average_type1 <- apply(complete_arr, c(1, 2), stats::median)
-    stt_q0.025_type1 <- apply(complete_arr, c(1, 2), stats::quantile, 0.025)
-    stt_q0.25_type1 <- apply(complete_arr, c(1, 2), stats::quantile, 0.25)
-    stt_q0.75_type1 <- apply(complete_arr, c(1, 2), stats::quantile, 0.75)
-    stt_q0.975_type1 <- apply(complete_arr, c(1, 2), stats::quantile, 0.975)
-    colnames(stt_average_type1) <- c(
-      "Time",
-      "nI",
-      "nA",
-      "nC",
-      "present",
-      "Endemic",
-      "Total"
-    )
-    colnames(stt_q0.025_type1) <- c(
-      "Time",
-      "nI",
-      "nA",
-      "nC",
-      "present",
-      "Endemic",
-      "Total"
-    )
-    colnames(stt_q0.25_type1) <- c(
-      "Time",
-      "nI",
-      "nA",
-      "nC",
-      "present",
-      "Endemic",
-      "Total"
-    )
-    colnames(stt_q0.75_type1) <- c(
-      "Time",
-      "nI",
-      "nA",
-      "nC",
-      "present",
-      "Endemic",
-      "Total"
-    )
-    colnames(stt_q0.975_type1) <- c(
-      "Time",
-      "nI",
-      "nA",
-      "nC",
-      "present",
-      "Endemic",
-      "Total"
-    )
-    type1_species <- list(
-      stt_average = stt_average_type1,
-      stt_q0.025 = stt_q0.025_type1,
-      stt_q0.25 = stt_q0.25_type1,
-      stt_q0.75 = stt_q0.75_type1,
-      stt_q0.975 = stt_q0.975_type1
-    )
-    ### STT TYPE2
-    s_freq <- length(simulation_outputs[[1]][[1]]$stt_type2[, 1])
-    complete_arr <- array(dim = c(s_freq, 7, replicates))
-    for (x in 1:replicates) {
-      sum_endemics <- simulation_outputs[[x]][[1]]$stt_type2[, "nA"] +
-        simulation_outputs[[x]][[1]]$stt_type2[, "nC"]
-      total <- simulation_outputs[[x]][[1]]$stt_type2[, "nA"] +
-        simulation_outputs[[x]][[1]]$stt_type2[, "nC"] +
-        simulation_outputs[[x]][[1]]$stt_type2[, "nI"]
-      complete_arr[, , x] <- cbind(
-        simulation_outputs[[x]][[1]]$stt_type2,
-        sum_endemics,
-        total
-      )
-    }
-    stt_average_type2 <- apply(complete_arr, c(1, 2), stats::median)
-    stt_q0.025_type2 <- apply(complete_arr, c(1, 2), stats::quantile, 0.025)
-    stt_q0.25_type2 <- apply(complete_arr, c(1, 2), stats::quantile, 0.25)
-    stt_q0.75_type2 <- apply(complete_arr, c(1, 2), stats::quantile, 0.75)
-    stt_q0.975_type2 <- apply(complete_arr, c(1, 2), stats::quantile, 0.975)
-    colnames(stt_average_type2) <- c(
-      "Time",
-      "nI",
-      "nA",
-      "nC",
-      "present",
-      "Endemic",
-      "Total"
-    )
-    colnames(stt_q0.025_type2) <- c(
-      "Time",
-      "nI",
-      "nA",
-      "nC",
-      "present",
-      "Endemic",
-      "Total"
-    )
-    colnames(stt_q0.25_type2) <- c(
-      "Time",
-      "nI",
-      "nA",
-      "nC",
-      "present",
-      "Endemic",
-      "Total"
-    )
-    colnames(stt_q0.75_type2) <- c(
-      "Time",
-      "nI",
-      "nA",
-      "nC",
-      "present",
-      "Endemic",
-      "Total"
-    )
-    colnames(stt_q0.975_type2) <- c(
-      "Time",
-      "nI",
-      "nA",
-      "nC",
-      "present",
-      "Endemic",
-      "Total"
-    )
-    type2_species <- list(
-      stt_average = stt_average_type2,
-      stt_q0.025 = stt_q0.025_type2,
-      stt_q0.25 = stt_q0.25_type2,
-      stt_q0.75 = stt_q0.75_type2,
-      stt_q0.975 = stt_q0.975_type2
-    )
-    return(list(
-      all_species = all_species,
-      type1_species = type1_species,
-      type2_species = type2_species
-    )
-    )
-  } else {
-    return(list(
-      all_species = all_species,
-      type1_species = NULL,
-      type2_species = NULL)
-    )
-  }
+  return(list(
+    all_species = all_species)
+  )
+
 }
 
-#' Create the Species-Through-Time plot. This is used to visualize
-#' the output of sim functions
+#' Create the Species-Through-Time plot
 #'
+#' This is used to visualize the output of sim functions.
+#'
+#' @note
+#' This function is modified from [DAISIE::DAISIE_plot_stt]. The location
+#' of the legend is shifted to the bottom right-hand side and the grey colour
+#' scheme is replaced by a green one.
+#' @author Luis Valente, Pedro Neves
 #' @inheritParams default_params_doc
 #'
 #' @keywords internal
