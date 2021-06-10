@@ -23,16 +23,16 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 ## Submit jobs (use last word ##* to get jobid for afterok)
-sbatch --job-name=o_c_max DAISIEutils/bash/submit_run_daisie_ml.sh o_c_max cr_di hawaiispiders 1
+sbatch --job-name=Spiders DAISIEutils/bash/submit_run_daisie_ml.sh o_c_max cr_di hawaiispiders 1
 
-sbatch --dependency=singleton --job-name=o_c_max DAISIEutils/bash/submit_run_daisie_ml.sh o_c_max cr_dd hawaiispiders 1
+sbatch --dependency=singleton --job-name=Spiders DAISIEutils/bash/submit_run_daisie_ml.sh o_c_max cr_dd hawaiispiders 1
 
-sbatch --dependency=singleton --job-name=o_c_max DAISIEutils/bash/submit_run_daisie_ml.sh o_c_max cr_di hawaiispiders 1
+sbatch --dependency=singleton --job-name=Spiders DAISIEutils/bash/submit_run_daisie_ml.sh o_c_max cr_di hawaiispiders 1
 
-sbatch --dependency=singleton --job-name=o_c_max DAISIEutils/bash/submit_run_daisie_ml.sh o_c_max cr_di_0laa hawaiispiders 1
+sbatch --dependency=singleton --job-name=Spiders DAISIEutils/bash/submit_run_daisie_ml.sh o_c_max cr_di_0laa hawaiispiders 1
 
-sbatch --dependency=singleton --job-name=o_c_max DAISIEutils/bash/submit_run_daisie_ml.sh o_c_max cr_dd_0laa hawaiispiders 1
+sbatch --dependency=singleton --job-name=Spiders DAISIEutils/bash/submit_run_daisie_ml.sh o_c_max cr_dd_0laa hawaiispiders 1
 
-sbatch --dependency=singleton --job-name=o_c_max DAISIEutils/bash/submit_run_daisie_ml.sh o_c_max cr_dd_0lac hawaiispiders 1
+sbatch --dependency=singleton --job-name=Spiders DAISIEutils/bash/submit_run_daisie_ml.sh o_c_max cr_dd_0lac hawaiispiders 1
 
-sbatch --dependency=singleton --job-name=o_c_max DAISIEutils/bash/submit_run_daisie_ml.sh o_c_max cr_di_0lac hawaiispiders 1
+sbatch --dependency=singleton --job-name=Spiders DAISIEutils/bash/submit_run_daisie_ml.sh o_c_max cr_di_0lac hawaiispiders 1
