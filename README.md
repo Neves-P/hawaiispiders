@@ -26,9 +26,9 @@ remotes::install_github("Neves-P/hawaiispiders")
 This package will only contain data files used for the study, as well as
 downstream data visualization and analyses applied on corresponding
 DAISIE model results. See the [DAISIE R package
-(v3.2.1)](https://github.com/rsetienne/DAISIE) for the the
+(v4.0.2)](https://github.com/rsetienne/DAISIE) for the the
 implementation of the model and [DAISIEutils
-(v1.0.0)](https://github.com/tece-lab/DAISIEutils) for the study
+(v1.1.0)](https://github.com/tece-lab/DAISIEutils) for the study
 pipeline implementation.
 
 ## Environment
