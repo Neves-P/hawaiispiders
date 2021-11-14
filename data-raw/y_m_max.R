@@ -5,7 +5,7 @@ data("y_m_max_datatable")
 y_m_max <- DAISIE::DAISIE_dataprep(
   y_m_max_datatable,
   island_age = 1.2,
-  M = 165
+  M = 168
 )
 
 usethis::use_data(y_m_max, overwrite = TRUE)
