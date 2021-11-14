@@ -5,7 +5,7 @@ data("o_m_no_datatable")
 o_m_no <- DAISIE::DAISIE_dataprep(
   o_m_no_datatable,
   island_age = 2.4,
-  M = 165
+  M = 168
 )
 
 usethis::use_data(o_m_no, overwrite = TRUE)
