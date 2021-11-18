@@ -6,9 +6,7 @@
 \alias{hawaiispiders-package}
 \title{hawaiispiders: Analyse Spider Evolution on Hawaii Island}
 \description{
-Using the DAISIE framework, runs macroevolutionary analyses on the
-    macroevolution of spider lineages on the Hawaii island, also known as Big 
-    Island. Explicitly accounts for the geodynamics of Hawaii.
+Using the DAISIE framework, runs macroevolutionary analyses on the macroevolution of spider lineages on the Hawaii island, also known as Big Island. Explicitly accounts for the geodynamics of Hawaii.
 }
 \seealso{
 Useful links:
