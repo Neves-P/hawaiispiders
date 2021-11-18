@@ -31,6 +31,6 @@ Imports:
     testit,
     devtools
 Remotes: 
-    rsetienne/DAISIE@e894c311cbf0fb0734c8e045eeb9a10f6c1a7791,
+    rsetienne/DAISIE@v4.0.5,
     tece-lab/DAISIEutils
 Config/testthat/edition: 3
