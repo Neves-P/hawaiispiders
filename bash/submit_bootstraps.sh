@@ -24,37 +24,3 @@
 
 
 sbatch --job-name=b-spiders DAISIEutils/bash/submit_bootstrap.sh o_c_max cr_dd hawaiispiders 1
-
-sbatch --dependency=singleton --job-name=b-spiders DAISIEutils/bash/submit_bootstrap.sh o_c_max cr_dd_0lac hawaiispiders 1
-
-sbatch --dependency=singleton --job-name=b-spiders DAISIEutils/bash/submit_bootstrap.sh o_c_min cr_dd hawaiispiders 1
-
-sbatch --dependency=singleton --job-name=b-spiders DAISIEutils/bash/submit_bootstrap.sh o_c_min cr_dd_0lac hawaiispiders 1
-
-sbatch --dependency=singleton --job-name=b-spiders DAISIEutils/bash/submit_bootstrap.sh o_c_no cr_dd hawaiispiders 1
-
-sbatch --dependency=singleton --job-name=b-spiders DAISIEutils/bash/submit_bootstrap.sh o_c_no cr_dd_0lac hawaiispiders 1
-
-sbatch --dependency=singleton --job-name=b-spiders DAISIEutils/bash/submit_bootstrap.sh y_c_max cr_dd hawaiispiders 1
-
-sbatch --dependency=singleton --job-name=b-spiders DAISIEutils/bash/submit_bootstrap.sh y_c_max cr_dd_0lac hawaiispiders 1
-
-sbatch --dependency=singleton --job-name=b-spiders DAISIEutils/bash/submit_bootstrap.sh y_c_min cr_dd hawaiispiders 1
-
-sbatch --dependency=singleton --job-name=b-spiders DAISIEutils/bash/submit_bootstrap.sh y_c_min cr_dd_0lac hawaiispiders 1
-
-sbatch --dependency=singleton --job-name=b-spiders DAISIEutils/bash/submit_bootstrap.sh y_c_no cr_dd hawaiispiders 1
-
-sbatch --dependency=singleton --job-name=b-spiders DAISIEutils/bash/submit_bootstrap.sh y_c_no cr_dd_0lac hawaiispiders 1
-
-sbatch --dependency=singleton --job-name=b-spiders DAISIEutils/bash/submit_bootstrap.sh a_c_max cr_dd hawaiispiders 1
-
-sbatch --dependency=singleton --job-name=b-spiders DAISIEutils/bash/submit_bootstrap.sh a_c_max cr_dd_0lac hawaiispiders 1
-
-sbatch --dependency=singleton --job-name=b-spiders DAISIEutils/bash/submit_bootstrap.sh a_c_min cr_dd hawaiispiders 1
-
-sbatch --dependency=singleton --job-name=b-spiders DAISIEutils/bash/submit_bootstrap.sh a_c_min cr_dd_0lac hawaiispiders 1
-
-sbatch --dependency=singleton --job-name=b-spiders DAISIEutils/bash/submit_bootstrap.sh a_c_no cr_dd hawaiispiders 1
-
-sbatch --dependency=singleton --job-name=b-spiders DAISIEutils/bash/submit_bootstrap.sh a_c_no cr_dd_0lac hawaiispiders 1
