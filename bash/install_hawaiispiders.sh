@@ -11,5 +11,5 @@ mkdir -p logs
 ml R
 
 Rscript -e 'remotes::install_github("rsetienne/DAISIE")'
-Rscript -e 'remotes::install_github("tece-lab/DAISIEutils")'
+Rscript -e 'remotes::install_github("tece-lab/DAISIEutils@4.0.5")'
 Rscript -e 'remotes::install_github("Neves-P/hawaiispiders")'
