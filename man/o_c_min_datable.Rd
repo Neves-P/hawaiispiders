@@ -5,7 +5,7 @@
 \alias{o_c_min_datable}
 \title{DAISIE datatable of spiders on Hawaii (Big Island) - o_c_min}
 \format{
-A tibble with 33 rows and 5 variables:
+A tibble with 50 rows and 5 variables:
 \describe{
 \item{Clade_name}{character vector with name of each lineage}
 \item{Status}{character vector with endemicity status. Can be

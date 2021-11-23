@@ -6,7 +6,7 @@
 #' Hawaiian archipelago in general. This dataset favours cladogenesis and
 #' assumes MaxAge for most clades. Island age is set to 1.2My.
 #'
-#' @format A tibble with 33 rows and 5 variables:
+#' @format A tibble with 50 rows and 5 variables:
 #' \describe{
 #'   \item{Clade_name}{character vector with name of each lineage}
 #'   \item{Status}{character vector with endemicity status. Can be
@@ -34,7 +34,7 @@
 #' dataset favours cladogenesis and assumes MaxAge for most clades.
 #' Island age is set to 1.2My.
 #'
-#' @format A list with 34 elements. The first one contains the `$island_age`,
+#' @format A list with 53 elements. The first one contains the `$island_age`,
 #'   a numeric with the island age in Ma, and `$not_present`, a numeric with the
 #'   number of known species on the archipelago not present on Big Island.
 #'
@@ -74,7 +74,7 @@
 #' Hawaiian archipelago in general. This dataset favours cladogenesis and does
 #' not assume MaxAge for most clades. Island age is set to 1.2My.
 #'
-#' @format A tibble with 33 rows and 5 variables:
+#' @format A tibble with 50 rows and 5 variables:
 #' \describe{
 #'   \item{Clade_name}{character vector with name of each lineage}
 #'   \item{Status}{character vector with endemicity status. Can be
@@ -102,7 +102,7 @@
 #' dataset favours cladogenesis and does not assume MaxAge for most clades.
 #' Island age is set to 1.2My.
 #'
-#' @format A list with 34 elements. The first one contains the `$island_age`,
+#' @format A list with 53 elements. The first one contains the `$island_age`,
 #'   a numeric with the island age in Ma, and `$not_present`, a numeric with the
 #'   number of known species on the archipelago not present on Big Island.
 #'
@@ -141,7 +141,7 @@
 #' not assume MaxAge for most clades. MinAge is never used when precise
 #' colonisation time is known. Island age is set to 1.2My.
 #'
-#' @format A tibble with 33 rows and 5 variables:
+#' @format A tibble with 50 rows and 5 variables:
 #' \describe{
 #'   \item{Clade_name}{character vector with name of each lineage}
 #'   \item{Status}{character vector with endemicity status. Can be
@@ -170,7 +170,7 @@
 #' MinAge is never used when precise colonisation time is known. Island age is
 #' set to 1.2My.
 #'
-#' @format A list with 34 elements. The first one contains the `$island_age`,
+#' @format A list with 53 elements. The first one contains the `$island_age`,
 #'   a numeric with the island age in Ma, and `$not_present`, a numeric with the
 #'   number of known species on the archipelago not present on Big Island.
 #'
@@ -209,7 +209,7 @@
 #' Hawaiian archipelago in general. This dataset favours cladogenesis and
 #' assumes MaxAge for most clades. Island age is set to 2.4My.
 #'
-#' @format A tibble with 33 rows and 5 variables:
+#' @format A tibble with 50 rows and 5 variables:
 #' \describe{
 #'   \item{Clade_name}{character vector with name of each lineage}
 #'   \item{Status}{character vector with endemicity status. Can be
@@ -237,7 +237,7 @@
 #' dataset favours cladogenesis and assumes MaxAge for most clades.
 #' Island age is set to 2.4My.
 #'
-#' @format A list with 34 elements. The first one contains the `$island_age`,
+#' @format A list with 53 elements. The first one contains the `$island_age`,
 #'   a numeric with the island age in Ma, and `$not_present`, a numeric with the
 #'   number of known species on the archipelago not present on Big Island.
 #'
@@ -275,7 +275,7 @@
 #' Hawaiian archipelago in general. This dataset favours cladogenesis and
 #' assumes MaxAge for most clades. Island age is set to 2.4My.
 #'
-#' @format A tibble with 33 rows and 5 variables:
+#' @format A tibble with 50 rows and 5 variables:
 #' \describe{
 #'   \item{Clade_name}{character vector with name of each lineage}
 #'   \item{Status}{character vector with endemicity status. Can be
@@ -303,7 +303,7 @@
 #' dataset favours cladogenesis and assumes MaxAge for most clades.
 #' Island age is set to 2.4My.
 #'
-#' @format A list with 34 elements. The first one contains the `$island_age`,
+#' @format A list with 53 elements. The first one contains the `$island_age`,
 #'   a numeric with the island age in Ma, and `$not_present`, a numeric with the
 #'   number of known species on the archipelago not present on Big Island.
 #'
@@ -342,7 +342,7 @@
 #' assumes MaxAge for most clades. MinAge is never used when precise
 #' colonisation time is known. Island age is set to 2.4My.
 #'
-#' @format A tibble with 33 rows and 5 variables:
+#' @format A tibble with 50 rows and 5 variables:
 #' \describe{
 #'   \item{Clade_name}{character vector with name of each lineage}
 #'   \item{Status}{character vector with endemicity status. Can be
@@ -371,7 +371,7 @@
 #' never used when precise colonisation time is known. Island age is set to
 #' 2.4My.
 #'
-#' @format A list with 34 elements. The first one contains the `$island_age`,
+#' @format A list with 53 elements. The first one contains the `$island_age`,
 #'   a numeric with the island age in Ma, and `$not_present`, a numeric with the
 #'   number of known species on the archipelago not present on Big Island.
 #'
@@ -409,7 +409,7 @@
 #' Hawaiian archipelago in general. This dataset favours immigration and
 #' assumes MaxAge for most clades. Island age is set to 1.2My.
 #'
-#' @format A tibble with 35 rows and 5 variables:
+#' @format A tibble with 52 rows and 5 variables:
 #' \describe{
 #'   \item{Clade_name}{character vector with name of each lineage}
 #'   \item{Status}{character vector with endemicity status. Can be
@@ -437,7 +437,7 @@
 #' dataset favours cladogenesis and assumes MaxAge for most clades.
 #' Island age is set to 1.2My.
 #'
-#' @format A list with 34 elements. The first one contains the `$island_age`,
+#' @format A list with 53 elements. The first one contains the `$island_age`,
 #'   a numeric with the island age in Ma, and `$not_present`, a numeric with the
 #'   number of known species on the archipelago not present on Big Island.
 #'
@@ -475,7 +475,7 @@
 #' Hawaiian archipelago in general. This dataset favours immigration and
 #' dos not assume MaxAge for most clades. Island age is set to 1.2My.
 #'
-#' @format A tibble with 35 rows and 5 variables:
+#' @format A tibble with 52 rows and 5 variables:
 #' \describe{
 #'   \item{Clade_name}{character vector with name of each lineage}
 #'   \item{Status}{character vector with endemicity status. Can be
@@ -503,7 +503,7 @@
 #' dataset favours cladogenesis and does not assume MaxAge for most clades.
 #' Island age is set to 1.2My.
 #'
-#' @format A list with 34 elements. The first one contains the `$island_age`,
+#' @format A list with 53 elements. The first one contains the `$island_age`,
 #'   a numeric with the island age in Ma, and `$not_present`, a numeric with the
 #'   number of known species on the archipelago not present on Big Island.
 #'
@@ -542,7 +542,7 @@
 #' dos not assume MaxAge for most clades. MinAge is never used when precise
 #' colonisation time is known. Island age is set to 1.2My.
 #'
-#' @format A tibble with 35 rows and 5 variables:
+#' @format A tibble with 52 rows and 5 variables:
 #' \describe{
 #'   \item{Clade_name}{character vector with name of each lineage}
 #'   \item{Status}{character vector with endemicity status. Can be
@@ -571,7 +571,7 @@
 #' MinAge is never used when precise colonisation time is known. Island age is
 #' set to 1.2My.
 #'
-#' @format A list with 34 elements. The first one contains the `$island_age`,
+#' @format A list with 53 elements. The first one contains the `$island_age`,
 #'   a numeric with the island age in Ma, and `$not_present`, a numeric with the
 #'   number of known species on the archipelago not present on Big Island.
 #'
@@ -609,7 +609,7 @@
 #' Hawaiian archipelago in general. This dataset favours immigration and
 #' assumes MaxAge for most clades. Island age is set to 2.4My.
 #'
-#' @format A tibble with 35 rows and 5 variables:
+#' @format A tibble with 52 rows and 5 variables:
 #' \describe{
 #'   \item{Clade_name}{character vector with name of each lineage}
 #'   \item{Status}{character vector with endemicity status. Can be
@@ -637,7 +637,7 @@
 #' dataset favours cladogenesis and assumes MaxAge for most clades.
 #' Island age is set to 2.4My.
 #'
-#' @format A list with 34 elements. The first one contains the `$island_age`,
+#' @format A list with 53 elements. The first one contains the `$island_age`,
 #'   a numeric with the island age in Ma, and `$not_present`, a numeric with the
 #'   number of known species on the archipelago not present on Big Island.
 #'
@@ -675,7 +675,7 @@
 #' Hawaiian archipelago in general. This dataset favours immigration and
 #' dos not assume MaxAge for most clades. Island age is set to 2.4My.
 #'
-#' @format A tibble with 35 rows and 5 variables:
+#' @format A tibble with 52 rows and 5 variables:
 #' \describe{
 #'   \item{Clade_name}{character vector with name of each lineage}
 #'   \item{Status}{character vector with endemicity status. Can be
@@ -703,7 +703,7 @@
 #' dataset favours cladogenesis and does not assume MaxAge for most clades.
 #' Island age is set to 2.4My.
 #'
-#' @format A list with 34 elements. The first one contains the `$island_age`,
+#' @format A list with 53 elements. The first one contains the `$island_age`,
 #'   a numeric with the island age in Ma, and `$not_present`, a numeric with the
 #'   number of known species on the archipelago not present on Big Island.
 #'
@@ -742,7 +742,7 @@
 #' dos not assume MaxAge for most clades. MinAge is never used when precise
 #' colonisation time is known. Island age is set to 2.4My.
 #'
-#' @format A tibble with 35 rows and 5 variables:
+#' @format A tibble with 52 rows and 5 variables:
 #' \describe{
 #'   \item{Clade_name}{character vector with name of each lineage}
 #'   \item{Status}{character vector with endemicity status. Can be
@@ -771,7 +771,7 @@
 #' MinAge is never used when precise colonisation time is known. Island age is
 #' set to 2.4My.
 #'
-#' @format A list with 34 elements. The first one contains the `$island_age`,
+#' @format A list with 53 elements. The first one contains the `$island_age`,
 #'   a numeric with the island age in Ma, and `$not_present`, a numeric with the
 #'   number of known species on the archipelago not present on Big Island.
 #'
@@ -800,3 +800,403 @@
 #' from multilocus genetic data. Molecular Ecology, 18: 1746-1764.
 #' \doi{10.1111/j.1365-294X.2009.04125.x}
 "o_m_no"
+
+#' DAISIE datatable of spiders on Hawaii (Big Island) - a_c_max
+#'
+#' A dataset containing the colonization and branching times of spiders on Big
+#' Island. This format can be passed to [DAISIE::DAISIE_dataprep()]. Endemicity
+#' status refers strictly to Big Island endemics, and not endemics to the
+#' Hawaiian archipelago in general. This dataset favours cladogenesis and
+#' assumes MaxAge for most clades. Island age is set to 3.6My.
+#'
+#' @format A tibble with 50 rows and 5 variables:
+#' \describe{
+#'   \item{Clade_name}{character vector with name of each lineage}
+#'   \item{Status}{character vector with endemicity status. Can be
+#'   `"Endemic_MaxAge"`, `"NonEndemic_MaxAge"`, `"Endemic_MaxAgeMinAge"` or
+#'   `"NonEndemic_MaxAgeMinAge"`}
+#'   \item{Missing_species}{numeric with the number of known species that are
+#'   missing in the phylogeny}
+#'   \item{Branching_times}{ordered numeric vector with colonisation and
+#'   branching times of each lineage. Can also contain `"MinAges"` when these
+#'   are available}
+#' }
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
+#'   filled in later.
+#' @references
+#' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
+#' colonization history and phylogeography of Hawaiian crab spiders inferred
+#' from multilocus genetic data. Molecular Ecology, 18: 1746-1764.
+#' \doi{10.1111/j.1365-294X.2009.04125.x}
+"a_c_max_datatable"
+
+#' DAISIE datalist of spiders on Hawaii (Big Island) - a_c_max
+#'
+#' A DAISIE datalist as required by [DAISIE::DAISIE_ML()]. Generated by running
+#' [DAISIE::DAISIE_dataprep()] on [a_c_min]. This
+#' dataset favours cladogenesis and assumes MaxAge for most clades.
+#' Island age is set to 3.6My.
+#'
+#' @format A list with 53 elements. The first one contains the `$island_age`,
+#'   a numeric with the island age in Ma, and `$not_present`, a numeric with the
+#'   number of known species on the archipelago not present on Big Island.
+#'
+#'   Each subsequent element of the list is comprised of 5 elements:
+#' \describe{
+#'   \item{$colonist_name}{character vector with name of each lineage.}
+#'   \item{$branching_times}{A decreasingly sorted numeric vector. The first
+#'   element is always the island age. Subsequent elements are either the
+#'   speciation times or information regarding the minimum age at which the
+#'   lineage could have colonised the archipelago.}
+#'   \item{$stac}{A numeric integer from 1 to 9. Defines the status of the
+#'   colonist, which has implications for the maximum likelihood inference.
+#'   See [DAISIE::DAISIE_dataprep] for more details.}
+#'   \item{$mising_species}{A numeric with the known number of missing species
+#'   that are not present in the phylogeny, or cannot otherwise be assigned
+#'   a branching time.}
+#'   \item{$type1or2}{A numeric defining if the clade is of type 1 or 2, for 2
+#'   type analyses. Always set to 1 in this dataset.}
+#'
+#' }
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
+#'   filled in later.
+#' @references
+#' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
+#' colonization history and phylogeography of Hawaiian crab spiders inferred
+#' from multilocus genetic data. Molecular Ecology, 18: 1746-1764.
+#' \doi{10.1111/j.1365-294X.2009.04125.x}
+"a_c_max"
+
+#' DAISIE datatable of spiders on Hawaii (Big Island) - a_c_min
+#'
+#' A dataset containing the colonization and branching times of spiders on Big
+#' Island. This format can be passed to [DAISIE::DAISIE_dataprep()]. Endemicity
+#' status refers strictly to Big Island endemics, and not endemics to the
+#' Hawaiian archipelago in general. This dataset favours cladogenesis and
+#' assumes MaxAge for most clades. Island age is set to 3.6My.
+#'
+#' @format A tibble with 50 rows and 5 variables:
+#' \describe{
+#'   \item{Clade_name}{character vector with name of each lineage}
+#'   \item{Status}{character vector with endemicity status. Can be
+#'   `"Endemic_MaxAge"`, `"NonEndemic_MaxAge"`, `"Endemic_MaxAgeMinAge"` or
+#'   `"NonEndemic_MaxAgeMinAge"`}
+#'   \item{Missing_species}{numeric with the number of known species that are
+#'   missing in the phylogeny}
+#'   \item{Branching_times}{ordered numeric vector with colonisation and
+#'   branching times of each lineage. Can also contain `"MinAges"` when these
+#'   are available}
+#' }
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
+#'   filled in later.
+#' @references
+#' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
+#' colonization history and phylogeography of Hawaiian crab spiders inferred
+#' from multilocus genetic data. Molecular Ecology, 18: 1746-1764.
+#' \doi{10.1111/j.1365-294X.2009.04125.x}
+"a_c_min_datable"
+
+#' DAISIE datalist of spiders on Hawaii (Big Island) - a_c_min
+#'
+#' A DAISIE datalist as required by [DAISIE::DAISIE_ML()]. Generated by running
+#' [DAISIE::DAISIE_dataprep()] on [a_c_min]. This
+#' dataset favours cladogenesis and assumes MaxAge for most clades.
+#' Island age is set to 3.6My.
+#'
+#' @format A list with 53 elements. The first one contains the `$island_age`,
+#'   a numeric with the island age in Ma, and `$not_present`, a numeric with the
+#'   number of known species on the archipelago not present on Big Island.
+#'
+#'   Each subsequent element of the list is comprised of 5 elements:
+#' \describe{
+#'   \item{$colonist_name}{character vector with name of each lineage.}
+#'   \item{$branching_times}{A decreasingly sorted numeric vector. The first
+#'   element is always the island age. Subsequent elements are either the
+#'   speciation times or information regarding the minimum age at which the
+#'   lineage could have colonised the archipelago.}
+#'   \item{$stac}{A numeric integer from 1 to 9. Defines the status of the
+#'   colonist, which has implications for the maximum likelihood inference.
+#'   See [DAISIE::DAISIE_dataprep] for more details.}
+#'   \item{$mising_species}{A numeric with the known number of missing species
+#'   that are not present in the phylogeny, or cannot otherwise be assigned
+#'   a branching time.}
+#'   \item{$type1or2}{A numeric defining if the clade is of type 1 or 2, for 2
+#'   type analyses. Always set to 1 in this dataset.}
+#'
+#' }
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
+#'   filled in later.
+#' @references
+#' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
+#' colonization history and phylogeography of Hawaiian crab spiders inferred
+#' from multilocus genetic data. Molecular Ecology, 18: 1746-1764.
+#' \doi{10.1111/j.1365-294X.2009.04125.x}
+"a_c_min"
+
+#' DAISIE datatable of spiders on Hawaii (Big Island) - a_c_no
+#'
+#' A dataset containing the colonization and branching times of spiders on Big
+#' Island. This format can be passed to [DAISIE::DAISIE_dataprep()]. Endemicity
+#' status refers strictly to Big Island endemics, and not endemics to the
+#' Hawaiian archipelago in general. This dataset favours cladogenesis and
+#' assumes MaxAge for most clades. MinAge is never used when precise
+#' colonisation time is known. Island age is set to 3.6My.
+#'
+#' @format A tibble with 50 rows and 5 variables:
+#' \describe{
+#'   \item{Clade_name}{character vector with name of each lineage}
+#'   \item{Status}{character vector with endemicity status. Can be
+#'   `"Endemic_MaxAge"`, `"NonEndemic_MaxAge"`, `"Endemic_MaxAgeMinAge"` or
+#'   `"NonEndemic_MaxAgeMinAge"`}
+#'   \item{Missing_species}{numeric with the number of known species that are
+#'   missing in the phylogeny}
+#'   \item{Branching_times}{ordered numeric vector with colonisation and
+#'   branching times of each lineage. Can also contain `"MinAges"` when these
+#'   are available}
+#' }
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
+#'   filled in later.
+#' @references
+#' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
+#' colonization history and phylogeography of Hawaiian crab spiders inferred
+#' from multilocus genetic data. Molecular Ecology, 18: 1746-1764.
+#' \doi{10.1111/j.1365-294X.2009.04125.x}
+"a_c_no_datatable"
+
+#' DAISIE datalist of spiders on Hawaii (Big Island) - a_c_no
+#'
+#' A DAISIE datalist as required by [DAISIE::DAISIE_ML()]. Generated by running
+#' [DAISIE::DAISIE_dataprep()] on [a_c_no_datatable]. This
+#' dataset favours cladogenesis and assumes MaxAge for most clades. MinAge is
+#' never used when precise colonisation time is known. Island age is set to
+#' 3.6My.
+#'
+#' @format A list with 53 elements. The first one contains the `$island_age`,
+#'   a numeric with the island age in Ma, and `$not_present`, a numeric with the
+#'   number of known species on the archipelago not present on Big Island.
+#'
+#'   Each subsequent element of the list is comprised of 5 elements:
+#' \describe{
+#'   \item{$colonist_name}{character vector with name of each lineage.}
+#'   \item{$branching_times}{A decreasingly sorted numeric vector. The first
+#'   element is always the island age. Subsequent elements are either the
+#'   speciation times or information regarding the minimum age at which the
+#'   lineage could have colonised the archipelago.}
+#'   \item{$stac}{A numeric integer from 1 to 9. Defines the status of the
+#'   colonist, which has implications for the maximum likelihood inference.
+#'   See [DAISIE::DAISIE_dataprep] for more details.}
+#'   \item{$mising_species}{A numeric with the known number of missing species
+#'   that are not present in the phylogeny, or cannot otherwise be assigned
+#'   a branching time.}
+#'   \item{$type1or2}{A numeric defining if the clade is of type 1 or 2, for 2
+#'   type analyses. Always set to 1 in this dataset.}
+#'
+#' }
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
+#'   filled in later.
+#' @references
+#' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
+#' colonization history and phylogeography of Hawaiian crab spiders inferred
+#' from multilocus genetic data. Molecular Ecology, 18: 1746-1764.
+#' \doi{10.1111/j.1365-294X.2009.04125.x}
+"a_c_no"
+
+#' DAISIE datatable of spiders on Hawaii (Big Island) - a_m_max
+#'
+#' A dataset containing the colonization and branching times of spiders on Big
+#' Island. This format can be passed to [DAISIE::DAISIE_dataprep()]. Endemicity
+#' status refers strictly to Big Island endemics, and not endemics to the
+#' Hawaiian archipelago in general. This dataset favours immigration and
+#' assumes MaxAge for most clades. Island age is set to 3.6My.
+#'
+#' @format A tibble with 52 rows and 5 variables:
+#' \describe{
+#'   \item{Clade_name}{character vector with name of each lineage}
+#'   \item{Status}{character vector with endemicity status. Can be
+#'   `"Endemic_MaxAge"`, `"NonEndemic_MaxAge"`, `"Endemic_MaxAgeMinAge"` or
+#'   `"NonEndemic_MaxAgeMinAge"`}
+#'   \item{Missing_species}{numeric with the number of known species that are
+#'   missing in the phylogeny}
+#'   \item{Branching_times}{ordered numeric vector with colonisation and
+#'   branching times of each lineage. Can also contain `"MinAges"` when these
+#'   are available}
+#' }
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
+#'   filled in later.
+#' @references
+#' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
+#' colonization history and phylogeography of Hawaiian crab spiders inferred
+#' from multilocus genetic data. Molecular Ecology, 18: 1746-1764.
+#' \doi{10.1111/j.1365-294X.2009.04125.x}
+"a_m_max_datatable"
+
+#' DAISIE datalist of spiders on Hawaii (Big Island) - a_m_max
+#'
+#' A DAISIE datalist as required by [DAISIE::DAISIE_ML()]. Generated by running
+#' [DAISIE::DAISIE_dataprep()] on [a_m_max_datatable]. This
+#' dataset favours cladogenesis and assumes MaxAge for most clades.
+#' Island age is set to 3.6My.
+#'
+#' @format A list with 53 elements. The first one contains the `$island_age`,
+#'   a numeric with the island age in Ma, and `$not_present`, a numeric with the
+#'   number of known species on the archipelago not present on Big Island.
+#'
+#'   Each subsequent element of the list is comprised of 5 elements:
+#' \describe{
+#'   \item{$colonist_name}{character vector with name of each lineage.}
+#'   \item{$branching_times}{A decreasingly sorted numeric vector. The first
+#'   element is always the island age. Subsequent elements are either the
+#'   speciation times or information regarding the minimum age at which the
+#'   lineage could have colonised the archipelago.}
+#'   \item{$stac}{A numeric integer from 1 to 9. Defines the status of the
+#'   colonist, which has implications for the maximum likelihood inference.
+#'   See [DAISIE::DAISIE_dataprep] for more details.}
+#'   \item{$mising_species}{A numeric with the known number of missing species
+#'   that are not present in the phylogeny, or cannot otherwise be assigned
+#'   a branching time.}
+#'   \item{$type1or2}{A numeric defining if the clade is of type 1 or 2, for 2
+#'   type analyses. Always set to 1 in this dataset.}
+#'
+#' }
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
+#'   filled in later.
+#' @references
+#' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
+#' colonization history and phylogeography of Hawaiian crab spiders inferred
+#' from multilocus genetic data. Molecular Ecology, 18: 1746-1764.
+#' \doi{10.1111/j.1365-294X.2009.04125.x}
+"a_m_max"
+
+#' DAISIE datatable of spiders on Hawaii (Big Island) - a_m_min
+#'
+#' A dataset containing the colonization and branching times of spiders on Big
+#' Island. This format can be passed to [DAISIE::DAISIE_dataprep()]. Endemicity
+#' status refers strictly to Big Island endemics, and not endemics to the
+#' Hawaiian archipelago in general. This dataset favours immigration and
+#' dos not assume MaxAge for most clades. Island age is set to 3.6My.
+#'
+#' @format A tibble with 52 rows and 5 variables:
+#' \describe{
+#'   \item{Clade_name}{character vector with name of each lineage}
+#'   \item{Status}{character vector with endemicity status. Can be
+#'   `"Endemic_MaxAge"`, `"NonEndemic_MaxAge"`, `"Endemic_MaxAgeMinAge"` or
+#'   `"NonEndemic_MaxAgeMinAge"`}
+#'   \item{Missing_species}{numeric with the number of known species that are
+#'   missing in the phylogeny}
+#'   \item{Branching_times}{ordered numeric vector with colonisation and
+#'   branching times of each lineage. Can also contain `"MinAges"` when these
+#'   are available}
+#' }
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
+#'   filled in later.
+#' @references
+#' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
+#' colonization history and phylogeography of Hawaiian crab spiders inferred
+#' from multilocus genetic data. Molecular Ecology, 18: 1746-1764.
+#' \doi{10.1111/j.1365-294X.2009.04125.x}
+"a_m_min_datatable"
+
+#' DAISIE datalist of spiders on Hawaii (Big Island) - a_m_min
+#'
+#' A DAISIE datalist as required by [DAISIE::DAISIE_ML()]. Generated by running
+#' [DAISIE::DAISIE_dataprep()] on [a_m_min_datatable]. This
+#' dataset favours cladogenesis and does not assume MaxAge for most clades.
+#' Island age is set to 3.6My.
+#'
+#' @format A list with 53 elements. The first one contains the `$island_age`,
+#'   a numeric with the island age in Ma, and `$not_present`, a numeric with the
+#'   number of known species on the archipelago not present on Big Island.
+#'
+#'   Each subsequent element of the list is comprised of 5 elements:
+#' \describe{
+#'   \item{$colonist_name}{character vector with name of each lineage.}
+#'   \item{$branching_times}{A decreasingly sorted numeric vector. The first
+#'   element is always the island age. Subsequent elements are either the
+#'   speciation times or information regarding the minimum age at which the
+#'   lineage could have colonised the archipelago.}
+#'   \item{$stac}{A numeric integer from 1 to 9. Defines the status of the
+#'   colonist, which has implications for the maximum likelihood inference.
+#'   See [DAISIE::DAISIE_dataprep] for more details.}
+#'   \item{$mising_species}{A numeric with the known number of missing species
+#'   that are not present in the phylogeny, or cannot otherwise be assigned
+#'   a branching time.}
+#'   \item{$type1or2}{A numeric defining if the clade is of type 1 or 2, for 2
+#'   type analyses. Always set to 1 in this dataset.}
+#'
+#' }
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
+#'   filled in later.
+#' @references
+#' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
+#' colonization history and phylogeography of Hawaiian crab spiders inferred
+#' from multilocus genetic data. Molecular Ecology, 18: 1746-1764.
+#' \doi{10.1111/j.1365-294X.2009.04125.x}
+"a_m_min"
+
+#' DAISIE datatable of spiders on Hawaii (Big Island) - a_m_no
+#'
+#' A dataset containing the colonization and branching times of spiders on Big
+#' Island. This format can be passed to [DAISIE::DAISIE_dataprep()]. Endemicity
+#' status refers strictly to Big Island endemics, and not endemics to the
+#' Hawaiian archipelago in general. This dataset favours immigration and
+#' dos not assume MaxAge for most clades. MinAge is never used when precise
+#' colonisation time is known. Island age is set to 3.6My.
+#'
+#' @format A tibble with 52 rows and 5 variables:
+#' \describe{
+#'   \item{Clade_name}{character vector with name of each lineage}
+#'   \item{Status}{character vector with endemicity status. Can be
+#'   `"Endemic_MaxAge"`, `"NonEndemic_MaxAge"`, `"Endemic_MaxAgeMinAge"` or
+#'   `"NonEndemic_MaxAgeMinAge"`}
+#'   \item{Missing_species}{numeric with the number of known species that are
+#'   missing in the phylogeny}
+#'   \item{Branching_times}{ordered numeric vector with colonisation and
+#'   branching times of each lineage. Can also contain `"MinAges"` when these
+#'   are available}
+#' }
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
+#'   filled in later.
+#' @references
+#' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
+#' colonization history and phylogeography of Hawaiian crab spiders inferred
+#' from multilocus genetic data. Molecular Ecology, 18: 1746-1764.
+#' \doi{10.1111/j.1365-294X.2009.04125.x}
+"a_m_no_datatable"
+
+#' DAISIE datalist of spiders on Hawaii (Big Island) - a_m_no
+#'
+#' A DAISIE datalist as required by [DAISIE::DAISIE_ML()]. Generated by running
+#' [DAISIE::DAISIE_dataprep()] on [a_m_no_datatable]. This
+#' dataset favours cladogenesis and does not assume MaxAge for most clades.
+#' MinAge is never used when precise colonisation time is known. Island age is
+#' set to 3.6My.
+#'
+#' @format A list with 53 elements. The first one contains the `$island_age`,
+#'   a numeric with the island age in Ma, and `$not_present`, a numeric with the
+#'   number of known species on the archipelago not present on Big Island.
+#'
+#'   Each subsequent element of the list is comprised of 5 elements:
+#' \describe{
+#'   \item{$colonist_name}{character vector with name of each lineage.}
+#'   \item{$branching_times}{A decreasingly sorted numeric vector. The first
+#'   element is always the island age. Subsequent elements are either the
+#'   speciation times or information regarding the minimum age at which the
+#'   lineage could have colonised the archipelago.}
+#'   \item{$stac}{A numeric integer from 1 to 9. Defines the status of the
+#'   colonist, which has implications for the maximum likelihood inference.
+#'   See [DAISIE::DAISIE_dataprep] for more details.}
+#'   \item{$mising_species}{A numeric with the known number of missing species
+#'   that are not present in the phylogeny, or cannot otherwise be assigned
+#'   a branching time.}
+#'   \item{$type1or2}{A numeric defining if the clade is of type 1 or 2, for 2
+#'   type analyses. Always set to 1 in this dataset.}
+#'
+#' }
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
+#'   filled in later.
+#' @references
+#' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
+#' colonization history and phylogeography of Hawaiian crab spiders inferred
+#' from multilocus genetic data. Molecular Ecology, 18: 1746-1764.
+#' \doi{10.1111/j.1365-294X.2009.04125.x}
+"a_m_no"
