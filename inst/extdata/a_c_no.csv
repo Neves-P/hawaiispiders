@@ -4,7 +4,7 @@ Pagiopalus_atomarius_Pagiopalus_sp,Endemic,0,"1.337,1.205"
 Pagiopalus_nigriventis,Non_Endemic,0,1.506
 Tetragnatha_obscura_Tetragnatha_kukuhaa,Endemic,0,"1.73,0.29"
 Tetragnatha_hawaiiensis,Non_Endemic_MaxAge,0,4.787
-Tetragnatha_quasimodo,Non_Endemic_MaxAge,0,2.761
+Tetragnatha_quasimodo,Non_Endemic,0,2.761
 Tretagna_anuenue,Endemic,0,2.1
 Tetragnatha_brevignathaHA,Non_Endemic,0,1.69
 Tetragnatha_restricta,Non_Endemic,0,2.05
@@ -12,11 +12,11 @@ Tetragnatha_kea,Endemic,0,1.72
 Tetragnatha_long_clawed_legs,Endemic,0,1.6
 Tetragnatha_elongate_forest_D_Tetragnatha_elongate_forest_E,Endemic,0,"0.79,0.145"
 Tetragnatha_perkinsi,Endemic,0,1.64
-Tetragnatha_golden_dome_Tetragnatha_red_star,Endemic_MaxAge,0,"2.53,2.06"
+Tetragnatha_golden_dome_Tetragnatha_red_star,Endemic,0,"2.53,2.06"
 Tetragnatha_acuta,Non_Endemic_MaxAge,0,NA
 Cnephalocotes_simpliciceps,Endemic_MaxAge,0,NA
 Erigone_stygius,Endemic_MaxAge,0,NA
-Orsonwelles_graphicus,Endemic_MaxAgeMinAge,0,"3.02,0.48"
+Orsonwelles_graphicus,Endemic,0,3.02
 Mecaphesa_anguliventris,Non_Endemic,0,0.3078
 Mecaphesa_naevigera,Non_Endemic,0,0.5043
 Mecaphesa_cavata,Endemic,0,1.402
@@ -31,7 +31,7 @@ Mecaphesa_nigrofrenata,Non_Endemic_MaxAge,0,NA
 Synaema_naevigerum,Non_Endemic_MaxAge,0,NA
 Ariamnes_waikula,Endemic,0,1
 Ariamnes_hiwa,Endemic,0,2.13
-Argyrodes_hawaiiensis,Endemic_MaxAgeMinAge,0,"2.7309,0.6564"
+Argyrodes_hawaiiensis,Endemic,0,2.7309
 Havaika_cruciata,Endemic,0,1.1403
 Havaika_pubens,Non_Endemic,0,2.3564
 Havaika_navata,Non_Endemic_MaxAge,0,NA
