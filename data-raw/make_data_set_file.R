@@ -29,10 +29,26 @@ for (island_age in island_ages) {
           split = ","))),
         decreasing = TRUE
       )
-      if (brts[1] >= island_age) {
-        status <- "_MaxAge"
+      status_suffix <- ""
+      print(i)
+      print(j)
+      print(brts)
+      if (brts[1] >= island_age || is.na(brts)) {
+        status_suffix <- "_MaxAge"
       }
+      only_single_species <- !duplicated(strsplit(
+        as.character(dataset_template[j, "Clade_name"]),
+        split = "_"
+      ))
+      if (length(brts) > 1 && only_single_species) {
+        paste0(status_suffix, "MinAge")
+      }
+      dataset_template[j, "Status"] <- paste0(
+        dataset_list[[i]][j, "Status"],
+        status_suffix
+      )
     }
+
 
   }
 }

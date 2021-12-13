@@ -45,6 +45,9 @@ DAISIE::DAISIE_plot_island(y_m_no)
 
 data("o_m_no", package = "hawaiispiders")
 DAISIE::DAISIE_plot_island(o_m_no)
+
+data("a_m_no", package = "hawaiispiders")
+DAISIE::DAISIE_plot_island(a_m_no)
 ```
 **Figures 1 to 4. Input island data plots with all colonising lineages. Fig 1. y_c_no scenario; Fig 2. o_c_no scenario; Fig 3. y_m_no scenario; Fig 4. o_m_no scenario**
 
@@ -73,33 +76,30 @@ rate_names <- c(
   "rate_y_no",
   "rate_o_max",
   "rate_o_min",
-  "rate_o_no"
+  "rate_o_no",
+  "rate_a_max",
+  "rate_a_min",
+  "rate_a_no"
 )
 
 scenarios <- c(
   "y_c_max",
-  "y_m_max",
   "y_c_min",
-  "y_m_min",
   "y_c_no",
-  "y_m_no",
   "o_c_max",
-  "o_m_max",
   "o_c_min",
-  "o_m_min",
   "o_c_no",
-  "o_m_no"
+  "a_c_max",
+  "a_c_min",
+  "a_c_no"
 )
 
-rate_sens <- DAISIEutils::sensitivity(scenarios, full_output = TRUE)
+rate_sens <- sensitivity(scenarios, full_output = TRUE)
 
 # rate_model_rankings <- data.frame(lapply(rate_sens$model_selection_rank, "[", 1))
-model_orders <- c("cr_di", "cr_dd", "cr_di_0laa", "cr_dd_0laa")
+model_orders <- c("cr_dd")
 rate_model_rankings <- data.frame(
-  "cr_di" = numeric(),
-  "cr_dd" = numeric(),
-  "cr_di_0laa" = numeric(),
-  "cr_dd_0laa" = numeric()
+  "cr_dd" = numeric()
 )
 
 for (scenario in seq_along(scenarios)) {
@@ -119,7 +119,7 @@ rate_model_rankings %>% dplyr::mutate_all(~kableExtra::cell_spec(
 **Table 2. Parameter estimates obtained for the best model of each scenario.**
 ```{r crdi results, echo=FALSE}
 # best model results
-best_model <- c(rep("cr_di", 10), "cr_dd_0laa", "cr_di")
+best_model <- rep("cr_dd", 10)
 row_names <- c()
 cr_model_fits <- data.frame()
 for (j in seq_along(rate_sens[[4]])) {
