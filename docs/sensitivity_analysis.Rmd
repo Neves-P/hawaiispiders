@@ -5,7 +5,7 @@ output: html_notebook
 
 Here I present the sensitivity of the model to alternate data sets, each corresponding to a specific interpretation of the phylogenetic data or model parameters.
 
-I compiled 12 alternate data sets from the same spider phylogenies. All data sets and the files needed to produce them are included as data objects on this `R` package. For the time being, this package is private and access to the raw data is only possible via invite. 
+I compiled 24 alternate data sets from the same spider phylogenies. All data sets and the files needed to produce them are included as data objects on this `R` package. For the time being, this package is private and access to the raw data is only possible via invite. 
 
 
 The following table describes the differences between each data set.
@@ -13,25 +13,37 @@ The following table describes the differences between each data set.
 ## Scenario descriptions
 |Scenario|Island Age|Favour cladogenesis|Favour MaxAge|
 |:------:|:--------:|:-----------------:|:-----------:|
-| y_c_max|   1.2My  |        Yes        |     Yes     |
-| y_c_min|   1.2My  |        Yes        |     MinAge  |
-| y_c_no |   1.2My  |        Yes        |     Never   |
-| o_c_max|   2.4My  |        Yes        |     Yes     |
-| o_c_min|   2.4My  |        Yes        |     MinAge  |
-| o_c_no |   2.4My  |        Yes        |     Never   |
-| y_m_max|   1.2My  |        No         |     Yes     |
-| y_m_min|   1.2My  |        No         |     MinAge  |
-| y_m_no |   1.2My  |        No         |     Never   |
-| o_m_max|   2.4My  |        No         |     Yes     |
-| o_m_min|   2.4My  |        No         |     MinAge  |
-| o_m_no |   2.4My  |        No         |     Never   |
+| r_c_max|   1.2My  |        Yes        |     Yes     |
+| r_c_min|   1.2My  |        Yes        |     MinAge  |
+| r_c_no |   1.2My  |        Yes        |     Never   |
+| y_c_max|   2.4My  |        Yes        |     Yes     |
+| y_c_min|   2.4My  |        Yes        |     MinAge  |
+| y_c_no |   2.4My  |        Yes        |     Never   |
+| o_c_max|   3.6My  |        Yes        |     Yes     |
+| o_c_min|   3.6My  |        Yes        |     MinAge  |
+| o_c_no |   3.6My  |        Yes        |     Never   |
+| a_c_max|   4.8My  |        Yes        |     Yes     |
+| a_c_min|   4.8My  |        Yes        |     MinAge  |
+| a_c_no |   4.8My  |        Yes        |     Never   |
+| r_m_max|   1.2My  |        No         |     Yes     |
+| r_m_min|   1.2My  |        No         |     MinAge  |
+| r_m_no |   1.2My  |        No         |     Never   |
+| y_m_max|   2.4My  |        No         |     Yes     |
+| y_m_min|   2.4My  |        No         |     MinAge  |
+| y_m_no |   2.4My  |        No         |     Never   |
+| o_m_max|   3.6My  |        No         |     Yes     |
+| o_m_min|   3.6My  |        No         |     MinAge  |
+| o_m_no |   3.6My  |        No         |     Never   |
+| a_m_max|   4.8My  |        No         |     Yes     |
+| a_m_min|   4.8My  |        No         |     MinAge  |
+| a_m_no |   4.8My  |        No         |     Never   |
 
 In scenarios favouring MaxAge the colonisation time is always assumed to be an upper limit, rather than a precise age, even when a precise age can be estimated from the data. While some information is lost in this process, the upside lies in accounting for possible uncertainty when inferring the phylogeny or interpreting it for the data pre processing step.
 A MinAge functions as a lower boundary for uncertain colonisation times. This lower limit corresponds to the earliest split between two populations of the same species. This ensures that uncertain colonisations (i.e., those considered MaxAge) have both an upper (MaxAge) and lower (MinAge) boundary, thus decreasing the assumed uncertainty in the phylogeny.
 MinAge favouring in the MaxAge column implies that MaxAgeMinAges are used when a min age is available and the precise colonisation time is available too.
 Not (never) favouring MaxAge means MinAges are used only **iff** the precise colonisation age is unknown and a min age is available. These are the "\_no" scenarios, which are arguably the most realistic ones from an empirical point of view.
 
-Broadly speaking, the data consists of mainly singleton endemic species which colonised the island early. In many cases the colonisation time predates the island age. On scenarios favouring cladogenesis, 33 independent clades are present, while the number increases to 35 on scenarios favouring colonisation. There are 37 species in total. 7 of all species are known to be present as nonendemics on the island, but have not been sampled in the phylogeny, hence their colonisation time is unknown.
+Broadly speaking, the data consists of mainly singleton endemic species which colonised the island early. In many cases the colonisation time predates the island age. On scenarios favouring cladogenesis, 50 independent clades are present, while the number increases to 52 on scenarios favouring colonisation. There are 52 species in total. 7 of all species are known to be present as nonendemics on the island, but have not been sampled in the phylogeny, hence their colonisation time is unknown.
 
 ```{r Plot, echo=FALSE}
 data("y_c_no", package = "hawaiispiders")

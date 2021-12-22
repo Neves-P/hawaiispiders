@@ -2,6 +2,7 @@
 
 data("c_master")
 data("m_master")
+library(usethis)
 
 dataset_list <- list(c_master, m_master)
 
@@ -85,7 +86,9 @@ for (h in seq_along(stac_handlings)) {
         island_age = island_ages[i],
         M = 168
       ))
-      saveRDS(get(name), file = file.path("data", paste0(name, ".rds")))
+      do.call("use_data", list(as.name(name), overwrite = TRUE))
+      do.call("use_data", list(as.name(name_datatable), overwrite = TRUE))
+      # saveRDS(get(name), file = file.path("data", paste0(name, ".rds")))
     }
     dataset_ages[[i]] <- dataset_c_m
   }
