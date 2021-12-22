@@ -1,11 +1,11 @@
 #!/bin/bash
-#SBATCH --time=72:00:00
+#SBATCH --time=71:50:00
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --job-name=Spiders
 #SBATCH --output=logs/Spiders.log
 #SBATCH --mem=2GB
-#SBATCH --partition=regular
+#SBATCH --partition=gelifes
 # hawaiispiders: Analyse Spider Evolution on Hawaii Island
 # Copyright (C) 2021 Pedro Neves
 #
