@@ -1,5 +1,10 @@
 ## code to prepare `daisie_objects` goes here
 
+
+# Check missing_species column when endemic and branching time is NA.
+# Change in master files!
+# Checksum of missing species with number of branching times in a clade
+# Focus on method and how to deal with them. Link with new paper mascarenes
 data("c_master")
 data("m_master")
 library(usethis)
@@ -39,25 +44,17 @@ for (h in seq_along(stac_handlings)) {
           na.last = TRUE
         )
         status_suffix <- ""
-        duplicate_word_index <- anyDuplicated(strsplit(
-          as.character(dataset_template[k, "Clade_name"]),
-          split = "_"
-        )[[1]])
+        min_age_available <- !is.na(dataset_list[[j]][k, "MinAge"])
         if ((brts[1] >= island_ages[i] || is.na(brts)) || stac_handlings[h] == "max") {
           status_suffix <- "_MaxAge"
-          # Returns 0 if there are no dup words or num if there are dup words
-        }
-        if (length(brts) > 1 && duplicate_word_index >= 0) {
-
+          dataset_template[k, "Branching_times"] <- paste(as.character(brts)[-2], sep = "", collapse = ",") # PUT THIS IN AN IF
+          if (isTRUE(min_age_available)) {
             status_suffix <- "_MaxAgeMinAge"
-            if (brts[2] > island_ages[i]) {
-              dataset_template[k, "Missing_species"] <- dataset_template[k, "Missing_species"] + 1
-              dataset_template[k, "Branching_times"] <- paste(as.character(brts)[-2], sep = "", collapse = ",")
-            }
           }
+        }
 
         # MinAge favour (MaxAgeMinAge even when precise col is known)
-        if (length(brts) > 1 && duplicate_word_index == 0 && stac_handlings[h] == "min") {
+        if (isTRUE(min_age_available) && stac_handlings[h] == "min") {
           status_suffix <- "_MaxAgeMinAge"
         }
         dataset_template[k, "Status"] <- paste0(
@@ -80,8 +77,7 @@ for (h in seq_along(stac_handlings)) {
         sep = "_"
       )
       assign(name_datatable, value = dataset_template)
-      saveRDS(get(name_datatable), file = file.path("data", paste0(name_datatable, ".rds")))
-      browser
+      browser()
       assign(name, value = DAISIE::DAISIE_dataprep(
         datatable = dataset_template,
         island_age = island_ages[i],
@@ -89,7 +85,6 @@ for (h in seq_along(stac_handlings)) {
       ))
       do.call("use_data", list(as.name(name), overwrite = TRUE))
       do.call("use_data", list(as.name(name_datatable), overwrite = TRUE))
-      # saveRDS(get(name), file = file.path("data", paste0(name, ".rds")))
     }
     dataset_ages[[i]] <- dataset_c_m
   }
