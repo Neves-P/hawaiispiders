@@ -46,22 +46,13 @@ Not (never) favouring MaxAge means MinAges are used only **iff** the precise col
 Broadly speaking, the data consists of mainly singleton endemic species which colonised the island early. In many cases the colonisation time predates the island age. On scenarios favouring cladogenesis, 50 independent clades are present, while the number increases to 52 on scenarios favouring colonisation. There are 52 species in total. 7 of all species are known to be present as nonendemics on the island, but have not been sampled in the phylogeny, hence their colonisation time is unknown.
 
 ```{r Plot, echo=FALSE}
-data("y_c_no", package = "hawaiispiders")
-DAISIE::DAISIE_plot_island(y_c_no)
+data("r_c_no", package = "hawaiispiders")
+DAISIE::DAISIE_plot_island(r_c_no)
 
-data("o_c_no", package = "hawaiispiders")
-DAISIE::DAISIE_plot_island(o_c_no)
-
-data("y_m_no", package = "hawaiispiders")
-DAISIE::DAISIE_plot_island(y_m_no)
-
-data("o_m_no", package = "hawaiispiders")
-DAISIE::DAISIE_plot_island(o_m_no)
-
-data("a_m_no", package = "hawaiispiders")
-DAISIE::DAISIE_plot_island(a_m_no)
+data("a_c_no", package = "hawaiispiders")
+DAISIE::DAISIE_plot_island(a_c_no)
 ```
-**Figures 1 to 4. Input island data plots with all colonising lineages. Fig 1. y_c_no scenario; Fig 2. o_c_no scenario; Fig 3. y_m_no scenario; Fig 4. o_m_no scenario**
+**Figures 1 to 4. Input island data plots with all colonising lineages. Fig 1. r_c_no scenario; Fig 2. a_c_no scenario**
 
 
 ## Model fitting
@@ -70,14 +61,10 @@ Seven different DAISIE models were fit to each of the data sets. Only constant r
 Fit models are as follows:
 
 * Constant rate diversity dependent model
-* Constant rate diversity independent model
-* Constant rate diversity dependent model with anagenesis rate fixed to 0
-* Constant rate diversity independent model with anagenesis rate fixed to 0
 
 ## Sensitivity
 
 After having fit a collection of DAISIE models, senstivity analysis was performed to assess the influence of varying scenarios on the selection of the best model and model rank overall.
-
 
 
 **Table 1. BIC for each model and dataset. Cells in red correspond to the lowest BIC value of a given dataset, and hence the preferred model.**
@@ -95,6 +82,9 @@ rate_names <- c(
 )
 
 scenarios <- c(
+  "r_c_max",
+  "r_c_min",
+  "r_c_no",
   "y_c_max",
   "y_c_min",
   "y_c_no",
@@ -106,7 +96,7 @@ scenarios <- c(
   "a_c_no"
 )
 
-rate_sens <- sensitivity(scenarios, full_output = TRUE)
+rate_sens <- DAISIEutils::sensitivity(scenarios, full_output = TRUE)
 
 # rate_model_rankings <- data.frame(lapply(rate_sens$model_selection_rank, "[", 1))
 model_orders <- c("cr_dd")
@@ -128,7 +118,7 @@ rate_model_rankings %>% dplyr::mutate_all(~kableExtra::cell_spec(
   knitr::kable(escape = FALSE) %>% kableExtra::kable_styling()
 ```
 
-**Table 2. Parameter estimates obtained for the best model of each scenario.**
+**Table 1. Parameter estimates obtained for the best model of each scenario.**
 ```{r crdi results, echo=FALSE}
 # best model results
 best_model <- rep("cr_dd", 10)

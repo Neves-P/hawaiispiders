@@ -81,6 +81,7 @@ for (h in seq_along(stac_handlings)) {
       )
       assign(name_datatable, value = dataset_template)
       saveRDS(get(name_datatable), file = file.path("data", paste0(name_datatable, ".rds")))
+      browser
       assign(name, value = DAISIE::DAISIE_dataprep(
         datatable = dataset_template,
         island_age = island_ages[i],
