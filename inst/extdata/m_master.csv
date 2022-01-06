@@ -1,7 +1,7 @@
-Clade_name,Status,Missing_species,Branching_times,
-Pedinopistha_stigmaticus,Non_Endemic,0,2.001,
+Clade_name,Status,Missing_species,Branching_times,MinAge
+Pedinopistha_stigmaticus,Non_Endemic,0,2.001,NA
 Pagiopalus_atomarius,Non_Endemic,0,1.337,0.576
-Pagiopalus_sp,Non_Endemic,0,1.205,
+Pagiopalus_sp,Non_Endemic,0,1.205,NA
 Pagiopalus_nigriventis,Non_Endemic,0,1.506,0.387
 Tetragnatha_obscura_Tetragnatha_kukuhaa,Endemic,0,"1.73,0.29",NA
 Tetragnatha_hawaiiensis,Non_Endemic,0,4.787,NA
