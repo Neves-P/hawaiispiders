@@ -47,7 +47,11 @@ for (h in seq_along(stac_handlings)) {
         min_age_available <- !is.na(dataset_list[[j]][k, "MinAge"])
         if ((brts[1] >= island_ages[i] || is.na(brts)) || stac_handlings[h] == "max") {
           status_suffix <- "_MaxAge"
-          dataset_template[k, "Branching_times"] <- paste(as.character(brts)[-2], sep = "", collapse = ",") # PUT THIS IN AN IF
+          if (length(brts) > 1 && brts[1] >= island_ages[i]) {
+            dataset_template[k, "Branching_times"] <- paste(
+              as.character(brts)[-2], sep = "", collapse = ","
+            )
+          }
           if (isTRUE(min_age_available)) {
             status_suffix <- "_MaxAgeMinAge"
           }
@@ -77,7 +81,7 @@ for (h in seq_along(stac_handlings)) {
         sep = "_"
       )
       assign(name_datatable, value = dataset_template)
-      browser()
+      # browser()
       assign(name, value = DAISIE::DAISIE_dataprep(
         datatable = dataset_template,
         island_age = island_ages[i],
