@@ -31,6 +31,6 @@ Imports:
     testit,
     devtools
 Remotes: 
-    rsetienne/DAISIE@v4.0.5,
-    tece-lab/DAISIEutils
+    rsetienne/DAISIE@onto_IW,
+    tece-lab/DAISIEutils@pedro
 Config/testthat/edition: 3
