@@ -2,7 +2,6 @@
 
 
 # Check missing_species column when endemic and branching time is NA.
-# Change in master files!
 # Checksum of missing species with number of branching times in a clade
 # Focus on method and how to deal with them. Link with new paper mascarenes
 data("c_master")
@@ -81,7 +80,6 @@ for (h in seq_along(stac_handlings)) {
         sep = "_"
       )
       assign(name_datatable, value = dataset_template)
-      # browser()
       assign(name, value = DAISIE::DAISIE_dataprep(
         datatable = dataset_template,
         island_age = island_ages[i],
