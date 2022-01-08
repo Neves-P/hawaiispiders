@@ -4,6 +4,9 @@
 # Check missing_species column when endemic and branching time is NA.
 # Checksum of missing species with number of branching times in a clade
 # Focus on method and how to deal with them. Link with new paper mascarenes
+# Check r_m_no[[3]] (pagiopalus atomarius). Not getting min age? Data not well
+# processed and this fails the MLs?
+# STILL NEED TO ADD THE MINAGES TO THE BRTS
 data("c_master")
 data("m_master")
 library(usethis)
@@ -53,6 +56,11 @@ for (h in seq_along(stac_handlings)) {
           }
           if (isTRUE(min_age_available)) {
             status_suffix <- "_MaxAgeMinAge"
+            dataset_template[k, "Branching_times"] <- paste(
+              dataset_template[k, "Branching_times"],
+              dataset_list[[j]][k, "MinAge"],
+              sep = ","
+            )
           }
         }
 
