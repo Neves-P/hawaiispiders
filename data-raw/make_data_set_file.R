@@ -47,6 +47,7 @@ for (h in seq_along(stac_handlings)) {
         )
         status_suffix <- ""
         min_age_available <- !is.na(dataset_list[[j]][k, "MinAge"])
+        # MaxAge cases
         if ((brts[1] >= island_ages[i] || is.na(brts)) || stac_handlings[h] == "max") {
           status_suffix <- "_MaxAge"
           if (length(brts) > 1 && brts[1] >= island_ages[i]) {
@@ -54,19 +55,25 @@ for (h in seq_along(stac_handlings)) {
               as.character(brts)[-2], sep = "", collapse = ","
             )
           }
-          if (isTRUE(min_age_available)) {
-            status_suffix <- "_MaxAgeMinAge"
-            dataset_template[k, "Branching_times"] <- paste(
-              dataset_template[k, "Branching_times"],
-              dataset_list[[j]][k, "MinAge"],
-              sep = ","
-            )
-          }
+        }
+        # MinAge
+        if (isTRUE(min_age_available) && brts[1] >= island_ages[i]) {
+          status_suffix <- "_MaxAgeMinAge"
+          dataset_template[k, "Branching_times"] <- paste(
+            dataset_template[k, "Branching_times"],
+            dataset_list[[j]][k, "MinAge"],
+            sep = ","
+          )
         }
 
         # MinAge favour (MaxAgeMinAge even when precise col is known)
         if (isTRUE(min_age_available) && stac_handlings[h] == "min") {
           status_suffix <- "_MaxAgeMinAge"
+          dataset_template[k, "Branching_times"] <- paste(
+            dataset_template[k, "Branching_times"],
+            dataset_list[[j]][k, "MinAge"],
+            sep = ","
+          )
         }
         dataset_template[k, "Status"] <- paste0(
           dataset_list[[j]][k, "Status"],
