@@ -1,11 +1,11 @@
 #!/bin/bash
-#SBATCH --time=72:00:00
+#SBATCH --time=00:30:00
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --job-name=boot
 #SBATCH --output=logs/boot.log
-#SBATCH --mem=2GB
-#SBATCH --partition=regular
+#SBATCH --mem=500MB
+#SBATCH --partition=short
 # hawaiispiders: Analyse Spider Evolution on Hawaii Island
 # Copyright (C) 2021 Pedro Neves
 #
@@ -23,4 +23,4 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-sbatch --job-name=b-spiders DAISIEutils/bash/submit_bootstrap.sh o_c_max cr_dd hawaiispiders 1
+sbatch --job-name=b-r_c_no DAISIEutils/bash/submit_bootstrap.sh r_c_no cr_dd hawaiispiders 1 "subplex"

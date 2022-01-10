@@ -23,4 +23,4 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-sbatch --job-name=b-spiders DAISIEutils/bash/submit_bootstrap.sh o_c_min cr_dd hawaiispiders 1
+sbatch --job-name=b-r_c_max DAISIEutils/bash/submit_bootstrap.sh r_c_max cr_dd hawaiispiders 1 "subplex"
