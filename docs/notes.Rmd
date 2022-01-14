@@ -1,0 +1,170 @@
+---
+title: "Untitled"
+author: "Pedro Neves"
+date: "11/01/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+make_res_df <- function(sens) {
+  out <- data.frame(
+    "lambda_c" = numeric(),
+    "mu" = numeric(),
+    "K" = numeric(),
+    "gamma" = numeric(),
+    "lambda_a" = numeric(),
+    "loglik" = numeric(),
+    "df" = numeric(),
+    "conv" = numeric(),
+    "bic" = numeric(),
+    "scenario" = character()
+  )
+  for (i in seq_along(sens)) {
+    out <- rbind(out, cbind("scenario" = names(sens[i]), sens[[i]][[1]]))
+  }
+  out
+}
+```
+
+
+
+```{r Prep res, include=FALSE}
+res <- data.frame()
+setwd("D:/Documents/code/hawaiispiders/")
+r_c_sens <- make_res_df(
+  DAISIEutils::sensitivity(
+    data_names = c("r_c_max", "r_c_min", "r_c_no"),
+    full_output = TRUE
+  )$full_output
+)
+
+y_c_sens <- make_res_df(
+  DAISIEutils::sensitivity(
+    data_names = c("y_c_max", "y_c_min", "y_c_no"),
+    full_output = TRUE
+  )$full_output
+)
+
+o_c_sens <- make_res_df(
+  DAISIEutils::sensitivity(
+    data_names = c("o_c_max", "o_c_min", "o_c_no"),
+    full_output = TRUE
+  )$full_output
+)
+
+a_c_sens <- make_res_df(
+  DAISIEutils::sensitivity(
+    data_names = c("a_c_max", "a_c_min", "a_c_no"),
+    full_output = TRUE
+  )$full_output
+)
+
+r_m_sens <- make_res_df(
+  DAISIEutils::sensitivity(
+    data_names = c("r_m_max", "r_m_min", "r_m_no"),
+    full_output = TRUE
+  )$full_output
+)
+
+y_m_sens <- make_res_df(
+  DAISIEutils::sensitivity(
+    data_names = c("y_m_max", "y_m_min", "y_m_no"),
+    full_output = TRUE
+  )$full_output
+)
+
+o_m_sens <- make_res_df(
+  DAISIEutils::sensitivity(
+    data_names = c("o_m_max", "o_m_min", "o_m_no"),
+    full_output = TRUE
+  )$full_output
+)
+
+a_m_sens <- make_res_df(
+  DAISIEutils::sensitivity(
+    data_names = c("a_m_max", "a_m_min", "a_m_no"),
+    full_output = TRUE
+  )$full_output
+)
+res <- rbind(
+  r_c_sens,
+  y_c_sens,
+  o_c_sens,
+  a_c_sens,
+  r_m_sens,
+  y_m_sens,
+  o_m_sens,
+  a_m_sens
+)
+```
+
+```{r}
+knitr::kable(res) %>% kableExtra::kable_styling()
+```
+
+```{r}
+facs <- sapply(res$scenario, strsplit, split = "_")
+expanded_table <- cbind(res, "island_age", "c_m", "stac")
+for (i in seq_along(facs)) {
+  expanded_table$`"island_age"`[i] <- facs[[i]][1]
+  expanded_table$`"c_m"`[i] <- facs[[i]][2]
+  expanded_table$`"stac"`[i] <- facs[[i]][3]
+}
+expanded_table$`"island_age"` <- factor(
+  expanded_table$`"island_age"`,
+  levels = c("r", "y", "o", "a")
+)
+```
+
+```{r}
+ggplot2::ggplot(expanded_table, aes(x = `"island_age"`, y = lambda_c)) +
+  geom_point(aes(color = `"stac"`, shape = `"c_m"`))  
+ggplot2::ggplot(expanded_table, aes(x = `"island_age"`, y = lambda_c)) +
+  geom_point(aes(color = `"stac"`, shape = `"c_m"`)) +
+  scale_y_continuous(trans = 'log2', name = "log2(lambda_c)")
+ggplot2::ggplot(expanded_table, aes(x = `"island_age"`, y = mu)) +
+  geom_point(aes(color = `"stac"`, shape = `"c_m"`))
+ggplot2::ggplot(expanded_table, aes(x = `"island_age"`, y = K)) +
+  geom_point(aes(color = `"stac"`, shape = `"c_m"`))
+ggplot2::ggplot(expanded_table, aes(x = `"island_age"`, y = gamma)) +
+  geom_point(aes(color = `"stac"`, shape = `"c_m"`))
+ggplot2::ggplot(expanded_table, aes(x = `"island_age"`, y = lambda_a)) +
+  geom_point(aes(color = `"stac"`, shape = `"c_m"`))  
+```
+
+Results from "y" batch might be incorrect given frequent non-convergence. On the other hand, this setup is unorthodox.
+Mu is positively correlated with island age, perhaps unsurprisingly. Migration favouring scenarios are also consistently higher.
+
+## Scenario descriptions
+|Scenario|Island Age|Favour cladogenesis|Favour MaxAge|
+|:------:|:--------:|:-----------------:|:-----------:|
+| r_c_max|   1.2My  |        Yes        |     Yes     |
+| r_c_min|   1.2My  |        Yes        |     MinAge  |
+| r_c_no |   1.2My  |        Yes        |     Never   |
+| y_c_max|   2.4My  |        Yes        |     Yes     |
+| y_c_min|   2.4My  |        Yes        |     MinAge  |
+| y_c_no |   2.4My  |        Yes        |     Never   |
+| o_c_max|   3.6My  |        Yes        |     Yes     |
+| o_c_min|   3.6My  |        Yes        |     MinAge  |
+| o_c_no |   3.6My  |        Yes        |     Never   |
+| a_c_max|   4.8My  |        Yes        |     Yes     |
+| a_c_min|   4.8My  |        Yes        |     MinAge  |
+| a_c_no |   4.8My  |        Yes        |     Never   |
+| r_m_max|   1.2My  |        No         |     Yes     |
+| r_m_min|   1.2My  |        No         |     MinAge  |
+| r_m_no |   1.2My  |        No         |     Never   |
+| y_m_max|   2.4My  |        No         |     Yes     |
+| y_m_min|   2.4My  |        No         |     MinAge  |
+| y_m_no |   2.4My  |        No         |     Never   |
+| o_m_max|   3.6My  |        No         |     Yes     |
+| o_m_min|   3.6My  |        No         |     MinAge  |
+| o_m_no |   3.6My  |        No         |     Never   |
+| a_m_max|   4.8My  |        No         |     Yes     |
+| a_m_min|   4.8My  |        No         |     MinAge  |
+| a_m_no |   4.8My  |        No         |     Never   |
+
+In scenarios favouring MaxAge the colonisation time is always assumed to be an upper limit, rather than a precise age, even when a precise age can be estimated from the data. While some information is lost in this process, the upside lies in accounting for possible uncertainty when inferring the phylogeny or interpreting it for the data pre processing step.
+A MinAge functions as a lower boundary for uncertain colonisation times. This lower limit corresponds to the earliest split between two populations of the same species. This ensures that uncertain colonisations (i.e., those considered MaxAge) have both an upper (MaxAge) and lower (MinAge) boundary, thus decreasing the assumed uncertainty in the phylogeny.
+MinAge favouring in the MaxAge column implies that MaxAgeMinAges are used when a min age is available and the precise colonisation time is available too.
+Not (never) favouring MaxAge means MinAges are used only **iff** the precise colonisation age is unknown and a min age is available. These are the "\_no" scenarios, which are arguably the most realistic ones from an empirical point of view.
