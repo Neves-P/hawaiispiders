@@ -4,9 +4,13 @@
 # Check missing_species column when endemic and branching time is NA.
 # Checksum of missing species with number of branching times in a clade
 # Focus on method and how to deal with them. Link with new paper mascarenes
-# Check r_m_no[[3]] (pagiopalus atomarius). Not getting min age? Data not well
-# processed and this fails the MLs?
-# STILL NEED TO ADD THE MINAGES TO THE BRTS
+#
+#
+# table with which are at equilibirum
+# use eq to get n_spec at equilibrium. daisie_expEIN. time Inf for div at eq
+# what would spider biologists
+#
+#
 data("c_master")
 data("m_master")
 library(usethis)
