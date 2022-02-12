@@ -8,7 +8,7 @@ output: html_document
 ```{r read results, include=FALSE}
   
 library(tidyverse)
-res <- readRDS("D:/code/hawaiispiders/full_res.rds")
+res <- readRDS("D:/Documents/code/hawaiispiders/full_res.rds")
 ```
 
 
@@ -31,23 +31,26 @@ expanded_table$`"island_age"` <- factor(
   expanded_table$`"island_age"`,
   levels = c("r", "y", "o", "a")
 )
-
+expanded_table_odeint <- subset(
+  x = expanded_table,
+  expanded_table$integrator == "odeint"
+)
 
 ```
 
 ```{r}
-ggplot2::ggplot(expanded_table, aes(x = `"island_age"`, y = lambda_c)) +
+ggplot2::ggplot(expanded_table_odeint, aes(x = `"island_age"`, y = lambda_c)) +
   geom_point(aes(color = `"stac"`, shape = `"c_m"`), position = position_dodge(0.4))  
-ggplot2::ggplot(expanded_table, aes(x = `"island_age"`, y = lambda_c)) +
+ggplot2::ggplot(expanded_table_odeint, aes(x = `"island_age"`, y = lambda_c)) +
   geom_point(aes(color = `"stac"`, shape = `"c_m"`), position = position_dodge(0.4)) +
   scale_y_continuous(trans = 'log2', name = "log2(lambda_c)")
-ggplot2::ggplot(expanded_table, aes(x = `"island_age"`, y = mu)) +
+ggplot2::ggplot(expanded_table_odeint, aes(x = `"island_age"`, y = mu)) +
   geom_point(aes(color = `"stac"`, shape = `"c_m"`), position = position_dodge(0.4))
-ggplot2::ggplot(expanded_table, aes(x = `"island_age"`, y = K)) +
+ggplot2::ggplot(expanded_table_odeint, aes(x = `"island_age"`, y = K)) +
   geom_point(aes(color = `"stac"`, shape = `"c_m"`), position = position_dodge(0.4))
-ggplot2::ggplot(expanded_table, aes(x = `"island_age"`, y = gamma)) +
+ggplot2::ggplot(expanded_table_odeint, aes(x = `"island_age"`, y = gamma)) +
   geom_point(aes(color = `"stac"`, shape = `"c_m"`), position = position_dodge(0.4))
-ggplot2::ggplot(expanded_table, aes(x = `"island_age"`, y = lambda_a)) +
+ggplot2::ggplot(expanded_table_odeint, aes(x = `"island_age"`, y = lambda_a)) +
   geom_point(aes(color = `"stac"`, shape = `"c_m"`), position = position_dodge(0.4))  
 ```
 
@@ -69,7 +72,7 @@ ggplot2::ggplot(expanded_table, aes(x = `"island_age"`, y = lambda_a)) +
 
 
 ``` {r}
-knitr::kable(aggregate(. ~ scenario, res, FUN = diff)[, 1:6]) %>% 
+knitr::kable(aggregate(. ~ scenario, res, FUN = diff)) %>% 
   kableExtra::kable_styling() %>% 
   kableExtra::footnote(
     general = "Difference between estimates obtained by different numeric integrators"

@@ -29,7 +29,9 @@ Depends:
     R (>= 2.10)
 Imports: 
     testit,
-    devtools
+    devtools,
+    ggplot2,
+    cowplot
 Remotes: 
     rsetienne/DAISIE@onto_IW,
     tece-lab/DAISIEutils@pedro
