@@ -28,5 +28,9 @@ plot_estimate_results <- function(plotting_table,
     ggplot2::guides(colour = ggplot2::guide_legend(colour_label),
                     shape = ggplot2::guide_legend(shape_label)) +
     ggplot2::ylab(label = estimate_label) +
-    ggplot2::xlab(label = partition_label)
+    ggplot2::xlab(label = partition_label) +
+    ggplot2::theme(axis.title.x = ggplot2::element_text(size = 9)) +
+    ggplot2::theme(axis.title.y = ggplot2::element_text(size = 8)) +
+    ggplot2::theme(legend.title = ggplot2::element_text(size = 9),
+                   legend.title.align = 1, legend.box.just = "right")
 }
