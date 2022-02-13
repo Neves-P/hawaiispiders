@@ -25,9 +25,16 @@ prepare_results_to_plot <- function(raw_results) {
     plotting_table$island_age,
     levels = c("r", "y", "o", "a")
   )
-  plotting_table_odeint <- subset(
-    x = plotting_table,
-    plotting_table$integrator == "odeint"
+  plotting_table$c_m <- factor(
+    plotting_table$c_m,
+    levels = c("c", "m")
   )
-  return(plotting_table)
+  plotting_table$stac <- factor(
+    plotting_table$stac,
+    levels = c("max", "min", "no")
+  )
+  levels(plotting_table$island_age) <- c("1.2", "2.4", "3.6", "4.8")
+  levels(plotting_table$c_m) <- c("Cladogenesis", "Colonisation")
+  levels(plotting_table$stac) <- c("1", "2", "3")
+  plotting_table
 }
