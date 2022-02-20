@@ -14,10 +14,10 @@ model_params <- DAISIEutils::setup_model("cr_dd")
 
 
 for (i in seq_along(scenarios)) {
-  initparsopt_odeint <- integrator_pairs[[i]][1, 2:6]
+  initparsopt_odeint <- unlist(integrator_pairs[[i]][1, 2:6])
   testit::assert(integrator_pairs[[i]][1, 11] == factor("odeint"))
 
-  initparsopt_lsodes <- integrator_pairs[[i]][2, 2:6]
+  initparsopt_lsodes <- unlist(integrator_pairs[[i]][2, 2:6])
   testit::assert(integrator_pairs[[i]][2, 11] == factor("lsodes"))
 
   res_odeint_lsodes <- DAISIE::DAISIE_ML(
@@ -29,7 +29,8 @@ for (i in seq_along(scenarios)) {
     idparsfix = model_params$idparsfix,
     ddmodel = model_params$ddmodel,
     cond = 5,
-    optimmethod = "lsodes",
+    optimmethod = "subplex",
+    methode = "lsodes",
     CS_version = model_params$cs_version
   )
   res_lsodes_odeint <- DAISIE::DAISIE_ML(
@@ -41,11 +42,15 @@ for (i in seq_along(scenarios)) {
     idparsfix = model_params$idparsfix,
     ddmodel = model_params$ddmodel,
     cond = 5,
-    optimmethod = "odeint::runge_kutta_fehlberg78",
+    optimmethod = "subplex",
+    methode = "odeint::runge_kutta_fehlberg78",
     CS_version = model_params$cs_version
   )
 
   testit::assert(names(out_list[i]) == scenarios[i])
   res <- rbind(res_odeint_lsodes, res_lsodes_odeint)
+  res <- cbind(res, type = c("odeint initpars lsodes methode", "lsodes initpars odeint methode"))
   out_list[[i]] <- res
 }
+
+saveRDS(out_list, "cross_ll_test.rds")
