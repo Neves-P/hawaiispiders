@@ -5,7 +5,7 @@
 #SBATCH --job-name=install_hawaiispiders
 #SBATCH --output=install_hawaiispiders.log
 #SBATCH --mem=2GB
-#SBATCH --partition=gelifes
+#SBATCH --partition=vulture
 
 mkdir -p logs
 ml R
