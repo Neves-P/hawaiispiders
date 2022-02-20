@@ -8,4 +8,4 @@
 #SBATCH --partition=vulture
 
 ml R
-Rscript hawaiispiders/scripts/cross_methode_test.R
+Rscript scripts/cross_methode_test.R
