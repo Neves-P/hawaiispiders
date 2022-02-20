@@ -1,4 +1,5 @@
 full_res <- readRDS("full_res.rds")
+library(hawaiispiders)
 prepared_out <- prepare_results_to_plot(full_res)
 
 scenarios <- unique(prepared_out$scenario)
