@@ -16,33 +16,43 @@ model_params <- DAISIEutils::setup_model("cr_dd")
 
 
 for (i in seq_along(scenarios)) {
+  res_out <- data.frame(
+    lambda_c = numeric(),
+    mu = numeric(),
+    K = numeric(),
+    gamma = numeric(),
+    lambda_a = numeric(),
+    loglik = numeric(),
+    df = numeric(),
+    conv = numeric(),
+    scenario = character(),
+    initpars_origin = character()
+  )
   for (j in seq_len(nrow(starter_pars[[i]]))) {
 
-    initparsopt_odeint <- unlist(integrator_pairs[[i]][1, 2:6])
-    testit::assert(integrator_pairs[[i]][1, 11] == factor("odeint"))
+    initparsopt <- unlist(starter_pars[[i]][j, 2:6])
 
-    initparsopt_lsodes <- unlist(integrator_pairs[[i]][2, 2:6])
-    testit::assert(integrator_pairs[[i]][2, 11] == factor("lsodes"))
-
-    res_lsodes_odeint <- DAISIE::DAISIE_ML(
+    res <- DAISIE::DAISIE_ML(
       datalist = get(scenarios[i]),
-      initparsopt = unlist(initparsopt_lsodes),
+      initparsopt = initparsopt,
       idparsnoshift = model_params$idparsnoshift,
       idparsopt = model_params$idparsopt,
       parsfix = model_params$parsfix,
       idparsfix = model_params$idparsfix,
       ddmodel = model_params$ddmodel,
-      cond = 5,
+      cond = 1,
       optimmethod = "subplex",
       methode = "odeint::runge_kutta_fehlberg78",
       CS_version = model_params$cs_version
     )
+    res <- cbind(
+      res,
+      scenario = scenarios[i],
+      initpars_origin = starter_pars[[i]][j, 1]
+    )
+    res_out <- rbind(res_out, res)
   }
-
-  testit::assert(names(out_list[i]) == scenarios[i])
-  res <- rbind(res_odeint_lsodes, res_lsodes_odeint)
-  res <- cbind(res, type = c("odeint initpars lsodes methode", "lsodes initpars odeint methode"))
-  out_list[[i]] <- res
+  out_list[[i]] <- res_out
 }
 
-saveRDS(out_list, "cross_ll_test.rds")
+saveRDS(out_list, "cross_scenario_ll.rds")
