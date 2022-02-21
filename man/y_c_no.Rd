@@ -39,7 +39,7 @@ A DAISIE datalist as required by \code{\link[DAISIE:DAISIE_ML]{DAISIE::DAISIE_ML
 \code{\link[DAISIE:DAISIE_dataprep]{DAISIE::DAISIE_dataprep()}} on \link{y_c_no_datatable}. This
 dataset favours cladogenesis and does not assume MaxAge for most clades.
 MinAge is never used when precise colonisation time is known. Island age is
-set to 1.2My.
+set to 2.4My.
 }
 \references{
 GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
