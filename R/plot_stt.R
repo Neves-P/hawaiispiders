@@ -61,7 +61,7 @@ convert_to_classic_plot <- function(simulation_outputs) {
 #' This function is modified from [DAISIE::DAISIE_plot_stt]. The location
 #' of the legend is shifted to the bottom right-hand side and the grey colour
 #' scheme is replaced by a green one.
-#' @author Luis Valente, Pedro Neves
+#' @author Luis Valente, Pedro Santos Neves
 #' @inheritParams default_params_doc
 #'
 #' @keywords internal

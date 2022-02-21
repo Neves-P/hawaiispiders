@@ -4,7 +4,7 @@
 #'   `"y_c_max"`.
 #' @export
 #'
-#' @author Pedro Neves
+#' @author Pedro Santos Neves
 #' @examples
 #' scenarios <- spider_scenarios()
 spider_scenarios <- function() {

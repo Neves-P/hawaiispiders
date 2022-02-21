@@ -5,7 +5,7 @@
 #'
 #' @keywords internal
 #' @return Nothing
-#' @author Pedro Neves
+#' @author Pedro Santos Neves
 default_params_doc <- function(island_replicates) {
 
 }

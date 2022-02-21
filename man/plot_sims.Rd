@@ -40,6 +40,6 @@ Equilibrium and non-equilibrium dynamics simultaneously operate in the
 Galapagos islands. Ecology Letters 18: 844-852.
 }
 \author{
-Luis Valente, Pedro Neves
+Luis Valente, Pedro Santos Neves
 }
 \keyword{models}

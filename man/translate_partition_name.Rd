@@ -2,7 +2,7 @@
 % Please edit documentation in R/translate_partition_name.R
 \name{translate_partition_name}
 \alias{translate_partition_name}
-\title{Title}
+\title{Translate partitioning codes into plottable English}
 \usage{
 translate_partition_name(partition_name)
 }
@@ -10,5 +10,5 @@ translate_partition_name(partition_name)
 
 }
 \description{
-Title
+Translate partitioning codes into plottable English
 }

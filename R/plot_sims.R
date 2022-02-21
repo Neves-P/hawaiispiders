@@ -14,7 +14,7 @@
 #' @inheritParams default_params_doc
 #'
 #' @return R plot.
-#' @author Luis Valente, Pedro Neves
+#' @author Luis Valente, Pedro Santos Neves
 #' @references Valente, L.M., A.B. Phillimore and R.S. Etienne (2015).
 #' Equilibrium and non-equilibrium dynamics simultaneously operate in the
 #' Galapagos islands. Ecology Letters 18: 844-852.

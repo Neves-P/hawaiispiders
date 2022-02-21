@@ -17,5 +17,5 @@ List all spider scenarios
 scenarios <- spider_scenarios()
 }
 \author{
-Pedro Neves
+Pedro Santos Neves
 }

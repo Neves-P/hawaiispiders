@@ -1,6 +1,6 @@
 ---
 title: "Spiders update"
-author: "Pedro Neves"
+author: "Pedro Santos Neves"
 date: "28/01/2022"
 output: html_document
 ---

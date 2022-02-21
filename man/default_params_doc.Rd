@@ -17,6 +17,6 @@ Nothing
 Default parameter documentation
 }
 \author{
-Pedro Neves
+Pedro Santos Neves
 }
 \keyword{internal}

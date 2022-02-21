@@ -15,6 +15,6 @@ of the legend is shifted to the bottom right-hand side and the grey colour
 scheme is replaced by a green one.
 }
 \author{
-Luis Valente, Pedro Neves
+Luis Valente, Pedro Santos Neves
 }
 \keyword{internal}
