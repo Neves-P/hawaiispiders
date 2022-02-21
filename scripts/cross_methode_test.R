@@ -29,7 +29,7 @@ for (i in seq_along(scenarios)) {
     parsfix = model_params$parsfix,
     idparsfix = model_params$idparsfix,
     ddmodel = model_params$ddmodel,
-    cond = 5,
+    cond = 1,
     optimmethod = "subplex",
     methode = "lsodes",
     CS_version = model_params$cs_version
@@ -42,7 +42,7 @@ for (i in seq_along(scenarios)) {
     parsfix = model_params$parsfix,
     idparsfix = model_params$idparsfix,
     ddmodel = model_params$ddmodel,
-    cond = 5,
+    cond = 1,
     optimmethod = "subplex",
     methode = "odeint::runge_kutta_fehlberg78",
     CS_version = model_params$cs_version
