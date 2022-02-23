@@ -31,7 +31,7 @@ Island. This format can be passed to \code{\link[DAISIE:DAISIE_dataprep]{DAISIE:
 status refers strictly to Big Island endemics, and not endemics to the
 Hawaiian archipelago in general. This dataset favours immigration and
 dos not assume MaxAge for most clades. MinAge is never used when precise
-colonisation time is known. Island age is set to 1.2My.
+colonisation time is known. Island age is set to 2.4My.
 }
 \references{
 GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:

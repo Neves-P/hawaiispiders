@@ -30,7 +30,7 @@ A dataset containing the colonization and branching times of spiders on Big
 Island. This format can be passed to \code{\link[DAISIE:DAISIE_dataprep]{DAISIE::DAISIE_dataprep()}}. Endemicity
 status refers strictly to Big Island endemics, and not endemics to the
 Hawaiian archipelago in general. This dataset favours cladogenesis and does
-not assume MaxAge for most clades. Island age is set to 1.2My.
+not assume MaxAge for most clades. Island age is set to 2.4My.
 }
 \references{
 GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
