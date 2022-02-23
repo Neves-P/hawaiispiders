@@ -1,0 +1,43 @@
+Fatal error: cannot open file 'hawaiispiders/scripts/cross_methode_test.R': No such file or directory
+
+
+###############################################################################
+Peregrine Cluster
+Job 23050409 for user 'p282067'
+Finished at: Sun Feb 20 16:01:00 CET 2022
+
+Job details:
+============
+
+Job ID              : 23050409
+Name                : cross_ll_spi
+User                : p282067
+Partition           : vulture
+Nodes               : pg-node276
+Number of Nodes     : 1
+Cores               : 1
+Number of Tasks     : 1
+State               : FAILED
+Submit              : 2022-02-20T16:00:54
+Start               : 2022-02-20T16:00:55
+End                 : 2022-02-20T16:01:00
+Reserved walltime   : 10:00:00
+Used walltime       : 00:00:05
+Used CPU time       : 00:00:02 (efficiency: 42.10%)
+% User (Computation): 53.21%
+% System (I/O)      : 46.79%
+Mem reserved        : 2G
+Max Mem (Node/step) : 0.00  (Node unknown, N/A)
+Full Max Mem usage  : 0.00 
+Total Disk Read     : 0.00 
+Total Disk Write    : 0.00 
+
+
+Acknowledgements:
+=================
+
+Please see this page for information about acknowledging Peregrine in your publications:
+
+https://wiki.hpc.rug.nl/peregrine/introduction/scientific_output
+
+################################################################################

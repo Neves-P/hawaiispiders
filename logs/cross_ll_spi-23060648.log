@@ -1,0 +1,547 @@
+You are optimizing lambda_c mu K gamma lambda_a 
+You are fixing nothing 
+Calculating the likelihood for the initial parameters. 
+The loglikelihood for the initial parameter values is -150.3813 
+Optimizing the likelihood - this may take a while. 
+
+ Maximum likelihood parameter estimates: lambda_c: 0.964629, mu: 0.755323, K: 1.999998,
+      gamma: 0.381333, lambda_a: 0.587238 
+ Maximum loglikelihood: -149.806362 
+You are optimizing lambda_c mu K gamma lambda_a 
+You are fixing nothing 
+Calculating the likelihood for the initial parameters. 
+The loglikelihood for the initial parameter values is -148.4772 
+Optimizing the likelihood - this may take a while. 
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+
+ Maximum likelihood parameter estimates: lambda_c: 0.787978, mu: 0.000000, K: 2.000000,
+      gamma: 0.257903, lambda_a: 0.648775 
+ Maximum loglikelihood: -148.477189 
+You are optimizing lambda_c mu K gamma lambda_a 
+You are fixing nothing 
+Calculating the likelihood for the initial parameters. 
+The loglikelihood for the initial parameter values is -158.4762 
+Optimizing the likelihood - this may take a while. 
+
+ Maximum likelihood parameter estimates: lambda_c: 0.684256, mu: 0.000001, K: 2.000005,
+      gamma: 0.250264, lambda_a: 0.732832 
+ Maximum loglikelihood: -158.271214 
+You are optimizing lambda_c mu K gamma lambda_a 
+You are fixing nothing 
+Calculating the likelihood for the initial parameters. 
+The loglikelihood for the initial parameter values is -157.0194 
+Optimizing the likelihood - this may take a while. 
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+
+ Maximum likelihood parameter estimates: lambda_c: 0.842927, mu: 0.000000, K: 2.000000,
+      gamma: 0.251427, lambda_a: 0.696054 
+ Maximum loglikelihood: -157.019415 
+You are optimizing lambda_c mu K gamma lambda_a 
+You are fixing nothing 
+Calculating the likelihood for the initial parameters. 
+The loglikelihood for the initial parameter values is -147.0769 
+Optimizing the likelihood - this may take a while. 
+
+ Maximum likelihood parameter estimates: lambda_c: 0.560388, mu: 0.000000, K: 1.999951,
+      gamma: 0.258121, lambda_a: 0.611283 
+ Maximum loglikelihood: -146.925407 
+You are optimizing lambda_c mu K gamma lambda_a 
+You are fixing nothing 
+Calculating the likelihood for the initial parameters. 
+The loglikelihood for the initial parameter values is -145.8492 
+Optimizing the likelihood - this may take a while. 
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+
+ Maximum likelihood parameter estimates: lambda_c: 0.675632, mu: 0.000000, K: 2.000000,
+      gamma: 0.259602, lambda_a: 0.580188 
+ Maximum loglikelihood: -145.849202 
+You are optimizing lambda_c mu K gamma lambda_a 
+You are fixing nothing 
+Calculating the likelihood for the initial parameters. 
+The loglikelihood for the initial parameter values is -159.3179 
+Optimizing the likelihood - this may take a while. 
+
+ Maximum likelihood parameter estimates: lambda_c: 8172.000937, mu: 1.556171, K: 1.000065,
+      gamma: 0.519871, lambda_a: 0.357695 
+ Maximum loglikelihood: -156.193248 
+You are optimizing lambda_c mu K gamma lambda_a 
+You are fixing nothing 
+Calculating the likelihood for the initial parameters. 
+The loglikelihood for the initial parameter values is -159.491 
+Optimizing the likelihood - this may take a while. 
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+
+ Maximum likelihood parameter estimates: lambda_c: 0.486659, mu: 1.399546, K: 4.000000,
+      gamma: 0.442371, lambda_a: 0.472116 
+ Maximum loglikelihood: -159.490964 
+You are optimizing lambda_c mu K gamma lambda_a 
+You are fixing nothing 
+Calculating the likelihood for the initial parameters. 
+The loglikelihood for the initial parameter values is -179.0491 
+Optimizing the likelihood - this may take a while. 
+
+ Maximum likelihood parameter estimates: lambda_c: 0.441058, mu: 0.029484, K: 2.000000,
+      gamma: 0.128480, lambda_a: 0.283927 
+ Maximum loglikelihood: -179.000203 
+You are optimizing lambda_c mu K gamma lambda_a 
+You are fixing nothing 
+Calculating the likelihood for the initial parameters. 
+The loglikelihood for the initial parameter values is -178.8182 
+Optimizing the likelihood - this may take a while. 
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+
+ Maximum likelihood parameter estimates: lambda_c: 0.457455, mu: 0.000000, K: 1.999997,
+      gamma: 0.124437, lambda_a: 0.274447 
+ Maximum loglikelihood: -178.818152 
+You are optimizing lambda_c mu K gamma lambda_a 
+You are fixing nothing 
+Calculating the likelihood for the initial parameters. 
+The loglikelihood for the initial parameter values is -164.0601 
+Optimizing the likelihood - this may take a while. 
+
+ Maximum likelihood parameter estimates: lambda_c: 49.487137, mu: 0.000000, K: 1.002345,
+      gamma: 0.141523, lambda_a: 0.272969 
+ Maximum loglikelihood: -164.032819 
+You are optimizing lambda_c mu K gamma lambda_a 
+You are fixing nothing 
+Calculating the likelihood for the initial parameters. 
+The loglikelihood for the initial parameter values is -164.229 
+Optimizing the likelihood - this may take a while. 
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+
+ Maximum likelihood parameter estimates: lambda_c: 136.795094, mu: 0.000003, K: 1.000907,
+      gamma: 0.141120, lambda_a: 0.259842 
+ Maximum loglikelihood: -164.229024 
+You are optimizing lambda_c mu K gamma lambda_a 
+You are fixing nothing 
+Calculating the likelihood for the initial parameters. 
+The loglikelihood for the initial parameter values is -166.8046 
+Optimizing the likelihood - this may take a while. 
+
+ Maximum likelihood parameter estimates: lambda_c: 371.644550, mu: 1.086662, K: 1.000873,
+      gamma: 0.386678, lambda_a: 0.391738 
+ Maximum loglikelihood: -163.679805 
+You are optimizing lambda_c mu K gamma lambda_a 
+You are fixing nothing 
+Calculating the likelihood for the initial parameters. 
+The loglikelihood for the initial parameter values is -167.0019 
+Optimizing the likelihood - this may take a while. 
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+
+ Maximum likelihood parameter estimates: lambda_c: 0.329492, mu: 1.075429, K: 4.000000,
+      gamma: 0.349756, lambda_a: 0.461970 
+ Maximum loglikelihood: -167.001868 
+You are optimizing lambda_c mu K gamma lambda_a 
+You are fixing nothing 
+Calculating the likelihood for the initial parameters. 
+The loglikelihood for the initial parameter values is -193.2442 
+Optimizing the likelihood - this may take a while. 
+
+ Maximum likelihood parameter estimates: lambda_c: 0.484910, mu: 0.309871, K: 2.000000,
+      gamma: 0.130235, lambda_a: 0.158210 
+ Maximum loglikelihood: -192.125356 
+You are optimizing lambda_c mu K gamma lambda_a 
+You are fixing nothing 
+Calculating the likelihood for the initial parameters. 
+The loglikelihood for the initial parameter values is -193.2664 
+Optimizing the likelihood - this may take a while. 
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+
+ Maximum likelihood parameter estimates: lambda_c: 0.260361, mu: 0.285395, K: 4.000001,
+      gamma: 0.124719, lambda_a: 0.169701 
+ Maximum loglikelihood: -193.266415 
+You are optimizing lambda_c mu K gamma lambda_a 
+You are fixing nothing 
+Calculating the likelihood for the initial parameters. 
+The loglikelihood for the initial parameter values is -181.2309 
+Optimizing the likelihood - this may take a while. 
+
+ Maximum likelihood parameter estimates: lambda_c: 6115.364696, mu: 0.396981, K: 1.000021,
+      gamma: 0.187708, lambda_a: 0.184322 
+ Maximum loglikelihood: -180.407004 
+You are optimizing lambda_c mu K gamma lambda_a 
+You are fixing nothing 
+Calculating the likelihood for the initial parameters. 
+The loglikelihood for the initial parameter values is -181.2004 
+Optimizing the likelihood - this may take a while. 
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+
+ Maximum likelihood parameter estimates: lambda_c: 0.162186, mu: 0.187118, K: 2.000000,
+      gamma: 0.132451, lambda_a: 0.205836 
+ Maximum loglikelihood: -181.200365 
+You are optimizing lambda_c mu K gamma lambda_a 
+You are fixing nothing 
+Calculating the likelihood for the initial parameters. 
+The loglikelihood for the initial parameter values is -167.0359 
+Optimizing the likelihood - this may take a while. 
+
+ Maximum likelihood parameter estimates: lambda_c: 26807.067886, mu: 1.074924, K: 1.000012,
+      gamma: 0.379002, lambda_a: 0.361507 
+ Maximum loglikelihood: -163.344658 
+You are optimizing lambda_c mu K gamma lambda_a 
+You are fixing nothing 
+Calculating the likelihood for the initial parameters. 
+The loglikelihood for the initial parameter values is -167.0781 
+Optimizing the likelihood - this may take a while. 
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+
+ Maximum likelihood parameter estimates: lambda_c: 0.337452, mu: 1.161050, K: 5.000001,
+      gamma: 0.363624, lambda_a: 0.458645 
+ Maximum loglikelihood: -167.078145 
+You are optimizing lambda_c mu K gamma lambda_a 
+You are fixing nothing 
+Calculating the likelihood for the initial parameters. 
+The loglikelihood for the initial parameter values is -201.6759 
+Optimizing the likelihood - this may take a while. 
+
+ Maximum likelihood parameter estimates: lambda_c: 0.458043, mu: 0.498893, K: 2.000000,
+      gamma: 0.153106, lambda_a: 0.123354 
+ Maximum loglikelihood: -200.709045 
+You are optimizing lambda_c mu K gamma lambda_a 
+You are fixing nothing 
+Calculating the likelihood for the initial parameters. 
+The loglikelihood for the initial parameter values is -201.755 
+Optimizing the likelihood - this may take a while. 
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+
+ Maximum likelihood parameter estimates: lambda_c: 0.245061, mu: 0.457315, K: 4.000000,
+      gamma: 0.140817, lambda_a: 0.131493 
+ Maximum loglikelihood: -201.755044 
+You are optimizing lambda_c mu K gamma lambda_a 
+You are fixing nothing 
+Calculating the likelihood for the initial parameters. 
+The loglikelihood for the initial parameter values is -190.2414 
+Optimizing the likelihood - this may take a while. 
+
+ Maximum likelihood parameter estimates: lambda_c: 11144.846701, mu: 0.572895, K: 1.000012,
+      gamma: 0.227013, lambda_a: 0.142647 
+ Maximum loglikelihood: -188.333408 
+You are optimizing lambda_c mu K gamma lambda_a 
+You are fixing nothing 
+Calculating the likelihood for the initial parameters. 
+The loglikelihood for the initial parameter values is -190.5543 
+Optimizing the likelihood - this may take a while. 
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+
+ Maximum likelihood parameter estimates: lambda_c: 0.127601, mu: 0.399187, K: 3.000004,
+      gamma: 0.164302, lambda_a: 0.159920 
+ Maximum loglikelihood: -190.554340 
+You are optimizing lambda_c mu K gamma lambda_a 
+You are fixing nothing 
+Calculating the likelihood for the initial parameters. 
+The loglikelihood for the initial parameter values is -156.0144 
+Optimizing the likelihood - this may take a while. 
+
+ Maximum likelihood parameter estimates: lambda_c: 0.571911, mu: 0.224513, K: 2.000000,
+      gamma: 0.306299, lambda_a: 0.731121 
+ Maximum loglikelihood: -155.698952 
+You are optimizing lambda_c mu K gamma lambda_a 
+You are fixing nothing 
+Calculating the likelihood for the initial parameters. 
+The loglikelihood for the initial parameter values is -154.3252 
+Optimizing the likelihood - this may take a while. 
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+
+ Maximum likelihood parameter estimates: lambda_c: 0.658675, mu: 0.000000, K: 2.000000,
+      gamma: 0.271115, lambda_a: 0.698383 
+ Maximum loglikelihood: -154.325179 
+You are optimizing lambda_c mu K gamma lambda_a 
+You are fixing nothing 
+Calculating the likelihood for the initial parameters. 
+The loglikelihood for the initial parameter values is -165.4232 
+Optimizing the likelihood - this may take a while. 
+
+ Maximum likelihood parameter estimates: lambda_c: 0.585425, mu: 0.000009, K: 2.000001,
+      gamma: 0.263242, lambda_a: 0.812472 
+ Maximum loglikelihood: -165.242866 
+You are optimizing lambda_c mu K gamma lambda_a 
+You are fixing nothing 
+Calculating the likelihood for the initial parameters. 
+The loglikelihood for the initial parameter values is -165.3197 
+Optimizing the likelihood - this may take a while. 
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+
+ Maximum likelihood parameter estimates: lambda_c: 0.236805, mu: 0.000000, K: 133973.149187,
+      gamma: 0.255810, lambda_a: 0.809993 
+ Maximum loglikelihood: -165.319654 
+You are optimizing lambda_c mu K gamma lambda_a 
+You are fixing nothing 
+Calculating the likelihood for the initial parameters. 
+The loglikelihood for the initial parameter values is -153.9575 
+Optimizing the likelihood - this may take a while. 
+
+ Maximum likelihood parameter estimates: lambda_c: 0.471661, mu: 0.000011, K: 2.000009,
+      gamma: 0.271458, lambda_a: 0.688549 
+ Maximum loglikelihood: -153.818665 
+You are optimizing lambda_c mu K gamma lambda_a 
+You are fixing nothing 
+Calculating the likelihood for the initial parameters. 
+The loglikelihood for the initial parameter values is -153.2129 
+Optimizing the likelihood - this may take a while. 
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+
+ Maximum likelihood parameter estimates: lambda_c: 0.568791, mu: 0.000000, K: 2.000000,
+      gamma: 0.271966, lambda_a: 0.645413 
+ Maximum loglikelihood: -153.212914 
+You are optimizing lambda_c mu K gamma lambda_a 
+You are fixing nothing 
+Calculating the likelihood for the initial parameters. 
+The loglikelihood for the initial parameter values is -157.0842 
+Optimizing the likelihood - this may take a while. 
+
+ Maximum likelihood parameter estimates: lambda_c: 8611.464448, mu: 2.145574, K: 1.000057,
+      gamma: 0.766235, lambda_a: 0.651875 
+ Maximum loglikelihood: -154.047246 
+You are optimizing lambda_c mu K gamma lambda_a 
+You are fixing nothing 
+Calculating the likelihood for the initial parameters. 
+The loglikelihood for the initial parameter values is -157.2212 
+Optimizing the likelihood - this may take a while. 
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+
+ Maximum likelihood parameter estimates: lambda_c: 0.430028, mu: 1.899844, K: 4.000000,
+      gamma: 0.627992, lambda_a: 0.729021 
+ Maximum loglikelihood: -157.221246 
+You are optimizing lambda_c mu K gamma lambda_a 
+You are fixing nothing 
+Calculating the likelihood for the initial parameters. 
+The loglikelihood for the initial parameter values is -188.707 
+Optimizing the likelihood - this may take a while. 
+
+ Maximum likelihood parameter estimates: lambda_c: 0.141882, mu: 0.000011, K: 126813.835622,
+      gamma: 0.126806, lambda_a: 0.353623 
+ Maximum loglikelihood: -188.577929 
+You are optimizing lambda_c mu K gamma lambda_a 
+You are fixing nothing 
+Calculating the likelihood for the initial parameters. 
+The loglikelihood for the initial parameter values is -188.3829 
+Optimizing the likelihood - this may take a while. 
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+
+ Maximum likelihood parameter estimates: lambda_c: 0.234953, mu: 0.000000, K: 2.999987,
+      gamma: 0.129560, lambda_a: 0.355616 
+ Maximum loglikelihood: -188.382854 
+You are optimizing lambda_c mu K gamma lambda_a 
+You are fixing nothing 
+Calculating the likelihood for the initial parameters. 
+The loglikelihood for the initial parameter values is -169.8218 
+Optimizing the likelihood - this may take a while. 
+
+ Maximum likelihood parameter estimates: lambda_c: 89569.541003, mu: 0.000000, K: 1.000001,
+      gamma: 0.148474, lambda_a: 0.300617 
+ Maximum loglikelihood: -168.781335 
+You are optimizing lambda_c mu K gamma lambda_a 
+You are fixing nothing 
+Calculating the likelihood for the initial parameters. 
+The loglikelihood for the initial parameter values is -169.8218 
+Optimizing the likelihood - this may take a while. 
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+
+ Maximum likelihood parameter estimates: lambda_c: 0.149559, mu: 0.000000, K: 2.000001,
+      gamma: 0.145617, lambda_a: 0.296867 
+ Maximum loglikelihood: -169.821829 
+You are optimizing lambda_c mu K gamma lambda_a 
+You are fixing nothing 
+Calculating the likelihood for the initial parameters. 
+The loglikelihood for the initial parameter values is -164.9086 
+Optimizing the likelihood - this may take a while. 
+
+ Maximum likelihood parameter estimates: lambda_c: 94836.443662, mu: 1.225123, K: 1.000002,
+      gamma: 0.472886, lambda_a: 0.552792 
+ Maximum loglikelihood: -162.006949 
+You are optimizing lambda_c mu K gamma lambda_a 
+You are fixing nothing 
+Calculating the likelihood for the initial parameters. 
+The loglikelihood for the initial parameter values is -165.0125 
+Optimizing the likelihood - this may take a while. 
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+
+ Maximum likelihood parameter estimates: lambda_c: 0.242047, mu: 1.228359, K: 4.000000,
+      gamma: 0.427513, lambda_a: 0.603065 
+ Maximum loglikelihood: -165.012458 
+You are optimizing lambda_c mu K gamma lambda_a 
+You are fixing nothing 
+Calculating the likelihood for the initial parameters. 
+The loglikelihood for the initial parameter values is -202.6692 
+Optimizing the likelihood - this may take a while. 
+
+ Maximum likelihood parameter estimates: lambda_c: 0.269856, mu: 0.431826, K: 2.997825,
+      gamma: 0.163266, lambda_a: 0.251559 
+ Maximum loglikelihood: -202.616714 
+You are optimizing lambda_c mu K gamma lambda_a 
+You are fixing nothing 
+Calculating the likelihood for the initial parameters. 
+The loglikelihood for the initial parameter values is -202.695 
+Optimizing the likelihood - this may take a while. 
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+
+ Maximum likelihood parameter estimates: lambda_c: 0.224958, mu: 0.409287, K: 4.000000,
+      gamma: 0.157536, lambda_a: 0.252569 
+ Maximum loglikelihood: -202.695042 
+You are optimizing lambda_c mu K gamma lambda_a 
+You are fixing nothing 
+Calculating the likelihood for the initial parameters. 
+The loglikelihood for the initial parameter values is -185.7443 
+Optimizing the likelihood - this may take a while. 
+
+ Maximum likelihood parameter estimates: lambda_c: 71878.524968, mu: 0.410272, K: 1.000001,
+      gamma: 0.206166, lambda_a: 0.242676 
+ Maximum loglikelihood: -184.941301 
+You are optimizing lambda_c mu K gamma lambda_a 
+You are fixing nothing 
+Calculating the likelihood for the initial parameters. 
+The loglikelihood for the initial parameter values is -185.3848 
+Optimizing the likelihood - this may take a while. 
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+
+ Maximum likelihood parameter estimates: lambda_c: 0.097897, mu: 0.263794, K: 2.000000,
+      gamma: 0.159361, lambda_a: 0.240933 
+ Maximum loglikelihood: -185.384783 
+You are optimizing lambda_c mu K gamma lambda_a 
+You are fixing nothing 
+Calculating the likelihood for the initial parameters. 
+The loglikelihood for the initial parameter values is -164.8917 
+Optimizing the likelihood - this may take a while. 
+
+ Maximum likelihood parameter estimates: lambda_c: 67.362805, mu: 1.201612, K: 1.003327,
+      gamma: 0.463055, lambda_a: 0.533819 
+ Maximum loglikelihood: -161.792498 
+You are optimizing lambda_c mu K gamma lambda_a 
+You are fixing nothing 
+Calculating the likelihood for the initial parameters. 
+The loglikelihood for the initial parameter values is -165.0613 
+Optimizing the likelihood - this may take a while. 
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+
+ Maximum likelihood parameter estimates: lambda_c: 0.234488, mu: 1.241768, K: 4.000001,
+      gamma: 0.427490, lambda_a: 0.607582 
+ Maximum loglikelihood: -165.061315 
+You are optimizing lambda_c mu K gamma lambda_a 
+You are fixing nothing 
+Calculating the likelihood for the initial parameters. 
+The loglikelihood for the initial parameter values is -211.1059 
+Optimizing the likelihood - this may take a while. 
+
+ Maximum likelihood parameter estimates: lambda_c: 0.373171, mu: 0.575268, K: 2.000000,
+      gamma: 0.185735, lambda_a: 0.216038 
+ Maximum loglikelihood: -210.895549 
+You are optimizing lambda_c mu K gamma lambda_a 
+You are fixing nothing 
+Calculating the likelihood for the initial parameters. 
+The loglikelihood for the initial parameter values is -211.1105 
+Optimizing the likelihood - this may take a while. 
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+
+ Maximum likelihood parameter estimates: lambda_c: 0.190408, mu: 0.524542, K: 5.000003,
+      gamma: 0.166542, lambda_a: 0.216436 
+ Maximum loglikelihood: -211.110469 
+You are optimizing lambda_c mu K gamma lambda_a 
+You are fixing nothing 
+Calculating the likelihood for the initial parameters. 
+The loglikelihood for the initial parameter values is -194.4304 
+Optimizing the likelihood - this may take a while. 
+
+ Maximum likelihood parameter estimates: lambda_c: 52988.799946, mu: 0.568839, K: 1.000001,
+      gamma: 0.246808, lambda_a: 0.215975 
+ Maximum loglikelihood: -192.762917 
+You are optimizing lambda_c mu K gamma lambda_a 
+You are fixing nothing 
+Calculating the likelihood for the initial parameters. 
+The loglikelihood for the initial parameter values is -194.0817 
+Optimizing the likelihood - this may take a while. 
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+Positive values of loglik encountered without possibility for approximation. Setting loglik to -Inf.
+
+ Maximum likelihood parameter estimates: lambda_c: 0.065130, mu: 0.389185, K: 2.000000,
+      gamma: 0.173301, lambda_a: 0.216199 
+ Maximum loglikelihood: -194.081693 
+
+
+###############################################################################
+Peregrine Cluster
+Job 23060648 for user 'p282067'
+Finished at: Mon Feb 21 18:25:36 CET 2022
+
+Job details:
+============
+
+Job ID              : 23060648
+Name                : cross_ll_spi
+User                : p282067
+Partition           : vulture
+Nodes               : pg-node276
+Number of Nodes     : 1
+Cores               : 1
+Number of Tasks     : 1
+State               : COMPLETED
+Submit              : 2022-02-21T18:05:10
+Start               : 2022-02-21T18:05:10
+End                 : 2022-02-21T18:25:36
+Reserved walltime   : 10:00:00
+Used walltime       : 00:20:26
+Used CPU time       : 00:20:16 (efficiency: 99.22%)
+% User (Computation): 99.84%
+% System (I/O)      :  0.16%
+Mem reserved        : 2G
+Max Mem (Node/step) : 104.56M (pg-node276, per node)
+Full Max Mem usage  : 104.56M
+Total Disk Read     : 2.18M
+Total Disk Write    : 143.54K
+
+
+Acknowledgements:
+=================
+
+Please see this page for information about acknowledging Peregrine in your publications:
+
+https://wiki.hpc.rug.nl/peregrine/introduction/scientific_output
+
+################################################################################

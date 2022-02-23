@@ -1,0 +1,396 @@
+Using github PAT from envvar GITHUB_PAT
+Skipping install of 'DAISIE' from a github remote, the SHA1 (7f351461) has not changed since last install.
+  Use `force = TRUE` to force installation
+Using github PAT from envvar GITHUB_PAT
+Skipping install of 'DAISIEutils' from a github remote, the SHA1 (70510951) has not changed since last install.
+  Use `force = TRUE` to force installation
+Using github PAT from envvar GITHUB_PAT
+Downloading GitHub repo Neves-P/hawaiispiders@HEAD
+colorspace (2.0-2 -> 2.0-3) [CRAN]
+yaml       (2.3.4 -> 2.3.5) [CRAN]
+Installing 2 packages: colorspace, yaml
+Installing packages into ‘/home/p282067/R/x86_64-pc-linux-gnu-library/4.1’
+(as ‘lib’ is unspecified)
+trying URL 'https://cloud.r-project.org/src/contrib/colorspace_2.0-3.tar.gz'
+Content type 'application/x-gzip' length 2199185 bytes (2.1 MB)
+==================================================
+downloaded 2.1 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/yaml_2.3.5.tar.gz'
+Content type 'application/x-gzip' length 94535 bytes (92 KB)
+==================================================
+downloaded 92 KB
+
+* installing *source* package ‘colorspace’ ...
+** package ‘colorspace’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc -I"/software/software/R/4.1.0-foss-2021a/lib64/R/include" -DNDEBUG   -I/software/software/OpenSSL/1.1/include -I/software/software/libgit2/1.1.0-GCCcore-10.3.0/include -I/software/software/GDAL/3.3.0-foss-2021a/include -I/software/software/nodejs/14.17.0-GCCcore-10.3.0/include -I/software/software/GLPK/5.0-GCCcore-10.3.0/include -I/software/software/ImageMagick/7.0.11-14-GCCcore-10.3.0/include -I/software/software/GSL/2.7-GCC-10.3.0/include -I/software/software/UDUNITS/2.2.28-GCCcore-10.3.0/include -I/software/software/HDF5/1.10.7-gompi-2021a/include -I/software/software/ICU/69.1-GCCcore-10.3.0/include -I/software/software/libsndfile/1.0.31-GCCcore-10.3.0/include -I/software/software/FFTW/3.3.9-gompi-2021a/include -I/software/software/NLopt/2.7.0-GCCcore-10.3.0/include -I/software/software/GMP/6.2.1-GCCcore-10.3.0/include -I/software/software/libxml2/2.9.10-GCCcore-10.3.0/include -I/software/software/cURL/7.76.0-GCCcore-10.3.0/include -I/software/software/Tk/8.6.11-GCCcore-10.3.0/include -I/software/software/Java/11.0.2/include -I/software/software/LibTIFF/4.2.0-GCCcore-10.3.0/include -I/software/software/libjpeg-turbo/2.0.6-GCCcore-10.3.0/include -I/software/software/libpng/1.6.37-GCCcore-10.3.0/include -I/software/software/PCRE2/10.36-GCCcore-10.3.0/include -I/software/software/SQLite/3.35.4-GCCcore-10.3.0/include -I/software/software/zlib/1.2.11-GCCcore-10.3.0/include -I/software/software/XZ/5.2.5-GCCcore-10.3.0/include -I/software/software/bzip2/1.0.8-GCCcore-10.3.0/include -I/software/software/ncurses/6.2-GCCcore-10.3.0/include -I/software/software/libreadline/8.1-GCCcore-10.3.0/include -I/software/software/cairo/1.16.0-GCCcore-10.3.0/include -I/software/software/libGLU/9.0.1-GCCcore-10.3.0/include -I/software/software/Mesa/21.1.1-GCCcore-10.3.0/include -I/software/software/X11/20210518-GCCcore-10.3.0/include -I/software/software/FlexiBLAS/3.0.4-GCC-10.3.0/include   -fpic  -O2 -ftree-vectorize -march=native -fno-math-errno  -c colorspace.c -o colorspace.o
+gcc -I"/software/software/R/4.1.0-foss-2021a/lib64/R/include" -DNDEBUG   -I/software/software/OpenSSL/1.1/include -I/software/software/libgit2/1.1.0-GCCcore-10.3.0/include -I/software/software/GDAL/3.3.0-foss-2021a/include -I/software/software/nodejs/14.17.0-GCCcore-10.3.0/include -I/software/software/GLPK/5.0-GCCcore-10.3.0/include -I/software/software/ImageMagick/7.0.11-14-GCCcore-10.3.0/include -I/software/software/GSL/2.7-GCC-10.3.0/include -I/software/software/UDUNITS/2.2.28-GCCcore-10.3.0/include -I/software/software/HDF5/1.10.7-gompi-2021a/include -I/software/software/ICU/69.1-GCCcore-10.3.0/include -I/software/software/libsndfile/1.0.31-GCCcore-10.3.0/include -I/software/software/FFTW/3.3.9-gompi-2021a/include -I/software/software/NLopt/2.7.0-GCCcore-10.3.0/include -I/software/software/GMP/6.2.1-GCCcore-10.3.0/include -I/software/software/libxml2/2.9.10-GCCcore-10.3.0/include -I/software/software/cURL/7.76.0-GCCcore-10.3.0/include -I/software/software/Tk/8.6.11-GCCcore-10.3.0/include -I/software/software/Java/11.0.2/include -I/software/software/LibTIFF/4.2.0-GCCcore-10.3.0/include -I/software/software/libjpeg-turbo/2.0.6-GCCcore-10.3.0/include -I/software/software/libpng/1.6.37-GCCcore-10.3.0/include -I/software/software/PCRE2/10.36-GCCcore-10.3.0/include -I/software/software/SQLite/3.35.4-GCCcore-10.3.0/include -I/software/software/zlib/1.2.11-GCCcore-10.3.0/include -I/software/software/XZ/5.2.5-GCCcore-10.3.0/include -I/software/software/bzip2/1.0.8-GCCcore-10.3.0/include -I/software/software/ncurses/6.2-GCCcore-10.3.0/include -I/software/software/libreadline/8.1-GCCcore-10.3.0/include -I/software/software/cairo/1.16.0-GCCcore-10.3.0/include -I/software/software/libGLU/9.0.1-GCCcore-10.3.0/include -I/software/software/Mesa/21.1.1-GCCcore-10.3.0/include -I/software/software/X11/20210518-GCCcore-10.3.0/include -I/software/software/FlexiBLAS/3.0.4-GCC-10.3.0/include   -fpic  -O2 -ftree-vectorize -march=native -fno-math-errno  -c init.c -o init.o
+gcc -shared -L/software/software/R/4.1.0-foss-2021a/lib64/R/lib -L/software/software/OpenSSL/1.1/lib64 -L/software/software/OpenSSL/1.1/lib -L/software/software/libgit2/1.1.0-GCCcore-10.3.0/lib64 -L/software/software/libgit2/1.1.0-GCCcore-10.3.0/lib -L/software/software/GDAL/3.3.0-foss-2021a/lib64 -L/software/software/GDAL/3.3.0-foss-2021a/lib -L/software/software/nodejs/14.17.0-GCCcore-10.3.0/lib64 -L/software/software/nodejs/14.17.0-GCCcore-10.3.0/lib -L/software/software/GLPK/5.0-GCCcore-10.3.0/lib64 -L/software/software/GLPK/5.0-GCCcore-10.3.0/lib -L/software/software/ImageMagick/7.0.11-14-GCCcore-10.3.0/lib64 -L/software/software/ImageMagick/7.0.11-14-GCCcore-10.3.0/lib -L/software/software/GSL/2.7-GCC-10.3.0/lib64 -L/software/software/GSL/2.7-GCC-10.3.0/lib -L/software/software/UDUNITS/2.2.28-GCCcore-10.3.0/lib64 -L/software/software/UDUNITS/2.2.28-GCCcore-10.3.0/lib -L/software/software/HDF5/1.10.7-gompi-2021a/lib64 -L/software/software/HDF5/1.10.7-gompi-2021a/lib -L/software/software/ICU/69.1-GCCcore-10.3.0/lib64 -L/software/software/ICU/69.1-GCCcore-10.3.0/lib -L/software/software/libsndfile/1.0.31-GCCcore-10.3.0/lib64 -L/software/software/libsndfile/1.0.31-GCCcore-10.3.0/lib -L/software/software/FFTW/3.3.9-gompi-2021a/lib64 -L/software/software/FFTW/3.3.9-gompi-2021a/lib -L/software/software/NLopt/2.7.0-GCCcore-10.3.0/lib64 -L/software/software/NLopt/2.7.0-GCCcore-10.3.0/lib -L/software/software/GMP/6.2.1-GCCcore-10.3.0/lib64 -L/software/software/GMP/6.2.1-GCCcore-10.3.0/lib -L/software/software/libxml2/2.9.10-GCCcore-10.3.0/lib64 -L/software/software/libxml2/2.9.10-GCCcore-10.3.0/lib -L/software/software/cURL/7.76.0-GCCcore-10.3.0/lib64 -L/software/software/cURL/7.76.0-GCCcore-10.3.0/lib -L/software/software/Tk/8.6.11-GCCcore-10.3.0/lib64 -L/software/software/Tk/8.6.11-GCCcore-10.3.0/lib -L/software/software/Java/11.0.2/lib -L/software/software/LibTIFF/4.2.0-GCCcore-10.3.0/lib64 -L/software/software/LibTIFF/4.2.0-GCCcore-10.3.0/lib -L/software/software/libjpeg-turbo/2.0.6-GCCcore-10.3.0/lib64 -L/software/software/libjpeg-turbo/2.0.6-GCCcore-10.3.0/lib -L/software/software/libpng/1.6.37-GCCcore-10.3.0/lib64 -L/software/software/libpng/1.6.37-GCCcore-10.3.0/lib -L/software/software/PCRE2/10.36-GCCcore-10.3.0/lib64 -L/software/software/PCRE2/10.36-GCCcore-10.3.0/lib -L/software/software/SQLite/3.35.4-GCCcore-10.3.0/lib64 -L/software/software/SQLite/3.35.4-GCCcore-10.3.0/lib -L/software/software/zlib/1.2.11-GCCcore-10.3.0/lib64 -L/software/software/zlib/1.2.11-GCCcore-10.3.0/lib -L/software/software/XZ/5.2.5-GCCcore-10.3.0/lib64 -L/software/software/XZ/5.2.5-GCCcore-10.3.0/lib -L/software/software/bzip2/1.0.8-GCCcore-10.3.0/lib64 -L/software/software/bzip2/1.0.8-GCCcore-10.3.0/lib -L/software/software/ncurses/6.2-GCCcore-10.3.0/lib64 -L/software/software/ncurses/6.2-GCCcore-10.3.0/lib -L/software/software/libreadline/8.1-GCCcore-10.3.0/lib64 -L/software/software/libreadline/8.1-GCCcore-10.3.0/lib -L/software/software/cairo/1.16.0-GCCcore-10.3.0/lib64 -L/software/software/cairo/1.16.0-GCCcore-10.3.0/lib -L/software/software/libGLU/9.0.1-GCCcore-10.3.0/lib64 -L/software/software/libGLU/9.0.1-GCCcore-10.3.0/lib -L/software/software/Mesa/21.1.1-GCCcore-10.3.0/lib64 -L/software/software/Mesa/21.1.1-GCCcore-10.3.0/lib -L/software/software/X11/20210518-GCCcore-10.3.0/lib64 -L/software/software/X11/20210518-GCCcore-10.3.0/lib -L/software/software/Xvfb/1.20.11-GCCcore-10.3.0/lib64 -L/software/software/Xvfb/1.20.11-GCCcore-10.3.0/lib -L/software/software/ScaLAPACK/2.1.0-gompi-2021a-fb/lib64 -L/software/software/ScaLAPACK/2.1.0-gompi-2021a-fb/lib -L/software/software/FlexiBLAS/3.0.4-GCC-10.3.0/lib64 -L/software/software/FlexiBLAS/3.0.4-GCC-10.3.0/lib -L/software/software/GCCcore/10.3.0/lib64 -L/software/software/GCCcore/10.3.0/lib -o colorspace.so colorspace.o init.o -L/software/software/R/4.1.0-foss-2021a/lib64/R/lib -lR
+installing to /home/p282067/R/x86_64-pc-linux-gnu-library/4.1/00LOCK-colorspace/00new/colorspace/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (colorspace)
+* installing *source* package ‘yaml’ ...
+** package ‘yaml’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc -I"/software/software/R/4.1.0-foss-2021a/lib64/R/include" -DNDEBUG -I. -DNDEBUG  -I/software/software/OpenSSL/1.1/include -I/software/software/libgit2/1.1.0-GCCcore-10.3.0/include -I/software/software/GDAL/3.3.0-foss-2021a/include -I/software/software/nodejs/14.17.0-GCCcore-10.3.0/include -I/software/software/GLPK/5.0-GCCcore-10.3.0/include -I/software/software/ImageMagick/7.0.11-14-GCCcore-10.3.0/include -I/software/software/GSL/2.7-GCC-10.3.0/include -I/software/software/UDUNITS/2.2.28-GCCcore-10.3.0/include -I/software/software/HDF5/1.10.7-gompi-2021a/include -I/software/software/ICU/69.1-GCCcore-10.3.0/include -I/software/software/libsndfile/1.0.31-GCCcore-10.3.0/include -I/software/software/FFTW/3.3.9-gompi-2021a/include -I/software/software/NLopt/2.7.0-GCCcore-10.3.0/include -I/software/software/GMP/6.2.1-GCCcore-10.3.0/include -I/software/software/libxml2/2.9.10-GCCcore-10.3.0/include -I/software/software/cURL/7.76.0-GCCcore-10.3.0/include -I/software/software/Tk/8.6.11-GCCcore-10.3.0/include -I/software/software/Java/11.0.2/include -I/software/software/LibTIFF/4.2.0-GCCcore-10.3.0/include -I/software/software/libjpeg-turbo/2.0.6-GCCcore-10.3.0/include -I/software/software/libpng/1.6.37-GCCcore-10.3.0/include -I/software/software/PCRE2/10.36-GCCcore-10.3.0/include -I/software/software/SQLite/3.35.4-GCCcore-10.3.0/include -I/software/software/zlib/1.2.11-GCCcore-10.3.0/include -I/software/software/XZ/5.2.5-GCCcore-10.3.0/include -I/software/software/bzip2/1.0.8-GCCcore-10.3.0/include -I/software/software/ncurses/6.2-GCCcore-10.3.0/include -I/software/software/libreadline/8.1-GCCcore-10.3.0/include -I/software/software/cairo/1.16.0-GCCcore-10.3.0/include -I/software/software/libGLU/9.0.1-GCCcore-10.3.0/include -I/software/software/Mesa/21.1.1-GCCcore-10.3.0/include -I/software/software/X11/20210518-GCCcore-10.3.0/include -I/software/software/FlexiBLAS/3.0.4-GCC-10.3.0/include   -fpic  -O2 -ftree-vectorize -march=native -fno-math-errno  -c api.c -o api.o
+gcc -I"/software/software/R/4.1.0-foss-2021a/lib64/R/include" -DNDEBUG -I. -DNDEBUG  -I/software/software/OpenSSL/1.1/include -I/software/software/libgit2/1.1.0-GCCcore-10.3.0/include -I/software/software/GDAL/3.3.0-foss-2021a/include -I/software/software/nodejs/14.17.0-GCCcore-10.3.0/include -I/software/software/GLPK/5.0-GCCcore-10.3.0/include -I/software/software/ImageMagick/7.0.11-14-GCCcore-10.3.0/include -I/software/software/GSL/2.7-GCC-10.3.0/include -I/software/software/UDUNITS/2.2.28-GCCcore-10.3.0/include -I/software/software/HDF5/1.10.7-gompi-2021a/include -I/software/software/ICU/69.1-GCCcore-10.3.0/include -I/software/software/libsndfile/1.0.31-GCCcore-10.3.0/include -I/software/software/FFTW/3.3.9-gompi-2021a/include -I/software/software/NLopt/2.7.0-GCCcore-10.3.0/include -I/software/software/GMP/6.2.1-GCCcore-10.3.0/include -I/software/software/libxml2/2.9.10-GCCcore-10.3.0/include -I/software/software/cURL/7.76.0-GCCcore-10.3.0/include -I/software/software/Tk/8.6.11-GCCcore-10.3.0/include -I/software/software/Java/11.0.2/include -I/software/software/LibTIFF/4.2.0-GCCcore-10.3.0/include -I/software/software/libjpeg-turbo/2.0.6-GCCcore-10.3.0/include -I/software/software/libpng/1.6.37-GCCcore-10.3.0/include -I/software/software/PCRE2/10.36-GCCcore-10.3.0/include -I/software/software/SQLite/3.35.4-GCCcore-10.3.0/include -I/software/software/zlib/1.2.11-GCCcore-10.3.0/include -I/software/software/XZ/5.2.5-GCCcore-10.3.0/include -I/software/software/bzip2/1.0.8-GCCcore-10.3.0/include -I/software/software/ncurses/6.2-GCCcore-10.3.0/include -I/software/software/libreadline/8.1-GCCcore-10.3.0/include -I/software/software/cairo/1.16.0-GCCcore-10.3.0/include -I/software/software/libGLU/9.0.1-GCCcore-10.3.0/include -I/software/software/Mesa/21.1.1-GCCcore-10.3.0/include -I/software/software/X11/20210518-GCCcore-10.3.0/include -I/software/software/FlexiBLAS/3.0.4-GCC-10.3.0/include   -fpic  -O2 -ftree-vectorize -march=native -fno-math-errno  -c dumper.c -o dumper.o
+gcc -I"/software/software/R/4.1.0-foss-2021a/lib64/R/include" -DNDEBUG -I. -DNDEBUG  -I/software/software/OpenSSL/1.1/include -I/software/software/libgit2/1.1.0-GCCcore-10.3.0/include -I/software/software/GDAL/3.3.0-foss-2021a/include -I/software/software/nodejs/14.17.0-GCCcore-10.3.0/include -I/software/software/GLPK/5.0-GCCcore-10.3.0/include -I/software/software/ImageMagick/7.0.11-14-GCCcore-10.3.0/include -I/software/software/GSL/2.7-GCC-10.3.0/include -I/software/software/UDUNITS/2.2.28-GCCcore-10.3.0/include -I/software/software/HDF5/1.10.7-gompi-2021a/include -I/software/software/ICU/69.1-GCCcore-10.3.0/include -I/software/software/libsndfile/1.0.31-GCCcore-10.3.0/include -I/software/software/FFTW/3.3.9-gompi-2021a/include -I/software/software/NLopt/2.7.0-GCCcore-10.3.0/include -I/software/software/GMP/6.2.1-GCCcore-10.3.0/include -I/software/software/libxml2/2.9.10-GCCcore-10.3.0/include -I/software/software/cURL/7.76.0-GCCcore-10.3.0/include -I/software/software/Tk/8.6.11-GCCcore-10.3.0/include -I/software/software/Java/11.0.2/include -I/software/software/LibTIFF/4.2.0-GCCcore-10.3.0/include -I/software/software/libjpeg-turbo/2.0.6-GCCcore-10.3.0/include -I/software/software/libpng/1.6.37-GCCcore-10.3.0/include -I/software/software/PCRE2/10.36-GCCcore-10.3.0/include -I/software/software/SQLite/3.35.4-GCCcore-10.3.0/include -I/software/software/zlib/1.2.11-GCCcore-10.3.0/include -I/software/software/XZ/5.2.5-GCCcore-10.3.0/include -I/software/software/bzip2/1.0.8-GCCcore-10.3.0/include -I/software/software/ncurses/6.2-GCCcore-10.3.0/include -I/software/software/libreadline/8.1-GCCcore-10.3.0/include -I/software/software/cairo/1.16.0-GCCcore-10.3.0/include -I/software/software/libGLU/9.0.1-GCCcore-10.3.0/include -I/software/software/Mesa/21.1.1-GCCcore-10.3.0/include -I/software/software/X11/20210518-GCCcore-10.3.0/include -I/software/software/FlexiBLAS/3.0.4-GCC-10.3.0/include   -fpic  -O2 -ftree-vectorize -march=native -fno-math-errno  -c emitter.c -o emitter.o
+gcc -I"/software/software/R/4.1.0-foss-2021a/lib64/R/include" -DNDEBUG -I. -DNDEBUG  -I/software/software/OpenSSL/1.1/include -I/software/software/libgit2/1.1.0-GCCcore-10.3.0/include -I/software/software/GDAL/3.3.0-foss-2021a/include -I/software/software/nodejs/14.17.0-GCCcore-10.3.0/include -I/software/software/GLPK/5.0-GCCcore-10.3.0/include -I/software/software/ImageMagick/7.0.11-14-GCCcore-10.3.0/include -I/software/software/GSL/2.7-GCC-10.3.0/include -I/software/software/UDUNITS/2.2.28-GCCcore-10.3.0/include -I/software/software/HDF5/1.10.7-gompi-2021a/include -I/software/software/ICU/69.1-GCCcore-10.3.0/include -I/software/software/libsndfile/1.0.31-GCCcore-10.3.0/include -I/software/software/FFTW/3.3.9-gompi-2021a/include -I/software/software/NLopt/2.7.0-GCCcore-10.3.0/include -I/software/software/GMP/6.2.1-GCCcore-10.3.0/include -I/software/software/libxml2/2.9.10-GCCcore-10.3.0/include -I/software/software/cURL/7.76.0-GCCcore-10.3.0/include -I/software/software/Tk/8.6.11-GCCcore-10.3.0/include -I/software/software/Java/11.0.2/include -I/software/software/LibTIFF/4.2.0-GCCcore-10.3.0/include -I/software/software/libjpeg-turbo/2.0.6-GCCcore-10.3.0/include -I/software/software/libpng/1.6.37-GCCcore-10.3.0/include -I/software/software/PCRE2/10.36-GCCcore-10.3.0/include -I/software/software/SQLite/3.35.4-GCCcore-10.3.0/include -I/software/software/zlib/1.2.11-GCCcore-10.3.0/include -I/software/software/XZ/5.2.5-GCCcore-10.3.0/include -I/software/software/bzip2/1.0.8-GCCcore-10.3.0/include -I/software/software/ncurses/6.2-GCCcore-10.3.0/include -I/software/software/libreadline/8.1-GCCcore-10.3.0/include -I/software/software/cairo/1.16.0-GCCcore-10.3.0/include -I/software/software/libGLU/9.0.1-GCCcore-10.3.0/include -I/software/software/Mesa/21.1.1-GCCcore-10.3.0/include -I/software/software/X11/20210518-GCCcore-10.3.0/include -I/software/software/FlexiBLAS/3.0.4-GCC-10.3.0/include   -fpic  -O2 -ftree-vectorize -march=native -fno-math-errno  -c implicit.c -o implicit.o
+gcc -I"/software/software/R/4.1.0-foss-2021a/lib64/R/include" -DNDEBUG -I. -DNDEBUG  -I/software/software/OpenSSL/1.1/include -I/software/software/libgit2/1.1.0-GCCcore-10.3.0/include -I/software/software/GDAL/3.3.0-foss-2021a/include -I/software/software/nodejs/14.17.0-GCCcore-10.3.0/include -I/software/software/GLPK/5.0-GCCcore-10.3.0/include -I/software/software/ImageMagick/7.0.11-14-GCCcore-10.3.0/include -I/software/software/GSL/2.7-GCC-10.3.0/include -I/software/software/UDUNITS/2.2.28-GCCcore-10.3.0/include -I/software/software/HDF5/1.10.7-gompi-2021a/include -I/software/software/ICU/69.1-GCCcore-10.3.0/include -I/software/software/libsndfile/1.0.31-GCCcore-10.3.0/include -I/software/software/FFTW/3.3.9-gompi-2021a/include -I/software/software/NLopt/2.7.0-GCCcore-10.3.0/include -I/software/software/GMP/6.2.1-GCCcore-10.3.0/include -I/software/software/libxml2/2.9.10-GCCcore-10.3.0/include -I/software/software/cURL/7.76.0-GCCcore-10.3.0/include -I/software/software/Tk/8.6.11-GCCcore-10.3.0/include -I/software/software/Java/11.0.2/include -I/software/software/LibTIFF/4.2.0-GCCcore-10.3.0/include -I/software/software/libjpeg-turbo/2.0.6-GCCcore-10.3.0/include -I/software/software/libpng/1.6.37-GCCcore-10.3.0/include -I/software/software/PCRE2/10.36-GCCcore-10.3.0/include -I/software/software/SQLite/3.35.4-GCCcore-10.3.0/include -I/software/software/zlib/1.2.11-GCCcore-10.3.0/include -I/software/software/XZ/5.2.5-GCCcore-10.3.0/include -I/software/software/bzip2/1.0.8-GCCcore-10.3.0/include -I/software/software/ncurses/6.2-GCCcore-10.3.0/include -I/software/software/libreadline/8.1-GCCcore-10.3.0/include -I/software/software/cairo/1.16.0-GCCcore-10.3.0/include -I/software/software/libGLU/9.0.1-GCCcore-10.3.0/include -I/software/software/Mesa/21.1.1-GCCcore-10.3.0/include -I/software/software/X11/20210518-GCCcore-10.3.0/include -I/software/software/FlexiBLAS/3.0.4-GCC-10.3.0/include   -fpic  -O2 -ftree-vectorize -march=native -fno-math-errno  -c loader.c -o loader.o
+gcc -I"/software/software/R/4.1.0-foss-2021a/lib64/R/include" -DNDEBUG -I. -DNDEBUG  -I/software/software/OpenSSL/1.1/include -I/software/software/libgit2/1.1.0-GCCcore-10.3.0/include -I/software/software/GDAL/3.3.0-foss-2021a/include -I/software/software/nodejs/14.17.0-GCCcore-10.3.0/include -I/software/software/GLPK/5.0-GCCcore-10.3.0/include -I/software/software/ImageMagick/7.0.11-14-GCCcore-10.3.0/include -I/software/software/GSL/2.7-GCC-10.3.0/include -I/software/software/UDUNITS/2.2.28-GCCcore-10.3.0/include -I/software/software/HDF5/1.10.7-gompi-2021a/include -I/software/software/ICU/69.1-GCCcore-10.3.0/include -I/software/software/libsndfile/1.0.31-GCCcore-10.3.0/include -I/software/software/FFTW/3.3.9-gompi-2021a/include -I/software/software/NLopt/2.7.0-GCCcore-10.3.0/include -I/software/software/GMP/6.2.1-GCCcore-10.3.0/include -I/software/software/libxml2/2.9.10-GCCcore-10.3.0/include -I/software/software/cURL/7.76.0-GCCcore-10.3.0/include -I/software/software/Tk/8.6.11-GCCcore-10.3.0/include -I/software/software/Java/11.0.2/include -I/software/software/LibTIFF/4.2.0-GCCcore-10.3.0/include -I/software/software/libjpeg-turbo/2.0.6-GCCcore-10.3.0/include -I/software/software/libpng/1.6.37-GCCcore-10.3.0/include -I/software/software/PCRE2/10.36-GCCcore-10.3.0/include -I/software/software/SQLite/3.35.4-GCCcore-10.3.0/include -I/software/software/zlib/1.2.11-GCCcore-10.3.0/include -I/software/software/XZ/5.2.5-GCCcore-10.3.0/include -I/software/software/bzip2/1.0.8-GCCcore-10.3.0/include -I/software/software/ncurses/6.2-GCCcore-10.3.0/include -I/software/software/libreadline/8.1-GCCcore-10.3.0/include -I/software/software/cairo/1.16.0-GCCcore-10.3.0/include -I/software/software/libGLU/9.0.1-GCCcore-10.3.0/include -I/software/software/Mesa/21.1.1-GCCcore-10.3.0/include -I/software/software/X11/20210518-GCCcore-10.3.0/include -I/software/software/FlexiBLAS/3.0.4-GCC-10.3.0/include   -fpic  -O2 -ftree-vectorize -march=native -fno-math-errno  -c parser.c -o parser.o
+gcc -I"/software/software/R/4.1.0-foss-2021a/lib64/R/include" -DNDEBUG -I. -DNDEBUG  -I/software/software/OpenSSL/1.1/include -I/software/software/libgit2/1.1.0-GCCcore-10.3.0/include -I/software/software/GDAL/3.3.0-foss-2021a/include -I/software/software/nodejs/14.17.0-GCCcore-10.3.0/include -I/software/software/GLPK/5.0-GCCcore-10.3.0/include -I/software/software/ImageMagick/7.0.11-14-GCCcore-10.3.0/include -I/software/software/GSL/2.7-GCC-10.3.0/include -I/software/software/UDUNITS/2.2.28-GCCcore-10.3.0/include -I/software/software/HDF5/1.10.7-gompi-2021a/include -I/software/software/ICU/69.1-GCCcore-10.3.0/include -I/software/software/libsndfile/1.0.31-GCCcore-10.3.0/include -I/software/software/FFTW/3.3.9-gompi-2021a/include -I/software/software/NLopt/2.7.0-GCCcore-10.3.0/include -I/software/software/GMP/6.2.1-GCCcore-10.3.0/include -I/software/software/libxml2/2.9.10-GCCcore-10.3.0/include -I/software/software/cURL/7.76.0-GCCcore-10.3.0/include -I/software/software/Tk/8.6.11-GCCcore-10.3.0/include -I/software/software/Java/11.0.2/include -I/software/software/LibTIFF/4.2.0-GCCcore-10.3.0/include -I/software/software/libjpeg-turbo/2.0.6-GCCcore-10.3.0/include -I/software/software/libpng/1.6.37-GCCcore-10.3.0/include -I/software/software/PCRE2/10.36-GCCcore-10.3.0/include -I/software/software/SQLite/3.35.4-GCCcore-10.3.0/include -I/software/software/zlib/1.2.11-GCCcore-10.3.0/include -I/software/software/XZ/5.2.5-GCCcore-10.3.0/include -I/software/software/bzip2/1.0.8-GCCcore-10.3.0/include -I/software/software/ncurses/6.2-GCCcore-10.3.0/include -I/software/software/libreadline/8.1-GCCcore-10.3.0/include -I/software/software/cairo/1.16.0-GCCcore-10.3.0/include -I/software/software/libGLU/9.0.1-GCCcore-10.3.0/include -I/software/software/Mesa/21.1.1-GCCcore-10.3.0/include -I/software/software/X11/20210518-GCCcore-10.3.0/include -I/software/software/FlexiBLAS/3.0.4-GCC-10.3.0/include   -fpic  -O2 -ftree-vectorize -march=native -fno-math-errno  -c r_emit.c -o r_emit.o
+gcc -I"/software/software/R/4.1.0-foss-2021a/lib64/R/include" -DNDEBUG -I. -DNDEBUG  -I/software/software/OpenSSL/1.1/include -I/software/software/libgit2/1.1.0-GCCcore-10.3.0/include -I/software/software/GDAL/3.3.0-foss-2021a/include -I/software/software/nodejs/14.17.0-GCCcore-10.3.0/include -I/software/software/GLPK/5.0-GCCcore-10.3.0/include -I/software/software/ImageMagick/7.0.11-14-GCCcore-10.3.0/include -I/software/software/GSL/2.7-GCC-10.3.0/include -I/software/software/UDUNITS/2.2.28-GCCcore-10.3.0/include -I/software/software/HDF5/1.10.7-gompi-2021a/include -I/software/software/ICU/69.1-GCCcore-10.3.0/include -I/software/software/libsndfile/1.0.31-GCCcore-10.3.0/include -I/software/software/FFTW/3.3.9-gompi-2021a/include -I/software/software/NLopt/2.7.0-GCCcore-10.3.0/include -I/software/software/GMP/6.2.1-GCCcore-10.3.0/include -I/software/software/libxml2/2.9.10-GCCcore-10.3.0/include -I/software/software/cURL/7.76.0-GCCcore-10.3.0/include -I/software/software/Tk/8.6.11-GCCcore-10.3.0/include -I/software/software/Java/11.0.2/include -I/software/software/LibTIFF/4.2.0-GCCcore-10.3.0/include -I/software/software/libjpeg-turbo/2.0.6-GCCcore-10.3.0/include -I/software/software/libpng/1.6.37-GCCcore-10.3.0/include -I/software/software/PCRE2/10.36-GCCcore-10.3.0/include -I/software/software/SQLite/3.35.4-GCCcore-10.3.0/include -I/software/software/zlib/1.2.11-GCCcore-10.3.0/include -I/software/software/XZ/5.2.5-GCCcore-10.3.0/include -I/software/software/bzip2/1.0.8-GCCcore-10.3.0/include -I/software/software/ncurses/6.2-GCCcore-10.3.0/include -I/software/software/libreadline/8.1-GCCcore-10.3.0/include -I/software/software/cairo/1.16.0-GCCcore-10.3.0/include -I/software/software/libGLU/9.0.1-GCCcore-10.3.0/include -I/software/software/Mesa/21.1.1-GCCcore-10.3.0/include -I/software/software/X11/20210518-GCCcore-10.3.0/include -I/software/software/FlexiBLAS/3.0.4-GCC-10.3.0/include   -fpic  -O2 -ftree-vectorize -march=native -fno-math-errno  -c r_ext.c -o r_ext.o
+gcc -I"/software/software/R/4.1.0-foss-2021a/lib64/R/include" -DNDEBUG -I. -DNDEBUG  -I/software/software/OpenSSL/1.1/include -I/software/software/libgit2/1.1.0-GCCcore-10.3.0/include -I/software/software/GDAL/3.3.0-foss-2021a/include -I/software/software/nodejs/14.17.0-GCCcore-10.3.0/include -I/software/software/GLPK/5.0-GCCcore-10.3.0/include -I/software/software/ImageMagick/7.0.11-14-GCCcore-10.3.0/include -I/software/software/GSL/2.7-GCC-10.3.0/include -I/software/software/UDUNITS/2.2.28-GCCcore-10.3.0/include -I/software/software/HDF5/1.10.7-gompi-2021a/include -I/software/software/ICU/69.1-GCCcore-10.3.0/include -I/software/software/libsndfile/1.0.31-GCCcore-10.3.0/include -I/software/software/FFTW/3.3.9-gompi-2021a/include -I/software/software/NLopt/2.7.0-GCCcore-10.3.0/include -I/software/software/GMP/6.2.1-GCCcore-10.3.0/include -I/software/software/libxml2/2.9.10-GCCcore-10.3.0/include -I/software/software/cURL/7.76.0-GCCcore-10.3.0/include -I/software/software/Tk/8.6.11-GCCcore-10.3.0/include -I/software/software/Java/11.0.2/include -I/software/software/LibTIFF/4.2.0-GCCcore-10.3.0/include -I/software/software/libjpeg-turbo/2.0.6-GCCcore-10.3.0/include -I/software/software/libpng/1.6.37-GCCcore-10.3.0/include -I/software/software/PCRE2/10.36-GCCcore-10.3.0/include -I/software/software/SQLite/3.35.4-GCCcore-10.3.0/include -I/software/software/zlib/1.2.11-GCCcore-10.3.0/include -I/software/software/XZ/5.2.5-GCCcore-10.3.0/include -I/software/software/bzip2/1.0.8-GCCcore-10.3.0/include -I/software/software/ncurses/6.2-GCCcore-10.3.0/include -I/software/software/libreadline/8.1-GCCcore-10.3.0/include -I/software/software/cairo/1.16.0-GCCcore-10.3.0/include -I/software/software/libGLU/9.0.1-GCCcore-10.3.0/include -I/software/software/Mesa/21.1.1-GCCcore-10.3.0/include -I/software/software/X11/20210518-GCCcore-10.3.0/include -I/software/software/FlexiBLAS/3.0.4-GCC-10.3.0/include   -fpic  -O2 -ftree-vectorize -march=native -fno-math-errno  -c r_parse.c -o r_parse.o
+gcc -I"/software/software/R/4.1.0-foss-2021a/lib64/R/include" -DNDEBUG -I. -DNDEBUG  -I/software/software/OpenSSL/1.1/include -I/software/software/libgit2/1.1.0-GCCcore-10.3.0/include -I/software/software/GDAL/3.3.0-foss-2021a/include -I/software/software/nodejs/14.17.0-GCCcore-10.3.0/include -I/software/software/GLPK/5.0-GCCcore-10.3.0/include -I/software/software/ImageMagick/7.0.11-14-GCCcore-10.3.0/include -I/software/software/GSL/2.7-GCC-10.3.0/include -I/software/software/UDUNITS/2.2.28-GCCcore-10.3.0/include -I/software/software/HDF5/1.10.7-gompi-2021a/include -I/software/software/ICU/69.1-GCCcore-10.3.0/include -I/software/software/libsndfile/1.0.31-GCCcore-10.3.0/include -I/software/software/FFTW/3.3.9-gompi-2021a/include -I/software/software/NLopt/2.7.0-GCCcore-10.3.0/include -I/software/software/GMP/6.2.1-GCCcore-10.3.0/include -I/software/software/libxml2/2.9.10-GCCcore-10.3.0/include -I/software/software/cURL/7.76.0-GCCcore-10.3.0/include -I/software/software/Tk/8.6.11-GCCcore-10.3.0/include -I/software/software/Java/11.0.2/include -I/software/software/LibTIFF/4.2.0-GCCcore-10.3.0/include -I/software/software/libjpeg-turbo/2.0.6-GCCcore-10.3.0/include -I/software/software/libpng/1.6.37-GCCcore-10.3.0/include -I/software/software/PCRE2/10.36-GCCcore-10.3.0/include -I/software/software/SQLite/3.35.4-GCCcore-10.3.0/include -I/software/software/zlib/1.2.11-GCCcore-10.3.0/include -I/software/software/XZ/5.2.5-GCCcore-10.3.0/include -I/software/software/bzip2/1.0.8-GCCcore-10.3.0/include -I/software/software/ncurses/6.2-GCCcore-10.3.0/include -I/software/software/libreadline/8.1-GCCcore-10.3.0/include -I/software/software/cairo/1.16.0-GCCcore-10.3.0/include -I/software/software/libGLU/9.0.1-GCCcore-10.3.0/include -I/software/software/Mesa/21.1.1-GCCcore-10.3.0/include -I/software/software/X11/20210518-GCCcore-10.3.0/include -I/software/software/FlexiBLAS/3.0.4-GCC-10.3.0/include   -fpic  -O2 -ftree-vectorize -march=native -fno-math-errno  -c reader.c -o reader.o
+gcc -I"/software/software/R/4.1.0-foss-2021a/lib64/R/include" -DNDEBUG -I. -DNDEBUG  -I/software/software/OpenSSL/1.1/include -I/software/software/libgit2/1.1.0-GCCcore-10.3.0/include -I/software/software/GDAL/3.3.0-foss-2021a/include -I/software/software/nodejs/14.17.0-GCCcore-10.3.0/include -I/software/software/GLPK/5.0-GCCcore-10.3.0/include -I/software/software/ImageMagick/7.0.11-14-GCCcore-10.3.0/include -I/software/software/GSL/2.7-GCC-10.3.0/include -I/software/software/UDUNITS/2.2.28-GCCcore-10.3.0/include -I/software/software/HDF5/1.10.7-gompi-2021a/include -I/software/software/ICU/69.1-GCCcore-10.3.0/include -I/software/software/libsndfile/1.0.31-GCCcore-10.3.0/include -I/software/software/FFTW/3.3.9-gompi-2021a/include -I/software/software/NLopt/2.7.0-GCCcore-10.3.0/include -I/software/software/GMP/6.2.1-GCCcore-10.3.0/include -I/software/software/libxml2/2.9.10-GCCcore-10.3.0/include -I/software/software/cURL/7.76.0-GCCcore-10.3.0/include -I/software/software/Tk/8.6.11-GCCcore-10.3.0/include -I/software/software/Java/11.0.2/include -I/software/software/LibTIFF/4.2.0-GCCcore-10.3.0/include -I/software/software/libjpeg-turbo/2.0.6-GCCcore-10.3.0/include -I/software/software/libpng/1.6.37-GCCcore-10.3.0/include -I/software/software/PCRE2/10.36-GCCcore-10.3.0/include -I/software/software/SQLite/3.35.4-GCCcore-10.3.0/include -I/software/software/zlib/1.2.11-GCCcore-10.3.0/include -I/software/software/XZ/5.2.5-GCCcore-10.3.0/include -I/software/software/bzip2/1.0.8-GCCcore-10.3.0/include -I/software/software/ncurses/6.2-GCCcore-10.3.0/include -I/software/software/libreadline/8.1-GCCcore-10.3.0/include -I/software/software/cairo/1.16.0-GCCcore-10.3.0/include -I/software/software/libGLU/9.0.1-GCCcore-10.3.0/include -I/software/software/Mesa/21.1.1-GCCcore-10.3.0/include -I/software/software/X11/20210518-GCCcore-10.3.0/include -I/software/software/FlexiBLAS/3.0.4-GCC-10.3.0/include   -fpic  -O2 -ftree-vectorize -march=native -fno-math-errno  -c scanner.c -o scanner.o
+gcc -I"/software/software/R/4.1.0-foss-2021a/lib64/R/include" -DNDEBUG -I. -DNDEBUG  -I/software/software/OpenSSL/1.1/include -I/software/software/libgit2/1.1.0-GCCcore-10.3.0/include -I/software/software/GDAL/3.3.0-foss-2021a/include -I/software/software/nodejs/14.17.0-GCCcore-10.3.0/include -I/software/software/GLPK/5.0-GCCcore-10.3.0/include -I/software/software/ImageMagick/7.0.11-14-GCCcore-10.3.0/include -I/software/software/GSL/2.7-GCC-10.3.0/include -I/software/software/UDUNITS/2.2.28-GCCcore-10.3.0/include -I/software/software/HDF5/1.10.7-gompi-2021a/include -I/software/software/ICU/69.1-GCCcore-10.3.0/include -I/software/software/libsndfile/1.0.31-GCCcore-10.3.0/include -I/software/software/FFTW/3.3.9-gompi-2021a/include -I/software/software/NLopt/2.7.0-GCCcore-10.3.0/include -I/software/software/GMP/6.2.1-GCCcore-10.3.0/include -I/software/software/libxml2/2.9.10-GCCcore-10.3.0/include -I/software/software/cURL/7.76.0-GCCcore-10.3.0/include -I/software/software/Tk/8.6.11-GCCcore-10.3.0/include -I/software/software/Java/11.0.2/include -I/software/software/LibTIFF/4.2.0-GCCcore-10.3.0/include -I/software/software/libjpeg-turbo/2.0.6-GCCcore-10.3.0/include -I/software/software/libpng/1.6.37-GCCcore-10.3.0/include -I/software/software/PCRE2/10.36-GCCcore-10.3.0/include -I/software/software/SQLite/3.35.4-GCCcore-10.3.0/include -I/software/software/zlib/1.2.11-GCCcore-10.3.0/include -I/software/software/XZ/5.2.5-GCCcore-10.3.0/include -I/software/software/bzip2/1.0.8-GCCcore-10.3.0/include -I/software/software/ncurses/6.2-GCCcore-10.3.0/include -I/software/software/libreadline/8.1-GCCcore-10.3.0/include -I/software/software/cairo/1.16.0-GCCcore-10.3.0/include -I/software/software/libGLU/9.0.1-GCCcore-10.3.0/include -I/software/software/Mesa/21.1.1-GCCcore-10.3.0/include -I/software/software/X11/20210518-GCCcore-10.3.0/include -I/software/software/FlexiBLAS/3.0.4-GCC-10.3.0/include   -fpic  -O2 -ftree-vectorize -march=native -fno-math-errno  -c writer.c -o writer.o
+gcc -shared -L/software/software/R/4.1.0-foss-2021a/lib64/R/lib -L/software/software/OpenSSL/1.1/lib64 -L/software/software/OpenSSL/1.1/lib -L/software/software/libgit2/1.1.0-GCCcore-10.3.0/lib64 -L/software/software/libgit2/1.1.0-GCCcore-10.3.0/lib -L/software/software/GDAL/3.3.0-foss-2021a/lib64 -L/software/software/GDAL/3.3.0-foss-2021a/lib -L/software/software/nodejs/14.17.0-GCCcore-10.3.0/lib64 -L/software/software/nodejs/14.17.0-GCCcore-10.3.0/lib -L/software/software/GLPK/5.0-GCCcore-10.3.0/lib64 -L/software/software/GLPK/5.0-GCCcore-10.3.0/lib -L/software/software/ImageMagick/7.0.11-14-GCCcore-10.3.0/lib64 -L/software/software/ImageMagick/7.0.11-14-GCCcore-10.3.0/lib -L/software/software/GSL/2.7-GCC-10.3.0/lib64 -L/software/software/GSL/2.7-GCC-10.3.0/lib -L/software/software/UDUNITS/2.2.28-GCCcore-10.3.0/lib64 -L/software/software/UDUNITS/2.2.28-GCCcore-10.3.0/lib -L/software/software/HDF5/1.10.7-gompi-2021a/lib64 -L/software/software/HDF5/1.10.7-gompi-2021a/lib -L/software/software/ICU/69.1-GCCcore-10.3.0/lib64 -L/software/software/ICU/69.1-GCCcore-10.3.0/lib -L/software/software/libsndfile/1.0.31-GCCcore-10.3.0/lib64 -L/software/software/libsndfile/1.0.31-GCCcore-10.3.0/lib -L/software/software/FFTW/3.3.9-gompi-2021a/lib64 -L/software/software/FFTW/3.3.9-gompi-2021a/lib -L/software/software/NLopt/2.7.0-GCCcore-10.3.0/lib64 -L/software/software/NLopt/2.7.0-GCCcore-10.3.0/lib -L/software/software/GMP/6.2.1-GCCcore-10.3.0/lib64 -L/software/software/GMP/6.2.1-GCCcore-10.3.0/lib -L/software/software/libxml2/2.9.10-GCCcore-10.3.0/lib64 -L/software/software/libxml2/2.9.10-GCCcore-10.3.0/lib -L/software/software/cURL/7.76.0-GCCcore-10.3.0/lib64 -L/software/software/cURL/7.76.0-GCCcore-10.3.0/lib -L/software/software/Tk/8.6.11-GCCcore-10.3.0/lib64 -L/software/software/Tk/8.6.11-GCCcore-10.3.0/lib -L/software/software/Java/11.0.2/lib -L/software/software/LibTIFF/4.2.0-GCCcore-10.3.0/lib64 -L/software/software/LibTIFF/4.2.0-GCCcore-10.3.0/lib -L/software/software/libjpeg-turbo/2.0.6-GCCcore-10.3.0/lib64 -L/software/software/libjpeg-turbo/2.0.6-GCCcore-10.3.0/lib -L/software/software/libpng/1.6.37-GCCcore-10.3.0/lib64 -L/software/software/libpng/1.6.37-GCCcore-10.3.0/lib -L/software/software/PCRE2/10.36-GCCcore-10.3.0/lib64 -L/software/software/PCRE2/10.36-GCCcore-10.3.0/lib -L/software/software/SQLite/3.35.4-GCCcore-10.3.0/lib64 -L/software/software/SQLite/3.35.4-GCCcore-10.3.0/lib -L/software/software/zlib/1.2.11-GCCcore-10.3.0/lib64 -L/software/software/zlib/1.2.11-GCCcore-10.3.0/lib -L/software/software/XZ/5.2.5-GCCcore-10.3.0/lib64 -L/software/software/XZ/5.2.5-GCCcore-10.3.0/lib -L/software/software/bzip2/1.0.8-GCCcore-10.3.0/lib64 -L/software/software/bzip2/1.0.8-GCCcore-10.3.0/lib -L/software/software/ncurses/6.2-GCCcore-10.3.0/lib64 -L/software/software/ncurses/6.2-GCCcore-10.3.0/lib -L/software/software/libreadline/8.1-GCCcore-10.3.0/lib64 -L/software/software/libreadline/8.1-GCCcore-10.3.0/lib -L/software/software/cairo/1.16.0-GCCcore-10.3.0/lib64 -L/software/software/cairo/1.16.0-GCCcore-10.3.0/lib -L/software/software/libGLU/9.0.1-GCCcore-10.3.0/lib64 -L/software/software/libGLU/9.0.1-GCCcore-10.3.0/lib -L/software/software/Mesa/21.1.1-GCCcore-10.3.0/lib64 -L/software/software/Mesa/21.1.1-GCCcore-10.3.0/lib -L/software/software/X11/20210518-GCCcore-10.3.0/lib64 -L/software/software/X11/20210518-GCCcore-10.3.0/lib -L/software/software/Xvfb/1.20.11-GCCcore-10.3.0/lib64 -L/software/software/Xvfb/1.20.11-GCCcore-10.3.0/lib -L/software/software/ScaLAPACK/2.1.0-gompi-2021a-fb/lib64 -L/software/software/ScaLAPACK/2.1.0-gompi-2021a-fb/lib -L/software/software/FlexiBLAS/3.0.4-GCC-10.3.0/lib64 -L/software/software/FlexiBLAS/3.0.4-GCC-10.3.0/lib -L/software/software/GCCcore/10.3.0/lib64 -L/software/software/GCCcore/10.3.0/lib -o yaml.so api.o dumper.o emitter.o implicit.o loader.o parser.o r_emit.o r_ext.o r_parse.o reader.o scanner.o writer.o -L/software/software/R/4.1.0-foss-2021a/lib64/R/lib -lR
+installing to /home/p282067/R/x86_64-pc-linux-gnu-library/4.1/00LOCK-yaml/00new/yaml/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (yaml)
+
+The downloaded source packages are in
+	‘/local/tmp/Rtmpt5hZvw/downloaded_packages’
+* checking for file ‘/local/tmp/Rtmpt5hZvw/remotes9999b64c65/Neves-P-hawaiispiders-04c06cf24fc3855cef673ad48a2f2e47486a8bb3/DESCRIPTION’ ... OK
+* preparing ‘hawaiispiders’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to process help pages
+* saving partial Rd database
+* checking for LF line-endings in source and make files and shell scripts
+* checking for empty or unneeded directories
+  NB: this package now depends on R (>= 3.5.0)
+  WARNING: Added dependency on R >= 3.5.0 because serialized objects in
+  serialize/load version 3 cannot be read in older versions of R.
+  File(s) containing such objects:
+    ‘hawaiispiders/full_res.rds’
+    ‘hawaiispiders/results/a_c_max/a_c_max_cr_dd_1.rds’
+    ‘hawaiispiders/results/a_c_max/a_c_max_cr_dd_10.rds’
+    ‘hawaiispiders/results/a_c_max/a_c_max_cr_dd_2.rds’
+    ‘hawaiispiders/results/a_c_max/a_c_max_cr_dd_3.rds’
+    ‘hawaiispiders/results/a_c_max/a_c_max_cr_dd_4.rds’
+    ‘hawaiispiders/results/a_c_max/a_c_max_cr_dd_5.rds’
+    ‘hawaiispiders/results/a_c_max/a_c_max_cr_dd_6.rds’
+    ‘hawaiispiders/results/a_c_max/a_c_max_cr_dd_7.rds’
+    ‘hawaiispiders/results/a_c_max/a_c_max_cr_dd_8.rds’
+    ‘hawaiispiders/results/a_c_max/a_c_max_cr_dd_9.rds’
+    ‘hawaiispiders/results/a_c_min/a_c_min_cr_dd_1.rds’
+    ‘hawaiispiders/results/a_c_min/a_c_min_cr_dd_10.rds’
+    ‘hawaiispiders/results/a_c_min/a_c_min_cr_dd_2.rds’
+    ‘hawaiispiders/results/a_c_min/a_c_min_cr_dd_3.rds’
+    ‘hawaiispiders/results/a_c_min/a_c_min_cr_dd_4.rds’
+    ‘hawaiispiders/results/a_c_min/a_c_min_cr_dd_5.rds’
+    ‘hawaiispiders/results/a_c_min/a_c_min_cr_dd_6.rds’
+    ‘hawaiispiders/results/a_c_min/a_c_min_cr_dd_7.rds’
+    ‘hawaiispiders/results/a_c_min/a_c_min_cr_dd_8.rds’
+    ‘hawaiispiders/results/a_c_min/a_c_min_cr_dd_9.rds’
+    ‘hawaiispiders/results/a_c_no/a_c_no_cr_dd_1.rds’
+    ‘hawaiispiders/results/a_c_no/a_c_no_cr_dd_10.rds’
+    ‘hawaiispiders/results/a_c_no/a_c_no_cr_dd_2.rds’
+    ‘hawaiispiders/results/a_c_no/a_c_no_cr_dd_3.rds’
+    ‘hawaiispiders/results/a_c_no/a_c_no_cr_dd_4.rds’
+    ‘hawaiispiders/results/a_c_no/a_c_no_cr_dd_5.rds’
+    ‘hawaiispiders/results/a_c_no/a_c_no_cr_dd_6.rds’
+    ‘hawaiispiders/results/a_c_no/a_c_no_cr_dd_7.rds’
+    ‘hawaiispiders/results/a_c_no/a_c_no_cr_dd_8.rds’
+    ‘hawaiispiders/results/a_c_no/a_c_no_cr_dd_9.rds’
+    ‘hawaiispiders/results/a_m_max/a_m_max_cr_dd_1.rds’
+    ‘hawaiispiders/results/a_m_max/a_m_max_cr_dd_10.rds’
+    ‘hawaiispiders/results/a_m_max/a_m_max_cr_dd_2.rds’
+    ‘hawaiispiders/results/a_m_max/a_m_max_cr_dd_3.rds’
+    ‘hawaiispiders/results/a_m_max/a_m_max_cr_dd_4.rds’
+    ‘hawaiispiders/results/a_m_max/a_m_max_cr_dd_5.rds’
+    ‘hawaiispiders/results/a_m_max/a_m_max_cr_dd_6.rds’
+    ‘hawaiispiders/results/a_m_max/a_m_max_cr_dd_7.rds’
+    ‘hawaiispiders/results/a_m_max/a_m_max_cr_dd_8.rds’
+    ‘hawaiispiders/results/a_m_max/a_m_max_cr_dd_9.rds’
+    ‘hawaiispiders/results/a_m_min/a_m_min_cr_dd_1.rds’
+    ‘hawaiispiders/results/a_m_min/a_m_min_cr_dd_10.rds’
+    ‘hawaiispiders/results/a_m_min/a_m_min_cr_dd_2.rds’
+    ‘hawaiispiders/results/a_m_min/a_m_min_cr_dd_3.rds’
+    ‘hawaiispiders/results/a_m_min/a_m_min_cr_dd_4.rds’
+    ‘hawaiispiders/results/a_m_min/a_m_min_cr_dd_5.rds’
+    ‘hawaiispiders/results/a_m_min/a_m_min_cr_dd_6.rds’
+    ‘hawaiispiders/results/a_m_min/a_m_min_cr_dd_7.rds’
+    ‘hawaiispiders/results/a_m_min/a_m_min_cr_dd_8.rds’
+    ‘hawaiispiders/results/a_m_min/a_m_min_cr_dd_9.rds’
+    ‘hawaiispiders/results/a_m_no/a_m_no_cr_dd_1.rds’
+    ‘hawaiispiders/results/a_m_no/a_m_no_cr_dd_10.rds’
+    ‘hawaiispiders/results/a_m_no/a_m_no_cr_dd_2.rds’
+    ‘hawaiispiders/results/a_m_no/a_m_no_cr_dd_3.rds’
+    ‘hawaiispiders/results/a_m_no/a_m_no_cr_dd_4.rds’
+    ‘hawaiispiders/results/a_m_no/a_m_no_cr_dd_5.rds’
+    ‘hawaiispiders/results/a_m_no/a_m_no_cr_dd_6.rds’
+    ‘hawaiispiders/results/a_m_no/a_m_no_cr_dd_7.rds’
+    ‘hawaiispiders/results/a_m_no/a_m_no_cr_dd_8.rds’
+    ‘hawaiispiders/results/a_m_no/a_m_no_cr_dd_9.rds’
+    ‘hawaiispiders/results/o_c_max/o_c_max_cr_dd_1.rds’
+    ‘hawaiispiders/results/o_c_max/o_c_max_cr_dd_10.rds’
+    ‘hawaiispiders/results/o_c_max/o_c_max_cr_dd_2.rds’
+    ‘hawaiispiders/results/o_c_max/o_c_max_cr_dd_3.rds’
+    ‘hawaiispiders/results/o_c_max/o_c_max_cr_dd_4.rds’
+    ‘hawaiispiders/results/o_c_max/o_c_max_cr_dd_5.rds’
+    ‘hawaiispiders/results/o_c_max/o_c_max_cr_dd_6.rds’
+    ‘hawaiispiders/results/o_c_max/o_c_max_cr_dd_7.rds’
+    ‘hawaiispiders/results/o_c_max/o_c_max_cr_dd_8.rds’
+    ‘hawaiispiders/results/o_c_max/o_c_max_cr_dd_9.rds’
+    ‘hawaiispiders/results/o_c_min/o_c_min_cr_dd_1.rds’
+    ‘hawaiispiders/results/o_c_min/o_c_min_cr_dd_10.rds’
+    ‘hawaiispiders/results/o_c_min/o_c_min_cr_dd_2.rds’
+    ‘hawaiispiders/results/o_c_min/o_c_min_cr_dd_3.rds’
+    ‘hawaiispiders/results/o_c_min/o_c_min_cr_dd_4.rds’
+    ‘hawaiispiders/results/o_c_min/o_c_min_cr_dd_5.rds’
+    ‘hawaiispiders/results/o_c_min/o_c_min_cr_dd_6.rds’
+    ‘hawaiispiders/results/o_c_min/o_c_min_cr_dd_7.rds’
+    ‘hawaiispiders/results/o_c_min/o_c_min_cr_dd_8.rds’
+    ‘hawaiispiders/results/o_c_min/o_c_min_cr_dd_9.rds’
+    ‘hawaiispiders/results/o_c_no/o_c_no_cr_dd_1.rds’
+    ‘hawaiispiders/results/o_c_no/o_c_no_cr_dd_10.rds’
+    ‘hawaiispiders/results/o_c_no/o_c_no_cr_dd_2.rds’
+    ‘hawaiispiders/results/o_c_no/o_c_no_cr_dd_3.rds’
+    ‘hawaiispiders/results/o_c_no/o_c_no_cr_dd_4.rds’
+    ‘hawaiispiders/results/o_c_no/o_c_no_cr_dd_5.rds’
+    ‘hawaiispiders/results/o_c_no/o_c_no_cr_dd_6.rds’
+    ‘hawaiispiders/results/o_c_no/o_c_no_cr_dd_7.rds’
+    ‘hawaiispiders/results/o_c_no/o_c_no_cr_dd_8.rds’
+    ‘hawaiispiders/results/o_c_no/o_c_no_cr_dd_9.rds’
+    ‘hawaiispiders/results/o_m_max/o_m_max_cr_dd_1.rds’
+    ‘hawaiispiders/results/o_m_max/o_m_max_cr_dd_10.rds’
+    ‘hawaiispiders/results/o_m_max/o_m_max_cr_dd_2.rds’
+    ‘hawaiispiders/results/o_m_max/o_m_max_cr_dd_3.rds’
+    ‘hawaiispiders/results/o_m_max/o_m_max_cr_dd_4.rds’
+    ‘hawaiispiders/results/o_m_max/o_m_max_cr_dd_5.rds’
+    ‘hawaiispiders/results/o_m_max/o_m_max_cr_dd_6.rds’
+    ‘hawaiispiders/results/o_m_max/o_m_max_cr_dd_7.rds’
+    ‘hawaiispiders/results/o_m_max/o_m_max_cr_dd_8.rds’
+    ‘hawaiispiders/results/o_m_max/o_m_max_cr_dd_9.rds’
+    ‘hawaiispiders/results/o_m_min/o_m_min_cr_dd_1.rds’
+    ‘hawaiispiders/results/o_m_min/o_m_min_cr_dd_10.rds’
+    ‘hawaiispiders/results/o_m_min/o_m_min_cr_dd_2.rds’
+    ‘hawaiispiders/results/o_m_min/o_m_min_cr_dd_3.rds’
+    ‘hawaiispiders/results/o_m_min/o_m_min_cr_dd_4.rds’
+    ‘hawaiispiders/results/o_m_min/o_m_min_cr_dd_5.rds’
+    ‘hawaiispiders/results/o_m_min/o_m_min_cr_dd_6.rds’
+    ‘hawaiispiders/results/o_m_min/o_m_min_cr_dd_7.rds’
+    ‘hawaiispiders/results/o_m_min/o_m_min_cr_dd_8.rds’
+    ‘hawaiispiders/results/o_m_min/o_m_min_cr_dd_9.rds’
+    ‘hawaiispiders/results/o_m_no/o_m_no_cr_dd_1.rds’
+    ‘hawaiispiders/results/o_m_no/o_m_no_cr_dd_10.rds’
+    ‘hawaiispiders/results/o_m_no/o_m_no_cr_dd_2.rds’
+    ‘hawaiispiders/results/o_m_no/o_m_no_cr_dd_3.rds’
+    ‘hawaiispiders/results/o_m_no/o_m_no_cr_dd_4.rds’
+    ‘hawaiispiders/results/o_m_no/o_m_no_cr_dd_5.rds’
+    ‘hawaiispiders/results/o_m_no/o_m_no_cr_dd_6.rds’
+    ‘hawaiispiders/results/o_m_no/o_m_no_cr_dd_7.rds’
+    ‘hawaiispiders/results/o_m_no/o_m_no_cr_dd_8.rds’
+    ‘hawaiispiders/results/o_m_no/o_m_no_cr_dd_9.rds’
+    ‘hawaiispiders/results/r_c_max/r_c_max_cr_dd_1.rds’
+    ‘hawaiispiders/results/r_c_max/r_c_max_cr_dd_10.rds’
+    ‘hawaiispiders/results/r_c_max/r_c_max_cr_dd_2.rds’
+    ‘hawaiispiders/results/r_c_max/r_c_max_cr_dd_3.rds’
+    ‘hawaiispiders/results/r_c_max/r_c_max_cr_dd_4.rds’
+    ‘hawaiispiders/results/r_c_max/r_c_max_cr_dd_5.rds’
+    ‘hawaiispiders/results/r_c_max/r_c_max_cr_dd_6.rds’
+    ‘hawaiispiders/results/r_c_max/r_c_max_cr_dd_7.rds’
+    ‘hawaiispiders/results/r_c_max/r_c_max_cr_dd_8.rds’
+    ‘hawaiispiders/results/r_c_max/r_c_max_cr_dd_9.rds’
+    ‘hawaiispiders/results/r_c_min/r_c_min_cr_dd_1.rds’
+    ‘hawaiispiders/results/r_c_min/r_c_min_cr_dd_10.rds’
+    ‘hawaiispiders/results/r_c_min/r_c_min_cr_dd_2.rds’
+    ‘hawaiispiders/results/r_c_min/r_c_min_cr_dd_3.rds’
+    ‘hawaiispiders/results/r_c_min/r_c_min_cr_dd_4.rds’
+    ‘hawaiispiders/results/r_c_min/r_c_min_cr_dd_5.rds’
+    ‘hawaiispiders/results/r_c_min/r_c_min_cr_dd_6.rds’
+    ‘hawaiispiders/results/r_c_min/r_c_min_cr_dd_7.rds’
+    ‘hawaiispiders/results/r_c_min/r_c_min_cr_dd_8.rds’
+    ‘hawaiispiders/results/r_c_min/r_c_min_cr_dd_9.rds’
+    ‘hawaiispiders/results/r_c_no/r_c_no_cr_dd_1.rds’
+    ‘hawaiispiders/results/r_c_no/r_c_no_cr_dd_10.rds’
+    ‘hawaiispiders/results/r_c_no/r_c_no_cr_dd_2.rds’
+    ‘hawaiispiders/results/r_c_no/r_c_no_cr_dd_3.rds’
+    ‘hawaiispiders/results/r_c_no/r_c_no_cr_dd_4.rds’
+    ‘hawaiispiders/results/r_c_no/r_c_no_cr_dd_5.rds’
+    ‘hawaiispiders/results/r_c_no/r_c_no_cr_dd_6.rds’
+    ‘hawaiispiders/results/r_c_no/r_c_no_cr_dd_7.rds’
+    ‘hawaiispiders/results/r_c_no/r_c_no_cr_dd_8.rds’
+    ‘hawaiispiders/results/r_c_no/r_c_no_cr_dd_9.rds’
+    ‘hawaiispiders/results/r_m_max/r_m_max_cr_dd_1.rds’
+    ‘hawaiispiders/results/r_m_max/r_m_max_cr_dd_10.rds’
+    ‘hawaiispiders/results/r_m_max/r_m_max_cr_dd_2.rds’
+    ‘hawaiispiders/results/r_m_max/r_m_max_cr_dd_3.rds’
+    ‘hawaiispiders/results/r_m_max/r_m_max_cr_dd_4.rds’
+    ‘hawaiispiders/results/r_m_max/r_m_max_cr_dd_5.rds’
+    ‘hawaiispiders/results/r_m_max/r_m_max_cr_dd_6.rds’
+    ‘hawaiispiders/results/r_m_max/r_m_max_cr_dd_7.rds’
+    ‘hawaiispiders/results/r_m_max/r_m_max_cr_dd_8.rds’
+    ‘hawaiispiders/results/r_m_max/r_m_max_cr_dd_9.rds’
+    ‘hawaiispiders/results/r_m_min/r_m_min_cr_dd_1.rds’
+    ‘hawaiispiders/results/r_m_min/r_m_min_cr_dd_10.rds’
+    ‘hawaiispiders/results/r_m_min/r_m_min_cr_dd_2.rds’
+    ‘hawaiispiders/results/r_m_min/r_m_min_cr_dd_3.rds’
+    ‘hawaiispiders/results/r_m_min/r_m_min_cr_dd_4.rds’
+    ‘hawaiispiders/results/r_m_min/r_m_min_cr_dd_5.rds’
+    ‘hawaiispiders/results/r_m_min/r_m_min_cr_dd_6.rds’
+    ‘hawaiispiders/results/r_m_min/r_m_min_cr_dd_7.rds’
+    ‘hawaiispiders/results/r_m_min/r_m_min_cr_dd_8.rds’
+    ‘hawaiispiders/results/r_m_min/r_m_min_cr_dd_9.rds’
+    ‘hawaiispiders/results/r_m_no/r_m_no_cr_dd_1.rds’
+    ‘hawaiispiders/results/r_m_no/r_m_no_cr_dd_10.rds’
+    ‘hawaiispiders/results/r_m_no/r_m_no_cr_dd_2.rds’
+    ‘hawaiispiders/results/r_m_no/r_m_no_cr_dd_3.rds’
+    ‘hawaiispiders/results/r_m_no/r_m_no_cr_dd_4.rds’
+    ‘hawaiispiders/results/r_m_no/r_m_no_cr_dd_5.rds’
+    ‘hawaiispiders/results/r_m_no/r_m_no_cr_dd_6.rds’
+    ‘hawaiispiders/results/r_m_no/r_m_no_cr_dd_7.rds’
+    ‘hawaiispiders/results/r_m_no/r_m_no_cr_dd_8.rds’
+    ‘hawaiispiders/results/r_m_no/r_m_no_cr_dd_9.rds’
+    ‘hawaiispiders/results/y_c_max/y_c_max_cr_dd_1.rds’
+    ‘hawaiispiders/results/y_c_max/y_c_max_cr_dd_10.rds’
+    ‘hawaiispiders/results/y_c_max/y_c_max_cr_dd_2.rds’
+    ‘hawaiispiders/results/y_c_max/y_c_max_cr_dd_3.rds’
+    ‘hawaiispiders/results/y_c_max/y_c_max_cr_dd_4.rds’
+    ‘hawaiispiders/results/y_c_max/y_c_max_cr_dd_5.rds’
+    ‘hawaiispiders/results/y_c_max/y_c_max_cr_dd_6.rds’
+    ‘hawaiispiders/results/y_c_max/y_c_max_cr_dd_7.rds’
+    ‘hawaiispiders/results/y_c_max/y_c_max_cr_dd_8.rds’
+    ‘hawaiispiders/results/y_c_max/y_c_max_cr_dd_9.rds’
+    ‘hawaiispiders/results/y_c_min/y_c_min_cr_dd_1.rds’
+    ‘hawaiispiders/results/y_c_min/y_c_min_cr_dd_10.rds’
+    ‘hawaiispiders/results/y_c_min/y_c_min_cr_dd_2.rds’
+    ‘hawaiispiders/results/y_c_min/y_c_min_cr_dd_3.rds’
+    ‘hawaiispiders/results/y_c_min/y_c_min_cr_dd_4.rds’
+    ‘hawaiispiders/results/y_c_min/y_c_min_cr_dd_5.rds’
+    ‘hawaiispiders/results/y_c_min/y_c_min_cr_dd_6.rds’
+    ‘hawaiispiders/results/y_c_min/y_c_min_cr_dd_7.rds’
+    ‘hawaiispiders/results/y_c_min/y_c_min_cr_dd_8.rds’
+    ‘hawaiispiders/results/y_c_min/y_c_min_cr_dd_9.rds’
+    ‘hawaiispiders/results/y_c_no/y_c_no_cr_dd_1.rds’
+    ‘hawaiispiders/results/y_c_no/y_c_no_cr_dd_10.rds’
+    ‘hawaiispiders/results/y_c_no/y_c_no_cr_dd_2.rds’
+    ‘hawaiispiders/results/y_c_no/y_c_no_cr_dd_3.rds’
+    ‘hawaiispiders/results/y_c_no/y_c_no_cr_dd_4.rds’
+    ‘hawaiispiders/results/y_c_no/y_c_no_cr_dd_5.rds’
+    ‘hawaiispiders/results/y_c_no/y_c_no_cr_dd_6.rds’
+    ‘hawaiispiders/results/y_c_no/y_c_no_cr_dd_7.rds’
+    ‘hawaiispiders/results/y_c_no/y_c_no_cr_dd_8.rds’
+    ‘hawaiispiders/results/y_c_no/y_c_no_cr_dd_9.rds’
+    ‘hawaiispiders/results/y_m_max/y_m_max_cr_dd_1.rds’
+    ‘hawaiispiders/results/y_m_max/y_m_max_cr_dd_10.rds’
+    ‘hawaiispiders/results/y_m_max/y_m_max_cr_dd_2.rds’
+    ‘hawaiispiders/results/y_m_max/y_m_max_cr_dd_3.rds’
+    ‘hawaiispiders/results/y_m_max/y_m_max_cr_dd_4.rds’
+    ‘hawaiispiders/results/y_m_max/y_m_max_cr_dd_5.rds’
+    ‘hawaiispiders/results/y_m_max/y_m_max_cr_dd_6.rds’
+    ‘hawaiispiders/results/y_m_max/y_m_max_cr_dd_7.rds’
+    ‘hawaiispiders/results/y_m_max/y_m_max_cr_dd_8.rds’
+    ‘hawaiispiders/results/y_m_max/y_m_max_cr_dd_9.rds’
+    ‘hawaiispiders/results/y_m_min/y_m_min_cr_dd_1.rds’
+    ‘hawaiispiders/results/y_m_min/y_m_min_cr_dd_10.rds’
+    ‘hawaiispiders/results/y_m_min/y_m_min_cr_dd_2.rds’
+    ‘hawaiispiders/results/y_m_min/y_m_min_cr_dd_3.rds’
+    ‘hawaiispiders/results/y_m_min/y_m_min_cr_dd_4.rds’
+    ‘hawaiispiders/results/y_m_min/y_m_min_cr_dd_5.rds’
+    ‘hawaiispiders/results/y_m_min/y_m_min_cr_dd_6.rds’
+    ‘hawaiispiders/results/y_m_min/y_m_min_cr_dd_7.rds’
+    ‘hawaiispiders/results/y_m_min/y_m_min_cr_dd_8.rds’
+    ‘hawaiispiders/results/y_m_min/y_m_min_cr_dd_9.rds’
+    ‘hawaiispiders/results/y_m_no/y_m_no_cr_dd_1.rds’
+    ‘hawaiispiders/results/y_m_no/y_m_no_cr_dd_10.rds’
+    ‘hawaiispiders/results/y_m_no/y_m_no_cr_dd_2.rds’
+    ‘hawaiispiders/results/y_m_no/y_m_no_cr_dd_3.rds’
+    ‘hawaiispiders/results/y_m_no/y_m_no_cr_dd_4.rds’
+    ‘hawaiispiders/results/y_m_no/y_m_no_cr_dd_5.rds’
+    ‘hawaiispiders/results/y_m_no/y_m_no_cr_dd_6.rds’
+    ‘hawaiispiders/results/y_m_no/y_m_no_cr_dd_7.rds’
+    ‘hawaiispiders/results/y_m_no/y_m_no_cr_dd_8.rds’
+    ‘hawaiispiders/results/y_m_no/y_m_no_cr_dd_9.rds’
+* building ‘hawaiispiders_3.0.0.tar.gz’
+Warning in sprintf(gettext(fmt, domain = domain), ...) :
+  one argument not used by format 'invalid uid value replaced by that for user 'nobody''
+Warning: invalid uid value replaced by that for user 'nobody'
+Warning in sprintf(gettext(fmt, domain = domain), ...) :
+  one argument not used by format 'invalid gid value replaced by that for user 'nobody''
+Warning: invalid gid value replaced by that for user 'nobody'
+
+Installing package into ‘/home/p282067/R/x86_64-pc-linux-gnu-library/4.1’
+(as ‘lib’ is unspecified)
+* installing *source* package ‘hawaiispiders’ ...
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (hawaiispiders)
+
+
+###############################################################################
+Peregrine Cluster
+Job 23060553 for user 'p282067'
+Finished at: Mon Feb 21 17:42:30 CET 2022
+
+Job details:
+============
+
+Job ID              : 23060553
+Name                : install_hawaiispiders
+User                : p282067
+Partition           : vulture
+Nodes               : pg-node276
+Number of Nodes     : 1
+Cores               : 1
+Number of Tasks     : 1
+State               : COMPLETED
+Submit              : 2022-02-21T17:41:21
+Start               : 2022-02-21T17:41:22
+End                 : 2022-02-21T17:42:30
+Reserved walltime   : 01:00:00
+Used walltime       : 00:01:08
+Used CPU time       : 00:00:30 (efficiency: 44.17%)
+% User (Computation): 69.79%
+% System (I/O)      : 30.21%
+Mem reserved        : 2G
+Max Mem (Node/step) : 165.56M (pg-node276, per node)
+Full Max Mem usage  : 165.56M
+Total Disk Read     : 18.77M
+Total Disk Write    : 146.52K
+
+
+Acknowledgements:
+=================
+
+Please see this page for information about acknowledging Peregrine in your publications:
+
+https://wiki.hpc.rug.nl/peregrine/introduction/scientific_output
+
+################################################################################
