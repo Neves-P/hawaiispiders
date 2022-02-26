@@ -11,7 +11,7 @@ translate_parameter_name <- function(parameter_name) {
     "lambda_c" = "Cladogenesis rate",
     "mu" = "Extinction rate",
     "K" = "Carrying capacity",
-    "gamma" = "Immigration rate",
+    "gamma" = "Colonisation rate",
     "lambda_a" = "Anagenesis rate"
   )
   out
