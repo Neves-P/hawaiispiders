@@ -31,7 +31,7 @@ Imports:
     testit,
     devtools,
     ggplot2,
-    cowplot
+    patchwork
 Remotes: 
     rsetienne/DAISIE@onto_IW,
     tece-lab/DAISIEutils@pedro
