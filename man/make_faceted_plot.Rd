@@ -7,14 +7,54 @@
 make_faceted_plot(
   plotting_table,
   parameter_names = get_parameter_names(),
-  x_partition_by,
+  partition_by,
   colour_by,
   shape_by
 )
 }
-\value{
+\arguments{
+\item{plotting_table}{A \code{data.frame} as returned by
+\code{prepare_results_to_plot()}. It contains the full results of the package
+estimate runs together with necessary columns for data partitioning. Has 14
+columns, the first 10 of which are as returned by
+\code{DAISIEutils::sensitivity()} and the remaining four contain the
+integration, island age, cladogenesis/migration grouping and treatment of
+uncertainty grouping. All these are made up as factors to allow easy
+plotting.}
 
+\item{parameter_names}{Vector with names of parameters using the codes
+usually found on \code{DAISIE} and as returned by \code{get_parameter_names()} by
+default. Can be of length 1 to 5, allows for:
+\itemize{
+\item \code{"lac"}
+\item \code{"mu"}
+\item \code{"K"}
+\item \code{"gam"}
+\item \code{"laa"}
+}}
+
+\item{partition_by}{A string indicating what the x-axis should be
+partitioned by. Options are \code{island_age} for partitioning by assumed island
+age, \code{stac} for partitioning by the treatment of uncertainty chosen, and
+\code{c_m} for partitioning by cladogenesis/migration favouring strategy.}
+
+\item{colour_by}{A string indicating what data partitioning should be used
+for colours. Options are \code{island_age} for partitioning by assumed island
+age, \code{stac} for partitioning by the treatment of uncertainty chosen, and
+\code{c_m} for partitioning by cladogenesis/migration favouring strategy.}
+
+\item{shape_by}{A string indicating what data partitioning should be used
+for shapes. Options are \code{island_age} for partitioning by assumed island
+age, \code{stac} for partitioning by the treatment of uncertainty chosen, and
+\code{c_m} for partitioning by cladogenesis/migration favouring strategy.}
+}
+\value{
+A faceted ggplot of the parameter estimates named in
+\code{parameter_names}
 }
 \description{
 Combine multiple estimate plots into one faceted plot
+}
+\author{
+Pedro Santos Neves
 }

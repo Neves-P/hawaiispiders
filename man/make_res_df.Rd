@@ -2,15 +2,21 @@
 % Please edit documentation in R/make_res_df.R
 \name{make_res_df}
 \alias{make_res_df}
-\title{Make results data frame}
+\title{Make one results data frame out several individual scenarios runs}
 \usage{
 make_res_df(sens)
+}
+\arguments{
+\item{sens}{A data frame consisting of the output of \code{DAISIE::sensitivity()},
+which can include several scenarios.}
 }
 \value{
 A data frame with the results and the corresponding scenario
 }
 \description{
-Make results data frame
+Combines the results from the full output of \code{DAISIEutils::sensitivity()}
+into a single data frame and appends a column at the end with the scenario
+name
 }
 \author{
 Pedro Santos Neves

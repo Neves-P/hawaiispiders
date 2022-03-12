@@ -6,6 +6,12 @@
 \usage{
 translate_partition_name(partition_name)
 }
+\arguments{
+\item{partition_name}{A string indicating with data partitioning codes.
+Options are \code{island_age} for partitioning by assumed island
+age, \code{stac} for partitioning by the treatment of uncertainty chosen, and
+\code{c_m} for partitioning by cladogenesis/migration favouring strategy.}
+}
 \value{
 A character string with formatted name of partition
 }

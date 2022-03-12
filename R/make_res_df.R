@@ -1,12 +1,14 @@
-#' Make results data frame
+#' Make one results data frame out several individual scenarios runs
 #'
-#' @inheritParams
+#' Combines the results from the full output of `DAISIEutils::sensitivity()`
+#' into a single data frame and appends a column at the end with the scenario
+#' name
+#'
+#' @inheritParams default_params_doc
 #'
 #' @return A data frame with the results and the corresponding scenario
 #' @export
 #' @author Pedro Santos Neves
-#'
-#' @examples
 make_res_df <- function(sens) {
   out <- data.frame(
     "lambda_c" = numeric(),

@@ -4,7 +4,15 @@
 \alias{save_paper_plot}
 \title{Save a plot to current directory}
 \usage{
-save_paper_plot(plot_to_save, name, type_size = "full_size")
+save_paper_plot(plot_to_save, file_name, type_size = "full_size")
+}
+\arguments{
+\item{plot_to_save}{A ggplot which will be saved to disk.}
+
+\item{file_name}{A string with the file name that should be used for saving.}
+
+\item{type_size}{A string determining whether the figure should take full
+size in a page: \code{"full_size"} or only half: \code{"half_size"}}
 }
 \value{
 NULL. A pdf and png files with the plot to save are saved to the

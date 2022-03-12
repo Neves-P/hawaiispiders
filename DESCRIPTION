@@ -31,7 +31,9 @@ Imports:
     testit,
     devtools,
     ggplot2,
-    patchwork
+    patchwork,
+    dplyr,
+    tools
 Remotes: 
     rsetienne/DAISIE@onto_IW,
     tece-lab/DAISIEutils@pedro

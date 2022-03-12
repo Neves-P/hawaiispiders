@@ -7,10 +7,38 @@
 plot_estimate_results(
   plotting_table,
   parameter_name,
-  x_partition_by,
+  partition_by,
   colour_by,
   shape_by
 )
+}
+\arguments{
+\item{plotting_table}{A \code{data.frame} as returned by
+\code{prepare_results_to_plot()}. It contains the full results of the package
+estimate runs together with necessary columns for data partitioning. Has 14
+columns, the first 10 of which are as returned by
+\code{DAISIEutils::sensitivity()} and the remaining four contain the
+integration, island age, cladogenesis/migration grouping and treatment of
+uncertainty grouping. All these are made up as factors to allow easy
+plotting.}
+
+\item{parameter_name}{A string with the code name of 1 parameter. Possible
+names are returned by \code{get_parameter_names()} (although only 1 is accepted).}
+
+\item{partition_by}{A string indicating what the x-axis should be
+partitioned by. Options are \code{island_age} for partitioning by assumed island
+age, \code{stac} for partitioning by the treatment of uncertainty chosen, and
+\code{c_m} for partitioning by cladogenesis/migration favouring strategy.}
+
+\item{colour_by}{A string indicating what data partitioning should be used
+for colours. Options are \code{island_age} for partitioning by assumed island
+age, \code{stac} for partitioning by the treatment of uncertainty chosen, and
+\code{c_m} for partitioning by cladogenesis/migration favouring strategy.}
+
+\item{shape_by}{A string indicating what data partitioning should be used
+for shapes. Options are \code{island_age} for partitioning by assumed island
+age, \code{stac} for partitioning by the treatment of uncertainty chosen, and
+\code{c_m} for partitioning by cladogenesis/migration favouring strategy.}
 }
 \value{
 A plot of one estimate partitioned by a given factor

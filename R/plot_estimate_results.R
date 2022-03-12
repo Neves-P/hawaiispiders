@@ -8,18 +8,24 @@
 #' @examples
 plot_estimate_results <- function(plotting_table,
                                   parameter_name,
-                                  x_partition_by,
+                                  partition_by,
                                   colour_by,
                                   shape_by) {
 
+  testit::assert(
+    identical(length(parameter_name), 1) &&
+      identical(length(partition_by), 1) &&
+      identical(length(colour_by), 1) &&
+      identical(length(shape_by), 1)
+    )
   estimate_label <- translate_parameter_name(parameter_name = parameter_name)
-  partition_label <- translate_partition_name(partition_name = x_partition_by)
+  partition_label <- translate_partition_name(partition_name = partition_by)
   colour_label <- translate_partition_name(partition_name = colour_by)
   shape_label <- translate_partition_name(partition_name = shape_by)
 
   ggplot2::ggplot(data = plotting_table) +
     ggplot2::geom_point(position = ggplot2::position_dodge(0.5),
-                        ggplot2::aes(x = get(x_partition_by),
+                        ggplot2::aes(x = get(partition_by),
                                      y = get(parameter_name),
                                      group = get(shape_by),
                                      shape = get(shape_by),

@@ -9,7 +9,7 @@ data_to_plot_no_outlier[2:6][data_to_plot_no_outlier[2:6] > 50] <- NA
 
 facet_all_data <- make_faceted_plot(
   data_to_plot,
-  x_partition_by = "island_age",
+  partition_by = "island_age",
   colour_by = "stac",
   shape_by = "c_m"
 )
@@ -20,7 +20,7 @@ save_paper_plot(
 )
 facet_no_outlier <- make_faceted_plot(
   data_to_plot_no_outlier,
-  x_partition_by = "island_age",
+  partition_by = "island_age",
   colour_by = "stac",
   shape_by = "c_m"
 )

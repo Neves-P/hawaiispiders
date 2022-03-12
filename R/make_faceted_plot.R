@@ -2,13 +2,13 @@
 #'
 #' @inheritParams default_params_doc
 #'
-#' @return
+#' @return A faceted ggplot of the parameter estimates named in
+#'   `parameter_names`
 #' @export
-#'
-#' @examples
+#' @author Pedro Santos Neves
 make_faceted_plot <- function(plotting_table,
                               parameter_names = get_parameter_names(),
-                              x_partition_by,
+                              partition_by,
                               colour_by,
                               shape_by) {
   testit::assert(all(parameter_names %in% get_parameter_names()))
@@ -16,7 +16,7 @@ make_faceted_plot <- function(plotting_table,
   for (i in seq_along(parameter_names)) {
     estimate_plots[[i]] <- plot_estimate_results(
       plotting_table = plotting_table,
-      x_partition_by = x_partition_by,
+      partition_by = partition_by,
       parameter_name = parameter_names[i],
       colour_by = colour_by,
       shape_by = shape_by)
