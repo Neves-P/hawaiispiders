@@ -4,7 +4,7 @@
 \alias{save_paper_plot}
 \title{Save a plot to current directory}
 \usage{
-save_paper_plot(plot_to_save, type_size = "full_size", name)
+save_paper_plot(plot_to_save, name, type_size = "full_size")
 }
 \value{
 NULL. A pdf and png files with the plot to save are saved to the

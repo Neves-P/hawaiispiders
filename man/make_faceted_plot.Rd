@@ -2,7 +2,7 @@
 % Please edit documentation in R/make_faceted_plot.R
 \name{make_faceted_plot}
 \alias{make_faceted_plot}
-\title{Title}
+\title{Combine multiple estimate plots into one faceted plot}
 \usage{
 make_faceted_plot(
   plotting_table,
@@ -16,5 +16,5 @@ make_faceted_plot(
 
 }
 \description{
-Title
+Combine multiple estimate plots into one faceted plot
 }

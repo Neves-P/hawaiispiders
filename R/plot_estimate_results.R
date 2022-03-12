@@ -18,11 +18,12 @@ plot_estimate_results <- function(plotting_table,
   shape_label <- translate_partition_name(partition_name = shape_by)
 
   ggplot2::ggplot(data = plotting_table) +
-    ggplot2::geom_point(position = ggplot2::position_dodge(0.15),
+    ggplot2::geom_point(position = ggplot2::position_dodge(0.5),
                         ggplot2::aes(x = get(x_partition_by),
                                      y = get(parameter_name),
-                                     colour = get(colour_by),
-                                     shape = get(shape_by))) +
+                                     group = get(shape_by),
+                                     shape = get(shape_by),
+                                     colour = get(colour_by))) +
     ggplot2::theme_classic() +
     ggplot2::scale_color_brewer(type = "qual", palette = "Set1") +
     ggplot2::guides(colour = ggplot2::guide_legend(colour_label),

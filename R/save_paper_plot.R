@@ -7,7 +7,7 @@
 #' @export
 #'
 #' @examples
-save_paper_plot <- function(plot_to_save, type_size = "full_size", name) {
+save_paper_plot <- function(plot_to_save, name, type_size = "full_size") {
   if (identical(type_size, "full_size")) {
     ggplot2::ggsave(
       plot = plot_to_save,

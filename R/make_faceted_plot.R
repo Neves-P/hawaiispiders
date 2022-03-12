@@ -1,4 +1,4 @@
-#' Title
+#' Combine multiple estimate plots into one faceted plot
 #'
 #' @inheritParams default_params_doc
 #'
@@ -19,8 +19,7 @@ make_faceted_plot <- function(plotting_table,
       x_partition_by = x_partition_by,
       parameter_name = parameter_names[i],
       colour_by = colour_by,
-      shape_by = shape_by
-    )
+      shape_by = shape_by)
   }
   # Default legend settings
   legend_direction <- "vertical"
@@ -34,10 +33,13 @@ make_faceted_plot <- function(plotting_table,
   grid_with_legend <- patchwork::wrap_plots(
     estimate_plots,
     ncol = 2,
-    guides = "collect") & ggplot2::theme(
+    guides = "collect") &
+    patchwork::plot_annotation(tag_levels = 'a') & ggplot2::theme(
       legend.direction = legend_direction,
       legend.position = legend_position,
-      legend.key.height = ggplot2::unit(0.4, "cm")
+      legend.key.height = ggplot2::unit(0.4, "cm"),
+      plot.tag = ggplot2::element_text(size = 10),
+      plot.tag.position = "topright"
     )
   grid_with_legend
 }

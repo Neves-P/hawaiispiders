@@ -7,8 +7,11 @@
 translate_partition_name(partition_name)
 }
 \value{
-
+A character string with formatted name of partition
 }
 \description{
 Translate partitioning codes into plottable English
+}
+\examples{
+plottable_name <- translate_partition_name(partition_name = "island_age")
 }
