@@ -34,7 +34,7 @@ make_faceted_plot <- function(plotting_table,
     estimate_plots,
     ncol = 2,
     guides = "collect") &
-    patchwork::plot_annotation(tag_levels = 'a') & ggplot2::theme(
+    patchwork::plot_annotation(tag_levels = "a") & ggplot2::theme(
       legend.direction = legend_direction,
       legend.position = legend_position,
       legend.key.height = ggplot2::unit(0.4, "cm"),

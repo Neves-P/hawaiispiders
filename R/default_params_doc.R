@@ -33,7 +33,8 @@
 #' @param sens A data frame consisting of the output of `DAISIE::sensitivity()`,
 #'   which can include several scenarios.
 #' @param parameter_name A string with the code name of 1 parameter. Possible
-#'   names are returned by `get_parameter_names()` (although only 1 is accepted).
+#'   names are returned by `get_parameter_names()` (although only 1 is
+#'   accepted).
 #' @param raw_results A data frame with the model results as returned by
 #'   `make_res_df()`.
 #' @param plot_to_save A ggplot which will be saved to disk.
