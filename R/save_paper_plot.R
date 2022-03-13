@@ -5,8 +5,20 @@
 #' @return NULL. A pdf and png files with the plot to save are saved to the
 #' working directory
 #' @export
+#' @author Pedro Santos Neves
 #'
 #' @examples
+#' \dontrun{
+#' plotting_table <- prepare_results_to_plot(readRDS("full_res.rds"))
+#' plot <- plot_estimate_results(
+#'   plotting_table,
+#'   parameter_name = "lambda_c",
+#'   partition_by = "island_age",
+#'   colour_by = "stac",
+#'   shape_by = "c_m"
+#' )
+#' save_paper_plot(plot_to_save = plot, "lac_plot", type_size = "full_size")
+#' }
 save_paper_plot <- function(plot_to_save, file_name, type_size = "full_size") {
 
   file_name <- tools::file_path_sans_ext(file_name)

@@ -15,7 +15,7 @@ facet_all_data <- make_faceted_plot(
 )
 save_paper_plot(
   plot_to_save = facet_all_data,
-  name = "facet_all_data",
+  file_name = "facet_all_data",
   type_size = "full_size"
 )
 facet_no_outlier <- make_faceted_plot(
@@ -26,7 +26,7 @@ facet_no_outlier <- make_faceted_plot(
 )
 save_paper_plot(
   plot_to_save = facet_no_outlier,
-  name = "facet_no_outlier",
+  file_name = "facet_no_outlier",
   type_size = "full_size"
 )
 

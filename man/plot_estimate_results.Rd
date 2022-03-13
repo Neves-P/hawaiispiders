@@ -2,7 +2,7 @@
 % Please edit documentation in R/plot_estimate_results.R
 \name{plot_estimate_results}
 \alias{plot_estimate_results}
-\title{Title}
+\title{Scatter plot of DAISIE estimate results}
 \usage{
 plot_estimate_results(
   plotting_table,
@@ -41,8 +41,24 @@ age, \code{stac} for partitioning by the treatment of uncertainty chosen, and
 \code{c_m} for partitioning by cladogenesis/migration favouring strategy.}
 }
 \value{
-A plot of one estimate partitioned by a given factor
+A plot of one estimate partitioned, coloured and shaped by given
+factors
 }
 \description{
-Title
+Scatter plot of DAISIE estimate results
+}
+\examples{
+\dontrun{
+plotting_table <- prepare_results_to_plot(readRDS("full_res.rds"))
+plot_estimate_results(
+  plotting_table,
+  parameter_name = "lambda_c",
+  partition_by = "island_age",
+  colour_by = "stac",
+  shape_by = "c_m"
+)
+}
+}
+\author{
+Pedro Santos Neves
 }

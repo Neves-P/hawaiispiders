@@ -2,13 +2,20 @@
 % Please edit documentation in R/get_parameter_names.R
 \name{get_parameter_names}
 \alias{get_parameter_names}
-\title{Title}
+\title{DAISIE parameter names}
 \usage{
 get_parameter_names()
 }
 \value{
-
+A character vector with 5 elements, each being the name of a DAISIE
+model parameter.
 }
 \description{
-Title
+DAISIE parameter names
+}
+\examples{
+parameter_names <- get_parameter_names()
+}
+\author{
+Pedro Santos Neves
 }

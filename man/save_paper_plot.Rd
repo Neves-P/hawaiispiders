@@ -21,3 +21,19 @@ working directory
 \description{
 Save a plot to current directory
 }
+\examples{
+\dontrun{
+plotting_table <- prepare_results_to_plot(readRDS("full_res.rds"))
+plot <- plot_estimate_results(
+  plotting_table,
+  parameter_name = "lambda_c",
+  partition_by = "island_age",
+  colour_by = "stac",
+  shape_by = "c_m"
+)
+save_paper_plot(plot_to_save = plot, "lac_plot", type_size = "full_size")
+}
+}
+\author{
+Pedro Santos Neves
+}

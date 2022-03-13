@@ -2,7 +2,7 @@
 % Please edit documentation in R/translate_parameter_name.R
 \name{translate_parameter_name}
 \alias{translate_parameter_name}
-\title{Title}
+\title{Translate parameter name into plain English}
 \usage{
 translate_parameter_name(parameter_name)
 }
@@ -11,8 +11,11 @@ translate_parameter_name(parameter_name)
 names are returned by \code{get_parameter_names()} (although only 1 is accepted).}
 }
 \value{
-
+A character with the corresponding well formatted parameter name
 }
 \description{
-Title
+Translate parameter name into plain English
+}
+\examples{
+parameter_name <- translate_parameter_name("lambda_c")
 }

@@ -66,8 +66,13 @@ res_lsodes <- rbind(
   a_m_sens
 )
 data.frame("integrator" = rep(factor("lsodes"), 24))
-res_lsodes <- cbind(res_lsodes, data.frame("integrator" = rep(factor("lsodes"), 24)))
-res_odeint <- cbind(res_odeint, data.frame("integrator" = rep(factor("odeint"), 24)))
+res_lsodes <- cbind(
+  res_lsodes,
+  data.frame("integrator" = rep(factor("lsodes"), 24))
+)
+res_odeint <- cbind(
+  res_odeint, data.frame("integrator" = rep(factor("odeint"), 24))
+)
 full_res <- rbind(res_odeint, res_lsodes)
 
 usethis::use_data(full_res, overwrite = TRUE)

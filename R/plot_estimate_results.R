@@ -1,11 +1,23 @@
-#' Title
+#' Scatter plot of DAISIE estimate results
 #'
 #' @inheritParams default_params_doc
 #'
-#' @return A plot of one estimate partitioned by a given factor
+#' @return A plot of one estimate partitioned, coloured and shaped by given
+#'   factors
 #' @export
+#' @author Pedro Santos Neves
 #'
 #' @examples
+#' \dontrun{
+#' plotting_table <- prepare_results_to_plot(readRDS("full_res.rds"))
+#' plot_estimate_results(
+#'   plotting_table,
+#'   parameter_name = "lambda_c",
+#'   partition_by = "island_age",
+#'   colour_by = "stac",
+#'   shape_by = "c_m"
+#' )
+#' }
 plot_estimate_results <- function(plotting_table,
                                   parameter_name,
                                   partition_by,
@@ -13,10 +25,10 @@ plot_estimate_results <- function(plotting_table,
                                   shape_by) {
 
   testit::assert(
-    identical(length(parameter_name), 1) &&
-      identical(length(partition_by), 1) &&
-      identical(length(colour_by), 1) &&
-      identical(length(shape_by), 1)
+    identical(length(parameter_name), 1L) &&
+      identical(length(partition_by), 1L) &&
+      identical(length(colour_by), 1L) &&
+      identical(length(shape_by), 1L)
     )
   estimate_label <- translate_parameter_name(parameter_name = parameter_name)
   partition_label <- translate_partition_name(partition_name = partition_by)
