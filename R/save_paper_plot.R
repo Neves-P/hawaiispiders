@@ -26,7 +26,7 @@ save_paper_plot <- function(plot_to_save, file_name, type_size = "full_size") {
   if (identical(type_size, "full_size")) {
     ggplot2::ggsave(
       plot = plot_to_save,
-      filename = file.path("figures", paste0(name, ".png")),
+      filename = file.path("figures", paste0(file_name, ".png")),
       device = "png",
       width = 168,
       height = 100,
@@ -35,7 +35,7 @@ save_paper_plot <- function(plot_to_save, file_name, type_size = "full_size") {
     )
     ggplot2::ggsave(
       plot = plot_to_save,
-      filename = file.path("figures", paste0(name, ".pdf")),
+      filename = file.path("figures", paste0(file_name, ".pdf")),
       device = "pdf",
       width = 168,
       height = 100,
@@ -44,7 +44,7 @@ save_paper_plot <- function(plot_to_save, file_name, type_size = "full_size") {
   } else if (identical(type_size, "half_size")) {
     ggplot2::ggsave(
       plot = plot_to_save,
-      filename = file.path("figures", paste0(name, ".png")),
+      filename = file.path("figures", paste0(file_name, ".png")),
       device = "png",
       width = 168 / 2,
       height = 100 / 2,
@@ -53,7 +53,7 @@ save_paper_plot <- function(plot_to_save, file_name, type_size = "full_size") {
     )
   ggplot2::ggsave(
     plot = plot_to_save,
-    filename = file.path("figures", paste0(name, ".pdf")),
+    filename = file.path("figures", paste0(file_name, ".pdf")),
     device = "pdf",
     width = 168 / 2,
     height = 100 / 2,
