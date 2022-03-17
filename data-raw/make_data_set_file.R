@@ -6,7 +6,7 @@
 # Focus on method and how to deal with them. Link with new paper mascarenes
 #
 #
-# table with which are at equilibirum
+# table with which are at equilibrium
 # use eq to get n_spec at equilibrium. daisie_expEIN. time Inf for div at eq
 # what would spider biologists
 #
@@ -52,8 +52,10 @@ for (h in seq_along(stac_handlings)) {
         status_suffix <- ""
         min_age_available <- !is.na(dataset_list[[j]][k, "MinAge"])
         # MaxAge cases
-        if ((brts[1] >= island_ages[i] || is.na(brts)) || stac_handlings[h] == "max") {
+        if ((brts[1] >= island_ages[i] || is.na(brts)) ||
+            stac_handlings[h] == "max") {
           status_suffix <- "_MaxAge"
+          # Can't have more brts is first brts > island_age
           if (length(brts) > 1 && brts[1] >= island_ages[i]) {
             dataset_template[k, "Branching_times"] <- paste(
               as.character(brts)[-2], sep = "", collapse = ","
