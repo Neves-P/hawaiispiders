@@ -1,10 +1,4 @@
 ## code to prepare `daisie_objects` goes here
-
-
-# Check missing_species column when endemic and branching time is NA.
-# Checksum of missing species with number of branching times in a clade
-# Focus on method and how to deal with them. Link with new paper mascarenes
-#
 #
 # table with which are at equilibrium
 # use eq to get n_spec at equilibrium. daisie_expEIN. time Inf for div at eq
@@ -55,11 +49,13 @@ for (h in seq_along(stac_handlings)) {
         if ((brts[1] >= island_ages[i] || is.na(brts)) ||
             stac_handlings[h] == "max") {
           status_suffix <- "_MaxAge"
-          # Can't have more brts is first brts > island_age
+          # Can't have more brts if cladogenesis_t > island_age
           if (length(brts) > 1 && brts[2] >= island_ages[i]) {
             dataset_template[k, "Branching_times"] <- paste(
               as.character(brts)[-2], sep = "", collapse = ","
             )
+            dataset_template[k, "Missing_species"] <-
+              dataset_template[k, "Missing_species"] + 1
           }
         }
         # MinAge normal use and MinAge favouring cases (stac_handlings == "min")
