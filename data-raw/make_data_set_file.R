@@ -56,7 +56,7 @@ for (h in seq_along(stac_handlings)) {
             stac_handlings[h] == "max") {
           status_suffix <- "_MaxAge"
           # Can't have more brts is first brts > island_age
-          if (length(brts) > 1 && brts[1] >= island_ages[i]) {
+          if (length(brts) > 1 && brts[2] >= island_ages[i]) {
             dataset_template[k, "Branching_times"] <- paste(
               as.character(brts)[-2], sep = "", collapse = ","
             )
