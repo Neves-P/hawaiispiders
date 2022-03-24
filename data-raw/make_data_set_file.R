@@ -51,6 +51,8 @@ for (h in seq_along(stac_handlings)) {
           status_suffix <- "_MaxAge"
           # Can't have more brts if cladogenesis_t > island_age
           if (length(brts) > 1 && brts[2] >= island_ages[i]) {
+            strsplit(dataset_template[k, "Clade_name"], "_")
+
             dataset_template[k, "Branching_times"] <- paste(
               as.character(brts)[-2], sep = "", collapse = ","
             )
