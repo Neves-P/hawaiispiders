@@ -30,12 +30,13 @@ for (h in seq_along(stac_handlings)) {
         "Missing_species" = numeric(),
         "Branching_times" = numeric()
       )
-
-      for (k in seq_len(nrow(dataset_list[[j]]))) {
-        dataset_template[k, "Clade_name"] <- dataset_list[[j]][k, "Clade_name"]
-        dataset_template[k, "Missing_species"] <- dataset_list[[j]][k, "Missing_species"]
-        dataset_template[k, "Branching_times"] <- dataset_list[[j]][k, "Branching_times"]
-        ages <- dataset_list[[j]][k, "Branching_times"]
+      focal_dataset <- dataset_list[[j]]
+      k <- 1
+      while (nrow(focal_dataset) > 0) {
+        dataset_template[k, "Clade_name"] <- focal_dataset[1, "Clade_name"]
+        dataset_template[k, "Missing_species"] <- focal_dataset[1, "Missing_species"]
+        dataset_template[k, "Branching_times"] <- focal_dataset[1, "Branching_times"]
+        ages <- focal_dataset[1, "Branching_times"]
         brts <- sort(
           as.numeric(unlist(strsplit(
             as.character(ages),
@@ -44,20 +45,31 @@ for (h in seq_along(stac_handlings)) {
           na.last = TRUE
         )
         status_suffix <- ""
-        min_age_available <- !is.na(dataset_list[[j]][k, "MinAge"])
+        min_age_available <- !is.na(focal_dataset[1, "MinAge"])
         # MaxAge cases
         if ((brts[1] >= island_ages[i] || is.na(brts)) ||
             stac_handlings[h] == "max") {
           status_suffix <- "_MaxAge"
           # Can't have more brts if cladogenesis_t > island_age
           if (length(brts) > 1 && brts[2] >= island_ages[i]) {
-            strsplit(dataset_template[k, "Clade_name"], "_")
-
-            dataset_template[k, "Branching_times"] <- paste(
-              as.character(brts)[-2], sep = "", collapse = ","
+            name_words <- unlist(
+              strsplit(dataset_template[k, "Clade_name"], "_")
             )
-            dataset_template[k, "Missing_species"] <-
-              dataset_template[k, "Missing_species"] + 1
+            dataset_template[k, "Clade_name"] <- paste(
+              name_words[1],
+              name_words[2],
+              sep = "_"
+            )
+            dataset_template[k, "Branching_times"] <- brts[1]
+            dataset_template[k + 1, "Clade_name"] <- paste(
+              name_words[3],
+              name_words[4],
+              sep = "_"
+            )
+            dataset_template[k + 1, "Missing_species"] <-
+              focal_dataset[1, "Missing_species"]
+            dataset_template[k + 1, "Branching_times"] <- brts[2]
+
           }
         }
         # MinAge normal use and MinAge favouring cases (stac_handlings == "min")
@@ -66,15 +78,17 @@ for (h in seq_along(stac_handlings)) {
           status_suffix <- "_MaxAgeMinAge"
           dataset_template[k, "Branching_times"] <- paste(
             dataset_template[k, "Branching_times"],
-            dataset_list[[j]][k, "MinAge"],
+            focal_dataset[1, "MinAge"],
             sep = ","
           )
         }
 
         dataset_template[k, "Status"] <- paste0(
-          dataset_list[[j]][k, "Status"],
+          focal_dataset[1, "Status"],
           status_suffix
         )
+        focal_dataset <- focal_dataset[-k, ]
+        k <- nrow(dataset_template) + 1
       }
       dataset_c_m[[j]] <- dataset_template
       name_datatable <- paste(
