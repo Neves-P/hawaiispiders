@@ -55,20 +55,25 @@ for (h in seq_along(stac_handlings)) {
             name_words <- unlist(
               strsplit(dataset_template[k, "Clade_name"], "_")
             )
+            genera_index <- grep('[A-Z]+', name_words)
             dataset_template[k, "Clade_name"] <- paste(
-              name_words[1],
-              name_words[2],
+              name_words[genera_index[1]],
+              name_words[genera_index[2] - 1],
               sep = "_"
             )
             dataset_template[k, "Branching_times"] <- brts[1]
             dataset_template[k + 1, "Clade_name"] <- paste(
-              name_words[3],
-              name_words[4],
-              sep = "_"
+              name_words[seq(genera_index[2], length(name_words))],
+              collapse = "_"
             )
             dataset_template[k + 1, "Missing_species"] <-
               focal_dataset[1, "Missing_species"]
             dataset_template[k + 1, "Branching_times"] <- brts[2]
+            # General case requires an extra check per brts. Possibly vectorize?
+            dataset_template[k + 1, "Status"] <- paste0(
+              focal_dataset[1, "Status"],
+              status_suffix
+            )
 
           }
         }
@@ -87,7 +92,7 @@ for (h in seq_along(stac_handlings)) {
           focal_dataset[1, "Status"],
           status_suffix
         )
-        focal_dataset <- focal_dataset[-k, ]
+        focal_dataset <- focal_dataset[-1, ]
         k <- nrow(dataset_template) + 1
       }
       dataset_c_m[[j]] <- dataset_template
