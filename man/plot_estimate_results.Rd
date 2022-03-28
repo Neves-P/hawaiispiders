@@ -23,7 +23,8 @@ uncertainty grouping. All these are made up as factors to allow easy
 plotting.}
 
 \item{parameter_name}{A string with the code name of 1 parameter. Possible
-names are returned by \code{get_parameter_names()} (although only 1 is accepted).}
+names are returned by \code{get_parameter_names()} (although only 1 is
+accepted).}
 
 \item{partition_by}{A string indicating what the x-axis should be
 partitioned by. Options are \code{island_age} for partitioning by assumed island

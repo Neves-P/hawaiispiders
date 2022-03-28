@@ -62,7 +62,8 @@ age, \code{stac} for partitioning by the treatment of uncertainty chosen, and
 which can include several scenarios.}
 
 \item{parameter_name}{A string with the code name of 1 parameter. Possible
-names are returned by \code{get_parameter_names()} (although only 1 is accepted).}
+names are returned by \code{get_parameter_names()} (although only 1 is
+accepted).}
 
 \item{raw_results}{A data frame with the model results as returned by
 \code{make_res_df()}.}

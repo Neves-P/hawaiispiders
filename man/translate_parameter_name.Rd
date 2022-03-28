@@ -8,7 +8,8 @@ translate_parameter_name(parameter_name)
 }
 \arguments{
 \item{parameter_name}{A string with the code name of 1 parameter. Possible
-names are returned by \code{get_parameter_names()} (although only 1 is accepted).}
+names are returned by \code{get_parameter_names()} (although only 1 is
+accepted).}
 }
 \value{
 A character with the corresponding well formatted parameter name
