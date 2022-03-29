@@ -1,10 +1,6 @@
 ## code to prepare `daisie_objects` goes here
-#
-# table with which are at equilibrium
-# use eq to get n_spec at equilibrium. daisie_expEIN. time Inf for div at eq
-# what would spider biologists
-#
-#
+
+
 data("c_master")
 data("m_master")
 library(usethis)
@@ -78,6 +74,7 @@ for (h in seq_along(stac_handlings)) {
           }
         }
         # MinAge normal use and MinAge favouring cases (stac_handlings == "min")
+        # Note that max cases don't take minage if available
         if ((isTRUE(min_age_available) && isTRUE(brts[1] >= island_ages[i])) ||
             (isTRUE(min_age_available) && stac_handlings[h] == "min"))  {
           status_suffix <- "_MaxAgeMinAge"
