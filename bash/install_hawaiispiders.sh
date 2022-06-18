@@ -1,11 +1,11 @@
 #!/bin/bash
-#SBATCH --time=1:00:00
+#SBATCH --time=00:30:00
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --job-name=install_hawaiispiders
 #SBATCH --output=install_hawaiispiders.log
 #SBATCH --mem=2GB
-#SBATCH --partition=vulture
+#SBATCH --partition=short
 
 mkdir -p logs
 ml R
