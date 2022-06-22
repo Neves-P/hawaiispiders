@@ -55,7 +55,7 @@ a_m_sens <- make_res_df(
     full_output = TRUE
   )$full_output
 )
-res_lsodes <- rbind(
+res_421 <- rbind(
   r_c_sens,
   y_c_sens,
   o_c_sens,
@@ -65,14 +65,13 @@ res_lsodes <- rbind(
   o_m_sens,
   a_m_sens
 )
-data.frame("integrator" = rep(factor("lsodes"), 24))
-res_lsodes <- cbind(
-  res_lsodes,
-  data.frame("integrator" = rep(factor("lsodes"), 24))
+res <- cbind(res_421, data.frame("version" = rep(factor("4.2.1"), 24)))
+data("full_res_410")
+res_410 <- cbind(
+  full_res_410[full_res_410$integrator == factor(x = "lsodes", levels = c("odeint", "lsodes")), ],
+  data.frame("version" = rep(factor("4.1.0"), 24))
 )
-res_odeint <- cbind(
-  res_odeint, data.frame("integrator" = rep(factor("odeint"), 24))
-)
-full_res <- rbind(res_odeint, res_lsodes)
+res_410 <- res_410[, -11]
+res <- rbind(res, res_410)
 
-usethis::use_data(full_res, overwrite = TRUE)
+usethis::use_data(res, overwrite = TRUE)
