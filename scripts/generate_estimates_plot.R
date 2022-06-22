@@ -1,9 +1,23 @@
 library(hawaiispiders)
 # Load data
-full_res <- readRDS("full_res.rds")
-full_res <- dplyr::filter(full_res, integrator == "odeint")
+data(res)
 
-data_to_plot <- prepare_results_to_plot(full_res)
+res <-
+
+
+
+old_version <- dplyr::filter(res, version == "4.1.0")
+new_version <- dplyr::filter(res, version == "4.2.1")
+
+diffs <- new_version[2:6] - old_version[2:6]
+plot(diffs$lambda_c)
+plot(diffs$mu)
+plot(diffs$K)
+plot(diffs$gamma)
+plot(diffs$lambda_a)
+
+
+data_to_plot <- prepare_results_to_plot(new_version)
 data_to_plot_no_outlier <- data_to_plot
 data_to_plot_no_outlier[2:6][data_to_plot_no_outlier[2:6] > 50] <- NA
 
