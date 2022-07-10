@@ -2,19 +2,16 @@ library(hawaiispiders)
 # Load data
 data(res)
 
-res <-
-
-
-
 old_version <- dplyr::filter(res, version == "4.1.0")
 new_version <- dplyr::filter(res, version == "4.2.1")
 
-diffs <- new_version[2:6] - old_version[2:6]
+diffs <- (new_version[2:7] - old_version[2:7]) / old_version[2:7]
 plot(diffs$lambda_c)
 plot(diffs$mu)
 plot(diffs$K)
 plot(diffs$gamma)
 plot(diffs$lambda_a)
+plot(diffs$loglik)
 
 
 data_to_plot <- prepare_results_to_plot(new_version)
