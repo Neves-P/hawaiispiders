@@ -13,7 +13,6 @@ plot(diffs$gamma)
 plot(diffs$lambda_a)
 plot(diffs$loglik)
 
-
 data_to_plot <- prepare_results_to_plot(new_version)
 data_to_plot_no_outlier <- data_to_plot
 data_to_plot_no_outlier[2:6][data_to_plot_no_outlier[2:6] > 50] <- NA
