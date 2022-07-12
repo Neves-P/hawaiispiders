@@ -18,10 +18,10 @@ brts <- strsplit(datatables$Branching_times, ",")
 first_brt <- as.numeric(sapply(brts, "[", 1))
 second_brt <- as.numeric(sapply(brts, "[", 2))
 datatables <- cbind(datatables, first_brt, second_brt)
-# datatables$first_brt[which(is.na(datatables$first_brt) & datatables$age == factor("a", levels = c("a", "o", "y", "r")))] <- 4.8
-# datatables$first_brt[which(is.na(datatables$first_brt) & datatables$age == factor("o", levels = c("a", "o", "y", "r")))] <- 3.6
-# datatables$first_brt[which(is.na(datatables$first_brt) & datatables$age == factor("y", levels = c("a", "o", "y", "r")))] <- 2.4
-# datatables$first_brt[which(is.na(datatables$first_brt) & datatables$age == factor("r", levels = c("a", "o", "y", "r")))] <- 1.2
+datatables$first_brt[which(is.na(datatables$first_brt) & datatables$age == factor("a", levels = c("a", "o", "y", "r")))] <- 4.8
+datatables$first_brt[which(is.na(datatables$first_brt) & datatables$age == factor("o", levels = c("a", "o", "y", "r")))] <- 3.6
+datatables$first_brt[which(is.na(datatables$first_brt) & datatables$age == factor("y", levels = c("a", "o", "y", "r")))] <- 2.4
+datatables$first_brt[which(is.na(datatables$first_brt) & datatables$age == factor("r", levels = c("a", "o", "y", "r")))] <- 1.2
 datatables <- dplyr::group_by(datatables, Clade_name)
 datatables <- dplyr::arrange(datatables, dplyr::desc(first_brt), .by_group = TRUE)
 datatables <- cbind(datatables, id = 1:nrow(datatables))
@@ -39,5 +39,19 @@ ggplot(datatables, aes(x = id, y = first_brt)) +
   geom_point(size = 3, aes(colour = Status)) +
   theme(axis.text.x = element_blank())
 
+# Load data
+data(res)
 
+old_version <- dplyr::filter(res, version == "4.1.0")
+new_version <- dplyr::filter(res, version == "4.2.1")
 
+data_to_plot <- prepare_results_to_plot(new_version)
+data_to_plot_no_outlier <- data_to_plot
+data_to_plot_no_outlier[2:6][data_to_plot_no_outlier[2:6] > 50] <- NA
+
+facet_all_data <- make_faceted_plot(
+  data_to_plot,
+  partition_by = "island_age",
+  colour_by = "stac",
+  shape_by = "c_m"
+)
