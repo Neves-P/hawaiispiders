@@ -29,7 +29,7 @@ datatables <- cbind(datatables, id = 1:nrow(datatables))
 library(ggplot2)
 
 # Plot
-ggplot(datatables, aes(x = id, y = first_brt)) +
+data_plot <- ggplot(datatables, aes(x = id, y = first_brt)) +
   geom_segment(aes(
     x = id,
     xend = id,
@@ -39,19 +39,41 @@ ggplot(datatables, aes(x = id, y = first_brt)) +
   geom_point(size = 3, aes(colour = Status)) +
   theme(axis.text.x = element_blank())
 
+# estimates
 # Load data
 data(res)
+res <- dplyr::filter(res, version == "4.2.1")
 
-old_version <- dplyr::filter(res, version == "4.1.0")
-new_version <- dplyr::filter(res, version == "4.2.1")
+data_to_plot <- prepare_results_to_plot(res)
+pivot_to_plot <- data_to_plot[,-(7:10)] |>
+  tidyr::pivot_longer(-scenario & -version & -island_age & -c_m & -stac)
 
-data_to_plot <- prepare_results_to_plot(new_version)
-data_to_plot_no_outlier <- data_to_plot
-data_to_plot_no_outlier[2:6][data_to_plot_no_outlier[2:6] > 50] <- NA
+r_pivot_to_plot <- pivot_to_plot |> dplyr::filter(island_age == 1.2)
+y_pivot_to_plot <- pivot_to_plot |> dplyr::filter(island_age == 2.4)
+o_pivot_to_plot <- pivot_to_plot |> dplyr::filter(island_age == 3.6)
+a_pivot_to_plot <- pivot_to_plot |> dplyr::filter(island_age == 4.8)
 
-facet_all_data <- make_faceted_plot(
-  data_to_plot,
-  partition_by = "island_age",
-  colour_by = "stac",
-  shape_by = "c_m"
-)
+r_plot <- ggplot2::ggplot(data = r_pivot_to_plot) +
+  ggplot2::geom_point(position = ggplot2::position_dodge(0.5),
+                      ggplot2::aes(x = name,
+                                   y = value,
+                                   shape = stac))
+y_plot <- ggplot2::ggplot(data = y_pivot_to_plot) +
+  ggplot2::geom_point(position = ggplot2::position_dodge(0.5),
+                      ggplot2::aes(x = name,
+                                   y = value,
+                                   shape = stac))
+o_plot <- ggplot2::ggplot(data = o_pivot_to_plot) +
+  ggplot2::geom_point(position = ggplot2::position_dodge(0.5),
+                      ggplot2::aes(x = name,
+                                   y = value,
+                                   shape = stac))
+a_plot <- ggplot2::ggplot(data = a_pivot_to_plot) +
+  ggplot2::geom_point(position = ggplot2::position_dodge(0.5),
+                      ggplot2::aes(x = name,
+                                   y = value,
+                                   shape = stac))
+library(patchwork)
+
+(data_plot | (a_plot / o_plot / y_plot / r_plot)) + plot_layout(guides = 'collect')
+
