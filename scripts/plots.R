@@ -37,7 +37,10 @@ data_plot <- ggplot(datatables, aes(x = id, y = first_brt)) +
     yend = first_brt
   )) +
   geom_point(size = 3, aes(colour = Status)) +
-  theme(axis.text.x = element_blank())
+  theme(axis.text.x = element_blank(),
+        axis.title.x = element_blank(), legend.position = "none") +
+  ylab("Time (myr)") +
+
 
 # estimates
 # Load data
@@ -57,23 +60,38 @@ r_plot <- ggplot2::ggplot(data = r_pivot_to_plot) +
   ggplot2::geom_point(position = ggplot2::position_dodge(0.5),
                       ggplot2::aes(x = name,
                                    y = value,
-                                   shape = stac))
+                                   shape = stac)) +
+  ggplot2::xlab("Parameters")
 y_plot <- ggplot2::ggplot(data = y_pivot_to_plot) +
   ggplot2::geom_point(position = ggplot2::position_dodge(0.5),
                       ggplot2::aes(x = name,
                                    y = value,
-                                   shape = stac))
+                                   shape = stac)) +
+  ggplot2::theme(axis.title.x = ggplot2::element_blank(),
+                 axis.text.x = ggplot2::element_blank())
 o_plot <- ggplot2::ggplot(data = o_pivot_to_plot) +
   ggplot2::geom_point(position = ggplot2::position_dodge(0.5),
                       ggplot2::aes(x = name,
                                    y = value,
-                                   shape = stac))
+                                   shape = stac)) +
+  ggplot2::theme(axis.title.x = ggplot2::element_blank(),
+                 axis.text.x = ggplot2::element_blank())
 a_plot <- ggplot2::ggplot(data = a_pivot_to_plot) +
   ggplot2::geom_point(position = ggplot2::position_dodge(0.5),
                       ggplot2::aes(x = name,
                                    y = value,
-                                   shape = stac))
+                                   shape = stac)) +
+  ggplot2::theme(axis.title.x = ggplot2::element_blank(),
+                 axis.text.x = ggplot2::element_blank())
 library(patchwork)
 
-(data_plot | (a_plot / o_plot / y_plot / r_plot)) + plot_layout(guides = 'collect')
+facet_plot <- (data_plot | (a_plot / o_plot / y_plot / r_plot)) + plot_layout(guides = 'collect') + theme(legend.position = "none")
+ggplot2::ggsave(
+  plot = facet_plot,
+  filename = paste0("facet_plot.png"),
+  device = "png",
+  width = 168,
+  height = 200,
+  units = "mm"
+)
 
