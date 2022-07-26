@@ -1,4 +1,5 @@
 
+
 datatables <- rbind(
   # cbind(a_c_max_datatable, age = factor("a"), stac = factor("max")),
   # cbind(a_c_min_datatable, age = factor("a"), stac = factor("min")),
@@ -18,17 +19,27 @@ brts <- strsplit(datatables$Branching_times, ",")
 first_brt <- as.numeric(sapply(brts, "[", 1))
 second_brt <- as.numeric(sapply(brts, "[", 2))
 datatables <- cbind(datatables, first_brt, second_brt)
-datatables$first_brt[which(is.na(datatables$first_brt) & datatables$age == factor("a", levels = c("a", "o", "y", "r")))] <- 4.8
-datatables$first_brt[which(is.na(datatables$first_brt) & datatables$age == factor("o", levels = c("a", "o", "y", "r")))] <- 3.6
-datatables$first_brt[which(is.na(datatables$first_brt) & datatables$age == factor("y", levels = c("a", "o", "y", "r")))] <- 2.4
-datatables$first_brt[which(is.na(datatables$first_brt) & datatables$age == factor("r", levels = c("a", "o", "y", "r")))] <- 1.2
+datatables$first_brt[which(is.na(datatables$first_brt) &
+                             datatables$age == factor("a", levels = c("a", "o", "y", "r")))] <-
+  4.8
+datatables$first_brt[which(is.na(datatables$first_brt) &
+                             datatables$age == factor("o", levels = c("a", "o", "y", "r")))] <-
+  3.6
+datatables$first_brt[which(is.na(datatables$first_brt) &
+                             datatables$age == factor("y", levels = c("a", "o", "y", "r")))] <-
+  2.4
+datatables$first_brt[which(is.na(datatables$first_brt) &
+                             datatables$age == factor("r", levels = c("a", "o", "y", "r")))] <-
+  1.2
 datatables <- dplyr::group_by(datatables, Clade_name)
-datatables <- dplyr::arrange(datatables, dplyr::desc(first_brt), .by_group = TRUE)
+datatables <-
+  dplyr::arrange(datatables, dplyr::desc(first_brt), .by_group = TRUE)
 datatables <- cbind(datatables, id = 1:nrow(datatables))
 
 library(ggplot2)
 
 # Plot
+# Colour lines
 data_plot <- ggplot(datatables, aes(x = id, y = first_brt)) +
   geom_segment(aes(
     x = id,
@@ -40,13 +51,16 @@ data_plot <- ggplot(datatables, aes(x = id, y = first_brt)) +
   theme(axis.text.x = element_blank())
 
 # estimates
+
+# Plot instead lambda_c1
 # Load data
 data(res)
 res <- dplyr::filter(res, version == "4.2.1")
 
 data_to_plot <- prepare_results_to_plot(res)
-pivot_to_plot <- data_to_plot[,-(7:10)] |>
-  tidyr::pivot_longer(-scenario & -version & -island_age & -c_m & -stac)
+pivot_to_plot <- data_to_plot[, -(7:10)] |>
+  tidyr::pivot_longer(-scenario &
+                        -version & -island_age & -c_m & -stac)
 
 r_pivot_to_plot <- pivot_to_plot |> dplyr::filter(island_age == 1.2)
 y_pivot_to_plot <- pivot_to_plot |> dplyr::filter(island_age == 2.4)
@@ -75,5 +89,5 @@ a_plot <- ggplot2::ggplot(data = a_pivot_to_plot) +
                                    shape = stac))
 library(patchwork)
 
-(data_plot | (a_plot / o_plot / y_plot / r_plot)) + plot_layout(guides = 'collect')
-
+(data_plot |
+    (a_plot / o_plot / y_plot / r_plot)) + plot_layout(guides = 'collect')
