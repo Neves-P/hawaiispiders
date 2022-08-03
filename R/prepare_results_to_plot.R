@@ -18,6 +18,7 @@
 #' }
 prepare_results_to_plot <- function(raw_results) {
   factors <- sapply(raw_results$scenario, strsplit, split = "_")
+  raw_results$lambda_c <- raw_results$lambda_c * (1 - (1 / raw_results$K))
   raw_results_colnames <- colnames(raw_results)
   plotting_table <- cbind(raw_results, NA, NA, NA)
   colnames(plotting_table) <- c(
@@ -45,6 +46,6 @@ prepare_results_to_plot <- function(raw_results) {
   )
   levels(plotting_table$island_age) <- c("1.2", "2.4", "3.6", "4.8")
   levels(plotting_table$c_m) <- c("Cladogenesis", "Colonisation")
-  levels(plotting_table$stac) <- c("1", "2", "3")
+  levels(plotting_table$stac) <- c("CAT", "PAT1", "PAT2")
   plotting_table
 }

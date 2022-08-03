@@ -29,7 +29,7 @@ save_paper_plot <- function(plot_to_save, file_name, type_size = "full_size") {
       filename = file.path("figures", paste0(file_name, ".png")),
       device = "png",
       width = 168,
-      height = 100,
+      height = 150,
       units = "mm",
       dpi = 600
     )
@@ -38,7 +38,7 @@ save_paper_plot <- function(plot_to_save, file_name, type_size = "full_size") {
       filename = file.path("figures", paste0(file_name, ".pdf")),
       device = "pdf",
       width = 168,
-      height = 100,
+      height = 150,
       units = "mm",
     )
   } else if (identical(type_size, "half_size")) {
@@ -47,7 +47,7 @@ save_paper_plot <- function(plot_to_save, file_name, type_size = "full_size") {
       filename = file.path("figures", paste0(file_name, ".png")),
       device = "png",
       width = 168 / 2,
-      height = 100 / 2,
+      height = 150 / 2,
       units = "mm",
       dpi = 600
     )
@@ -56,8 +56,8 @@ save_paper_plot <- function(plot_to_save, file_name, type_size = "full_size") {
     filename = file.path("figures", paste0(file_name, ".pdf")),
     device = "pdf",
     width = 168 / 2,
-    height = 100 / 2,
-    units = "mm",
+    height = 150 / 2,
+    units = "mm"
   )
   }
 }

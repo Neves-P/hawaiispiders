@@ -34,12 +34,12 @@ make_faceted_plot <- function(plotting_table,
     estimate_plots,
     ncol = 2,
     guides = "collect") &
-    patchwork::plot_annotation(tag_levels = "a") & ggplot2::theme(
+    patchwork::plot_annotation(tag_levels = "A") & ggplot2::theme(
       legend.direction = legend_direction,
       legend.position = legend_position,
       legend.key.height = ggplot2::unit(0.4, "cm"),
-      plot.tag = ggplot2::element_text(size = 10),
-      plot.tag.position = "topright"
+      plot.tag = ggplot2::element_text(size = 8),
+      plot.tag.position = "topleft"
     )
   grid_with_legend
 }
