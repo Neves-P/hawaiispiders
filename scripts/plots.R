@@ -47,6 +47,7 @@ data_plot_1 <- ggplot(datatables, aes(x = id, y = first_brt)) +
     yend = first_brt
   )) +
   geom_point(size = 3, aes(colour = Status)) +
+  theme_minimal() +
   theme(axis.text.x = element_blank(),
         axis.title.x = element_blank(), legend.position = "none") +
   ylab("Time (myr)")
@@ -60,6 +61,7 @@ data_plot_2 <- ggplot(datatables, aes(y = id, x = first_brt)) +
     xend = first_brt
   )) +
   geom_point(size = 3, aes(colour = Status)) +
+  theme_minimal() +
   theme(axis.text.x = element_blank(),
         axis.title.x = element_blank(), legend.position = "none") +
   ylab("Time (myr)")
@@ -72,6 +74,12 @@ data(res)
 res <- dplyr::filter(res, version == "4.2.1")
 
 data_to_plot <- prepare_results_to_plot(res)
+# data_to_plot$lambda_c <- data_to_plot$lambda_c * (1 - (1 /data_to_plot$K))
+
+# Export results table
+latex_table <- cbind(data_to_plot$island_age, data_to_plot$c_m, data_to_plot$stac, data_to_plot[, 2:6])
+xtable::xtable(latex_table)
+
 pivot_to_plot <- data_to_plot[, -(7:10)] |>
   tidyr::pivot_longer(-scenario &
                         -version & -island_age & -c_m & -stac)
@@ -87,6 +95,7 @@ r_plot <- ggplot2::ggplot(data = r_pivot_to_plot) +
                                    y = value,
                                    shape = stac)) +
   ggplot2::xlab("Parameters") +
+  ggplot2::theme_minimal() +
   ggplot2::theme(legend.position = "none",
                  axis.title.y = ggplot2::element_blank()) +
   ggplot2::scale_x_discrete(
@@ -101,6 +110,7 @@ y_plot <- ggplot2::ggplot(data = y_pivot_to_plot) +
                       ggplot2::aes(x = name,
                                    y = value,
                                    shape = stac)) +
+  ggplot2::theme_minimal() +
   ggplot2::theme(axis.title.x = ggplot2::element_blank(),
                  axis.text.x = ggplot2::element_blank(),
                  legend.position = "none",
@@ -110,6 +120,7 @@ o_plot <- ggplot2::ggplot(data = o_pivot_to_plot) +
                       ggplot2::aes(x = name,
                                    y = value,
                                    shape = stac)) +
+  ggplot2::theme_minimal() +
   ggplot2::theme(axis.title.x = ggplot2::element_blank(),
                  axis.text.x = ggplot2::element_blank(),
                  legend.position = "none",
@@ -119,6 +130,7 @@ a_plot <- ggplot2::ggplot(data = a_pivot_to_plot) +
                       ggplot2::aes(x = name,
                                    y = value,
                                    shape = stac)) +
+  ggplot2::theme_minimal() +
   ggplot2::theme(axis.title.x = ggplot2::element_blank(),
                  axis.text.x = ggplot2::element_blank(),
                  legend.position = "none",
