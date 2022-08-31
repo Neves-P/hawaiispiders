@@ -1,0 +1,55 @@
+family,genus,species,brts_avail,minage_avail
+Philodromidae, Pedinopistha, Pedinopistha_stigmaticus,Available,NA
+Philodromidae, Pagiopalus, Pagiopalus_atomarius,Available,Available
+Philodromidae, Pagiopalus, Pagiopalus_sp,Available,NA
+Philodromidae, Pagiopalus, Pagiopalus_nigriventis,Available,Available
+Tetragnathidae, Tetragnatha, Tetragnatha_obscura,Available,NA
+Tetragnathidae, Tetragnatha,Tetragnatha_kukuhaa,Available,NA
+Tetragnathidae, Tetragnatha, Tetragnatha_hawaiiensis,Available,NA
+Tetragnathidae, Tetragnatha, Tetragnatha_quasimodo,Available,NA
+Tetragnathidae, Tetragnatha, Tetragnatha_anuenue,Available,NA
+Tetragnathidae, Tetragnatha, Tetragnatha_brevignatha H A,Available,NA
+Tetragnathidae, Tetragnatha, Tetragnatha_restricta,Available,NA
+Tetragnathidae, Tetragnatha, Tetragnatha_kea,Available,NA
+Tetragnathidae, Tetragnatha, Tetragnatha_long_clawed_legs,Available,NA
+Tetragnathidae, Tetragnatha, Tetragnatha_elongate_forest_ D,Available,NA
+Tetragnathidae, Tetragnatha, Tetragnatha_elongate_forest_ E,Available,NA
+Tetragnathidae, Tetragnatha, Tetragnatha_perkinsi,Available,NA
+Tetragnathidae, Tetragnatha, Tetragnatha_golden_dome,Available,NA
+Tetragnathidae, Tetragnatha, Tetragnatha_red_star,Available,NA
+Tetragnathidae, Tetragnatha, Tetragnatha_acuta,NA,NA
+Linyphiidae, Cnephalocotes, Cnephalocotes_simpliciceps,NA,NA
+Linyphiidae, Erigone, Erigone_stygius,NA,NA
+Linyphiidae, Orsonwelles, Orsonwelles_graphicus,Available,Available
+Thomisidae, Mecaphesa, Mecaphesa_anguliventris,Available,Available
+Thomisidae, Mecaphesa, Mecaphesa_naevigera,Available,NA
+Thomisidae, Mecaphesa, Mecaphesa_cavata,Available,Available
+Thomisidae, Mecaphesa, Mecaphesa_facunda,Available,Available
+Thomisidae, Mecaphesa, Mecaphesa_kanakana,Available,Available
+Thomisidae, Mecaphesa, Mecaphesa_imbricata,NA,NA
+Thomisidae, Mecaphesa, Mecaphesa_insulana,NA,NA
+Thomisidae, Mecaphesa, Mecaphesa_junctus,NA,NA
+Thomisidae, Mecaphesa, Mecaphesa_oreades,NA,NA
+Thomisidae, Mecaphesa, Mecaphesa_arida,NA,NA
+Thomisidae, Mecaphesa, Mecaphesa_nigrofrenata,NA,NA
+Thomisidae, Synaema, Synaema_naevigerum,NA,NA
+Theridiidae, Ariamnes, Ariamnes_waikula,Available,Available
+Theridiidae, Ariamnes, Ariamnes_hiwa,Available,Available
+Theridiidae, Argyrodes, Argyrodes_hawaiiensis,Available,Available
+Salticidae, Havaika, Havaika_cruciata,Available,NA
+Salticidae, Havaika, Havaika_pubens,Available,NA
+Salticidae, Havaika, Havaika_navata,NA,NA
+Salticidae, Havaika, Havaika_valida,NA,NA
+Araneidae, Araneus, Araneus_emmae,NA,NA
+Araneidae, Araneus, Araneus_kapiolaniae,NA,NA
+Araneidae, Cyclosa, Cyclosa_cucurbitula_trees_speckles,NA,NA
+Araneidae, Cyclosa, Cyclosa_cucurbitula_simplicaudata,NA,NA
+Araneidae, Cyclosa, Cyclosa_cucurbitula_perkinsi,NA,NA
+Lycosidae, Lycosa, Lycosa_hawaiiensis,NA,NA
+Lycosidae, Lycosa, Lycosa_howarthi,NA,NA
+Lycosidae, Lycosa, Lycosa_oahuensis,NA,NA
+Lycosidae, Syroloma, Syroloma_majus,NA,NA
+Oonopidae, Ischnothyreus, Ischnothyreus_sp,NA,NA
+Theridiidae, Theridion, Theridion_grallator,NA,NA
+Theridiidae, Theridion, Theridion_melinum,NA,NA
+Theridiidae, Theridion, Theridion_praetextum,NA,NA
