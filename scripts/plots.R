@@ -78,6 +78,7 @@ data_plot <- ggplot(datatables, aes(y = Clade_name, x = first_brt)) +
     axis.text.y = element_blank(),
     axis.title.y = element_blank(),
     axis.ticks.y = element_blank(),
+    axis.line.y = element_blank(),
     legend.position = "bottom",
     legend.title = element_blank()
   ) +
@@ -92,10 +93,11 @@ data_plot <- ggplot(datatables, aes(y = Clade_name, x = first_brt)) +
       "Non-endemic upper and lower bound"
     )) +
   xlab("Time (myr)") +
-  geom_vline(xintercept = 1.2, linetype = "dashed", size = 0.4) +
-  geom_vline(xintercept = 2.4, linetype = "dashed", size = 0.4) +
-  geom_vline(xintercept = 3.6, linetype = "dashed", size = 0.4) +
-  geom_vline(xintercept = 4.8, linetype = "dashed", size = 0.4)
+  geom_vline(xintercept = 1.2, linetype = "dashed", linewidth = 0.4) +
+  geom_vline(xintercept = 2.4, linetype = "dashed", linewidth = 0.4) +
+  geom_vline(xintercept = 3.6, linetype = "dashed", linewidth = 0.4) +
+  geom_vline(xintercept = 4.8, linetype = "dashed", linewidth = 0.4) +
+  ggplot2::scale_x_reverse()
 
 
 # estimatesdata(res)
