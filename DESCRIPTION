@@ -1,7 +1,7 @@
 Package: hawaiispiders
 Title: Analyse Spider Evolution on Hawaii Island
 Date: 2023-02-17
-Version: 3.0.0
+Version: 3.0.0.9000
 Authors@R: 
     person(given = "Pedro",
            family = "Santos Neves",
