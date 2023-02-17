@@ -1,8 +1,8 @@
----
-editor_options: 
-  markdown: 
-    wrap: 72
----
+# hawaiispiders 3.0.0
+
+* Add many plotting functions.
+* Add analysis functions.
+* Status, data and analysis after second round of collaborator input.
 
 # hawaiispiders 2.0.0
 
