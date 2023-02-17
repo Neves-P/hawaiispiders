@@ -24,7 +24,8 @@ Suggests:
     DAISIEutils (>= 1.0.0),
     readr,
     testthat (>= 3.0.0),
-    lintr
+    lintr,
+    covr
 Depends: 
     R (>= 3.5.0)
 Imports: 

@@ -8,3 +8,4 @@
 ^bash$
 ^docs$
 ^figures$
+^codecov\.yml$
