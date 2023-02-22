@@ -7,8 +7,8 @@ library(usethis)
 
 dataset_list <- list(c_master, m_master)
 
-island_ages <- 1.2 * 1:4
-age_names <- c("r", "y", "o", "a")
+island_ages <- c(0.3, 0.6, 1.2 * 1:4)
+age_names <- c("q", "h", "r", "y", "o", "a")
 c_or_m <- c("c", "m")
 
 
