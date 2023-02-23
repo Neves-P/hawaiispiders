@@ -43,11 +43,11 @@ for (h in seq_along(stac_handlings)) {
         status_suffix <- ""
         min_age_available <- !is.na(focal_dataset[1, "MinAge"])
         # MaxAge cases
-        if ((brts[1] >= island_ages[i] || is.na(brts)) ||
+        if ((brts[1] >= island_ages[i] || any(is.na(brts))) ||
             stac_handlings[h] == "max") {
           status_suffix <- "_MaxAge"
           # Can't have more brts if cladogenesis_t > island_age
-          if (length(brts) > 1 && brts[2] >= island_ages[i]) {
+          if (length(brts) > 1 && brts[2] >= island_ages[i]) { # Check: two statements?
             name_words <- unlist(
               strsplit(dataset_template[k, "Clade_name"], "_")
             )
