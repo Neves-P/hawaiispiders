@@ -77,45 +77,64 @@ for (h in seq_along(stac_handlings)) {
         # Note that max cases don't take minage if available
         if ((isTRUE(min_age_available) && isTRUE(brts[1] >= island_ages[i])) ||
             (isTRUE(min_age_available) && stac_handlings[h] == "min"))  {
-          status_suffix <- "_MaxAgeMinAge"
-          dataset_template[k, "Branching_times"] <- paste(
-            dataset_template[k, "Branching_times"],
-            focal_dataset[1, "MinAge"],
-            sep = ","
-          )
-        }
+          browser()
+          # If min age would be used, but is older than island age
+          if (isTRUE(brts[2] >= island_ages[i])) {
+            status_suffix <- "_MaxAge"
+            dataset_template[k, "Branching_times"] <- brts[1]
+            dataset_template[k, "Clade_name"] <- paste(
+              focal_dataset[0, "Clade_name"],
+              "A",
+              sep = "_"
+            )
+            dataset_template[k, "Missing_species"] <-
+              focal_dataset[0, "Missing_species"]
+            dataset_template[k + 1, "Clade_name"] <- paste(
+              focal_dataset[1, "Clade_name"],
+              "B",
+              sep = "_"
+            )
+          } else {
+            # Min age is younger than island age, so we can use it
+            status_suffix <- "_MaxAgeMinAge"
+            dataset_template[k, "Branching_times"] <- paste(
+              dataset_template[k, "Branching_times"],
+              focal_dataset[1, "MinAge"],
+              sep = ","
+            )
+          }
 
-        dataset_template[k, "Status"] <- paste0(
-          focal_dataset[1, "Status"],
-          status_suffix
+          dataset_template[k, "Status"] <- paste0(
+            focal_dataset[1, "Status"],
+            status_suffix
+          )
+          focal_dataset <- focal_dataset[-1, ]
+          k <- nrow(dataset_template) + 1
+        }
+        dataset_c_m[[j]] <- dataset_template
+        name_datatable <- paste(
+          age_names[i],
+          c_or_m[j],
+          stac_handlings[h],
+          "datatable",
+          sep = "_"
         )
-        focal_dataset <- focal_dataset[-1, ]
-        k <- nrow(dataset_template) + 1
+        name <- paste(
+          age_names[i],
+          c_or_m[j],
+          stac_handlings[h],
+          sep = "_"
+        )
+        assign(name_datatable, value = dataset_template)
+        assign(name, value = DAISIE::DAISIE_dataprep(
+          datatable = dataset_template,
+          island_age = island_ages[i],
+          M = 168
+        ))
+        do.call("use_data", list(as.name(name), overwrite = TRUE))
+        do.call("use_data", list(as.name(name_datatable), overwrite = TRUE))
       }
-      dataset_c_m[[j]] <- dataset_template
-      name_datatable <- paste(
-        age_names[i],
-        c_or_m[j],
-        stac_handlings[h],
-        "datatable",
-        sep = "_"
-      )
-      name <- paste(
-        age_names[i],
-        c_or_m[j],
-        stac_handlings[h],
-        sep = "_"
-      )
-      assign(name_datatable, value = dataset_template)
-      assign(name, value = DAISIE::DAISIE_dataprep(
-        datatable = dataset_template,
-        island_age = island_ages[i],
-        M = 168
-      ))
-      do.call("use_data", list(as.name(name), overwrite = TRUE))
-      do.call("use_data", list(as.name(name_datatable), overwrite = TRUE))
+      dataset_ages[[i]] <- dataset_c_m
     }
-    dataset_ages[[i]] <- dataset_c_m
+    dataset_out[[h]] <- dataset_ages
   }
-  dataset_out[[h]] <- dataset_ages
-}
