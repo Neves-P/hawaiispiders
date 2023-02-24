@@ -81,12 +81,12 @@ for (h in seq_along(stac_handlings)) {
           # If min age would be used, but is older than island age
           if (isTRUE(brts[2] >= island_ages[i])) {
             status_suffix <- "_MaxAge"
-            dataset_template[k, "Branching_times"] <- brts[1]
             dataset_template[k, "Clade_name"] <- paste(
               focal_dataset[0, "Clade_name"],
               "A",
               sep = "_"
             )
+            dataset_template[k, "Branching_times"] <- brts[1]
             dataset_template[k, "Missing_species"] <-
               focal_dataset[0, "Missing_species"]
             dataset_template[k + 1, "Clade_name"] <- paste(
