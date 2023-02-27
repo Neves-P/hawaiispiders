@@ -28,8 +28,6 @@ for (h in seq_along(stac_handlings)) {
       focal_dataset <- dataset_list[[j]]
       k <- 1
       while (nrow(focal_dataset) > 0) {
-        print(focal_dataset[1, ])
-        browser()
         dataset_template[k, "Clade_name"] <- focal_dataset[1, "Clade_name"]
         dataset_template[k, "Missing_species"] <- focal_dataset[1, "Missing_species"]
         dataset_template[k, "Branching_times"] <- focal_dataset[1, "Branching_times"]
@@ -42,7 +40,9 @@ for (h in seq_along(stac_handlings)) {
           na.last = TRUE
         )
         status_suffix <- ""
-        min_age_available <- !is.na(focal_dataset[1, "MinAge"])
+        min_ages <- focal_dataset[1, "MinAge"]
+        min_age_available <- !is.na(min_ages)
+
         # MaxAge cases
         if ((brts[1] >= island_ages[i] || any(is.na(brts))) ||
             stac_handlings[h] == "max") {
@@ -78,7 +78,7 @@ for (h in seq_along(stac_handlings)) {
         if ((isTRUE(min_age_available) && isTRUE(brts[1] >= island_ages[i])) ||
             (isTRUE(min_age_available) && stac_handlings[h] == "min"))  {
           # If min age would be used, but is older than island age
-          if (isTRUE(brts[2] >= island_ages[i])) {
+          if (isTRUE(min_ages >= island_ages[i])) {
             status_suffix <- "_MaxAge"
             dataset_template[k, "Clade_name"] <- paste(
               focal_dataset[1, "Clade_name"],
