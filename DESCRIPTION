@@ -19,8 +19,8 @@ RoxygenNote: 7.2.3
 URL: https://github.com/Neves-P/hawaiispiders
 BugReports: https://github.com/Neves-P/hawaiispiders/issues
 Suggests: 
-    DAISIE (>= 4.2.1),
-    DDD,
+    DAISIE (>= 4.3.2),
+    DDD (>= 5.2.1),
     DAISIEutils (>= 1.0.0),
     readr,
     testthat (>= 3.0.0),
@@ -30,12 +30,10 @@ Depends:
     R (>= 3.5.0)
 Imports: 
     testit,
-    devtools,
     ggplot2,
     patchwork,
-    dplyr,
     tools
 Remotes: 
-    rsetienne/DAISIE,
+    rsetienne/DAISIE@v4.3.2,
     tece-lab/DAISIEutils
 Config/testthat/edition: 3
