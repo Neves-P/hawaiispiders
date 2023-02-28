@@ -1,4 +1,10 @@
-# hawaiispiders (development version)
+# hawaiispiders 3.1.0
+
+* Add 0.6 and 0.3Mya cases, tagged as `h` and `q` respectively.
+* Update documentation.
+* Delete function stub `plot_island_lineages()`
+* Delete old and no longer useful results and logs.
+* Depend on more recent versions of `'DAISIE'`, `'DAISIEutils'` and `'DDD'`.
 
 # hawaiispiders 3.0.0
 
