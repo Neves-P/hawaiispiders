@@ -5,7 +5,7 @@
 \alias{y_c_no_datatable}
 \title{DAISIE datatable of spiders on Hawaii (Big Island) - y_c_no}
 \format{
-A tibble with 50 rows and 5 variables:
+A data frame with 50 rows and 5 variables:
 \describe{
 \item{Clade_name}{character vector with name of each lineage}
 \item{Status}{character vector with endemicity status. Can be
