@@ -47,6 +47,18 @@ sbatch --dependency=singleton --job-name=Spiders DAISIEutils/bash/submit_run_dai
 
 sbatch --dependency=singleton --job-name=Spiders DAISIEutils/bash/submit_run_daisie_ml.sh a_c_no cr_dd hawaiispiders 1
 
+sbatch --dependency=singleton --job-name=Spiders DAISIEutils/bash/submit_run_daisie_ml.sh q_c_max cr_dd hawaiispiders 1
+
+sbatch --dependency=singleton --job-name=Spiders DAISIEutils/bash/submit_run_daisie_ml.sh q_c_min cr_dd hawaiispiders 1
+
+sbatch --dependency=singleton --job-name=Spiders DAISIEutils/bash/submit_run_daisie_ml.sh q_c_no cr_dd hawaiispiders 1
+
+sbatch --dependency=singleton --job-name=Spiders DAISIEutils/bash/submit_run_daisie_ml.sh h_c_max cr_dd hawaiispiders 1
+
+sbatch --dependency=singleton --job-name=Spiders DAISIEutils/bash/submit_run_daisie_ml.sh h_c_min cr_dd hawaiispiders 1
+
+sbatch --dependency=singleton --job-name=Spiders DAISIEutils/bash/submit_run_daisie_ml.sh h_c_no cr_dd hawaiispiders 1
+
 sbatch --dependency=singleton --job-name=Spiders DAISIEutils/bash/submit_run_daisie_ml.sh r_m_max cr_dd hawaiispiders 1
 
 sbatch --dependency=singleton --job-name=Spiders DAISIEutils/bash/submit_run_daisie_ml.sh r_m_min cr_dd hawaiispiders 1
@@ -70,3 +82,15 @@ sbatch --dependency=singleton --job-name=Spiders DAISIEutils/bash/submit_run_dai
 sbatch --dependency=singleton --job-name=Spiders DAISIEutils/bash/submit_run_daisie_ml.sh a_m_min cr_dd hawaiispiders 1
 
 sbatch --dependency=singleton --job-name=Spiders DAISIEutils/bash/submit_run_daisie_ml.sh a_m_no cr_dd hawaiispiders 1
+
+sbatch --dependency=singleton --job-name=Spiders DAISIEutils/bash/submit_run_daisie_ml.sh h_m_max cr_dd hawaiispiders 1
+
+sbatch --dependency=singleton --job-name=Spiders DAISIEutils/bash/submit_run_daisie_ml.sh h_m_min cr_dd hawaiispiders 1
+
+sbatch --dependency=singleton --job-name=Spiders DAISIEutils/bash/submit_run_daisie_ml.sh h_m_no cr_dd hawaiispiders 1
+
+sbatch --dependency=singleton --job-name=Spiders DAISIEutils/bash/submit_run_daisie_ml.sh q_m_max cr_dd hawaiispiders 1
+
+sbatch --dependency=singleton --job-name=Spiders DAISIEutils/bash/submit_run_daisie_ml.sh q_m_min cr_dd hawaiispiders 1
+
+sbatch --dependency=singleton --job-name=Spiders DAISIEutils/bash/submit_run_daisie_ml.sh q_m_no cr_dd hawaiispiders 1
