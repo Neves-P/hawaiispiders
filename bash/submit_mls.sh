@@ -7,7 +7,7 @@
 #SBATCH --mem=200MB
 #SBATCH --partition=regular
 # hawaiispiders: Analyse Spider Evolution on Hawaii Island
-# Copyright (C) 2022 Pedro Santos Neves
+# Copyright (C) 2023 Pedro Santos Neves
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
