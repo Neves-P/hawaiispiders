@@ -7,7 +7,7 @@
 #SBATCH --mem=200MB
 #SBATCH --partition=regular
 # hawaiispiders: Analyse Spider Evolution on Hawaii Island
-# Copyright (C) 2022 Pedro Santos Neves
+# Copyright (C) 2023 Pedro Santos Neves
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -23,7 +23,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 ## Submit jobs (use last word ##* to get jobid for afterok)
-sbatch --job-name=sp_r_c_max DAISIEutils/bash/submit_run_daisie_ml.sh r_c_max cr_dd hawaiispiders 1 NULL odeint::runge_kutta_fehlberg78 NULL odeint::
+sbatch --job-name=sp_r_c_max DAISIEutils/bash/submit_run_daisie_ml.sh r_c_max cr_dd hawaiispiders 1 NULL odeint::runge_kutta_fehlberg78
 
 sbatch --job-name=sp_r_c_min DAISIEutils/bash/submit_run_daisie_ml.sh r_c_min cr_dd hawaiispiders 1 NULL odeint::runge_kutta_fehlberg78
 
