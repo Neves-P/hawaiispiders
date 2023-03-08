@@ -11,7 +11,7 @@ translate_parameter_name <- function(parameter_name) {
   out <- switch(
     parameter_name,
     "lambda_c" = "Cladogenesis rate",
-    "lambda_a" = "Cladogenesis rate",
+    "lambda_a" = "Anagenesis rate",
     "gamma" = "Colonisation rate",
     "mu" = "Extinction rate",
     "K" = "Carrying capacity"
