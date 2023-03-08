@@ -1,6 +1,24 @@
 ## code to prepare `full_res` dataset goes here
 
 results_dir_odeint <- "G:/My Drive/PhD/Projects/spiders/current results/spiders_odeint/"
+
+
+q_c_sens <- make_res_df(
+  DAISIEutils::sensitivity(
+    data_names = c("q_c_max", "q_c_min", "q_c_no"),
+    full_output = TRUE,
+    results_dir = results_dir_odeint
+  )$full_output
+)
+
+h_c_sens <- make_res_df(
+  DAISIEutils::sensitivity(
+    data_names = c("h_c_max", "h_c_min", "h_c_no"),
+    full_output = TRUE,
+    results_dir = results_dir_odeint
+  )$full_output
+)
+
 r_c_sens <- make_res_df(
   DAISIEutils::sensitivity(
     data_names = c("r_c_max", "r_c_min", "r_c_no"),
@@ -28,6 +46,22 @@ o_c_sens <- make_res_df(
 a_c_sens <- make_res_df(
   DAISIEutils::sensitivity(
     data_names = c("a_c_max", "a_c_min", "a_c_no"),
+    full_output = TRUE,
+    results_dir = results_dir_odeint
+  )$full_output
+)
+
+q_m_sens <- make_res_df(
+  DAISIEutils::sensitivity(
+    data_names = c("q_m_max", "q_m_min", "q_m_no"),
+    full_output = TRUE,
+    results_dir = results_dir_odeint
+  )$full_output
+)
+
+h_m_sens <- make_res_df(
+  DAISIEutils::sensitivity(
+    data_names = c("h_m_max", "h_m_min", "h_m_no"),
     full_output = TRUE,
     results_dir = results_dir_odeint
   )$full_output
@@ -65,22 +99,26 @@ a_m_sens <- make_res_df(
   )$full_output
 )
 res <- rbind(
+  q_c_sens,
+  h_c_sens,
   r_c_sens,
   y_c_sens,
   o_c_sens,
   a_c_sens,
+  q_m_sens,
+  h_m_sens,
   r_m_sens,
   y_m_sens,
   o_m_sens,
   a_m_sens
 )
-res <- cbind(res_421, data.frame("version" = rep(factor("4.2.1"), 24)))
-data("full_res")
-res_410 <- cbind(
-  full_res_410[full_res_410$integrator == factor(x = "lsodes", levels = c("odeint", "lsodes")), ],
-  data.frame("version" = rep(factor("4.1.0"), 24))
-)
-res_410 <- res_410[, -11]
-res <- rbind(res, res_410)
+# res <- cbind(res_421, data.frame("version" = rep(factor("4.2.1"), 24)))
+# data("full_res")
+# res_410 <- cbind(
+#   full_res_410[full_res_410$integrator == factor(x = "lsodes", levels = c("odeint", "lsodes")), ],
+#   data.frame("version" = rep(factor("4.1.0"), 24))
+# )
+# res_410 <- res_410[, -11]
+# res <- rbind(res, res_410)
 
 usethis::use_data(res, overwrite = TRUE)

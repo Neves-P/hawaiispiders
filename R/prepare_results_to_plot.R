@@ -34,7 +34,7 @@ prepare_results_to_plot <- function(raw_results) {
   }
   plotting_table$island_age <- factor(
     plotting_table$island_age,
-    levels = c("r", "y", "o", "a")
+    levels = c("q", "h", "r", "y", "o", "a")
   )
   plotting_table$c_m <- factor(
     plotting_table$c_m,
@@ -44,7 +44,7 @@ prepare_results_to_plot <- function(raw_results) {
     plotting_table$stac,
     levels = c("max", "min", "no")
   )
-  levels(plotting_table$island_age) <- c("1.2", "2.4", "3.6", "4.8")
+  levels(plotting_table$island_age) <- c("0.3" ,"0.6", "1.2", "2.4", "3.6", "4.8")
   levels(plotting_table$c_m) <- c("Cladogenesis", "Colonisation")
   levels(plotting_table$stac) <- c("CAT", "PAT1", "PAT2")
   plotting_table

@@ -2,10 +2,10 @@ library(hawaiispiders)
 # Load data
 data(res)
 
-old_version <- dplyr::filter(res, version == "4.1.0")
-new_version <- dplyr::filter(res, version == "4.2.1")
+# old_version <- dplyr::filter(res, version == "4.1.0")
+# new_version <- dplyr::filter(res, version == "4.2.1")
 
-data_to_plot <- prepare_results_to_plot(new_version)
+data_to_plot <- prepare_results_to_plot(res)
 
 facet_all_data <- make_faceted_plot(
   data_to_plot,
