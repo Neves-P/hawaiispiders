@@ -2,7 +2,9 @@ datatables <- rbind(
   cbind(a_c_no_datatable,  age = factor("a"), stac = factor("no")),
   cbind(o_c_no_datatable,  age = factor("o"), stac = factor("no")),
   cbind(y_c_no_datatable,  age = factor("y"), stac = factor("no")),
-  cbind(r_c_no_datatable,  age = factor("r"), stac = factor("no"))
+  cbind(r_c_no_datatable,  age = factor("r"), stac = factor("no")),
+  cbind(h_c_no_datatable,  age = factor("h"), stac = factor("no")),
+  cbind(q_c_no_datatable,  age = factor("q"), stac = factor("no"))
 )
 
 brts <- strsplit(datatables$Branching_times, ",")
@@ -10,34 +12,34 @@ first_brt <- as.numeric(sapply(brts, "[", 1))
 second_brt <- as.numeric(sapply(brts, "[", 2))
 datatables <- cbind(datatables, first_brt, second_brt)
 datatables$first_brt[which(is.na(datatables$first_brt) &
-                             datatables$age == factor("a", levels = c("a", "o", "y", "r")))] <-
+                             datatables$age == factor("a", levels = c("a", "o", "y", "r", "h", "q")))] <-
   4.8
 datatables$first_brt[which(is.na(datatables$first_brt) &
-                             datatables$age == factor("o", levels = c("a", "o", "y", "r")))] <-
+                             datatables$age == factor("o", levels = c("a", "o", "y", "r", "h", "q")))] <-
   3.6
 datatables$first_brt[which(is.na(datatables$first_brt) &
-                             datatables$age == factor("y", levels = c("a", "o", "y", "r")))] <-
+                             datatables$age == factor("y", levels = c("a", "o", "y", "r", "h", "q")))] <-
   2.4
 datatables$first_brt[
   which(is.na(datatables$first_brt) &
-          datatables$age == factor("r", levels = c("a", "o", "y", "r"))
+          datatables$age == factor("r", levels = c("a", "o", "y", "r", "h", "q"))
   )] <- 1.2
 
 
 datatables$first_brt[
   which(datatables$first_brt > 4.8 &
-          datatables$age == factor("a", levels = c("a", "o", "y", "r")))] <- 4.8
+          datatables$age == factor("a", levels = c("a", "o", "y", "r", "h", "q")))] <- 4.8
 
 datatables$first_brt[
   which(datatables$first_brt > 3.6 &
-          datatables$age == factor("o", levels = c("a", "o", "y", "r")))] <- 3.6
+          datatables$age == factor("o", levels = c("a", "o", "y", "r", "h", "q")))] <- 3.6
 
 datatables$first_brt[
   which(datatables$first_brt > 2.4 &
-          datatables$age == factor("y", levels = c("a", "o", "y", "r")))] <- 2.4
+          datatables$age == factor("y", levels = c("a", "o", "y", "r", "h", "q")))] <- 2.4
 datatables$first_brt[
   which(datatables$first_brt > 1.2 &
-          datatables$age == factor("r", levels = c("a", "o", "y", "r")))] <- 1.2
+          datatables$age == factor("r", levels = c("a", "o", "y", "r", "h", "q")))] <- 1.2
 
 datatables <- dplyr::group_by(datatables, Clade_name)
 datatables <- dplyr::arrange(datatables, dplyr::desc(first_brt), .by_group = TRUE)
@@ -99,9 +101,6 @@ data_plot <- ggplot(datatables, aes(y = Clade_name, x = first_brt)) +
   geom_vline(xintercept = 4.8, linetype = "dashed", linewidth = 0.4) +
   ggplot2::scale_x_reverse()
 
-
-# estimatesdata(res)
-res <- dplyr::filter(res, version == "4.2.1")
 
 save_paper_plot(
   plot_to_save = data_plot,
