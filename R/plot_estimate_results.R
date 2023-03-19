@@ -36,7 +36,7 @@ plot_estimate_results <- function(plotting_table,
   shape_label <- translate_partition_name(partition_name = shape_by)
 
   ggplot2::ggplot(data = plotting_table) +
-    ggplot2::geom_point(position = ggplot2::position_dodge(0.5),
+    ggplot2::geom_point(position = ggplot2::position_jitterdodge(jitter.height = 0, jitter.width = 0.5),
                         ggplot2::aes(x = get(partition_by),
                                      y = get(parameter_name),
                                      group = get(shape_by),
