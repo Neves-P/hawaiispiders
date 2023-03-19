@@ -9,7 +9,7 @@
 #' plottable_name <- translate_partition_name(partition_name = "island_age")
 translate_partition_name <- function(partition_name) {
   out <- switch(partition_name,
-                 "island_age" = "Assumed island age (myr)",
+                 "island_age" = "Assumed island age (Ma)",
                  "c_m" = "Uncertainty in\nnumber of\ncolonisations",
                  "stac" = "Uncertainty in\ncolonisation time",
   )

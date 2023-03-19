@@ -108,7 +108,7 @@ data_plot <- ggplot(datatables, aes(y = Clade_name, x = first_brt)) +
       "Endemic upper and lower bound",
       "Non-endemic upper and lower bound"
     )) +
-  xlab("Time (myr)") +
+  xlab("Time (Ma)") +
   geom_vline(xintercept = 0.3, linetype = "dashed", linewidth = 0.4) +
   geom_vline(xintercept = 0.6, linetype = "dashed", linewidth = 0.4) +
   geom_vline(xintercept = 1.2, linetype = "dashed", linewidth = 0.4) +
