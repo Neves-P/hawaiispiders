@@ -32,7 +32,8 @@ Imports:
     testit,
     ggplot2,
     patchwork,
-    tools
+    tools,
+    xtable
 Remotes: 
     rsetienne/DAISIE@v4.3.2,
     tece-lab/DAISIEutils

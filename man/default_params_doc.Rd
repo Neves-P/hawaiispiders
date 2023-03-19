@@ -16,7 +16,8 @@ default_params_doc(
   raw_results,
   plot_to_save,
   name,
-  type_size
+  type_size,
+  res
 )
 }
 \arguments{
@@ -73,12 +74,8 @@ accepted).}
 \item{type_size}{A string determining whether the figure should take full
 size in a page: \code{"full_size"} or only half: \code{"half_size"}}
 
-\item{file_name}{A string with the file name that should be used for saving.}
-
-\item{partition_name}{A string indicating with data partitioning codes.
-Options are \code{island_age} for partitioning by assumed island
-age, \code{stac} for partitioning by the treatment of uncertainty chosen, and
-\code{c_m} for partitioning by cladogenesis/migration favouring strategy.}
+\item{res}{A data frame with each row corresponding to the best of 10 model
+fits with a different set of randomly sampled starting parameters.}
 }
 \value{
 Nothing

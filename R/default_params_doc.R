@@ -38,14 +38,10 @@
 #' @param raw_results A data frame with the model results as returned by
 #'   `make_res_df()`.
 #' @param plot_to_save A ggplot which will be saved to disk.
-#' @param file_name A string with the file name that should be used for saving.
 #' @param type_size A string determining whether the figure should take full
 #'   size in a page: `"full_size"` or only half: `"half_size"`
-#' @param partition_name A string indicating with data partitioning codes.
-#'   Options are `island_age` for partitioning by assumed island
-#'   age, `stac` for partitioning by the treatment of uncertainty chosen, and
-#'   `c_m` for partitioning by cladogenesis/migration favouring strategy.
-#'
+#' @param res A data frame with each row corresponding to the best of 10 model
+#'   fits with a different set of randomly sampled starting parameters.
 #' @keywords internal
 #' @return Nothing
 #' @author Pedro Santos Neves
@@ -60,7 +56,8 @@ default_params_doc <- function(island_replicates,
                                raw_results,
                                plot_to_save,
                                name,
-                               type_size) {
+                               type_size,
+                               res) {
 
  # Intentionally empty
 }

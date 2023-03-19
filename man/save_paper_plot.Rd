@@ -9,8 +9,6 @@ save_paper_plot(plot_to_save, file_name, type_size = "full_size")
 \arguments{
 \item{plot_to_save}{A ggplot which will be saved to disk.}
 
-\item{file_name}{A string with the file name that should be used for saving.}
-
 \item{type_size}{A string determining whether the figure should take full
 size in a page: \code{"full_size"} or only half: \code{"half_size"}}
 }

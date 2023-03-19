@@ -24,6 +24,14 @@ datatables$first_brt[
   which(is.na(datatables$first_brt) &
           datatables$age == factor("r", levels = c("a", "o", "y", "r", "h", "q"))
   )] <- 1.2
+datatables$first_brt[
+  which(is.na(datatables$first_brt) &
+          datatables$age == factor("h", levels = c("a", "o", "y", "r", "h", "q"))
+  )] <- 0.6
+datatables$first_brt[
+  which(is.na(datatables$first_brt) &
+          datatables$age == factor("q", levels = c("a", "o", "y", "r", "h", "q"))
+  )] <- 0.3
 
 
 datatables$first_brt[
@@ -40,6 +48,12 @@ datatables$first_brt[
 datatables$first_brt[
   which(datatables$first_brt > 1.2 &
           datatables$age == factor("r", levels = c("a", "o", "y", "r", "h", "q")))] <- 1.2
+datatables$first_brt[
+  which(datatables$first_brt > 0.6 &
+          datatables$age == factor("h", levels = c("a", "o", "y", "r", "h", "q")))] <- 0.6
+datatables$first_brt[
+  which(datatables$first_brt > 0.3 &
+          datatables$age == factor("q", levels = c("a", "o", "y", "r", "h", "q")))] <- 0.3
 
 datatables <- dplyr::group_by(datatables, Clade_name)
 datatables <- dplyr::arrange(datatables, dplyr::desc(first_brt), .by_group = TRUE)
@@ -95,6 +109,8 @@ data_plot <- ggplot(datatables, aes(y = Clade_name, x = first_brt)) +
       "Non-endemic upper and lower bound"
     )) +
   xlab("Time (myr)") +
+  geom_vline(xintercept = 0.3, linetype = "dashed", linewidth = 0.4) +
+  geom_vline(xintercept = 0.6, linetype = "dashed", linewidth = 0.4) +
   geom_vline(xintercept = 1.2, linetype = "dashed", linewidth = 0.4) +
   geom_vline(xintercept = 2.4, linetype = "dashed", linewidth = 0.4) +
   geom_vline(xintercept = 3.6, linetype = "dashed", linewidth = 0.4) +
