@@ -19,7 +19,7 @@ Make latex table from results
 \examples{
 \donttest{
 data(res)
-make_latex_table(res)
+make_latex_table(res_lsodes)
 }
 # \% latex table generated in R 4.2.3 by xtable 1.8-4 package
 # \% Sun Mar 19 16:18:15 2023
