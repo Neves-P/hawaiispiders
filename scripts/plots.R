@@ -123,3 +123,10 @@ save_paper_plot(
   file_name = "data_plot",
   type_size = "full_size"
 )
+
+loglik_plot <- generate_loglik_plot(res_odeint)
+save_paper_plot(
+  plot_to_save = loglik_plot,
+  file_name = "loglik_plot",
+  type_size = "full_size"
+)
