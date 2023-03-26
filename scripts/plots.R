@@ -124,7 +124,7 @@ save_paper_plot(
   type_size = "full_size"
 )
 
-loglik_plot <- generate_loglik_plot(res_odeint)
+loglik_plot <- generate_loglik_plot(res = res_odeint)
 save_paper_plot(
   plot_to_save = loglik_plot,
   file_name = "loglik_plot",
