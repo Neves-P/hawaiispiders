@@ -62,7 +62,7 @@ make_latex_table <- function(res) {
   prepped_res <- prepare_results_to_plot(res)
   df_for_latex <- cbind(prepped_res[, 11:13], prepped_res[2:7])
   df_for_latex$c_m <- c(
-    rep("Back-colonisation allowed", 18),
+    rep("Back-colonisation", 18),
       rep("No back-colonisation", 18)
   )
   print(
