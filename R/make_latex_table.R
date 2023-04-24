@@ -65,6 +65,15 @@ make_latex_table <- function(res) {
     rep("Back-colonisation", 18),
       rep("No back-colonisation", 18)
   )
+
+  for (i in seq_len(nrow(prepped_res))) {
+    datatable <- get(paste0(prepped_res[i, 1], "_datatable"))
+    n_max_ages <- length(grep("MaxAge", datatable$Status))
+    n_clades <- nrow(datatable)
+    max_age_clade_ratio <- n_max_ages / n_clades
+    testit::assert(max_age_clade_ratio < 1 && max_age_clade_ratio > 0)
+  }
+
   print(
     xtable::xtable(
       df_for_latex,
