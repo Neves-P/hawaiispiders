@@ -62,17 +62,36 @@ make_latex_table <- function(res) {
   prepped_res <- prepare_results_to_plot(res)
   df_for_latex <- cbind(prepped_res[, 11:13], prepped_res[2:7])
   df_for_latex$c_m <- c(
-    rep("Back-colonisation", 18),
-      rep("No back-colonisation", 18)
+    rep("BC", 18),
+      rep("no BC", 18)
   )
 
+  n_max_ages <- c()
+  n_clades <- c()
+  max_age_clade_pc <- c()
   for (i in seq_len(nrow(prepped_res))) {
     datatable <- get(paste0(prepped_res[i, 1], "_datatable"))
-    n_max_ages <- length(grep("MaxAge", datatable$Status))
-    n_clades <- nrow(datatable)
-    max_age_clade_ratio <- n_max_ages / n_clades
-    testit::assert(max_age_clade_ratio < 1 && max_age_clade_ratio > 0)
+    n_max_ages[i] <- length(grep("MaxAge", datatable$Status))
+    n_clades[i] <- nrow(datatable)
+    max_age_clade_pc[i] <- 100 - ((n_max_ages[i] / n_clades[i]) * 100)
+    testit::assert(max_age_clade_pc[i] <= 100 && max_age_clade_pc[i] >= 0)
   }
+  df_for_latex$n_clades <- n_clades
+  df_for_latex$max_age_clade_pc <- max_age_clade_pc
+
+  df_for_latex <- df_for_latex[, c(
+      "island_age",
+      "c_m",
+      "stac",
+      "n_clades",
+      "max_age_clade_pc",
+      "lambda_c",
+      "mu",
+      "K",
+      "gamma",
+      "lambda_a",
+      "loglik"
+    )]
 
   print(
     xtable::xtable(
