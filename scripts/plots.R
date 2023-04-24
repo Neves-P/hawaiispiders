@@ -102,9 +102,9 @@ data_plot <- ggplot(datatables, aes(y = Clade_name, x = first_brt)) +
     palette = "Dark2",
     labels = c(
       "Endemic precise",
-      "Endemic upper bound",
+      "Endemic upper and/or lower bound",
       "Non-endemic precise",
-      "Non-endemic upper bound",
+      "Non-endemic upper and/or lower bound",
       "Endemic upper and lower bound",
       "Non-endemic upper and lower bound"
     )) +
