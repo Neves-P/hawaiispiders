@@ -36,13 +36,16 @@ plot_estimate_results <- function(plotting_table,
   shape_label <- translate_partition_name(partition_name = shape_by)
 
   ggplot2::ggplot(data = plotting_table) +
-    ggplot2::geom_point(position = ggplot2::position_jitterdodge(jitter.height = 0, jitter.width = 0.5),
-                        ggplot2::aes(x = get(partition_by),
-                                     y = get(parameter_name),
-                                     group = get(shape_by),
-                                     shape = get(shape_by),
-                                     colour = get(colour_by))) +
+    ggplot2::geom_point(position = ggplot2::position_jitterdodge(
+      jitter.height = 0, jitter.width = 0.5
+    ),
+    ggplot2::aes(x = get(partition_by),
+                 y = get(parameter_name),
+                 group = get(shape_by),
+                 shape = get(shape_by),
+                 colour = get(colour_by))) +
     ggplot2::theme_classic() +
+    ggplot2::geom_vline(xintercept = 1.5:6.5, linetype = "dashed", colour = "grey") +
     ggplot2::scale_color_brewer(type = "qual", palette = "Set1") +
     ggplot2::guides(colour = ggplot2::guide_legend(colour_label),
                     shape = ggplot2::guide_legend(shape_label)) +
