@@ -10,6 +10,8 @@ datatables <- rbind(
 brts <- strsplit(datatables$Branching_times, ",")
 first_brt <- as.numeric(sapply(brts, "[", 1))
 second_brt <- as.numeric(sapply(brts, "[", 2))
+
+
 datatables <- cbind(datatables, first_brt, second_brt)
 datatables$first_brt[which(is.na(datatables$first_brt) &
                              datatables$age == factor("a", levels = c("a", "o", "y", "r", "h", "q")))] <-
@@ -55,6 +57,9 @@ datatables$first_brt[
   which(datatables$first_brt > 0.3 &
           datatables$age == factor("q", levels = c("a", "o", "y", "r", "h", "q")))] <- 0.3
 
+asterisk <- ifelse(!grepl( "_MaxAge", datatables$Status), "*", NA)
+datatables <- cbind(datatables, asterisk)
+
 datatables <- dplyr::group_by(datatables, Clade_name)
 datatables <- dplyr::arrange(datatables, dplyr::desc(first_brt), .by_group = TRUE)
 
@@ -89,6 +94,7 @@ data_plot <- ggplot(datatables, aes(y = Clade_name, x = first_brt)) +
     xend = 0
   )) +
   geom_point(size = 3, aes(colour = Status)) +
+  geom_text(aes(label = asterisk), nudge_y = -0.5) +
   theme_classic() +
   theme(
     axis.text.y = element_blank(),
@@ -102,11 +108,11 @@ data_plot <- ggplot(datatables, aes(y = Clade_name, x = first_brt)) +
     palette = "Dark2",
     labels = c(
       "Endemic precise",
-      "Endemic upper and/or lower bound",
+      "Endemic upper and/or\n lower bound",
       "Non-endemic precise",
-      "Non-endemic upper and/or lower bound",
-      "Endemic upper and lower bound",
-      "Non-endemic upper and lower bound"
+      "Non-endemic upper and/or\n lower bound",
+      "Endemic upper and lower\n bound",
+      "Non-endemic upper and lower\n bound"
     )) +
   xlab("Time (Ma)") +
   geom_vline(xintercept = 0.3, linetype = "dashed", linewidth = 0.4) +
