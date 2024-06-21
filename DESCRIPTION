@@ -36,6 +36,5 @@ Imports:
     tools,
     xtable
 Remotes: 
-    rsetienne/DAISIE@v4.3.2,
     tece-lab/DAISIEutils
 Config/testthat/edition: 3
