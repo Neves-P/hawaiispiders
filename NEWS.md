@@ -1,3 +1,8 @@
+# hawaiispiders 3.2.0
+
+* Update documentation files and add documentation to `res_lsodes` data file.
+* Delete unnecessary `res_odeint` file and associated files.
+
 # hawaiispiders 3.1.0
 
 * Add 0.6 and 0.3Mya cases, tagged as `h` and `q` respectively.
