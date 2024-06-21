@@ -1,14 +1,9 @@
-
-<!-- README.md is generated from README.Rmd. Please edit that file -->
-
 # hawaiispiders
 
 <!-- badges: start -->
-
-[![R build
-status](https://github.com/Neves-P/hawaiispiders/workflows/R-CMD-check/badge.svg)](https://github.com/Neves-P/hawaiispiders/actions)
+![GitHub R package version](https://img.shields.io/github/r-package/v/Neves-P/hawaiispiders)
+[![R-CMD-check](https://github.com/neves-p/hawaiispiders/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/neves-p/hawaiispiders/actions/workflows/R-CMD-check.yaml)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4544048.svg)](https://doi.org/10.5281/zenodo.4544041)
-[![Codecov test coverage](https://codecov.io/gh/Neves-P/hawaiispiders/branch/master/graph/badge.svg)](https://app.codecov.io/gh/Neves-P/hawaiispiders?branch=master)
 <!-- badges: end -->
 
 The goal of hawaiispiders is to study the diversification and impact of
