@@ -1,13 +1,13 @@
 #' Plot loglikelihood through time
 #'
-#' @param res
+#' @inheritParams default_params_doc
 #'
 #' @return A plot of loglik through time.
 #' @export
 #'
 #' @examples
-#' data(res_odeint)
-#' plot <- generate_loglik_plot(res_odeint)
+#' data(res_lsodes)
+#' plot <- generate_loglik_plot(res_lsodes)
 generate_loglik_plot <- function(res) {
   prepped_res <- prepare_results_to_plot(res)
   prepped_res$island_age <- as.numeric(as.character(prepped_res$island_age))

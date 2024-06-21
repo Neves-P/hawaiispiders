@@ -7,7 +7,8 @@
 generate_loglik_plot(res)
 }
 \arguments{
-\item{res}{}
+\item{res}{A data frame with each row corresponding to the best of 10 model
+fits with a different set of randomly sampled starting parameters.}
 }
 \value{
 A plot of loglik through time.
@@ -16,6 +17,6 @@ A plot of loglik through time.
 Plot loglikelihood through time
 }
 \examples{
-data(res_odeint)
-plot <- generate_loglik_plot(res_odeint)
+data(res_lsodes)
+plot <- generate_loglik_plot(res_lsodes)
 }

@@ -42,6 +42,11 @@
 #'   size in a page: `"full_size"` or only half: `"half_size"`
 #' @param res A data frame with each row corresponding to the best of 10 model
 #'   fits with a different set of randomly sampled starting parameters.
+#' @param file_name A string with the name of a file.
+#' @param partition_name A string corresponding to the internal code for
+#'   partition names. Can be `"island_age"` for "Assumued island age (Ma)",
+#'   `"c_m"` for "Uncertainty in number of colonisations", or `"stac"` for
+#'   "Uncertainty in colonisation time"
 #' @keywords internal
 #' @return Nothing
 #' @author Pedro Santos Neves
@@ -55,9 +60,10 @@ default_params_doc <- function(island_replicates,
                                parameter_name,
                                raw_results,
                                plot_to_save,
-                               name,
+                               file_name,
                                type_size,
-                               res) {
+                               res,
+                               partition_name) {
 
  # Intentionally empty
 }

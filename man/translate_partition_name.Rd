@@ -6,6 +6,12 @@
 \usage{
 translate_partition_name(partition_name)
 }
+\arguments{
+\item{partition_name}{A string corresponding to the internal code for
+partition names. Can be \code{"island_age"} for "Assumued island age (Ma)",
+\code{"c_m"} for "Uncertainty in number of colonisations", or \code{"stac"} for
+"Uncertainty in colonisation time"}
+}
 \value{
 A character string with formatted name of partition
 }

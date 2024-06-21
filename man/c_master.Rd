@@ -21,8 +21,8 @@ are available}
 }
 }
 \source{
-Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-filled in later.
+Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+found in the accompanying publication.
 }
 \usage{
 c_master

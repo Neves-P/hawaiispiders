@@ -18,8 +18,8 @@
 #'   branching times of each lineage. Can also contain `"MinAges"` when these
 #'   are available}
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -55,8 +55,8 @@
 #'   type analyses. Always set to 1 in this dataset.}
 #'
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -84,8 +84,8 @@
 #'   branching times of each lineage. Can also contain `"MinAges"` when these
 #'   are available}
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -121,8 +121,8 @@
 #'   type analyses. Always set to 1 in this dataset.}
 #'
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -151,8 +151,8 @@
 #'   branching times of each lineage. Can also contain `"MinAges"` when these
 #'   are available}
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -189,8 +189,8 @@
 #'   type analyses. Always set to 1 in this dataset.}
 #'
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -220,8 +220,8 @@
 #'   branching times of each lineage. Can also contain `"MinAges"` when these
 #'   are available}
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -257,8 +257,8 @@
 #'   type analyses. Always set to 1 in this dataset.}
 #'
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -286,8 +286,8 @@
 #'   branching times of each lineage. Can also contain `"MinAges"` when these
 #'   are available}
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -323,8 +323,8 @@
 #'   type analyses. Always set to 1 in this dataset.}
 #'
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -353,8 +353,8 @@
 #'   branching times of each lineage. Can also contain `"MinAges"` when these
 #'   are available}
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -391,8 +391,8 @@
 #'   type analyses. Always set to 1 in this dataset.}
 #'
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -420,8 +420,8 @@
 #'   branching times of each lineage. Can also contain `"MinAges"` when these
 #'   are available}
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -457,8 +457,8 @@
 #'   type analyses. Always set to 1 in this dataset.}
 #'
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -487,8 +487,8 @@
 #'   branching times of each lineage. Can also contain `"MinAges"` when these
 #'   are available}
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -524,8 +524,8 @@
 #'   type analyses. Always set to 1 in this dataset.}
 #'
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -554,8 +554,8 @@
 #'   branching times of each lineage. Can also contain `"MinAges"` when these
 #'   are available}
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -592,8 +592,8 @@
 #'   type analyses. Always set to 1 in this dataset.}
 #'
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -622,8 +622,8 @@
 #'   branching times of each lineage. Can also contain `"MinAges"` when these
 #'   are available}
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -659,8 +659,8 @@
 #'   type analyses. Always set to 1 in this dataset.}
 #'
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -689,8 +689,8 @@
 #'   branching times of each lineage. Can also contain `"MinAges"` when these
 #'   are available}
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -726,8 +726,8 @@
 #'   type analyses. Always set to 1 in this dataset.}
 #'
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -756,8 +756,8 @@
 #'   branching times of each lineage. Can also contain `"MinAges"` when these
 #'   are available}
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -794,8 +794,8 @@
 #'   type analyses. Always set to 1 in this dataset.}
 #'
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -823,8 +823,8 @@
 #'   branching times of each lineage. Can also contain `"MinAges"` when these
 #'   are available}
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -860,8 +860,8 @@
 #'   type analyses. Always set to 1 in this dataset.}
 #'
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -891,8 +891,8 @@
 #'   branching times of each lineage. Can also contain `"MinAges"` when these
 #'   are available}
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -928,8 +928,8 @@
 #'   type analyses. Always set to 1 in this dataset.}
 #'
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -958,8 +958,8 @@
 #'   branching times of each lineage. Can also contain `"MinAges"` when these
 #'   are available}
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -996,8 +996,8 @@
 #'   type analyses. Always set to 1 in this dataset.}
 #'
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -1025,8 +1025,8 @@
 #'   branching times of each lineage. Can also contain `"MinAges"` when these
 #'   are available}
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -1062,8 +1062,8 @@
 #'   type analyses. Always set to 1 in this dataset.}
 #'
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -1091,8 +1091,8 @@
 #'   branching times of each lineage. Can also contain `"MinAges"` when these
 #'   are available}
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -1128,8 +1128,8 @@
 #'   type analyses. Always set to 1 in this dataset.}
 #'
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -1158,8 +1158,8 @@
 #'   branching times of each lineage. Can also contain `"MinAges"` when these
 #'   are available}
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -1196,8 +1196,8 @@
 #'   type analyses. Always set to 1 in this dataset.}
 #'
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -1225,8 +1225,8 @@
 #'   branching times of each lineage. Can also contain `"MinAges"` when these
 #'   are available}
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -1262,8 +1262,8 @@
 #'   type analyses. Always set to 1 in this dataset.}
 #'
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -1291,8 +1291,8 @@
 #'   branching times of each lineage. Can also contain `"MinAges"` when these
 #'   are available}
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -1328,8 +1328,8 @@
 #'   type analyses. Always set to 1 in this dataset.}
 #'
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -1358,8 +1358,8 @@
 #'   branching times of each lineage. Can also contain `"MinAges"` when these
 #'   are available}
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -1396,8 +1396,8 @@
 #'   type analyses. Always set to 1 in this dataset.}
 #'
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -1425,8 +1425,8 @@
 #'   branching times of each lineage. Can also contain `"MinAges"` when these
 #'   are available}
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -1462,8 +1462,8 @@
 #'   type analyses. Always set to 1 in this dataset.}
 #'
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -1491,8 +1491,8 @@
 #'   branching times of each lineage. Can also contain `"MinAges"` when these
 #'   are available}
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -1528,8 +1528,8 @@
 #'   type analyses. Always set to 1 in this dataset.}
 #'
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -1558,8 +1558,8 @@
 #'   branching times of each lineage. Can also contain `"MinAges"` when these
 #'   are available}
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -1596,8 +1596,8 @@
 #'   type analyses. Always set to 1 in this dataset.}
 #'
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -1626,8 +1626,8 @@
 #'   branching times of each lineage. Can also contain `"MinAges"` when these
 #'   are available}
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -1663,8 +1663,8 @@
 #'   type analyses. Always set to 1 in this dataset.}
 #'
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -1692,8 +1692,8 @@
 #'   branching times of each lineage. Can also contain `"MinAges"` when these
 #'   are available}
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -1729,8 +1729,8 @@
 #'   type analyses. Always set to 1 in this dataset.}
 #'
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -1759,8 +1759,8 @@
 #'   branching times of each lineage. Can also contain `"MinAges"` when these
 #'   are available}
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -1797,8 +1797,8 @@
 #'   type analyses. Always set to 1 in this dataset.}
 #'
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -1826,8 +1826,8 @@
 #'   branching times of each lineage. Can also contain `"MinAges"` when these
 #'   are available}
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -1863,8 +1863,8 @@
 #'   type analyses. Always set to 1 in this dataset.}
 #'
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -1892,8 +1892,8 @@
 #'   branching times of each lineage. Can also contain `"MinAges"` when these
 #'   are available}
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -1929,8 +1929,8 @@
 #'   type analyses. Always set to 1 in this dataset.}
 #'
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -1959,8 +1959,8 @@
 #'   branching times of each lineage. Can also contain `"MinAges"` when these
 #'   are available}
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -1997,8 +1997,8 @@
 #'   type analyses. Always set to 1 in this dataset.}
 #'
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -2026,8 +2026,8 @@
 #'   branching times of each lineage. Can also contain `"MinAges"` when these
 #'   are available}
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -2063,8 +2063,8 @@
 #'   type analyses. Always set to 1 in this dataset.}
 #'
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -2092,8 +2092,8 @@
 #'   branching times of each lineage. Can also contain `"MinAges"` when these
 #'   are available}
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -2129,8 +2129,8 @@
 #'   type analyses. Always set to 1 in this dataset.}
 #'
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -2159,8 +2159,8 @@
 #'   branching times of each lineage. Can also contain `"MinAges"` when these
 #'   are available}
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -2197,8 +2197,8 @@
 #'   type analyses. Always set to 1 in this dataset.}
 #'
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -2226,8 +2226,8 @@
 #'   branching times of each lineage. Can also contain `"MinAges"` when these
 #'   are available}
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -2263,8 +2263,8 @@
 #'   type analyses. Always set to 1 in this dataset.}
 #'
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -2292,8 +2292,8 @@
 #'   branching times of each lineage. Can also contain `"MinAges"` when these
 #'   are available}
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -2329,8 +2329,8 @@
 #'   type analyses. Always set to 1 in this dataset.}
 #'
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -2359,8 +2359,8 @@
 #'   branching times of each lineage. Can also contain `"MinAges"` when these
 #'   are available}
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -2397,8 +2397,8 @@
 #'   type analyses. Always set to 1 in this dataset.}
 #'
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -2431,8 +2431,8 @@
 #'   branching times of each lineage. Can also contain `"MinAges"` when these
 #'   are available}
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
@@ -2465,11 +2465,45 @@
 #'   branching times of each lineage. Can also contain `"MinAges"` when these
 #'   are available}
 #' }
-#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-#'   filled in later.
+#' @source Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+#'   found in the accompanying publication.
 #' @references
 #' GARB, J.E. and GILLESPIE, R.G. (2009), Diversity despite dispersal:
 #' colonization history and phylogeography of Hawaiian crab spiders inferred
 #' from multilocus genetic data. Molecular Ecology, 18: 1746-1764.
 #' \doi{10.1111/j.1365-294X.2009.04125.x}
 "m_master"
+
+#' Results of MLE procedure on spider data yielding DAISIE parameter estimates
+#'
+#' A data frame obtained by running the file `data-raw/res_lsodes` on all sets
+#' of MLE procedures that yielded likelihood values and DAISIE parameter
+#' estimates. Only the best fit as chosen by BIC for each scenario is kept in
+#' the resulting data frame. Further details can be found in the document ion
+#' for `DAISIEutils::sensitivity()`. All MLE procedures used the `lsodes`
+#' numerical integrator from  `R` package `deSolve` from within the `DAISIE`
+#' package.
+#'
+#' @format A data frame with 36 rows and 10 variables:
+#' \describe{
+#'   \item{scenario}{character vector with name of each scenario}
+#'   \item{lambda_c}{numeric atomic vector with estimated value of cladogenesis
+#'     rate}
+#'   \item{mu}{numeric atomic vector with estimated value of extinction
+#'     rate}
+#'   \item{K}{numeric atomic vector with estimated value of carrying capacity
+#'     }
+#'   \item{gamma}{numeric atomic vector with estimated value of colonisation
+#'     rate}
+#'   \item{lambda_a}{numeric atomic vector with estimated value of anagenesis
+#'     rate}
+#'   \item{loglik}{numeric atomic vector with calculated log-likelihood value of
+#'     the model fit.}
+#'   \item{df}{numeric atomic vector with the degrees of freedom in the model}
+#'   \item{conv}{numeric atomic vector indicating if the optimisation procedure
+#'     converged. A value of `0` denotes convergence.}
+#'   \item{bic}{numeric atomic vector with the calculated value of the Bayesian
+#'   Information Criterion}
+#' }
+#' @source See accompanying publication.
+"res_lsodes"

@@ -15,9 +15,10 @@ default_params_doc(
   parameter_name,
   raw_results,
   plot_to_save,
-  name,
+  file_name,
   type_size,
-  res
+  res,
+  partition_name
 )
 }
 \arguments{
@@ -71,11 +72,18 @@ accepted).}
 
 \item{plot_to_save}{A ggplot which will be saved to disk.}
 
+\item{file_name}{A string with the name of a file.}
+
 \item{type_size}{A string determining whether the figure should take full
 size in a page: \code{"full_size"} or only half: \code{"half_size"}}
 
 \item{res}{A data frame with each row corresponding to the best of 10 model
 fits with a different set of randomly sampled starting parameters.}
+
+\item{partition_name}{A string corresponding to the internal code for
+partition names. Can be \code{"island_age"} for "Assumued island age (Ma)",
+\code{"c_m"} for "Uncertainty in number of colonisations", or \code{"stac"} for
+"Uncertainty in colonisation time"}
 }
 \value{
 Nothing

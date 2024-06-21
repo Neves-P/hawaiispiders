@@ -28,8 +28,8 @@ type analyses. Always set to 1 in this dataset.}
 }
 }
 \source{
-Jairo Patiño and Rosemary Gilliespie. Full reference list to be
-filled in later.
+Jairo Patiño and Rosemary Gilliespie. Full reference list can be
+found in the accompanying publication.
 }
 \usage{
 y_c_no
