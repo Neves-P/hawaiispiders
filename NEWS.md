@@ -1,3 +1,7 @@
+# hawaiispiders 3.2.1
+
+* Depend on CRAN's version of `DAISIE`, not that from GitHub.
+
 # hawaiispiders 3.2.0
 
 * Update documentation files and add documentation to `res_lsodes` data file.
