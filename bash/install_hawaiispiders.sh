@@ -8,8 +8,8 @@
 #SBATCH --partition=regular
 
 mkdir -p logs
-ml R
+ml R-bundle-CRAN/2024.11-foss-2024a
 
-Rscript -e 'remotes::install_github("rsetienne/DAISIE", upgrade = TRUE, force = TRUE)'
-Rscript -e 'remotes::install_github("tece-lab/DAISIEutils", upgrade = TRUE, force = TRUE)'
-Rscript -e 'remotes::install_github("Neves-P/hawaiispiders", upgrade = TRUE, force = TRUE)'
+Rscript -e 'install.packages("DAISIE")'
+Rscript -e 'remotes::install_github("tece-lab/DAISIEutils@develop", force = TRUE)'
+Rscript -e 'remotes::install_github("Neves-P/hawaiispiders@develop", force = TRUE)'
